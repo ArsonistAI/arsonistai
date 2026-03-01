@@ -1,0 +1,231 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "products": "Productos",
+    "partnerships": "Alianzas",
+    "insights": "Blog"
+  },
+  "footer": {
+    "tagline": "Construyendo un futuro empoderado con IA avanzada.",
+    "links": "Enlaces",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos Legales",
+    "contact": "Contacto",
+    "email": "hello@arsonistai.com",
+    "copyright": "© {year} Arsonist AI. Todos los derechos reservados.",
+    "backToTop": "volver arriba"
+  },
+  "home": {
+    "heroSubtitle": "Diseño Aumentado",
+    "heroTitle": "Nuestra misión es construir un futuro empoderado con IA avanzada, haciéndola accesible, escalable y centrada en las personas que más la necesitan.",
+    "heroCta": "Conoce nuestro trabajo",
+    "heroTagline": "Tu firma de diseño con IA — escala tu negocio con IA",
+    "servicesHeading": "Nuestros Servicios",
+    "servicesSubheading": "Ya sea que estés comenzando o liderando una empresa establecida, estamos comprometidos a entender tus objetivos y ayudarte a alcanzarlos.",
+    "whyHeading": "¿Por qué elegirnos?",
+    "why1Title": "Somos expertos en IA",
+    "why1Text": "Nos mantenemos al día con las últimas y mejores herramientas de IA para que tú no tengas que hacerlo.",
+    "why2Title": "Nos adaptamos a tus necesidades",
+    "why2Text": "En lugar de usar un modelo único, estudiamos tu negocio y personalizamos.",
+    "why3Title": "Servimos a escala",
+    "why3Text": "Usar IA nos permite analizar y diseñar para problemas que van desde lo micro hasta lo global.",
+    "productsHeading": "Productos",
+    "allProducts": "ver productos",
+    "insightsHeading": "Blog",
+    "allInsights": "ver todo",
+    "readMore": "leer más",
+    "contactHeading": "Contáctanos"
+  },
+  "about": {
+    "heading": "nosotros",
+    "intro": "Somos una empresa AI-first que ayuda a las empresas a desbloquear el potencial humano a través de la tecnología emergente. Usando herramientas de vanguardia, construimos soluciones escalables y éticas que empoderan a las organizaciones para adoptar IA con claridad, confianza y propósito.",
+    "missionHeading": "nuestra misión",
+    "missionText": "Nuestra misión es construir el futuro con IA avanzada, haciéndola accesible, escalable y centrada en las personas que más la necesitan.",
+    "valuesHeading": "nuestros valores",
+    "value1Title": "Usamos IA para el bien",
+    "value1Text": "La IA es increíblemente poderosa y requiere adherencia a estándares éticos de uso.",
+    "value2Title": "No aceptamos cualquier cliente",
+    "value2Text": "Priorizamos trabajo de alta calidad, colaborativo y de alto impacto.",
+    "value3Title": "Somos un equipo diverso",
+    "value3Text": "Lo decimos en todas las formas posibles en que se pueda interpretar.",
+    "careersHeading": "¿Interesado en construir el futuro?",
+    "careersText": "Cuéntanos por qué y cómo enviándonos un email:",
+    "careersEmail": "careers@arsonistai.com",
+    "copied": "¡Copiado!"
+  },
+  "services": {
+    "heading": "Servicios",
+    "subheading": "Servicios aumentados con IA, escalables",
+    "label": "Servicios de IA",
+    "contentGeneration": {
+      "title": "Generación de Contenido",
+      "short": "Estás empezando desde cero y quieres ideas de alta calidad para productos y servicios.",
+      "long": "¿Necesitas ideas frescas rápido? Nuestro servicio de generación de contenido e ideas potenciado por IA ayuda a creadores, emprendedores y equipos a innovar en segundos. Ya sea que estés haciendo lluvia de ideas para nombres de productos, contenido de redes sociales, conceptos de startups o eslóganes de campañas, nuestra IA entrega sugerencias personalizadas y de alta calidad."
+    },
+    "conceptVisualization": {
+      "title": "Visualización de Conceptos",
+      "short": "Tienes algunas ideas abstractas pero necesitas agregar detalle y visuales increíbles.",
+      "long": "Da vida a tus ideas con nuestro servicio de visualización de conceptos potenciado por IA. Usamos las últimas y mejores herramientas de IA para transformar conceptos en bruto en visuales impactantes y de alto impacto—rápido."
+    },
+    "explorationScaling": {
+      "title": "Escalado de Exploración",
+      "short": "Tienes algunas ideas visualizadas pero quieres crear un conjunto más amplio de variaciones.",
+      "long": "Expande tus horizontes creativos con nuestro servicio de escalado de exploración potenciado por IA. Si tienes un concepto sólido o algunas ideas visuales, te ayudamos a generar rápidamente variaciones de alta calidad—estilísticas, estructurales o conceptuales."
+    },
+    "experienceOptimization": {
+      "title": "Optimización de Experiencia",
+      "short": "Audita y mejora tus productos digitales para asegurar resonancia y usabilidad.",
+      "long": "Optimiza cada punto de contacto de usuario de tu producto digital. Auditamos usando IA avanzada y principios de UX para descubrir fricciones, oportunidades perdidas y áreas para un mayor compromiso del usuario."
+    },
+    "productDesign": {
+      "title": "Diseño de Producto",
+      "short": "Nuestro equipo de expertos te ayudará en todas las etapas del desarrollo de productos.",
+      "long": "Transforma tus ideas en productos bellamente funcionales con nuestro servicio de diseño de producto potenciado por IA. Combinamos la velocidad de la IA con la perspectiva del diseño centrado en el ser humano."
+    },
+    "operationsConsulting": {
+      "title": "Consultoría de Operaciones",
+      "short": "Aprovecha el poder de la IA para mejorar la eficiencia y escalabilidad empresarial.",
+      "long": "Optimiza y escala con nuestro servicio de consultoría de operaciones empresariales potenciado por IA. Usamos herramientas de IA de vanguardia para analizar flujos de trabajo, identificar ineficiencias y entregar recomendaciones basadas en datos."
+    }
+  },
+  "products": {
+    "heading": "Productos",
+    "viewProduct": "ver producto",
+    "kpis": {
+      "title": "Plugin de KPIs de Producto"
+    },
+    "diversifyr": {
+      "title": "Herramienta Diversifyr"
+    },
+    "figmaToolkit": {
+      "title": "Kit de Negocios para Figma"
+    }
+  },
+  "partnerships": {
+    "heading": "Alianzas",
+    "text": "En Arsonist AI, la colaboración está en el centro de todo lo que hacemos. Creemos que las mejores ideas surgen cuando mentes diversas se unen, por eso siempre buscamos alianzas con equipos e individuos visionarios en el espacio de la IA. Ya sea co-desarrollando herramientas, explorando nuevas aplicaciones o intercambiando ideas, estamos emocionados de construir junto a otros que comparten nuestra pasión por superar los límites."
+  },
+  "contact": {
+    "heading": "Contáctanos",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado exitosamente!",
+    "error": "Algo salió mal. Por favor intenta de nuevo."
+  },
+  "posts": {
+    "by": "por",
+    "published": "Publicado",
+    "productKpisPlugin": {
+      "title": "Presentamos Product KPIs: Impacto Medible Directamente en Tu Flujo de Diseño",
+      "excerpt": "La mayoría de los equipos de producto adivinan qué métricas realmente importan. Creamos un plugin de Figma con más de 100 KPIs probados en la industria para cambiar eso."
+    },
+    "kpis": {
+      "title": "Por qué elegir los KPIs correctos marca toda la diferencia en el éxito del producto",
+      "excerpt": "En el mundo acelerado del desarrollo de productos y diseño UX, el \"impacto\" no es solo jerga corporativa."
+    },
+    "containment": {
+      "title": "Contención, no catástrofe: 9 formas prácticas de regular la IA antes de que nos regule",
+      "excerpt": "La pregunta crítica que enfrentamos ya no es si la IA debe ser regulada, sino cómo."
+    },
+    "everydayAI": {
+      "title": "10 formas de incorporar la IA en la vida cotidiana",
+      "excerpt": "La IA se ha convertido en una herramienta cada vez más valiosa en varios aspectos de la vida."
+    },
+    "leanCanvas": {
+      "title": "Plantillas interactivas de Lean Product Canvas para Figma",
+      "excerpt": "Nos asociamos con Jeff Gothelf y Josh Seiden para llevar el Lean Product Canvas a un formato digital moderno e interactivo."
+    },
+    "dateAI": {
+      "title": "¿Saldrías con una IA?",
+      "excerpt": "Las personas están formando conexiones emocionales profundas, a veces románticas, con compañeros de IA."
+    },
+    "figmaBrand": {
+      "title": "Cómo usar Figma para gestionar tu marca",
+      "excerpt": "Figma no es solo una herramienta de diseño. Es el centro de mando que tu marca estaba esperando."
+    },
+    "designersAI": {
+      "title": "Lo que los diseñadores necesitan saber sobre la IA",
+      "excerpt": "Tu trabajo puede estar contribuyendo al entrenamiento de modelos de IA, a menudo sin tu consentimiento explícito."
+    },
+    "publicPerception": {
+      "title": "¿Emocionados o aterrados? Lo que la gente realmente piensa sobre la IA",
+      "excerpt": "El 52% de los estadounidenses están más preocupados que emocionados por la IA en la vida diaria."
+    }
+  },
+  "work": {
+    "heading": "Caso de Estudio",
+    "backToWork": "Volver"
+  },
+  "privacy": {
+    "heading": "Política de Privacidad"
+  },
+  "legal": {
+    "heading": "Términos Legales"
+  },
+  "newsletter": {
+    "heading": "Boletín",
+    "description": "Mantente al día con noticias e ideas sobre IA.",
+    "placeholder": "Tu correo",
+    "subscribe": "Suscribirse",
+    "submitting": "Suscribiendo...",
+    "success": "¡Te has suscrito!",
+    "error": "Algo salió mal. Por favor intenta de nuevo.",
+    "optIn": "Suscribirme al boletín"
+  },
+  "notFound": {
+    "heading": "Página no encontrada",
+    "text": "La página que buscas no existe.",
+    "backHome": "Volver al inicio"
+  },
+  "meta": {
+    "home": {
+      "title": "ArsonistAI — Firma de Diseño con IA | Soluciones de IA Centradas en las Personas",
+      "description": "ArsonistAI es una firma de diseño con IA que ofrece generación de contenido, visualización de conceptos, diseño de productos y consultoría de operaciones. Haciendo la IA accesible, escalable y centrada en las personas.",
+      "ogDescription": "Firma de diseño con IA especializada en generación de contenido, visualización de conceptos, diseño de productos y consultoría de operaciones."
+    },
+    "about": {
+      "title": "Nosotros",
+      "description": "Conoce a ArsonistAI — una firma de diseño con IA con la misión de hacer la inteligencia artificial accesible, escalable y centrada en las personas. Conoce nuestro equipo y valores.",
+      "ogTitle": "Sobre ArsonistAI — Firma de Diseño con IA",
+      "ogDescription": "Una firma de diseño AI-first que hace la inteligencia artificial accesible, escalable y centrada en las personas."
+    },
+    "services": {
+      "title": "Servicios de Diseño con IA",
+      "description": "Explora los servicios de diseño con IA de ArsonistAI: generación de contenido, visualización de conceptos, escalado de exploración, optimización de experiencia, diseño de producto y consultoría de operaciones.",
+      "ogTitle": "Servicios de Diseño con IA — ArsonistAI",
+      "ogDescription": "Servicios de diseño potenciados por IA incluyendo generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones."
+    },
+    "products": {
+      "title": "Productos y Herramientas con IA",
+      "description": "Descubre los productos de ArsonistAI: Plugin de KPIs de Producto, Herramienta Diversifyr y Kit de Negocios para Figma. Herramientas diseñadas para acelerar el diseño y los negocios.",
+      "ogTitle": "Productos y Herramientas con IA — ArsonistAI",
+      "ogDescription": "Productos y herramientas potenciados por IA para diseñadores y empresas, incluyendo plugins de Figma y herramientas de portafolio."
+    },
+    "insights": {
+      "title": "Blog e Ideas sobre IA",
+      "description": "Lee las últimas ideas de ArsonistAI sobre diseño con IA, estrategia de producto, ética de la IA, regulación y cómo la inteligencia artificial está transformando las industrias creativas.",
+      "ogTitle": "Blog e Ideas sobre IA — ArsonistAI",
+      "ogDescription": "Liderazgo de pensamiento sobre diseño con IA, estrategia de producto, ética de la IA y el futuro de las industrias creativas."
+    },
+    "partnerships": {
+      "title": "Alianzas",
+      "description": "Asóciate con ArsonistAI para construir soluciones con IA juntos. Colaboramos con empresas visionarias para hacer la IA accesible, escalable y centrada en las personas.",
+      "ogTitle": "Alianzas — ArsonistAI",
+      "ogDescription": "Colabora con ArsonistAI para construir soluciones con IA. Alianzas estratégicas para empresas visionarias."
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "description": "Política de privacidad de ArsonistAI. Conoce cómo recopilamos, usamos y protegemos tu información personal."
+    },
+    "legal": {
+      "title": "Términos Legales",
+      "description": "Términos legales y condiciones de uso de ArsonistAI. Revisa los términos que rigen el uso de nuestro sitio web y servicios."
+    }
+  }
+}

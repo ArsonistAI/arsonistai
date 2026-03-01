@@ -1,0 +1,16 @@
+{
+  "name": "ArsonistAI",
+  "short_name": "ArsonistAI",
+  "description": "AI design firm building accessible, scalable, and human-centered AI solutions.",
+  "start_url": "/en",
+  "display": "standalone",
+  "theme_color": "#FF4000",
+  "background_color": "#0A0A0A",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
