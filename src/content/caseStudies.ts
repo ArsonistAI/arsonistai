@@ -1,6 +1,8 @@
 export interface CaseStudy {
   slug: string;
   title: string;
+  /** Optional display name for listing pages (e.g. "Hello Cloud IT") */
+  displayName?: string;
   client: string;
   url: string;
   heroImage: string;
@@ -15,6 +17,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "hello-cit",
     title: "Interactive Website for Hello CIT",
+    displayName: "Hello Cloud IT",
     client: "Hello CIT",
     url: "https://www.hellocit.com/",
     heroImage: "/images/work/hello-cit-hero.png",

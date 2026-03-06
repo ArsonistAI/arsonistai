@@ -108,6 +108,11 @@
     "heading": "Partnerships",
     "text": "At Arsonist AI, collaboration is at the core of everything we do. We believe the best ideas emerge when diverse minds come together, which is why we're always seeking partnerships with forward-thinking teams and individuals in the AI space. Whether it's co-developing tools, exploring new applications, or exchanging insights, we're excited to build alongside others who share our passion for pushing boundaries."
   },
+  "caseStudies": {
+    "heading": "Case Studies",
+    "visitSite": "Visit site",
+    "readCaseStudy": "Read case study"
+  },
   "contact": {
     "heading": "Get in Touch",
     "name": "Name",
@@ -218,6 +223,12 @@
       "description": "Partner with ArsonistAI to build AI-powered solutions together. We collaborate with forward-thinking companies to make AI accessible, scalable, and human-centered.",
       "ogTitle": "Partnerships — ArsonistAI",
       "ogDescription": "Collaborate with ArsonistAI to build AI-powered solutions. Strategic partnerships for forward-thinking companies."
+    },
+    "caseStudies": {
+      "title": "Case Studies",
+      "description": "Explore ArsonistAI case studies: client projects and outcomes across AI design, product development, and digital experiences.",
+      "ogTitle": "Case Studies — ArsonistAI",
+      "ogDescription": "Case studies and client work from ArsonistAI: AI design, product development, and digital experiences."
     },
     "privacy": {
       "title": "Privacy Policy",

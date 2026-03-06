@@ -130,7 +130,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "sending" || (!turnstileToken && !!TURNSTILE_SITE_KEY)}
-            className="px-10 py-4 bg-lava text-background font-bold rounded-shape-full m3-button disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-10 py-4 bg-lava text-background font-bold rounded-shape-full m3-button disabled:bg-lava-dark disabled:cursor-not-allowed"
           >
             {status === "sending" ? t("sending") : t("submit")}
           </button>

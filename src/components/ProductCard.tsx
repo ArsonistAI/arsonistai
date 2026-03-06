@@ -17,13 +17,16 @@ export default function ProductCard({ product }: Props) {
         rel="noopener noreferrer"
         className="group block"
       >
-        <div className="aspect-[4/3] overflow-hidden bg-surface-light">
+        <div
+          className="w-full max-w-[332px] overflow-hidden bg-surface-light"
+          style={{ aspectRatio: "332/263" }}
+        >
           <img
             src={product.image}
             alt={t(product.titleKey)}
             loading="lazy"
-            width={480}
-            height={360}
+            width={332}
+            height={263}
             className="w-full h-full object-cover group-hover:scale-105 m3-transition-medium transition-transform"
           />
         </div>

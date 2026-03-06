@@ -108,6 +108,11 @@
     "heading": "Alianzas",
     "text": "En Arsonist AI, la colaboración está en el centro de todo lo que hacemos. Creemos que las mejores ideas surgen cuando mentes diversas se unen, por eso siempre buscamos alianzas con equipos e individuos visionarios en el espacio de la IA. Ya sea co-desarrollando herramientas, explorando nuevas aplicaciones o intercambiando ideas, estamos emocionados de construir junto a otros que comparten nuestra pasión por superar los límites."
   },
+  "caseStudies": {
+    "heading": "Casos de estudio",
+    "visitSite": "Visitar sitio",
+    "readCaseStudy": "Leer caso de estudio"
+  },
   "contact": {
     "heading": "Contáctanos",
     "name": "Nombre",
@@ -218,6 +223,12 @@
       "description": "Asóciate con ArsonistAI para construir soluciones con IA juntos. Colaboramos con empresas visionarias para hacer la IA accesible, escalable y centrada en las personas.",
       "ogTitle": "Alianzas — ArsonistAI",
       "ogDescription": "Colabora con ArsonistAI para construir soluciones con IA. Alianzas estratégicas para empresas visionarias."
+    },
+    "caseStudies": {
+      "title": "Casos de estudio",
+      "description": "Explora los casos de estudio de ArsonistAI: proyectos con clientes y resultados en diseño con IA, desarrollo de productos y experiencias digitales.",
+      "ogTitle": "Casos de estudio — ArsonistAI",
+      "ogDescription": "Casos de estudio y trabajo con clientes de ArsonistAI: diseño con IA, desarrollo de productos y experiencias digitales."
     },
     "privacy": {
       "title": "Política de Privacidad",
