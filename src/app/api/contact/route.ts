@@ -62,7 +62,10 @@ async function sendEmailServer(params: {
     }),
   });
 
-  if (!res.ok) throw new Error(`EmailJS ${res.status}`);
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`EmailJS ${res.status}: ${text || res.statusText}`);
+  }
 }
 
 async function subscribeServer(email: string) {
@@ -139,6 +142,21 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  if (
+    !EMAILJS_SERVICE_ID ||
+    !EMAILJS_TEMPLATE_ID ||
+    !EMAILJS_PUBLIC_KEY ||
+    !EMAILJS_PRIVATE_KEY
+  ) {
+    return NextResponse.json(
+      {
+        error: "Failed to send message.",
+        detail: "EmailJS is not configured. Set EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, EMAILJS_PUBLIC_KEY, and EMAILJS_PRIVATE_KEY in Vercel.",
+      },
+      { status: 500 },
+    );
+  }
+
   try {
     await sendEmailServer({ name, email, message });
 
@@ -147,9 +165,10 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "Unknown error";
     return NextResponse.json(
-      { error: "Failed to send message." },
+      { error: "Failed to send message.", detail: message },
       { status: 500 },
     );
   }
