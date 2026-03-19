@@ -5,6 +5,8 @@ export interface Service {
   longDescriptionKey: string;
   icon: string;
   image: string;
+  /** Optional section key for grouping (e.g. "applicationServices"). Services with the same key are grouped under one subsection heading. */
+  sectionKey?: string;
 }
 
 export const services: Service[] = [
@@ -55,5 +57,24 @@ export const services: Service[] = [
     longDescriptionKey: "services.operationsConsulting.long",
     icon: "settings",
     image: "/images/services/factory.png",
+  },
+  // Application services subsection
+  {
+    id: "openclaw-installation",
+    titleKey: "services.openclawInstallation.title",
+    descriptionKey: "services.openclawInstallation.short",
+    longDescriptionKey: "services.openclawInstallation.long",
+    icon: "wrench",
+    image: "/images/services/product.png",
+    sectionKey: "applicationServices",
+  },
+  {
+    id: "claude-cursor-training",
+    titleKey: "services.claudeCursorTraining.title",
+    descriptionKey: "services.claudeCursorTraining.short",
+    longDescriptionKey: "services.claudeCursorTraining.long",
+    icon: "code",
+    image: "/images/services/factory.png",
+    sectionKey: "applicationServices",
   },
 ];

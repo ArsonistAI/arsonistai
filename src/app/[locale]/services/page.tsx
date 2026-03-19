@@ -86,10 +86,25 @@ function ServicesContent({ locale }: { locale: string }) {
         </div>
       </section>
 
-      {services.map((service) => (
-        <section key={service.id} className="relative">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="border-t border-border" />
+      {services.map((service, index) => {
+        const showSubsectionHeading =
+          service.sectionKey &&
+          (index === 0 || services[index - 1].sectionKey !== service.sectionKey);
+        const subsectionHeadingKey =
+          service.sectionKey === "applicationServices"
+            ? "applicationServicesHeading"
+            : null;
+
+        return (
+          <section key={service.id} className="relative">
+            <div className="max-w-7xl mx-auto px-6">
+              <div className="border-t border-border" />
+
+              {showSubsectionHeading && subsectionHeadingKey && (
+                <h2 className="text-headline-md font-bold pt-16 pb-4">
+                  {t(subsectionHeadingKey)}
+                </h2>
+              )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 py-20 md:py-24 items-start">
               <div className="flex flex-col gap-6">
@@ -121,7 +136,8 @@ function ServicesContent({ locale }: { locale: string }) {
             </div>
           </div>
         </section>
-      ))}
+        );
+      })}
 
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">

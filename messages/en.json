@@ -89,6 +89,17 @@
       "title": "Operations Consulting",
       "short": "Harness the power of AI to improve business efficiency and scalability.",
       "long": "Streamline and scale with our AI-powered business operations consulting service. We use cutting-edge AI tools to analyze workflows, identify inefficiencies, and deliver data-driven recommendations that boost productivity and reduce costs."
+    },
+    "applicationServicesHeading": "Application services",
+    "openclawInstallation": {
+      "title": "Openclaw Installation & Integration",
+      "short": "Full installation and integration of Openclaw with 30-day support.",
+      "long": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you're covered from day one. Includes setup, configuration, and knowledge transfer. $3,000."
+    },
+    "claudeCursorTraining": {
+      "title": "Claude Code and Cursor Training",
+      "short": "Get your team up to speed on Claude Code and Cursor for AI-augmented development.",
+      "long": "Structured training on using Claude Code and Cursor effectively for development workflows. We cover best practices, prompts, and integration so your team can ship faster with AI assistance. Sessions can be tailored to your stack and processes."
     }
   },
   "products": {

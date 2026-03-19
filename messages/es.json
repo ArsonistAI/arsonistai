@@ -89,6 +89,17 @@
       "title": "Consultoría de Operaciones",
       "short": "Aprovecha el poder de la IA para mejorar la eficiencia y escalabilidad empresarial.",
       "long": "Optimiza y escala con nuestro servicio de consultoría de operaciones empresariales potenciado por IA. Usamos herramientas de IA de vanguardia para analizar flujos de trabajo, identificar ineficiencias y entregar recomendaciones basadas en datos."
+    },
+    "applicationServicesHeading": "Servicios de aplicaciones",
+    "openclawInstallation": {
+      "title": "Instalación e integración de Openclaw",
+      "short": "Instalación e integración completa de Openclaw con 30 días de soporte.",
+      "long": "Realizamos la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el primer día. Incluye configuración, puesta a punto y transferencia de conocimiento. $3,000."
+    },
+    "claudeCursorTraining": {
+      "title": "Capacitación en Claude Code y Cursor",
+      "short": "Capacita a tu equipo en Claude Code y Cursor para desarrollo aumentado por IA.",
+      "long": "Capacitación estructurada en el uso efectivo de Claude Code y Cursor en flujos de desarrollo. Cubrimos mejores prácticas, prompts e integración para que tu equipo pueda entregar más rápido con asistencia de IA. Las sesiones se adaptan a tu stack y procesos."
     }
   },
   "products": {
