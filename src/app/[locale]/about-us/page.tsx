@@ -6,8 +6,7 @@ import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ContactForm from "@/components/ContactForm";
 import CopyEmailButton from "@/components/CopyEmailButton";
 import TrefoilViewerWrapper from "@/components/TrefoilViewerWrapper";
-
-const SITE_URL = "https://arsonistai.com";
+import { alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -19,14 +18,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "/about-us",
       title: t("ogTitle"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/about-us`,
-      languages: { en: `${SITE_URL}/en/about-us`, es: `${SITE_URL}/es/about-us` },
-    },
+    }),
+    alternates: alternatesFor(locale, "/about-us"),
   };
 }
 
@@ -42,6 +40,7 @@ export default async function AboutPage({
 }
 
 function AboutContent({ locale }: { locale: string }) {
+  const tn = useTranslations("nav");
   const t = useTranslations("about");
 
   const values = [
@@ -55,8 +54,8 @@ function AboutContent({ locale }: { locale: string }) {
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "About Us", path: "/about-us" },
+          { name: tn("home"), path: "" },
+          { name: tn("about"), path: "/about-us" },
         ]}
       />
       <section className="py-36 md:py-44 overflow-hidden">

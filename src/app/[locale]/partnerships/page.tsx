@@ -4,8 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ContactForm from "@/components/ContactForm";
-
-const SITE_URL = "https://arsonistai.com";
+import { alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -17,14 +16,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "/partnerships",
       title: t("ogTitle"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/partnerships`,
-      languages: { en: `${SITE_URL}/en/partnerships`, es: `${SITE_URL}/es/partnerships` },
-    },
+    }),
+    alternates: alternatesFor(locale, "/partnerships"),
   };
 }
 
@@ -40,6 +38,7 @@ export default async function PartnershipsPage({
 }
 
 function PartnershipsContent({ locale }: { locale: string }) {
+  const tn = useTranslations("nav");
   const t = useTranslations("partnerships");
 
   return (
@@ -47,8 +46,8 @@ function PartnershipsContent({ locale }: { locale: string }) {
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "Partnerships", path: "/partnerships" },
+          { name: tn("home"), path: "" },
+          { name: tn("partnerships"), path: "/partnerships" },
         ]}
       />
       <section className="py-36 md:py-44">

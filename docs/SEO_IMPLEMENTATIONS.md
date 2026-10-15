@@ -122,7 +122,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 ## 7. Open Graph & social
 
 - **Default OG/Twitter** — Set in root `layout.tsx` (title, description, image).
-- **OG image** — `public/images/og-image.png` (1200×630), branded (e.g. logo + “AI Design Firm”), dark theme and accent color.
+- **OG image** — `public/images/og-image.jpg` (1200×630, 88 KB), branded (e.g. logo + “AI Design Firm”), dark theme and accent color.
 - **Per-page OG** — Optional overrides in each page’s `generateMetadata` (e.g. `openGraph.title`, `openGraph.description`) using translated strings.
 
 **Best practice:** Provide one high-quality OG image per site or section; use locale-aware titles/descriptions for shared links.
@@ -232,4 +232,72 @@ This document lists all SEO work implemented on the site and can be used as a re
 
 ---
 
-*Last updated to reflect implementations through the third SEO pass (locale-aware metadata, canonicals, breadcrumb locale, OG image, 404, manifest, social links, keyword in content).*
+---
+
+## Fourth SEO pass
+
+### 16. Shared SEO helpers (`src/lib/seo.ts`)
+
+`SITE_URL` was previously redeclared in seven files. It now lives in one module alongside:
+
+- `ORG_ID` / `WEBSITE_ID` — stable schema.org node ids.
+- `absoluteUrl(locale, path)` — locale-prefixed absolute URLs for JSON-LD and breadcrumbs.
+- `alternatesFor(locale, path)` — canonical plus `en`, `es`, and `x-default` hreflang.
+- `openGraphFor({ locale, path, title, description, image })` — Open Graph with the site image, `og:url`, `og:locale`, and `siteName` filled in.
+- `OG_IMAGE` — the site-wide 1200x630 card.
+
+**Why it matters:** Next.js replaces a parent's `alternates` and `openGraph` objects wholesale when a child sets them; it does not deep-merge. Any page declaring a partial object silently loses everything the parent supplied. Routing both through helpers makes that failure impossible rather than merely unlikely.
+
+### 17. Canonical and hreflang bugs fixed
+
+- `insights/[slug]` and `work/[slug]` declared `alternates.languages` with no `canonical`, so every blog post and case study shipped with no canonical at all.
+- The root canonical pointed at `https://arsonistai.com`, which redirects to `/en`. A canonical must never point at a redirect. It is now `/en`.
+- No page emitted `x-default`. Every page now does.
+
+### 18. Open Graph image restored site-wide
+
+Every page setting `openGraph: { title, description }` was dropping the site-wide OG image, the homepage included. Sharing the site produced a bare link. All pages now emit `og:image`, with page-specific images on services, case studies, and blog posts.
+
+### 19. Sitemap corrections
+
+- `/case-studies` was missing entirely and is now included.
+- `/services/[slug]` routes added (8 services x 2 locales).
+- `lastModified` used `new Date()`, marking the whole site as changed on every deploy. It now reads real per-entry dates from `staticPages`, `post.lastModified`, and `CaseStudy.lastModified`.
+- All 54 entries carry `x-default` alternates.
+
+### 20. Structured data
+
+- Organization declared once in `src/app/[locale]/layout.tsx` with `@id`, typed as `["Organization", "ProfessionalService"]`, with `contactPoint`, `areaServed`, and `serviceType`. Services, products, and articles reference it as `{ "@id": ORG_ID }` instead of restating partial copies.
+- `BlogPosting.mainEntityOfPage` was hardcoded to `/en/`, so Spanish posts declared the English URL as their canonical entity. It now follows the request locale, and the node gained `inLanguage`, real `dateModified`, `wordCount`, and `articleSection`.
+- Case studies emit `Article` with `about` pointing at the client organization.
+- Products switched from `Product` to `SoftwareApplication`. They are sold off-site, so `Product` would demand `offers` we do not have and earn only "missing field" warnings.
+- `FAQPage` on every service detail page.
+- `VideoObject` for the demo reel, backed by a real poster frame.
+- Breadcrumb labels were hardcoded English on Spanish pages. They now come from `nav.*` translations, and `work/[slug]` no longer emits a "Work" crumb pointing at the homepage.
+
+### 21. Localization gaps closed
+
+`work/[slug]` served English titles and descriptions on Spanish URLs while claiming a Spanish hreflang pair. `CaseStudy` now carries `LocalizedText` for title, summary, and section prose, matching the `content: { en, es }` shape in `posts.ts`. Post dates, the demo reel headings, and the "Back to Insights" link are also localized now.
+
+### 22. Images and Core Web Vitals
+
+- `images: { unoptimized: true }` removed. AVIF and WebP are enabled, so Vercel serves responsive srcsets.
+- Content images converted to `next/image`. The three remaining raw `<img>` tags are SVG logos and the client marquee, where optimization gains nothing.
+- `og-image.png` was **4.5 MB at 2848x1504**, despite the metadata declaring 1200x630. Replaced with an 88 KB JPEG at the correct dimensions.
+- The demo reel gained a poster frame, replacing a bare CSS gradient.
+
+### 23. 404 handling
+
+`[locale]/not-found.tsx` had no metadata and inherited the root title. A root `app/not-found.tsx` was also added: URLs matching no route at all previously fell through to Next's unbranded default, which inherited the root layout's `index, follow` and emitted a conflicting pair of robots tags. Both paths now return HTTP 404 with a branded page and `noindex, follow`.
+
+### 24. Search console verification
+
+`verification.google` and `msvalidate.01` read from `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` and `NEXT_PUBLIC_BING_SITE_VERIFICATION`. Tags are omitted when the variables are unset. Both are documented in `.env.local.example`.
+
+### 25. Service detail pages
+
+`/services` was a single URL carrying eight services, so no page could rank for any individual service term. Each service now has its own indexable route at `/services/[slug]` with unique metadata, an `h1`, a three-step process section, a deliverables list, four FAQs, `Service` and `FAQPage` schema, and links to sibling services. `/services` became the hub linking to all eight.
+
+---
+
+*Last updated to reflect the fourth SEO pass (shared helpers, canonical and OG merge bugs, sitemap accuracy, schema depth, image optimization, 404 handling, service detail pages).*

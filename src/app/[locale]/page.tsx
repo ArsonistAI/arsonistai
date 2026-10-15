@@ -13,8 +13,7 @@ import ContactForm from "@/components/ContactForm";
 import ClientMarquee from "@/components/ClientMarquee";
 import DemoReel from "@/components/DemoReel";
 import FadeInSection from "@/components/FadeInSection";
-
-const SITE_URL = "https://arsonistai.com";
+import { alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -26,14 +25,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "",
       title: t("title"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}`,
-      languages: { en: `${SITE_URL}/en`, es: `${SITE_URL}/es` },
-    },
+    }),
+    alternates: alternatesFor(locale, ""),
   };
 }
 

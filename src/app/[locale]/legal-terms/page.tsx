@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
-
-const SITE_URL = "https://arsonistai.com";
+import { alternatesFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,10 +15,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     robots: { index: true, follow: true },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/legal-terms`,
-      languages: { en: `${SITE_URL}/en/legal-terms`, es: `${SITE_URL}/es/legal-terms` },
-    },
+    alternates: alternatesFor(locale, "/legal-terms"),
   };
 }
 

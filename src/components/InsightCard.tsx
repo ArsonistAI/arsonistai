@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { Post } from "@/content/posts";
 import { useTranslations } from "next-intl";
@@ -17,12 +18,12 @@ export default function InsightCard({ post }: Props) {
         className="group block"
       >
         <div className="aspect-[16/9] overflow-hidden">
-          <img
+          <Image
             src={post.image}
             alt={t(post.titleKey)}
-            loading="lazy"
             width={640}
             height={360}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 640px"
             className="w-full h-full object-cover group-hover:scale-105 m3-transition-medium transition-transform"
           />
         </div>

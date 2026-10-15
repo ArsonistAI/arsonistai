@@ -1,8 +1,14 @@
 "use client";
 
 import { useRef, useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
+import { SITE_URL } from "@/lib/seo";
+
+const POSTER = "/videos/demo-reel-poster.jpg";
+const VIDEO = "/videos/demo-reel.mp4";
 
 export default function DemoReel() {
+  const t = useTranslations("home");
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -34,7 +40,7 @@ export default function DemoReel() {
     if (!video) return;
 
     video.volume = 0;
-    video.src = "/videos/demo-reel.mp4";
+    video.src = VIDEO;
     video.load();
     video.play().then(() => {
       fadeInAudio(video);
@@ -63,13 +69,28 @@ export default function DemoReel() {
     }
   }
 
+  const videoJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: t("demoReelHeading"),
+    description: t("demoReelDescription"),
+    thumbnailUrl: `${SITE_URL}${POSTER}`,
+    contentUrl: `${SITE_URL}${VIDEO}`,
+    uploadDate: "2026-03-06",
+    duration: "PT58S",
+  };
+
   return (
     <section id="demo-reel" className="py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
+      />
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <p className="text-label-lg text-lava uppercase tracking-widest mb-2">
-          Our Work
+          {t("demoReelLabel")}
         </p>
-        <h2 className="text-headline-md font-bold">Demo Reel</h2>
+        <h2 className="text-headline-md font-bold">{t("demoReelHeading")}</h2>
       </div>
 
       <div
@@ -94,6 +115,7 @@ export default function DemoReel() {
         <video
           ref={videoRef}
           className="w-full h-full object-contain"
+          poster={POSTER}
           preload="none"
           playsInline
           onLoadedMetadata={handleLoadedMetadata}
@@ -106,7 +128,7 @@ export default function DemoReel() {
               e.stopPropagation();
               handlePlay();
             }}
-            aria-label="Play demo reel"
+            aria-label={t("demoReelPlay")}
             className="absolute inset-0 flex items-center justify-center"
           >
             <div className="w-20 h-20 rounded-shape-full bg-lava/90 flex items-center justify-center shadow-2xl m3-button group-hover:scale-110 group-hover:bg-lava">

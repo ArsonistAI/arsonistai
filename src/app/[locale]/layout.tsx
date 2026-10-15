@@ -9,6 +9,7 @@ import CustomCursor from "@/components/CustomCursor";
 import EmberBackgroundWrapper from "@/components/EmberBackgroundWrapper";
 import HeatWaveFilter from "@/components/HeatWaveFilter";
 import SecurityGuard from "@/components/SecurityGuard";
+import { SITE_URL, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 import "../globals.css";
 
 const inter = Inter({
@@ -35,15 +36,38 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  // Declared once here with a stable @id. Every other page references it as
+  // { "@id": ORG_ID } instead of restating a partial copy of the organization.
   const organizationJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": ["Organization", "ProfessionalService"],
+    "@id": ORG_ID,
     name: "ArsonistAI",
-    url: "https://arsonistai.com",
-    logo: "https://arsonistai.com/Logo_Orange.svg",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/Logo_Orange.svg`,
+    },
+    image: `${SITE_URL}/images/og-image.jpg`,
     description:
       "AI design firm building accessible, scalable, and human-centered AI solutions.",
     email: "hello@arsonistai.com",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "hello@arsonistai.com",
+      contactType: "sales",
+      availableLanguage: ["en", "es"],
+    },
+    areaServed: "Worldwide",
+    serviceType: [
+      "AI Design",
+      "AI Consulting",
+      "Product Design",
+      "Content Generation",
+      "Concept Visualization",
+      "Operations Consulting",
+    ],
+    // Keep in sync with the social links in Footer.tsx.
     sameAs: [
       "https://www.instagram.com/arsonistai/",
       "https://www.linkedin.com/company/arsonistai/",
@@ -62,8 +86,10 @@ export default async function LocaleLayout({
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": WEBSITE_ID,
     name: "ArsonistAI",
-    url: "https://arsonistai.com",
+    url: SITE_URL,
+    publisher: { "@id": ORG_ID },
     inLanguage: [locale === "es" ? "es" : "en"],
     description:
       "AI design firm specializing in content generation, concept visualization, product design, and operations consulting.",

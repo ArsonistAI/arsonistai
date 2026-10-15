@@ -1,7 +1,9 @@
-const SITE_URL = "https://arsonistai.com";
+import { absoluteUrl } from "@/lib/seo";
 
 interface BreadcrumbItem {
+  /** Visible crumb label. Pass a translated string, not a hardcoded English one. */
   name: string;
+  /** Route after the locale prefix, e.g. "/services". Empty string for Home. */
   path: string;
 }
 
@@ -19,7 +21,7 @@ export function BreadcrumbJsonLd({
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: `${SITE_URL}/${locale}${item.path}`,
+      item: absoluteUrl(locale, item.path),
     })),
   };
 

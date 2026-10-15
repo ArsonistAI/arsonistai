@@ -5,8 +5,7 @@ import { useTranslations } from "next-intl";
 import { products } from "@/content/products";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ProductCard from "@/components/ProductCard";
-
-const SITE_URL = "https://arsonistai.com";
+import { SITE_URL, ORG_ID, absoluteUrl, alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,14 +17,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "/products",
       title: t("ogTitle"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/products`,
-      languages: { en: `${SITE_URL}/en/products`, es: `${SITE_URL}/es/products` },
-    },
+    }),
+    alternates: alternatesFor(locale, "/products"),
   };
 }
 
@@ -41,6 +39,7 @@ export default async function ProductsPage({
 }
 
 function ProductsContent({ locale }: { locale: string }) {
+  const tn = useTranslations("nav");
   const t = useTranslations("products");
   const tAll = useTranslations();
 
@@ -51,14 +50,17 @@ function ProductsContent({ locale }: { locale: string }) {
       "@type": "ListItem",
       position: i + 1,
       item: {
-        "@type": "Product",
+        // SoftwareApplication rather than Product: these are Figma plugins and
+        // toolkits sold elsewhere, so Product would demand `offers` we do not
+        // have and would only earn "missing field" warnings in Search Console.
+        "@type": "SoftwareApplication",
+        "@id": `${absoluteUrl(locale, "/products")}#${product.id}`,
         name: tAll(product.titleKey),
-        image: `https://arsonistai.com${product.image}`,
+        image: `${SITE_URL}${product.image}`,
         url: product.url,
-        brand: {
-          "@type": "Organization",
-          name: "ArsonistAI",
-        },
+        applicationCategory: "DesignApplication",
+        operatingSystem: "Web",
+        publisher: { "@id": ORG_ID },
       },
     })),
   };
@@ -72,8 +74,8 @@ function ProductsContent({ locale }: { locale: string }) {
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "Products", path: "/products" },
+          { name: tn("home"), path: "" },
+          { name: tn("products"), path: "/products" },
         ]}
       />
       <section className="py-36 md:py-44">

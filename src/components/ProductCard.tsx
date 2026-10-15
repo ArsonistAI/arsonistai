@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Product } from "@/content/products";
 import { useTranslations } from "next-intl";
 
@@ -21,12 +22,12 @@ export default function ProductCard({ product }: Props) {
           className="w-full max-w-[332px] overflow-hidden bg-surface-light"
           style={{ aspectRatio: "332/263" }}
         >
-          <img
+          <Image
             src={product.image}
             alt={t(product.titleKey)}
-            loading="lazy"
             width={332}
             height={263}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 332px"
             className="w-full h-full object-cover group-hover:scale-105 m3-transition-medium transition-transform"
           />
         </div>

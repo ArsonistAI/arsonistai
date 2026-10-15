@@ -5,8 +5,7 @@ import { useTranslations } from "next-intl";
 import { posts } from "@/content/posts";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import InsightCard from "@/components/InsightCard";
-
-const SITE_URL = "https://arsonistai.com";
+import { alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,14 +17,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "/insights",
       title: t("ogTitle"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/insights`,
-      languages: { en: `${SITE_URL}/en/insights`, es: `${SITE_URL}/es/insights` },
-    },
+    }),
+    alternates: alternatesFor(locale, "/insights"),
   };
 }
 
@@ -41,6 +39,7 @@ export default async function InsightsPage({
 }
 
 function InsightsContent({ locale }: { locale: string }) {
+  const tn = useTranslations("nav");
   const t = useTranslations("home");
 
   return (
@@ -48,8 +47,8 @@ function InsightsContent({ locale }: { locale: string }) {
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "Insights", path: "/insights" },
+          { name: tn("home"), path: "" },
+          { name: tn("insights"), path: "/insights" },
         ]}
       />
       <section className="py-36 md:py-44">

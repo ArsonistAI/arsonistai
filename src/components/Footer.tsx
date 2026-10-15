@@ -78,6 +78,7 @@ export default function Footer() {
   const pageLinks = [
     { href: "/products" as const, label: tn("products") },
     { href: "/services" as const, label: tn("services") },
+    { href: "/case-studies" as const, label: tn("caseStudies") },
     { href: "/insights" as const, label: tn("insights") },
     { href: "/about-us" as const, label: tn("about") },
     { href: "/partnerships" as const, label: tn("partnerships") },

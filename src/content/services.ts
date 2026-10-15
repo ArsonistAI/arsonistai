@@ -77,4 +77,21 @@ export const services: Service[] = [
     image: "/images/services/factory.png",
     sectionKey: "applicationServices",
   },
+  {
+    id: "chatbot-audit",
+    titleKey: "services.chatbotAudit.title",
+    descriptionKey: "services.chatbotAudit.short",
+    longDescriptionKey: "services.chatbotAudit.long",
+    icon: "chat",
+    image: "/images/services/phone.png",
+    sectionKey: "applicationServices",
+  },
 ];
+
+/**
+ * Message namespace for a service, derived from its titleKey.
+ * "services.contentGeneration.title" -> "services.contentGeneration"
+ */
+export function serviceMessageKey(service: Service): string {
+  return service.titleKey.split(".").slice(0, 2).join(".");
+}

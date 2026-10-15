@@ -5,7 +5,8 @@
     "services": "Servicios",
     "products": "Productos",
     "partnerships": "Alianzas",
-    "insights": "Blog"
+    "insights": "Blog",
+    "caseStudies": "Casos de Éxito"
   },
   "footer": {
     "tagline": "Construyendo un futuro empoderado con IA avanzada.",
@@ -37,7 +38,11 @@
     "insightsHeading": "Blog",
     "allInsights": "ver todo",
     "readMore": "leer más",
-    "contactHeading": "Contáctanos"
+    "contactHeading": "Contáctanos",
+    "demoReelLabel": "Nuestro trabajo",
+    "demoReelHeading": "Demo Reel",
+    "demoReelDescription": "Una muestra del trabajo de ArsonistAI en diseño de producto, visualización de conceptos e interfaces asistido por IA.",
+    "demoReelPlay": "Reproducir el demo reel"
   },
   "about": {
     "heading": "nosotros",
@@ -63,43 +68,453 @@
     "contentGeneration": {
       "title": "Generación de Contenido",
       "short": "Estás empezando desde cero y quieres ideas de alta calidad para productos y servicios.",
-      "long": "¿Necesitas ideas frescas rápido? Nuestro servicio de generación de contenido e ideas potenciado por IA ayuda a creadores, emprendedores y equipos a innovar en segundos. Ya sea que estés haciendo lluvia de ideas para nombres de productos, contenido de redes sociales, conceptos de startups o eslóganes de campañas, nuestra IA entrega sugerencias personalizadas y de alta calidad."
+      "long": "¿Necesitas ideas frescas rápido? Nuestro servicio de generación de contenido e ideas potenciado por IA ayuda a creadores, emprendedores y equipos a innovar en segundos. Ya sea que estés haciendo lluvia de ideas para nombres de productos, contenido de redes sociales, conceptos de startups o eslóganes de campañas, nuestra IA entrega sugerencias personalizadas y de alta calidad.",
+      "detail": {
+        "intro": "La mayoría de los equipos no tiene un problema de ideas. Tiene un problema de volumen. Los conceptos que habrían funcionado nunca se escriben, porque producir cincuenta opciones viables cuesta horas que nadie tiene. Nuestro servicio de generación de contenido cierra esa brecha: construimos los sistemas de prompts, las restricciones de marca y los ciclos de revisión que permiten a tu equipo producir muchos puntos de partida fieles a tu marca y luego elegir bien entre ellos.",
+        "body": "Esto no significa entregar tu voz a un modelo. Partimos de cómo suenas hoy, lo codificamos y usamos la IA para ampliar el campo de opciones, no para sustituir el criterio que elige la ganadora. El resultado es un sistema que tu equipo conserva, no una entrega puntual de textos.",
+        "steps": [
+          {
+            "title": "Capturar tu voz",
+            "body": "Auditamos los textos, el posicionamiento y la investigación de audiencia existentes para construir una especificación escrita de marca y tono. Esa especificación se convierte en la restricción con la que se mide cada opción generada, de modo que el volumen nunca te cueste consistencia."
+          },
+          {
+            "title": "Construir el sistema de generación",
+            "body": "Armamos cadenas de prompts, bibliotecas de referencia y criterios de evaluación ajustados a tus categorías, ya sea naming de producto, líneas de campaña, contenido editorial largo o social. Recibes el sistema, los prompts y el razonamiento detrás de ambos."
+          },
+          {
+            "title": "Generar, filtrar y transferir",
+            "body": "Ejecutamos el sistema contra tus briefs reales, filtramos el resultado hasta los candidatos más fuertes y formamos a tu equipo para operarlo sin nosotros. La transferencia de conocimiento es parte del trabajo, no un extra."
+          }
+        ],
+        "deliverables": [
+          "Una especificación escrita de voz y tono de marca",
+          "Bibliotecas de prompts y flujos de generación ajustados a tus categorías",
+          "Un conjunto filtrado de conceptos listos para usar a partir de tus briefs reales",
+          "Una sesión de trabajo para que tu equipo opere el sistema de forma autónoma"
+        ],
+        "faq": [
+          {
+            "q": "¿El resultado sonará como el contenido con IA de todos los demás?",
+            "a": "Ese es exactamente el fallo que buscamos evitar. La especificación de voz y la biblioteca de referencia son lo que mantiene las opciones generadas dentro de tu marca y no dentro de los valores por defecto del modelo. Cuando el resultado es genérico suele ser porque nadie codificó las restricciones, y codificarlas es la primera fase del trabajo."
+          },
+          {
+            "q": "¿Nos quedamos con los prompts y sistemas que construyen?",
+            "a": "Sí. Todo lo que construimos queda documentado y se entrega. El sentido del proyecto es que tu equipo pueda seguir generando cuando termine."
+          },
+          {
+            "q": "¿Qué modelos utilizan?",
+            "a": "Elegimos según la tarea en lugar de casarnos con un proveedor, y te explicamos por qué. El trabajo que exige razonamiento y el de alto volumen tienen perfiles de coste y calidad distintos."
+          },
+          {
+            "q": "¿Cómo garantizan la exactitud de los datos?",
+            "a": "Los borradores generados se tratan como candidatos, nunca como afirmaciones terminadas. Toda afirmación factual pasa por revisión humana antes de publicarse, y ese control está integrado en el flujo en lugar de depender de la disciplina de cada persona."
+          }
+        ]
+      },
+      "metaTitle": "Generación de Contenido con IA",
+      "metaDescription": "Generación de contenido con IA de ArsonistAI. Construimos los sistemas de prompts, restricciones de marca y ciclos de revisión que tu equipo conserva."
     },
     "conceptVisualization": {
       "title": "Visualización de Conceptos",
       "short": "Tienes algunas ideas abstractas pero necesitas agregar detalle y visuales increíbles.",
-      "long": "Da vida a tus ideas con nuestro servicio de visualización de conceptos potenciado por IA. Usamos las últimas y mejores herramientas de IA para transformar conceptos en bruto en visuales impactantes y de alto impacto—rápido."
+      "long": "Da vida a tus ideas con nuestro servicio de visualización de conceptos potenciado por IA. Usamos las últimas y mejores herramientas de IA para transformar conceptos en bruto en visuales impactantes y de alto impacto—rápido.",
+      "detail": {
+        "intro": "La distancia entre una idea descrita en una reunión y una idea que todos pueden ver es donde se atascan la mayoría de los proyectos. Los conceptos escritos reciben asentimientos y luego se interpretan de seis maneras distintas. Nuestro servicio de visualización de conceptos comprime esa distancia: convertimos una dirección abstracta en visuales concretos y de alta fidelidad con la rapidez suficiente para usarlos dentro de la decisión, no después.",
+        "body": "Trabajamos en diseño de producto, moodboards, interfaces 3D, entornos e imágenes de campaña. El objetivo es la alineación. Cuando alguien puede señalar algo, la conversación pasa de qué querías decir a si esto es lo correcto.",
+        "steps": [
+          {
+            "title": "Fijar la dirección",
+            "body": "Partimos de tu brief, referencias y restricciones para establecer qué debe comunicar el visual y a quién. Los insumos vagos producen imágenes vagas, así que en este paso concretamos qué decisión debe apoyar el visual."
+          },
+          {
+            "title": "Generar en amplitud",
+            "body": "Producimos varias direcciones visuales distintas en lugar de refinar una única apuesta. Ver tres opciones reales lado a lado revela preferencias que ninguna cantidad de discusión saca a la luz."
+          },
+          {
+            "title": "Refinar hasta la fidelidad necesaria",
+            "body": "Una vez elegida la dirección, la llevamos al nivel de fidelidad que realmente necesitas: un render listo para presentar, un moodboard para un equipo de diseño o un set de piezas para campaña."
+          }
+        ],
+        "deliverables": [
+          "Varias direcciones visuales distintas, no variaciones de una sola apuesta",
+          "Renders o moodboards de alta fidelidad en la resolución que necesites",
+          "Archivos fuente junto con los prompts y referencias de cada dirección",
+          "Un razonamiento documentado de por qué cada dirección se lee como se lee"
+        ],
+        "faq": [
+          {
+            "q": "¿Qué tan rápida es la primera ronda?",
+            "a": "Las primeras direcciones suelen llegar en días y no en semanas, porque generar amplitud es barato una vez que el brief es específico. El plazo depende mucho más de la rapidez con que se concrete el brief que de la producción."
+          },
+          {
+            "q": "¿Pueden respetar una identidad visual existente?",
+            "a": "Sí. Trabajar dentro de una identidad establecida es el caso habitual. Construimos un set de referencia a partir de tus piezas actuales y lo tratamos como restricción de cada dirección que generamos."
+          },
+          {
+            "q": "¿Recibimos los archivos fuente?",
+            "a": "Sí, junto con los prompts y las imágenes de referencia, para que tu equipo pueda continuar la dirección sin empezar de cero."
+          },
+          {
+            "q": "¿Esto reemplaza a un equipo de diseño?",
+            "a": "No. Es una forma de que un equipo de diseño llegue antes al punto de partida correcto. El criterio sobre qué dirección es la adecuada sigue siendo una decisión humana, y normalmente tuya."
+          }
+        ]
+      },
+      "metaTitle": "Visualización de Conceptos con IA",
+      "metaDescription": "Convierte una dirección abstracta en visuales de alta fidelidad: diseño de producto, moodboards, interfaces 3D e imágenes de campaña."
     },
     "explorationScaling": {
       "title": "Escalado de Exploración",
       "short": "Tienes algunas ideas visualizadas pero quieres crear un conjunto más amplio de variaciones.",
-      "long": "Expande tus horizontes creativos con nuestro servicio de escalado de exploración potenciado por IA. Si tienes un concepto sólido o algunas ideas visuales, te ayudamos a generar rápidamente variaciones de alta calidad—estilísticas, estructurales o conceptuales."
+      "long": "Expande tus horizontes creativos con nuestro servicio de escalado de exploración potenciado por IA. Si tienes un concepto sólido o algunas ideas visuales, te ayudamos a generar rápidamente variaciones de alta calidad—estilísticas, estructurales o conceptuales.",
+      "detail": {
+        "intro": "Un único concepto bueno es un riesgo. Sin alternativas no puedes saber si es la respuesta correcta o simplemente la primera. Nuestro servicio de escalado de exploración toma una dirección en la que ya crees y la expande en un panorama amplio y estructurado de variaciones, para que la opción que lances sea una que elegiste y no una con la que te conformaste.",
+        "body": "La variación puede ser estilística, estructural o conceptual. Decidimos contigo qué eje importa de verdad para la decisión que tienes delante y generamos a lo largo de ese eje de forma deliberada, en lugar de producir ruido.",
+        "steps": [
+          {
+            "title": "Definir el eje de variación",
+            "body": "Escalar en todas las direcciones a la vez produce un montón, no una decisión. Identificamos qué dimensión está realmente abierta: el estilo visual, la estructura de la información o el concepto de fondo."
+          },
+          {
+            "title": "Generar de forma sistemática",
+            "body": "Producimos variaciones a lo largo del eje elegido en volumen, manteniendo fijas las demás variables para que las comparaciones sean significativas. Eso distingue una exploración real de una muestra aleatoria."
+          },
+          {
+            "title": "Agrupar y reducir",
+            "body": "Agrupamos el resultado en familias coherentes, nombramos qué las distingue y reducimos a una lista corta que tu equipo pueda evaluar de verdad en una sala."
+          }
+        ],
+        "deliverables": [
+          "Un set de exploración estructurado y organizado por un eje de variación con nombre",
+          "Familias agrupadas con la lógica que las distingue por escrito",
+          "Una lista corta del tamaño de una reunión de revisión real",
+          "El montaje de generación, para que puedas repetir la exploración más adelante"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuántas variaciones producen?",
+            "a": "Las suficientes para que el eje resulte legible, normalmente decenas y no un puñado. Lo que recibes es la lista corta agrupada, no el montón en bruto."
+          },
+          {
+            "q": "¿Qué necesitan de nosotros para empezar?",
+            "a": "Una dirección en la que ya creas y una declaración clara de qué decisión debe informar la exploración."
+          },
+          {
+            "q": "¿Funciona para trabajo no visual?",
+            "a": "Sí. El mismo método aplica a arquitectura de información, estructura de mensajes y conceptos de producto. Cambia el eje, no la disciplina."
+          },
+          {
+            "q": "¿Y si ninguna variación es la correcta?",
+            "a": "Es un resultado útil, y casi siempre significa que el eje estaba mal, no la ejecución. Reajustamos el eje y repetimos, algo rápido una vez construido el sistema."
+          }
+        ]
+      },
+      "metaTitle": "Escalado de Exploración con IA",
+      "metaDescription": "Expande una dirección en un panorama estructurado de variaciones, agrupadas y reducidas a una lista corta que tu equipo pueda evaluar de verdad."
     },
     "experienceOptimization": {
       "title": "Optimización de Experiencia",
       "short": "Audita y mejora tus productos digitales para asegurar resonancia y usabilidad.",
-      "long": "Optimiza cada punto de contacto de usuario de tu producto digital. Auditamos usando IA avanzada y principios de UX para descubrir fricciones, oportunidades perdidas y áreas para un mayor compromiso del usuario."
+      "long": "Optimiza cada punto de contacto de usuario de tu producto digital. Auditamos usando IA avanzada y principios de UX para descubrir fricciones, oportunidades perdidas y áreas para un mayor compromiso del usuario.",
+      "detail": {
+        "intro": "Los productos rara vez fallan en un momento dramático. Pierden usuarios a lo largo de decenas de fricciones pequeñas que ya nadie dentro del equipo alcanza a ver. Nuestro servicio de optimización de experiencia audita tu producto digital con análisis de IA y principios de UX establecidos, y devuelve una lista priorizada y concreta de qué cambiar y por qué.",
+        "body": "El entregable no es un documento que te describe tu propio producto. Es un conjunto ordenado de cambios, cada uno ligado a la fricción que elimina y a la evidencia que lo respalda.",
+        "steps": [
+          {
+            "title": "Auditar la experiencia actual",
+            "body": "Recorremos los flujos reales como lo hace una persona usuaria, con análisis de IA y evaluación heurística, y registramos dónde se rompe la atención, dónde se pierde la intención y dónde la interfaz pide más de lo necesario."
+          },
+          {
+            "title": "Ordenar por impacto y coste",
+            "body": "Cada hallazgo se puntúa según cuánta fricción elimina y cuánto cuesta arreglarlo. Una lista larga e indiferenciada de problemas no es accionable, así que no entregamos una."
+          },
+          {
+            "title": "Especificar las soluciones",
+            "body": "Para los hallazgos principales producimos recomendaciones concretas y, cuando ayuda, la propia interfaz revisada, de modo que tu equipo implemente una decisión en lugar de interpretar una crítica."
+          }
+        ],
+        "deliverables": [
+          "Una lista de hallazgos ordenada por impacto y coste de implementación",
+          "Evidencia para cada hallazgo, no solo una afirmación",
+          "Soluciones concretas recomendadas para los puntos de mayor impacto",
+          "Diseños de interfaz revisados cuando una recomendación escrita no basta"
+        ],
+        "faq": [
+          {
+            "q": "¿Necesitan acceso a nuestra analítica?",
+            "a": "Ayuda y afina la priorización, pero no es imprescindible. Una auditoría heurística asistida por IA encuentra la mayor parte de la fricción estructural sin ella."
+          },
+          {
+            "q": "¿Cuánto dura una auditoría?",
+            "a": "Escala con el número de flujos distintos, no de pantallas. El alcance empieza con una conversación sobre qué recorridos importan de verdad al negocio."
+          },
+          {
+            "q": "¿Implementan ustedes los cambios?",
+            "a": "Podemos hacerlo, y el diseño de producto es un servicio aparte si prefieres que las soluciones se construyan en lugar de especificarse. La auditoría se sostiene por sí sola en cualquier caso."
+          },
+          {
+            "q": "¿Y si no estamos de acuerdo con un hallazgo?",
+            "a": "Cada hallazgo llega con su evidencia para que puedas discutirlo. Un hallazgo que no puedes interrogar no merece que actúes sobre él."
+          }
+        ]
+      },
+      "metaTitle": "Optimización de Experiencia con IA",
+      "metaDescription": "Una auditoría UX que devuelve soluciones ordenadas y respaldadas por evidencia, puntuadas por impacto y coste, no un documento descriptivo."
     },
     "productDesign": {
       "title": "Diseño de Producto",
       "short": "Nuestro equipo de expertos te ayudará en todas las etapas del desarrollo de productos.",
-      "long": "Transforma tus ideas en productos bellamente funcionales con nuestro servicio de diseño de producto potenciado por IA. Combinamos la velocidad de la IA con la perspectiva del diseño centrado en el ser humano."
+      "long": "Transforma tus ideas en productos bellamente funcionales con nuestro servicio de diseño de producto potenciado por IA. Combinamos la velocidad de la IA con la perspectiva del diseño centrado en el ser humano.",
+      "detail": {
+        "intro": "Nuestro servicio de diseño de producto combina la velocidad de la generación con IA y el criterio del diseño centrado en las personas. Obtienes la velocidad de iteración que hace asequible explorar alternativas reales, y el pensamiento estructural que mantiene coherente un producto que avanza rápido en lugar de acumular decisiones que nadie tomó a propósito.",
+        "body": "Trabajamos todo el arco: concepto temprano, arquitectura de información, diseño de interfaz y sistemas de diseño. Qué partes necesitas depende de dónde esté realmente el producto, y ajustamos el alcance a eso y no a un paquete fijo.",
+        "steps": [
+          {
+            "title": "Enmarcar el problema",
+            "body": "Establecemos para qué sirve el producto, a quién sirve y cómo se ve el éxito en términos medibles antes de dibujar nada. La mayoría de los problemas de diseño que se resisten son problemas de encuadre disfrazados."
+          },
+          {
+            "title": "Diseñar e iterar",
+            "body": "Avanzamos por concepto, estructura e interfaz, usando IA para que cada iteración sea barata y así probar alternativas reales en lugar de defender la primera."
+          },
+          {
+            "title": "Sistematizar y entregar",
+            "body": "Consolidamos el resultado en componentes, patrones y decisiones documentadas para que el producto siga coherente cuando nos vayamos y tus ingenieros no tengan que deducir la intención a partir de una maqueta."
+          }
+        ],
+        "deliverables": [
+          "Un encuadre escrito del problema con criterios de éxito medibles",
+          "Diseños de interfaz para los flujos que importan",
+          "Componentes y patrones documentados para la entrega a ingeniería",
+          "El razonamiento detrás de las decisiones estructurales, por escrito"
+        ],
+        "faq": [
+          {
+            "q": "¿Trabajan con sistemas de diseño existentes?",
+            "a": "Sí, y suele ser el mejor camino. Extendemos lo que ya tienes en lugar de reemplazarlo, salvo que reemplazarlo sea realmente la opción más barata."
+          },
+          {
+            "q": "¿Qué entregan a ingeniería?",
+            "a": "Diseños, componentes y el razonamiento detrás de las decisiones estructurales. Ese razonamiento escrito es lo que evita que la intención se degrade durante la implementación."
+          },
+          {
+            "q": "¿Cómo se usa la IA realmente aquí?",
+            "a": "Sobre todo para abaratar la iteración: generar alternativas, probar estructuras y producir variaciones con la rapidez suficiente para que explorar sea asequible. Las decisiones estructurales siguen siendo humanas."
+          },
+          {
+            "q": "¿Pueden trabajar junto a nuestros diseñadores internos?",
+            "a": "Sí. Integrarnos con un equipo existente es habitual, y el paso de sistematización está pensado para dejar a ese equipo mejor equipado que al principio."
+          }
+        ]
+      },
+      "metaTitle": "Diseño de Producto con IA",
+      "metaDescription": "Diseño de producto que combina la velocidad de iteración de la IA con criterio humano: concepto, arquitectura de información, interfaz y sistemas."
     },
     "operationsConsulting": {
       "title": "Consultoría de Operaciones",
       "short": "Aprovecha el poder de la IA para mejorar la eficiencia y escalabilidad empresarial.",
-      "long": "Optimiza y escala con nuestro servicio de consultoría de operaciones empresariales potenciado por IA. Usamos herramientas de IA de vanguardia para analizar flujos de trabajo, identificar ineficiencias y entregar recomendaciones basadas en datos."
+      "long": "Optimiza y escala con nuestro servicio de consultoría de operaciones empresariales potenciado por IA. Usamos herramientas de IA de vanguardia para analizar flujos de trabajo, identificar ineficiencias y entregar recomendaciones basadas en datos.",
+      "detail": {
+        "intro": "La mayor parte de la ineficiencia operativa es invisible desde dentro, porque los apaños llevan años siendo lo normal. Nuestro servicio de consultoría de operaciones con IA mapea cómo se mueve el trabajo realmente en tu organización, identifica dónde se fuga tiempo y dinero, y devuelve recomendaciones lo bastante concretas para actuar este trimestre.",
+        "body": "Nos interesan los procesos que tu equipo ejecuta de verdad, no los del organigrama. Esa diferencia suele ser donde se esconde el coste recuperable.",
+        "steps": [
+          {
+            "title": "Mapear el flujo real",
+            "body": "Documentamos cómo se mueve el trabajo de verdad, incluidas las hojas de cálculo, los canales paralelos y los pasos manuales que ningún diagrama de proceso reconoce. Ahí suele estar la mayor parte del tiempo recuperable."
+          },
+          {
+            "title": "Encontrar las fugas",
+            "body": "Usamos análisis con IA para identificar trabajo repetitivo, demoras en los traspasos y decisiones que se estancan por motivos que nadie asume, y cuantificamos lo que cuesta cada una."
+          },
+          {
+            "title": "Recomendar y secuenciar",
+            "body": "Recibes recomendaciones ordenadas por retorno y dificultad, secuenciadas en un orden que funciona de verdad, porque algunas soluciones son requisito de otras."
+          }
+        ],
+        "deliverables": [
+          "Un mapa documentado de cómo se mueve el trabajo hoy",
+          "Ineficiencias cuantificadas con el coste de cada una por escrito",
+          "Recomendaciones ordenadas con retorno esperado y dificultad",
+          "Un orden de implementación secuenciado, no una lista indiferenciada"
+        ],
+        "faq": [
+          {
+            "q": "¿Se trata de reemplazar personas con IA?",
+            "a": "No. Se trata de encontrar el trabajo repetitivo que está consumiendo a personas que deberían estar haciendo algo más difícil. Donde automatizar sea la respuesta correcta lo diremos, y donde no lo sea también."
+          },
+          {
+            "q": "¿Cuánto acceso necesitan?",
+            "a": "El suficiente para observar flujos reales, lo que normalmente implica entrevistas y acceso a las herramientas por donde pasa el trabajo. Definimos ese acceso de forma explícita al inicio."
+          },
+          {
+            "q": "¿Para qué tamaño de organización es esto?",
+            "a": "El método escala desde un solo equipo hasta un departamento. Por debajo de cierto tamaño el coste recuperable no suele justificar el proyecto, y te lo diremos si es el caso."
+          },
+          {
+            "q": "¿Ayudan a implementar las recomendaciones?",
+            "a": "Sí, como proyecto aparte. El diagnóstico es deliberadamente útil por sí solo para que no quedes atado a una continuación."
+          }
+        ]
+      },
+      "metaTitle": "Consultoría de Operaciones con IA",
+      "metaDescription": "Mapeamos cómo se mueve el trabajo en tu organización, cuantificamos dónde se fuga tiempo y dinero, y secuenciamos las soluciones que valen más."
     },
     "applicationServicesHeading": "Servicios de aplicaciones",
     "openclawInstallation": {
       "title": "Instalación e integración de Openclaw",
       "short": "Instalación e integración completa de Openclaw con 30 días de soporte.",
-      "long": "Realizamos la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el primer día. Incluye configuración, puesta a punto y transferencia de conocimiento. $3,000."
+      "long": "Realizamos la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el primer día. Incluye configuración, puesta a punto y transferencia de conocimiento. $3,000.",
+      "detail": {
+        "intro": "Nos encargamos de la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el momento en que entra en producción. El trabajo incluye configuración, integración y transferencia de conocimiento, con un precio de 3.000 dólares.",
+        "body": "El objetivo no es solo una instalación que funcione. Es que tu equipo entienda la configuración lo bastante bien como para cambiarla sin llamarnos, y para eso existe el paso de transferencia de conocimiento.",
+        "steps": [
+          {
+            "title": "Evaluar el entorno",
+            "body": "Revisamos tu stack actual, tu modelo de accesos y tus restricciones para que la instalación encaje con lo que realmente ejecutas y no con una arquitectura de referencia que asume otra cosa."
+          },
+          {
+            "title": "Instalar y configurar",
+            "body": "Realizamos la instalación completa y ajustamos la configuración a tu entorno, incluidos los puntos de integración con las herramientas que tu equipo ya usa."
+          },
+          {
+            "title": "Transferir y dar soporte",
+            "body": "Documentamos la configuración, la explicamos a tu equipo y quedamos disponibles durante 30 días para atender lo que surja cuando empiece el uso real."
+          }
+        ],
+        "deliverables": [
+          "Una instalación de Openclaw completa y configurada en tu entorno",
+          "Integración con las herramientas que tu equipo ya usa",
+          "Documentación escrita de la configuración y una sesión explicativa",
+          "30 días de soporte tras la puesta en producción"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto cuesta el servicio?",
+            "a": "3.000 dólares, que cubren instalación, integración, configuración, transferencia de conocimiento y 30 días de soporte posterior al lanzamiento."
+          },
+          {
+            "q": "¿Qué cubre la política de soporte de 30 días?",
+            "a": "Las incidencias derivadas de la instalación y la configuración que entregamos, incluidos los problemas que solo aparecen cuando el equipo la usa de verdad."
+          },
+          {
+            "q": "¿Cuánto tarda la instalación?",
+            "a": "Depende de la complejidad de tu entorno y de la rapidez con que se concedan los accesos. La evaluación del entorno te da un plazo firme antes de empezar."
+          },
+          {
+            "q": "¿Qué pasa después de los 30 días?",
+            "a": "Tu equipo se queda con una configuración documentada que entiende. El soporte continuado puede acordarse aparte, pero la entrega está diseñada para que no lo necesites."
+          }
+        ]
+      },
+      "metaTitle": "Instalación e Integración de Openclaw",
+      "metaDescription": "Instalación e integración completa de Openclaw adaptada a tu entorno, con configuración, transferencia de conocimiento y 30 días de soporte."
     },
     "claudeCursorTraining": {
       "title": "Capacitación en Claude Code y Cursor",
       "short": "Capacita a tu equipo en Claude Code y Cursor para desarrollo aumentado por IA.",
-      "long": "Capacitación estructurada en el uso efectivo de Claude Code y Cursor en flujos de desarrollo. Cubrimos mejores prácticas, prompts e integración para que tu equipo pueda entregar más rápido con asistencia de IA. Las sesiones se adaptan a tu stack y procesos."
+      "long": "Capacitación estructurada en el uso efectivo de Claude Code y Cursor en flujos de desarrollo. Cubrimos mejores prácticas, prompts e integración para que tu equipo pueda entregar más rápido con asistencia de IA. Las sesiones se adaptan a tu stack y procesos.",
+      "detail": {
+        "intro": "Formación estructurada sobre el uso efectivo de Claude Code y Cursor dentro de flujos de desarrollo reales. Cubrimos las prácticas, los patrones de prompting y las decisiones de integración que separan a los equipos que entregan más rápido con asistencia de IA de los que solo generan más código y revisan más.",
+        "body": "Las sesiones se adaptan a tu stack y a tus procesos. La formación genérica en IA produce resultados genéricos, así que construimos el material alrededor del código en el que tu equipo trabaja de verdad.",
+        "steps": [
+          {
+            "title": "Evaluar cómo trabaja tu equipo",
+            "body": "Revisamos tu stack, tu proceso de revisión y el uso actual de IA para encontrar dónde las herramientas van a rendir y dónde ya están generando retrabajo."
+          },
+          {
+            "title": "Impartir sesiones a medida",
+            "body": "La formación usa tu propio código y tus flujos de trabajo, no ejemplos de juguete. Los ejercicios salen de trabajo que tu equipo reconoce."
+          },
+          {
+            "title": "Establecer una práctica de trabajo",
+            "body": "Dejamos convenciones documentadas sobre cuándo recurrir a la asistencia de IA, cómo revisar su resultado y dónde conviene que no intervenga."
+          }
+        ],
+        "deliverables": [
+          "Sesiones de formación construidas sobre tu código y tus flujos de trabajo",
+          "Convenciones documentadas de prompting y revisión para tu equipo",
+          "Guía de integración con tu proceso de desarrollo actual",
+          "Una guía de práctica escrita que tu equipo conserva"
+        ],
+        "faq": [
+          {
+            "q": "¿Qué nivel técnico necesita el equipo?",
+            "a": "La formación está dirigida a desarrolladores en activo. Ajustamos la profundidad al nivel de experiencia, pero asume personas que escriben y revisan código."
+          },
+          {
+            "q": "¿Claude Code, Cursor o ambos?",
+            "a": "El que encaje con tu flujo de trabajo. Resuelven problemas que se solapan de formas distintas, y parte de la formación es saber cuál usar y cuándo."
+          },
+          {
+            "q": "¿Cuánto dura la formación?",
+            "a": "Escala con el tamaño del equipo y con la profundidad que quieras. El alcance empieza con una conversación sobre tu flujo actual y dónde duele."
+          },
+          {
+            "q": "¿Se puede impartir en remoto?",
+            "a": "Sí. La entrega remota es lo habitual, y las sesiones están estructuradas para funcionar así en lugar de ser un formato presencial trasladado a pantalla."
+          }
+        ]
+      },
+      "metaTitle": "Formación en Claude Code y Cursor",
+      "metaDescription": "Formación estructurada en Claude Code y Cursor construida sobre tu propio código y tu proceso de revisión, para entregar más rápido de verdad."
+    },
+    "chatbotAudit": {
+      "title": "Test\u00a0de\u00a0Chatbot",
+      "short": "Pon a prueba tu chatbot de atención al cliente antes de que hable con tus\u00a0clientes\u00a0en\u00a0tu\u00a0nombre.",
+      "long": "Antes de que tu chatbot de soporte salga en vivo, le hacemos las preguntas que suelen hacer fallar a los bots y comprobamos cada respuesta con tus propias políticas y páginas de producto. Cada precio, fecha, teléfono y enlace que da se compara con tus documentos, y todo lo que se inventó queda señalado. Recibes un informe en lenguaje claro que puedes leer en\u00a0diez\u00a0minutos.\u00a0Desde\u00a0$250.",
+      "detail": {
+        "intro": "Tu chatbot de soporte está a punto de hablar con tus clientes en tu nombre. Las preguntas que más importan son las que tus documentos no responden. Un bot que inventa una política de reembolso, un precio o una garantía hace más daño que uno que admite no saber, y tus clientes te harán cumplir lo que dijo. La mayor parte de la auditoría\u00a0apunta\u00a0a\u00a0ese\u00a0fallo.",
+        "body": "Las comprobaciones son reglas siempre que una regla pueda decidir. Cuando solo el criterio puede saber si una respuesta es incorrecta, un modelo de IA busca contradicciones con tus documentos, cita la línea exacta en la que se basa y queda marcado como veredicto de un modelo para que puedas revisarlo tú mismo. Lo que las comprobaciones no pueden resolver se lista para que lo lea una persona y\u00a0nunca\u00a0cuenta\u00a0como\u00a0aprobado.",
+        "steps": [
+          {
+            "title": "Escribir\u00a0las\u00a0preguntas",
+            "body": "Preparamos unas 60 preguntas a partir de tus documentos: las que responden, las cercanas que no responden, políticas que no tienes, peticiones fuera de la función del bot, intentos de hacerle romper sus reglas y preguntas sobre el pedido de un cliente concreto. Apruebas la lista antes de que se envíe\u00a0nada\u00a0a\u00a0tu\u00a0bot."
+          },
+          {
+            "title": "Revisar\u00a0respuestas",
+            "body": "Las preguntas llegan a tu bot de una en una, algunas como conversaciones cortas, porque un bot que responde bien a un mensaje puede ceder a lo largo de tres. Cada precio, porcentaje, número de días, fecha, teléfono, correo electrónico y enlace de sus respuestas se compara con tus documentos. Si\u00a0no\u00a0está,\u00a0lo\u00a0marcamos."
+          },
+          {
+            "title": "Qué\u00a0corregir\u00a0primero",
+            "body": "Recibes un informe que se abre en cualquier navegador y se imprime bien: cuántas respuestas aprobaron y fallaron, los tres fallos más graves en palabras sencillas y después cada pregunta con la respuesta exacta del bot y el motivo de su veredicto. Una llamada breve o una nota escrita te\u00a0dice\u00a0qué\u00a0va\u00a0primero."
+          }
+        ],
+        "deliverables": [
+          "Un informe con cada pregunta, la respuesta exacta del bot y el\u00a0motivo\u00a0de\u00a0cada\u00a0veredicto",
+          "Los tres fallos más graves, explicados en palabras sencillas\u00a0al\u00a0principio\u00a0del\u00a0informe",
+          "El conjunto de preguntas, para repetir la misma prueba después de\u00a0cada\u00a0cambio\u00a0que\u00a0hagas",
+          "Una llamada breve o una nota escrita sobre qué corregir primero\u00a0y\u00a0en\u00a0qué\u00a0orden"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto\u00a0cuesta?",
+            "a": "$250 por una revisión de 30 preguntas en 3 días, $550 por la auditoría completa de 60 preguntas en 5 días y $800 por la auditoría completa más una nueva prueba después de tus correcciones, entregada en 14 días contando el tiempo que tardes en hacerlas. Corregir el bot es un trabajo aparte, que se cotiza cuando\u00a0hayas\u00a0visto\u00a0el\u00a0informe."
+          },
+          {
+            "q": "¿Qué\u00a0necesitan?",
+            "a": "Los documentos con los que el bot debe responder, como políticas, envíos y devoluciones, datos de producto e información de contacto. Una forma de llegar al bot, ya sea la dirección en la que responde o la página web donde está su ventana de chat. Y una confirmación por escrito de que el bot es tuyo o de que tienes permiso para que\u00a0lo\u00a0pongamos\u00a0a\u00a0prueba."
+          },
+          {
+            "q": "¿Es\u00a0un\u00a0test\u00a0de\u00a0seguridad?",
+            "a": "No. Incluye un conjunto básico de intentos de hacer que el bot rompa sus reglas, pero no es una prueba de seguridad ni de penetración, y tampoco es una prueba de carga. Las preguntas se envían de una en una, con\u00a0una\u00a0pausa\u00a0entre\u00a0ellas."
+          },
+          {
+            "q": "¿Aprobar\u00a0es\u00a0una\u00a0garantía?",
+            "a": "No. Un aprobado es una buena respuesta, no una promesa. Cada pregunta se hace una vez, y un bot puede responder de otra forma la próxima vez. El conjunto de preguntas es tuyo, así que puedes repetirlo\u00a0después\u00a0de\u00a0cada\u00a0cambio."
+          }
+        ]
+      },
+      "metaTitle": "Auditoría de Chatbot Previa al Lanzamiento",
+      "metaDescription": "Pon a prueba tu chatbot de atención al cliente antes del lanzamiento. Cada respuesta se compara con tus documentos y se señalan precios, políticas y enlaces inventados."
+    },
+    "detail": {
+      "processHeading": "Cómo funciona",
+      "deliverablesHeading": "Qué recibes",
+      "faqHeading": "Preguntas frecuentes",
+      "backToServices": "Todos los servicios",
+      "ctaHeading": "Empecemos a hablar",
+      "exploreHeading": "Explora este servicio",
+      "readMore": "Saber más"
     }
   },
   "products": {
@@ -176,7 +591,10 @@
   },
   "work": {
     "heading": "Caso de Estudio",
-    "backToWork": "Volver"
+    "backToWork": "Volver",
+    "label": "Caso de éxito",
+    "client": "Cliente",
+    "backToCaseStudies": "Volver a casos de éxito"
   },
   "privacy": {
     "heading": "Política de Privacidad"
@@ -201,42 +619,42 @@
   },
   "meta": {
     "home": {
-      "title": "ArsonistAI — Firma de Diseño con IA | Soluciones de IA Centradas en las Personas",
-      "description": "ArsonistAI es una firma de diseño con IA que ofrece generación de contenido, visualización de conceptos, diseño de productos y consultoría de operaciones. Haciendo la IA accesible, escalable y centrada en las personas.",
+      "title": "ArsonistAI: Firma de Diseño con IA y Consultoría",
+      "description": "ArsonistAI es una firma de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones.",
       "ogDescription": "Firma de diseño con IA especializada en generación de contenido, visualización de conceptos, diseño de productos y consultoría de operaciones."
     },
     "about": {
-      "title": "Nosotros",
-      "description": "Conoce a ArsonistAI — una firma de diseño con IA con la misión de hacer la inteligencia artificial accesible, escalable y centrada en las personas. Conoce nuestro equipo y valores.",
+      "title": "Sobre Nuestra Firma de Diseño con IA",
+      "description": "ArsonistAI es una firma de diseño con IA con la misión de hacer la inteligencia artificial accesible, escalable y centrada en las personas.",
       "ogTitle": "Sobre ArsonistAI — Firma de Diseño con IA",
       "ogDescription": "Una firma de diseño AI-first que hace la inteligencia artificial accesible, escalable y centrada en las personas."
     },
     "services": {
       "title": "Servicios de Diseño con IA",
-      "description": "Explora los servicios de diseño con IA de ArsonistAI: generación de contenido, visualización de conceptos, escalado de exploración, optimización de experiencia, diseño de producto y consultoría de operaciones.",
+      "description": "Servicios de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones para tu equipo.",
       "ogTitle": "Servicios de Diseño con IA — ArsonistAI",
       "ogDescription": "Servicios de diseño potenciados por IA incluyendo generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones."
     },
     "products": {
       "title": "Productos y Herramientas con IA",
-      "description": "Descubre los productos de ArsonistAI: Plugin de KPIs de Producto, Herramienta Diversifyr y Kit de Negocios para Figma. Herramientas diseñadas para acelerar el diseño y los negocios.",
+      "description": "Productos con IA de ArsonistAI: plugin Product KPIs para Figma, Diversifyr y el Kit de Negocios. Herramientas para acelerar tu trabajo de diseño.",
       "ogTitle": "Productos y Herramientas con IA — ArsonistAI",
       "ogDescription": "Productos y herramientas potenciados por IA para diseñadores y empresas, incluyendo plugins de Figma y herramientas de portafolio."
     },
     "insights": {
       "title": "Blog e Ideas sobre IA",
-      "description": "Lee las últimas ideas de ArsonistAI sobre diseño con IA, estrategia de producto, ética de la IA, regulación y cómo la inteligencia artificial está transformando las industrias creativas.",
+      "description": "Ideas de ArsonistAI sobre diseño con IA, estrategia de producto, ética y regulación de la inteligencia artificial en industrias creativas.",
       "ogTitle": "Blog e Ideas sobre IA — ArsonistAI",
       "ogDescription": "Liderazgo de pensamiento sobre diseño con IA, estrategia de producto, ética de la IA y el futuro de las industrias creativas."
     },
     "partnerships": {
-      "title": "Alianzas",
-      "description": "Asóciate con ArsonistAI para construir soluciones con IA juntos. Colaboramos con empresas visionarias para hacer la IA accesible, escalable y centrada en las personas.",
+      "title": "Alianzas y Colaboración en IA",
+      "description": "Asóciate con ArsonistAI para construir soluciones con IA. Colaboramos con empresas visionarias para hacer la IA accesible y escalable.",
       "ogTitle": "Alianzas — ArsonistAI",
       "ogDescription": "Colabora con ArsonistAI para construir soluciones con IA. Alianzas estratégicas para empresas visionarias."
     },
     "caseStudies": {
-      "title": "Casos de estudio",
+      "title": "Casos de Éxito en Diseño con IA",
       "description": "Explora los casos de estudio de ArsonistAI: proyectos con clientes y resultados en diseño con IA, desarrollo de productos y experiencias digitales.",
       "ogTitle": "Casos de estudio — ArsonistAI",
       "ogDescription": "Casos de estudio y trabajo con clientes de ArsonistAI: diseño con IA, desarrollo de productos y experiencias digitales."
@@ -249,5 +667,9 @@
       "title": "Términos Legales",
       "description": "Términos legales y condiciones de uso de ArsonistAI. Revisa los términos que rigen el uso de nuestro sitio web y servicios."
     }
+  },
+  "insights": {
+    "relatedHeading": "Contenido relacionado",
+    "backToInsights": "Volver al blog"
   }
 }

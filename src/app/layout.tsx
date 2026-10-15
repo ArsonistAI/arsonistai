@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-
-const siteUrl = "https://arsonistai.com";
+import { SITE_URL as siteUrl, alternatesFor } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -44,9 +43,10 @@ export const metadata: Metadata = {
       "AI design firm specializing in content generation, concept visualization, product design, and operations consulting. Making AI accessible, scalable, and human-centered.",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
+        type: "image/jpeg",
         alt: "ArsonistAI — AI Design Firm",
       },
     ],
@@ -56,13 +56,15 @@ export const metadata: Metadata = {
     title: "ArsonistAI — AI Design Firm | Human-Centered AI Solutions",
     description:
       "AI design firm specializing in content generation, concept visualization, product design, and operations consulting.",
-    images: ["/images/og-image.png"],
+    images: ["/images/og-image.jpg"],
   },
-  alternates: {
-    canonical: siteUrl,
-    languages: {
-      en: `${siteUrl}/en`,
-      es: `${siteUrl}/es`,
+  // `/` redirects to `/en`, so the default canonical must be the locale root,
+  // never the bare origin.
+  alternates: alternatesFor("en"),
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? [],
     },
   },
   robots: {

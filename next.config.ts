@@ -35,7 +35,10 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   images: {
-    unoptimized: true,
+    // Vercel serves these through /_next/image, so modern formats and
+    // responsive srcsets come for free. Leaving this unoptimized was shipping
+    // multi-megabyte PNGs to every visitor.
+    formats: ["image/avif", "image/webp"],
   },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];

@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
-import { caseStudies } from "@/content/caseStudies";
+import Image from "next/image";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { caseStudies, localized } from "@/content/caseStudies";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
+import {
+  SITE_URL,
+  ORG_ID,
+  absoluteUrl,
+  alternatesFor,
+  openGraphFor,
+} from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 
@@ -12,26 +21,30 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const study = caseStudies.find((cs) => cs.slug === slug);
   if (!study) return {};
 
+  const t = await getTranslations({ locale, namespace: "work" });
+  const title = localized(study.title, locale);
+  const description = localized(study.metaDescription, locale);
+
   return {
-    title: `${study.title} — Case Study`,
-    description: study.summary,
+    title,
+    description,
     openGraph: {
-      title: `${study.title} — ArsonistAI Case Study`,
-      description: study.summary,
-      images: study.heroImage ? [{ url: study.heroImage }] : undefined,
+      ...openGraphFor({
+        locale,
+        path: `/work/${slug}`,
+        title: `${title} — ${t("label")}`,
+        description,
+        image: `${SITE_URL}${study.heroImage}`,
+      }),
+      type: "article",
     },
-    alternates: {
-      languages: {
-        en: `/en/work/${slug}`,
-        es: `/es/work/${slug}`,
-      },
-    },
+    alternates: alternatesFor(locale, `/work/${slug}`),
   };
 }
 
@@ -46,39 +59,80 @@ export default async function CaseStudyPage({
   const study = caseStudies.find((cs) => cs.slug === slug);
   if (!study) notFound();
 
+  return <CaseStudyContent study={study} locale={locale} />;
+}
+
+function CaseStudyContent({
+  study,
+  locale,
+}: {
+  study: (typeof caseStudies)[number];
+  locale: string;
+}) {
+  const t = useTranslations("work");
+  const tn = useTranslations("nav");
+
+  const title = localized(study.title, locale);
+  const summary = localized(study.summary, locale);
+
+  const caseStudyJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: localized(study.metaDescription, locale),
+    image: `${SITE_URL}${study.heroImage}`,
+    inLanguage: locale,
+    dateModified: study.lastModified,
+    datePublished: study.lastModified,
+    author: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    about: { "@type": "Organization", name: study.client, url: study.url },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(locale, `/work/${study.slug}`),
+    },
+  };
+
   return (
     <article className="py-36 md:py-44">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudyJsonLd) }}
+      />
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "Work", path: "" },
-          { name: study.title, path: `/work/${study.slug}` },
+          { name: tn("home"), path: "" },
+          { name: tn("caseStudies"), path: "/case-studies" },
+          { name: title, path: `/work/${study.slug}` },
         ]}
       />
       <div className="max-w-3xl mx-auto px-6">
         <Link
-          href="/"
+          href="/case-studies"
           className="text-label-lg text-lava mb-8 inline-block hover:underline"
         >
-          &larr; Back
+          &larr; {t("backToCaseStudies")}
         </Link>
 
-        <img
+        <Image
           src={study.heroImage}
-          alt={study.title}
-          loading="lazy"
+          alt={title}
           width={960}
           height={540}
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
           className="w-full aspect-[16/9] object-cover rounded-shape-lg mb-10"
         />
 
         <p className="text-label-lg text-lava uppercase tracking-wider mb-2">
-          Case Study
+          {t("label")}
         </p>
-        <h1 className="text-headline-lg md:text-display-sm font-bold mb-4">{study.title}</h1>
+        <h1 className="text-headline-lg md:text-display-sm font-bold mb-4">
+          {title}
+        </h1>
         <p className="text-body-md text-muted mb-2">
-          Client:{" "}
+          {t("client")}:{" "}
           <a
             href={study.url}
             target="_blank"
@@ -90,13 +144,17 @@ export default async function CaseStudyPage({
         </p>
 
         <p className="text-body-lg text-muted leading-relaxed mt-10 mb-14">
-          {study.summary}
+          {summary}
         </p>
 
         {study.sections.map((section, i) => (
           <div key={i} className="mb-12">
-            <h2 className="text-headline-sm font-bold mb-4">{section.heading}</h2>
-            <p className="text-body-lg text-muted leading-relaxed">{section.body}</p>
+            <h2 className="text-headline-sm font-bold mb-4">
+              {localized(section.heading, locale)}
+            </h2>
+            <p className="text-body-lg text-muted leading-relaxed">
+              {localized(section.body, locale)}
+            </p>
           </div>
         ))}
       </div>

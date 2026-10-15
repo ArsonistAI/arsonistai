@@ -3,11 +3,11 @@ import Image from "next/image";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { services } from "@/content/services";
+import { services, serviceMessageKey } from "@/content/services";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ContactForm from "@/components/ContactForm";
-
-const SITE_URL = "https://arsonistai.com";
+import { Link } from "@/i18n/navigation";
+import { ORG_ID, absoluteUrl, alternatesFor, openGraphFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -19,14 +19,13 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: {
+    openGraph: openGraphFor({
+      locale,
+      path: "/services",
       title: t("ogTitle"),
       description: t("ogDescription"),
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${locale}/services`,
-      languages: { en: `${SITE_URL}/en/services`, es: `${SITE_URL}/es/services` },
-    },
+    }),
+    alternates: alternatesFor(locale, "/services"),
   };
 }
 
@@ -42,8 +41,10 @@ export default async function ServicesPage({
 }
 
 function ServicesContent({ locale }: { locale: string }) {
+  const tn = useTranslations("nav");
   const t = useTranslations("services");
   const tAll = useTranslations();
+  const td = useTranslations("services.detail");
 
   const servicesJsonLd = {
     "@context": "https://schema.org",
@@ -53,13 +54,13 @@ function ServicesContent({ locale }: { locale: string }) {
       position: i + 1,
       item: {
         "@type": "Service",
+        // Same @id the detail page declares, so the hub listing and the detail
+        // page describe one entity rather than two competing ones.
+        "@id": `${absoluteUrl(locale, `/services/${service.id}`)}#service`,
         name: tAll(service.titleKey),
-        description: tAll(service.longDescriptionKey),
-        provider: {
-          "@type": "Organization",
-          name: "ArsonistAI",
-          url: "https://arsonistai.com",
-        },
+        description: tAll(`${serviceMessageKey(service)}.metaDescription`),
+        url: absoluteUrl(locale, `/services/${service.id}`),
+        provider: { "@id": ORG_ID },
       },
     })),
   };
@@ -73,8 +74,8 @@ function ServicesContent({ locale }: { locale: string }) {
       <BreadcrumbJsonLd
         locale={locale}
         items={[
-          { name: "Home", path: "" },
-          { name: "Services", path: "/services" },
+          { name: tn("home"), path: "" },
+          { name: tn("services"), path: "/services" },
         ]}
       />
       <section className="py-36 md:py-44">
@@ -123,15 +124,26 @@ function ServicesContent({ locale }: { locale: string }) {
                     {t("label")}
                   </p>
                   <h2 className="text-headline-md md:text-headline-lg font-bold">
-                    {tAll(service.titleKey)}
+                    <Link
+                      href={`/services/${service.id}`}
+                      className="hover:text-lava m3-transition transition-colors"
+                    >
+                      {tAll(service.titleKey)}
+                    </Link>
                   </h2>
                 </div>
               </div>
 
-              <div className="flex items-start pt-0 md:pt-8">
+              <div className="flex flex-col items-start gap-6 pt-0 md:pt-8">
                 <p className="text-body-lg text-muted leading-relaxed">
                   {tAll(service.longDescriptionKey)}
                 </p>
+                <Link
+                  href={`/services/${service.id}`}
+                  className="text-label-lg text-lava hover:underline"
+                >
+                  {td("readMore")} &rarr;
+                </Link>
               </div>
             </div>
           </div>

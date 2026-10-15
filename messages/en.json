@@ -5,7 +5,8 @@
     "services": "Services",
     "products": "Products",
     "partnerships": "Partnerships",
-    "insights": "Insights"
+    "insights": "Insights",
+    "caseStudies": "Case Studies"
   },
   "footer": {
     "tagline": "Building an empowered future with advanced AI.",
@@ -37,7 +38,11 @@
     "insightsHeading": "Insights",
     "allInsights": "all insights",
     "readMore": "read more",
-    "contactHeading": "Get in Touch"
+    "contactHeading": "Get in Touch",
+    "demoReelLabel": "Our Work",
+    "demoReelHeading": "Demo Reel",
+    "demoReelDescription": "A reel of AI-assisted product design, concept visualization, and interface work from ArsonistAI.",
+    "demoReelPlay": "Play demo reel"
   },
   "about": {
     "heading": "about us",
@@ -63,43 +68,453 @@
     "contentGeneration": {
       "title": "Content Generation",
       "short": "You are starting from scratch and want high quality ideas for products and services.",
-      "long": "Need fresh ideas fast? Our AI-powered content and idea generation service helps creators, entrepreneurs, and teams spark innovation in seconds. Whether you're brainstorming product names, social media content, startup concepts, or campaign slogans, our AI delivers tailored, high-quality suggestions based on your goals and audience. No more creative blocks—just endless possibilities."
+      "long": "Need fresh ideas fast? Our AI-powered content and idea generation service helps creators, entrepreneurs, and teams spark innovation in seconds. Whether you're brainstorming product names, social media content, startup concepts, or campaign slogans, our AI delivers tailored, high-quality suggestions based on your goals and audience. No more creative blocks—just endless possibilities.",
+      "detail": {
+        "intro": "Most teams do not have an idea problem. They have a throughput problem. The concepts that would have worked never get written down, because the hours it takes to produce fifty viable options are hours nobody has. Our content generation service closes that gap: we build the prompt systems, brand constraints, and review loops that let your team produce a large volume of on-brand starting points and then choose well among them.",
+        "body": "This is not a request to hand your voice over to a model. We start from what you already sound like, encode it, and use AI to widen the field of options rather than to replace the judgment that picks the winner. The output is a working system your team keeps, not a one-time delivery of copy.",
+        "steps": [
+          {
+            "title": "Capture your voice",
+            "body": "We audit existing copy, positioning, and audience research to build a written brand and tone specification. That specification becomes the constraint every generated option is measured against, so volume never costs you consistency."
+          },
+          {
+            "title": "Build the generation system",
+            "body": "We assemble prompt chains, reference libraries, and evaluation criteria tuned to your categories, whether that is product naming, campaign lines, long-form editorial, or social. You get the system, the prompts, and the reasoning behind both."
+          },
+          {
+            "title": "Generate, filter, and hand over",
+            "body": "We run the system against your live briefs, filter the output down to the strongest candidates, and train your team to operate it without us. Knowledge transfer is part of the engagement, not an upsell."
+          }
+        ],
+        "deliverables": [
+          "A written brand voice and tone specification",
+          "Prompt libraries and generation workflows tuned to your categories",
+          "A filtered set of ready-to-use concepts from your live briefs",
+          "A working session so your team can run the system independently"
+        ],
+        "faq": [
+          {
+            "q": "Will the output sound like everyone else's AI copy?",
+            "a": "That is the failure mode we build against. The voice specification and reference library are what keep generated options inside your brand rather than inside the model's defaults. Generic output usually means nobody encoded the constraints, and encoding them is the first phase of the work."
+          },
+          {
+            "q": "Do we keep the prompts and systems you build?",
+            "a": "Yes. Everything we build is documented and handed over. The point of the engagement is that your team can keep generating after it ends."
+          },
+          {
+            "q": "Which models do you use?",
+            "a": "We select per task rather than committing to one vendor, and we tell you why. Reasoning-heavy work and high-volume drafting have different cost and quality profiles."
+          },
+          {
+            "q": "How do you handle factual accuracy?",
+            "a": "Generated drafts are treated as candidates, never as finished claims. Any factual assertion goes through human review before it ships, and we build that checkpoint into the workflow rather than leaving it to discipline."
+          }
+        ]
+      },
+      "metaTitle": "AI Content Generation Services",
+      "metaDescription": "AI content generation from ArsonistAI. We build the prompt systems, brand constraints, and review loops your team keeps and operates independently."
     },
     "conceptVisualization": {
       "title": "Concept Visualization",
       "short": "You have some abstract ideas but need to add detail and amazing visuals.",
-      "long": "Bring your ideas to life with our AI-powered concept visualization service. We use the latest and greatest AI tools to transform rough concepts into stunning, high-impact visuals—fast. Whether you're crafting product designs, moodboards, 3D interfaces, or campaign imagery, we help you move from idea to visual clarity in minutes."
+      "long": "Bring your ideas to life with our AI-powered concept visualization service. We use the latest and greatest AI tools to transform rough concepts into stunning, high-impact visuals—fast. Whether you're crafting product designs, moodboards, 3D interfaces, or campaign imagery, we help you move from idea to visual clarity in minutes.",
+      "detail": {
+        "intro": "The distance between an idea described in a meeting and an idea everyone can see is where most projects stall. Written concepts get nodded at and then interpreted six different ways. Our concept visualization service compresses that distance: we turn abstract direction into concrete, high-fidelity visuals fast enough to use inside the decision, not after it.",
+        "body": "We work across product design, moodboards, 3D interfaces, environments, and campaign imagery. The goal is alignment. When a stakeholder can point at something, the conversation changes from what did you mean to whether this is right.",
+        "steps": [
+          {
+            "title": "Pin down the direction",
+            "body": "We work from your brief, references, and constraints to establish what the visual has to communicate and to whom. Vague inputs produce vague images, so this step is where we get specific about the decision the visual needs to support."
+          },
+          {
+            "title": "Generate at breadth",
+            "body": "We produce multiple distinct visual directions rather than refining a single guess. Seeing three real options side by side surfaces preferences that no amount of discussion will."
+          },
+          {
+            "title": "Refine to fidelity",
+            "body": "Once a direction is chosen, we push it to the fidelity you actually need, whether that is a pitch-ready render, a moodboard for a design team, or a set of assets for a campaign."
+          }
+        ],
+        "deliverables": [
+          "Multiple distinct visual directions, not variations on one guess",
+          "High-fidelity renders or moodboards at the resolution you need",
+          "Source files and the prompts and references behind each direction",
+          "A documented rationale for why each direction reads the way it does"
+        ],
+        "faq": [
+          {
+            "q": "How fast is the first round?",
+            "a": "First directions typically land within days rather than weeks, because generating breadth is cheap once the brief is specific. The timeline depends far more on how quickly the brief gets pinned down than on production."
+          },
+          {
+            "q": "Can you match an existing visual identity?",
+            "a": "Yes. Working inside an established identity is the common case. We build a reference set from your existing assets and treat it as a constraint on every direction we generate."
+          },
+          {
+            "q": "Do we get the source files?",
+            "a": "Yes, along with the prompts and reference images behind them, so your team can continue the direction without starting over."
+          },
+          {
+            "q": "Is this a replacement for a design team?",
+            "a": "No. It is a way to get a design team to the right starting point faster. The judgment about which direction is right remains a human decision, and usually yours."
+          }
+        ]
+      },
+      "metaTitle": "AI Concept Visualization",
+      "metaDescription": "Turn abstract direction into high-fidelity visuals fast. Product design, moodboards, 3D interfaces, and campaign imagery from ArsonistAI."
     },
     "explorationScaling": {
       "title": "Exploration Scaling",
       "short": "You have some ideas visualized but want to create a wider set of variations.",
-      "long": "Expand your creative horizons with our AI-powered exploration scaling service. If you've got a solid concept or a few visual ideas, we help you rapidly generate high-quality variations—stylistic, structural, or conceptual. Using the latest AI models, we scale your initial direction into a broader landscape of possibilities."
+      "long": "Expand your creative horizons with our AI-powered exploration scaling service. If you've got a solid concept or a few visual ideas, we help you rapidly generate high-quality variations—stylistic, structural, or conceptual. Using the latest AI models, we scale your initial direction into a broader landscape of possibilities.",
+      "detail": {
+        "intro": "A single good concept is a risk. Without alternatives, you cannot tell whether it is the right answer or the first answer. Our exploration scaling service takes a direction you already believe in and expands it into a broad, structured landscape of variations, so the option you ship is one you chose rather than one you settled for.",
+        "body": "Variation can be stylistic, structural, or conceptual. We decide with you which axis actually matters for the decision in front of you, then generate along it deliberately instead of producing noise.",
+        "steps": [
+          {
+            "title": "Define the axis of variation",
+            "body": "Scaling in every direction at once produces a pile, not a decision. We identify which dimension is genuinely open, whether that is visual style, information structure, or the underlying concept."
+          },
+          {
+            "title": "Generate systematically",
+            "body": "We produce variations along the chosen axis at volume, keeping every other variable fixed so comparisons are meaningful. This is what separates a real exploration from a random sample."
+          },
+          {
+            "title": "Cluster and narrow",
+            "body": "We group the output into coherent families, name what distinguishes them, and narrow to a shortlist your team can actually evaluate in a room."
+          }
+        ],
+        "deliverables": [
+          "A structured exploration set organized by a named axis of variation",
+          "Clustered families with the distinguishing logic written down",
+          "A shortlist sized for an actual review meeting",
+          "The generation setup, so you can rerun the exploration later"
+        ],
+        "faq": [
+          {
+            "q": "How many variations do you produce?",
+            "a": "Enough to make the axis legible, which is usually dozens rather than a handful. What you receive is the clustered shortlist, not the raw pile."
+          },
+          {
+            "q": "What do you need from us to start?",
+            "a": "One direction you already believe in, and a clear statement of what decision the exploration is meant to inform."
+          },
+          {
+            "q": "Does this work for non-visual work?",
+            "a": "Yes. The same method applies to information architecture, messaging structure, and product concepts. The axis changes, the discipline does not."
+          },
+          {
+            "q": "What if none of the variations are right?",
+            "a": "That is a useful outcome, and it usually means the axis was wrong rather than the execution. We reset the axis and rerun, which is fast once the system is built."
+          }
+        ]
+      },
+      "metaTitle": "AI Exploration Scaling",
+      "metaDescription": "Expand one direction into a structured landscape of variations, clustered and narrowed to a shortlist your team can actually evaluate."
     },
     "experienceOptimization": {
       "title": "Experience Optimization",
       "short": "Audit and improve your digital products to ensure resonance and usability.",
-      "long": "Optimize every user touchpoint of your digital product. We audit using advanced AI and UX principles to uncover friction, missed opportunities, and areas for deeper user engagement. From UI clarity to flow efficiency, we identify what's working—and what's not—then generate smart, actionable improvements."
+      "long": "Optimize every user touchpoint of your digital product. We audit using advanced AI and UX principles to uncover friction, missed opportunities, and areas for deeper user engagement. From UI clarity to flow efficiency, we identify what's working—and what's not—then generate smart, actionable improvements.",
+      "detail": {
+        "intro": "Products rarely fail at one dramatic moment. They lose people across dozens of small frictions that no one inside the team can still see. Our experience optimization service audits your digital product against AI analysis and established UX principles, then returns a prioritized, specific list of what to change and why.",
+        "body": "The deliverable is not a document that describes your product back to you. It is a ranked set of changes, each tied to the friction it removes and the evidence behind the claim.",
+        "steps": [
+          {
+            "title": "Audit the current experience",
+            "body": "We walk the real flows the way a user does, instrumented with AI analysis and heuristic evaluation, and record where attention breaks, where intent gets lost, and where the interface asks for more than it needs."
+          },
+          {
+            "title": "Rank by impact and cost",
+            "body": "Every finding is scored against how much friction it removes and how expensive it is to fix. A long undifferentiated list of problems is not actionable, so we do not deliver one."
+          },
+          {
+            "title": "Specify the fixes",
+            "body": "For the top findings we produce concrete recommendations, and where it helps, the revised interface itself, so your team is implementing a decision rather than interpreting a critique."
+          }
+        ],
+        "deliverables": [
+          "A ranked findings list scored by impact and implementation cost",
+          "Evidence for each finding, not just an assertion",
+          "Concrete recommended fixes for the highest-impact items",
+          "Revised interface designs where a written recommendation is not enough"
+        ],
+        "faq": [
+          {
+            "q": "Do you need access to our analytics?",
+            "a": "It helps and it sharpens the ranking, but it is not required. A heuristic and AI-assisted audit finds most structural friction without it."
+          },
+          {
+            "q": "How long does an audit take?",
+            "a": "It scales with the number of distinct flows rather than screens. Scoping starts with a conversation about which journeys actually matter to the business."
+          },
+          {
+            "q": "Will you implement the changes?",
+            "a": "We can, and product design is a separate service if you want the fixes built rather than specified. The audit stands on its own either way."
+          },
+          {
+            "q": "What if we disagree with a finding?",
+            "a": "Every finding ships with its evidence so you can argue with it. A finding you can not interrogate is not worth acting on."
+          }
+        ]
+      },
+      "metaTitle": "AI Experience Optimization",
+      "metaDescription": "A UX audit that returns ranked, evidence-backed fixes scored by impact and cost, not a document describing your product back to you."
     },
     "productDesign": {
       "title": "Product Design",
       "short": "Our team of experts will help you through all stages of product development.",
-      "long": "Transform your ideas into beautifully functional products with our AI-powered product design service. We combine the speed of AI with the insight of human-centered design to help you visualize, iterate, and refine digital experiences faster than ever."
+      "long": "Transform your ideas into beautifully functional products with our AI-powered product design service. We combine the speed of AI with the insight of human-centered design to help you visualize, iterate, and refine digital experiences faster than ever.",
+      "detail": {
+        "intro": "Our product design service pairs the speed of AI generation with the judgment of human-centered design. You get the iteration velocity that makes exploring real alternatives affordable, and the structural thinking that keeps a fast-moving product coherent instead of accumulating decisions nobody meant to make.",
+        "body": "We work across the full arc: early concept, information architecture, interface design, and design system work. Which parts you need depends on where the product actually is, and we scope to that rather than to a fixed package.",
+        "steps": [
+          {
+            "title": "Frame the problem",
+            "body": "We establish what the product is for, who it serves, and what success looks like in measurable terms before anything gets drawn. Most design problems that resist solving are framing problems wearing a costume."
+          },
+          {
+            "title": "Design and iterate",
+            "body": "We move through concept, structure, and interface, using AI to make each iteration cheap enough that we test real alternatives instead of defending the first one."
+          },
+          {
+            "title": "Systematize and hand off",
+            "body": "We consolidate the result into components, patterns, and documented decisions so the product stays coherent after we leave and your engineers are not reverse-engineering intent from a mockup."
+          }
+        ],
+        "deliverables": [
+          "A written problem frame with measurable success criteria",
+          "Interface designs across the flows that matter",
+          "Components and patterns documented for engineering handoff",
+          "The reasoning behind structural decisions, written down"
+        ],
+        "faq": [
+          {
+            "q": "Do you work with existing design systems?",
+            "a": "Yes, and it is usually the better path. We extend what you have rather than replacing it, unless replacing it is genuinely the cheaper option."
+          },
+          {
+            "q": "What do you hand off to engineering?",
+            "a": "Designs, components, and the reasoning behind the structural decisions. The written rationale is what stops the intent from decaying during implementation."
+          },
+          {
+            "q": "How is AI actually used here?",
+            "a": "Mostly to make iteration cheap: generating alternatives, testing structures, and producing variations fast enough that exploration is affordable. Structural decisions stay human."
+          },
+          {
+            "q": "Can you work alongside our in-house designers?",
+            "a": "Yes. Embedding with an existing team is common, and the systematization step is designed to leave that team better equipped than it started."
+          }
+        ]
+      },
+      "metaTitle": "AI Product Design Services",
+      "metaDescription": "Product design pairing AI iteration speed with human-centered judgment. Concept, information architecture, interface, and design system work."
     },
     "operationsConsulting": {
       "title": "Operations Consulting",
       "short": "Harness the power of AI to improve business efficiency and scalability.",
-      "long": "Streamline and scale with our AI-powered business operations consulting service. We use cutting-edge AI tools to analyze workflows, identify inefficiencies, and deliver data-driven recommendations that boost productivity and reduce costs."
+      "long": "Streamline and scale with our AI-powered business operations consulting service. We use cutting-edge AI tools to analyze workflows, identify inefficiencies, and deliver data-driven recommendations that boost productivity and reduce costs.",
+      "detail": {
+        "intro": "Most operational inefficiency is invisible from the inside, because the workarounds have been normal for years. Our AI operations consulting service maps how work actually moves through your organization, identifies where time and money leak, and returns recommendations specific enough to act on this quarter.",
+        "body": "We are interested in the processes your team actually runs, not the ones on the org chart. That distinction is usually where the recoverable cost is hiding.",
+        "steps": [
+          {
+            "title": "Map the real workflow",
+            "body": "We document how work actually moves, including the spreadsheets, side channels, and manual steps that no process diagram admits to. This is where most of the recoverable time turns out to live."
+          },
+          {
+            "title": "Find the leaks",
+            "body": "We use AI analysis to identify repetitive work, handoff delays, and decisions that stall for reasons nobody owns, then quantify what each one costs."
+          },
+          {
+            "title": "Recommend and sequence",
+            "body": "You get recommendations ranked by return and difficulty, sequenced into an order that actually works, because some fixes are prerequisites for others."
+          }
+        ],
+        "deliverables": [
+          "A documented map of how work actually moves today",
+          "Quantified inefficiencies with the cost of each written down",
+          "Ranked recommendations with expected return and difficulty",
+          "A sequenced implementation order, not an undifferentiated backlog"
+        ],
+        "faq": [
+          {
+            "q": "Is this about replacing staff with AI?",
+            "a": "No. It is about finding the repetitive work that is consuming people who should be doing something harder. Where automation is the right answer we will say so, and where it is not we will say that too."
+          },
+          {
+            "q": "How much access do you need?",
+            "a": "Enough to observe real workflows, which usually means interviews and access to the tools work passes through. We scope access explicitly at the start."
+          },
+          {
+            "q": "What size organization is this for?",
+            "a": "The method scales from a single team to a department. Below a certain size the recoverable cost usually does not justify the engagement, and we will tell you if that is the case."
+          },
+          {
+            "q": "Do you help implement the recommendations?",
+            "a": "Yes, as a separate engagement. The assessment is deliberately useful on its own so you are not locked into a follow-on."
+          }
+        ]
+      },
+      "metaTitle": "AI Operations Consulting",
+      "metaDescription": "We map how work actually moves through your organization, quantify where time and money leak, and sequence the fixes worth making first."
     },
     "applicationServicesHeading": "Application services",
     "openclawInstallation": {
       "title": "Openclaw Installation & Integration",
       "short": "Full installation and integration of Openclaw with 30-day support.",
-      "long": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you're covered from day one. Includes setup, configuration, and knowledge transfer. $3,000."
+      "long": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you're covered from day one. Includes setup, configuration, and knowledge transfer. $3,000.",
+      "detail": {
+        "intro": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you are covered from the moment it goes live. The engagement includes setup, configuration, and knowledge transfer, and is priced at $3,000.",
+        "body": "The point is not just a working install. It is that your team understands the configuration well enough to change it without calling us, which is what the knowledge transfer step exists to guarantee.",
+        "steps": [
+          {
+            "title": "Assess the environment",
+            "body": "We review your existing stack, access model, and constraints so the installation fits what you actually run rather than a reference architecture that assumes otherwise."
+          },
+          {
+            "title": "Install and configure",
+            "body": "We handle the full installation and tune the configuration to your environment, including the integration points with the tools your team already uses."
+          },
+          {
+            "title": "Transfer and support",
+            "body": "We document the configuration and walk your team through it, then stay available for 30 days to handle whatever surfaces once real usage starts."
+          }
+        ],
+        "deliverables": [
+          "A complete, configured Openclaw installation in your environment",
+          "Integration with the tools your team already uses",
+          "Written configuration documentation and a walkthrough session",
+          "30 days of support after go-live"
+        ],
+        "faq": [
+          {
+            "q": "What does the engagement cost?",
+            "a": "$3,000, covering installation, integration, configuration, knowledge transfer, and 30 days of post-launch support."
+          },
+          {
+            "q": "What does the 30-day support policy cover?",
+            "a": "Issues arising from the installation and configuration we delivered, including the problems that only appear once the team is using it for real."
+          },
+          {
+            "q": "How long does installation take?",
+            "a": "It depends on the complexity of your environment and how quickly access is granted. The environment assessment gives you a firm timeline before work starts."
+          },
+          {
+            "q": "What happens after the 30 days?",
+            "a": "Your team owns a documented configuration they understand. Ongoing support can be arranged separately, but the handover is designed so you do not need it."
+          }
+        ]
+      },
+      "metaTitle": "Openclaw Installation & Integration",
+      "metaDescription": "Full Openclaw installation and integration tailored to your environment, including configuration, knowledge transfer, and 30 days of support."
     },
     "claudeCursorTraining": {
       "title": "Claude Code and Cursor Training",
       "short": "Get your team up to speed on Claude Code and Cursor for AI-augmented development.",
-      "long": "Structured training on using Claude Code and Cursor effectively for development workflows. We cover best practices, prompts, and integration so your team can ship faster with AI assistance. Sessions can be tailored to your stack and processes."
+      "long": "Structured training on using Claude Code and Cursor effectively for development workflows. We cover best practices, prompts, and integration so your team can ship faster with AI assistance. Sessions can be tailored to your stack and processes.",
+      "detail": {
+        "intro": "Structured training on using Claude Code and Cursor effectively inside real development workflows. We cover the practices, prompting patterns, and integration decisions that separate teams that ship faster with AI assistance from teams that generate more code and review more of it.",
+        "body": "Sessions are tailored to your stack and your processes. Generic AI training produces generic results, so we build the material around the codebase your team actually works in.",
+        "steps": [
+          {
+            "title": "Assess how your team works",
+            "body": "We review your stack, review process, and current AI usage to find where the tools will pay off and where they are already creating rework."
+          },
+          {
+            "title": "Run tailored sessions",
+            "body": "Training uses your codebase and your workflows, not toy examples. The exercises are drawn from work your team recognizes."
+          },
+          {
+            "title": "Establish working practice",
+            "body": "We leave behind documented conventions covering when to reach for AI assistance, how to review its output, and where it should stay out of the way."
+          }
+        ],
+        "deliverables": [
+          "Training sessions built around your codebase and workflows",
+          "Documented prompting and review conventions for your team",
+          "Integration guidance for your existing development process",
+          "A written practice guide your team keeps"
+        ],
+        "faq": [
+          {
+            "q": "How technical does the team need to be?",
+            "a": "The training targets working developers. We adjust depth to experience level, but it assumes people who write and review code."
+          },
+          {
+            "q": "Claude Code, Cursor, or both?",
+            "a": "Whichever fits your workflow. They solve overlapping problems differently, and part of the training is knowing which to reach for and when."
+          },
+          {
+            "q": "How long is the training?",
+            "a": "It scales with team size and how deep you want to go. Scoping starts with a conversation about your current workflow and where it hurts."
+          },
+          {
+            "q": "Can it be delivered remotely?",
+            "a": "Yes. Remote delivery is the default, and sessions are structured to work that way rather than being an in-person format moved online."
+          }
+        ]
+      },
+      "metaTitle": "Claude Code & Cursor Training",
+      "metaDescription": "Structured Claude Code and Cursor training built around your codebase and review process, so your team ships faster instead of reviewing more."
+    },
+    "chatbotAudit": {
+      "title": "Chatbot\u00a0Audit",
+      "short": "Test your customer support chatbot before it talks to\u00a0customers\u00a0in\u00a0your\u00a0name.",
+      "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in\u00a0ten\u00a0minutes.\u00a0From\u00a0$250.",
+      "detail": {
+        "intro": "Your support chatbot is about to talk to customers in your name. The questions that matter most are the ones your documents do not answer. A bot that invents a refund policy, a price, or a warranty does more harm than one that says it does not know, and customers will hold you to what it said. Most of the audit is\u00a0aimed\u00a0at\u00a0that\u00a0failure.",
+        "body": "The checks are rules wherever a rule can decide. Where only judgment can tell whether an answer is wrong, an AI model looks for contradictions with your documents, quotes the exact line it relied on, and is labeled as a model's verdict so you can check it yourself. Anything the checks cannot settle is listed for a person to read and is never\u00a0counted\u00a0as\u00a0a\u00a0pass.",
+        "steps": [
+          {
+            "title": "Write\u00a0the\u00a0questions",
+            "body": "We build about 60 questions from your documents: ones they answer, ones close to them that they do not, policies you do not have, requests outside the bot's job, attempts to make it break its rules, and questions about one customer's own order. You approve the list before anything is\u00a0sent\u00a0to\u00a0your\u00a0bot."
+          },
+          {
+            "title": "Check\u00a0every\u00a0answer",
+            "body": "Questions go to your bot one at a time, some as short conversations, because a bot that is fine with one message can be talked round over three. Every price, percentage, number of days, date, phone number, email address, and link in its replies is compared with your documents. If it is not\u00a0there,\u00a0we\u00a0flag\u00a0it."
+          },
+          {
+            "title": "Rank\u00a0what\u00a0to\u00a0fix",
+            "body": "You get one report that opens in any browser and prints cleanly: the pass and fail counts, the three most serious failures in plain words, then every question with the bot's exact reply and the reason for its verdict. A short call or written note covers\u00a0what\u00a0to\u00a0fix\u00a0first."
+          }
+        ],
+        "deliverables": [
+          "A report with every question, the bot's exact reply, and the\u00a0reason\u00a0for\u00a0each\u00a0verdict",
+          "The three most serious failures, explained in plain words at the\u00a0top\u00a0of\u00a0the\u00a0report",
+          "The question set, so you can run the same test again after\u00a0every\u00a0change\u00a0you\u00a0make",
+          "A short call or written note on what to fix first, and in what\u00a0order\u00a0to\u00a0fix\u00a0it"
+        ],
+        "faq": [
+          {
+            "q": "What\u00a0does\u00a0it\u00a0cost?",
+            "a": "$250 for a 30-question check in 3 days, $550 for the full 60-question audit in 5 days, and $800 for the full audit plus a retest after your fixes, delivered within 14 days including the time you take to make them. Fixing the bot is separate work, quoted once you\u00a0have\u00a0seen\u00a0the\u00a0report."
+          },
+          {
+            "q": "What\u00a0do\u00a0you\u00a0need?",
+            "a": "The documents the bot is meant to answer from, such as policies, shipping and returns, product facts, and contact details. A way to reach the bot, either the address it answers on or the web page its chat window is on. And written confirmation that you own the bot or are allowed\u00a0to\u00a0have\u00a0it\u00a0tested."
+          },
+          {
+            "q": "Is\u00a0it\u00a0a\u00a0security\u00a0test?",
+            "a": "No. It includes a basic set of attempts to make the bot break its rules, but it is not a security or penetration test, and it is not a load test. Questions are sent one at a time with\u00a0a\u00a0pause\u00a0between\u00a0them."
+          },
+          {
+            "q": "Is\u00a0a\u00a0pass\u00a0a\u00a0guarantee?",
+            "a": "No. A pass is one good answer, not a promise. Each question is asked once, and a bot can answer differently next time. The question set is yours to keep, so you can run it\u00a0again\u00a0after\u00a0every\u00a0change."
+          }
+        ]
+      },
+      "metaTitle": "Pre-launch Chatbot Audit",
+      "metaDescription": "Test your customer support chatbot before launch. Every answer is checked against your own documents, and invented prices, policies, and links are flagged."
+    },
+    "detail": {
+      "processHeading": "How it works",
+      "deliverablesHeading": "What you get",
+      "faqHeading": "Common questions",
+      "backToServices": "All services",
+      "ctaHeading": "Start a conversation",
+      "exploreHeading": "Explore this service",
+      "readMore": "Learn more"
     }
   },
   "products": {
@@ -176,7 +591,10 @@
   },
   "work": {
     "heading": "Case Study",
-    "backToWork": "Back to work"
+    "backToWork": "Back to work",
+    "label": "Case Study",
+    "client": "Client",
+    "backToCaseStudies": "Back to case studies"
   },
   "privacy": {
     "heading": "Privacy Policy"
@@ -201,25 +619,25 @@
   },
   "meta": {
     "home": {
-      "title": "ArsonistAI — AI Design Firm | Human-Centered AI Solutions",
-      "description": "ArsonistAI is an AI design firm offering AI-powered content generation, concept visualization, product design, and operations consulting. Making AI accessible, scalable, and human-centered.",
+      "title": "ArsonistAI: AI Design Firm and AI Consulting",
+      "description": "ArsonistAI is an AI design firm building content generation, concept visualization, product design, and AI operations consulting for teams.",
       "ogDescription": "AI design firm specializing in content generation, concept visualization, product design, and operations consulting."
     },
     "about": {
-      "title": "About Us",
-      "description": "Learn about ArsonistAI — an AI design firm on a mission to make artificial intelligence accessible, scalable, and human-centered. Meet our team and values.",
+      "title": "About Our AI Design Firm",
+      "description": "ArsonistAI is an AI design firm on a mission to make artificial intelligence accessible, scalable, and human-centered. Meet our team and values.",
       "ogTitle": "About ArsonistAI — AI Design Firm",
       "ogDescription": "An AI-first design firm making artificial intelligence accessible, scalable, and human-centered."
     },
     "services": {
       "title": "AI Design Services",
-      "description": "Explore ArsonistAI's AI design services: content generation, concept visualization, exploration scaling, experience optimization, product design, and operations consulting.",
+      "description": "AI design services from ArsonistAI: content generation, concept visualization, exploration scaling, product design, and operations consulting.",
       "ogTitle": "AI Design Services — ArsonistAI",
       "ogDescription": "AI-powered design services including content generation, concept visualization, product design, and operations consulting."
     },
     "products": {
       "title": "AI-Powered Products & Tools",
-      "description": "Discover ArsonistAI's AI-powered products: Product KPIs Plugin, Diversifyr Portfolio Tool, and Figma New Business Toolkit. Tools built to accelerate design and business.",
+      "description": "AI-powered products from ArsonistAI: the Product KPIs Figma plugin, Diversifyr, and the New Business Toolkit. Tools that accelerate design work.",
       "ogTitle": "AI-Powered Products & Tools — ArsonistAI",
       "ogDescription": "AI-powered products and tools for designers and businesses, including Figma plugins and portfolio tools."
     },
@@ -230,13 +648,13 @@
       "ogDescription": "Thought leadership on AI design, product strategy, AI ethics, and the future of creative industries."
     },
     "partnerships": {
-      "title": "Partnerships",
-      "description": "Partner with ArsonistAI to build AI-powered solutions together. We collaborate with forward-thinking companies to make AI accessible, scalable, and human-centered.",
+      "title": "AI Partnerships and Collaboration",
+      "description": "Partner with ArsonistAI to build AI-powered solutions. We collaborate with forward-thinking companies to make AI accessible and human-centered.",
       "ogTitle": "Partnerships — ArsonistAI",
       "ogDescription": "Collaborate with ArsonistAI to build AI-powered solutions. Strategic partnerships for forward-thinking companies."
     },
     "caseStudies": {
-      "title": "Case Studies",
+      "title": "AI Design Case Studies",
       "description": "Explore ArsonistAI case studies: client projects and outcomes across AI design, product development, and digital experiences.",
       "ogTitle": "Case Studies — ArsonistAI",
       "ogDescription": "Case studies and client work from ArsonistAI: AI design, product development, and digital experiences."
@@ -249,5 +667,9 @@
       "title": "Legal Terms",
       "description": "ArsonistAI's legal terms and conditions of use. Review the terms governing your use of our website and services."
     }
+  },
+  "insights": {
+    "relatedHeading": "Related insights",
+    "backToInsights": "Back to Insights"
   }
 }
