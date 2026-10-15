@@ -21,7 +21,7 @@
   },
   "home": {
     "heroSubtitle": "Diseño Aumentado",
-    "heroTitle": "Nuestra misión es construir un futuro empoderado con IA avanzada, haciéndola accesible, escalable y centrada en las personas que más la necesitan.",
+    "heroTitle": "Nuestra meta es una IA para todos, que crezca con cada uno y que sirva a quien más la necesita.",
     "heroCta": "Conoce nuestro trabajo",
     "heroTagline": "Tu firma de diseño con IA — escala tu negocio con IA",
     "servicesHeading": "Nuestros Servicios",
@@ -46,9 +46,9 @@
   },
   "about": {
     "heading": "nosotros",
-    "intro": "Somos una empresa AI-first que ayuda a las empresas a desbloquear el potencial humano a través de la tecnología emergente. Usando herramientas de vanguardia, construimos soluciones escalables y éticas que empoderan a las organizaciones para adoptar IA con claridad, confianza y propósito.",
+    "intro": "Somos una firma que pone la IA primero. Ayudamos a que tu gente dé lo mejor de sí con lo más nuevo, y hacemos sistemas seguros y justos que crecen contigo, para que tu equipo use la IA con calma, con un plan y con un fin.",
     "missionHeading": "nuestra misión",
-    "missionText": "Nuestra misión es construir el futuro con IA avanzada, haciéndola accesible, escalable y centrada en las personas que más la necesitan.",
+    "missionText": "Queremos crear el futuro con una IA fácil de usar, que pueda crecer y que sirva a las personas que más la necesitan.",
     "valuesHeading": "nuestros valores",
     "value1Title": "Usamos IA para el bien",
     "value1Text": "La IA es muy potente, así que la usamos con reglas éticas claras.",
@@ -554,14 +554,20 @@
     "published": "Publicado",
     "productKpisPlugin": {
       "title": "Presentamos Product KPIs: Impacto Medible Directamente en Tu Flujo de Diseño",
+      "pageTitle": "Presentamos Product KPIs",
+      "cardTitle": "Conoce Product KPIs",
       "excerpt": "La mayoría de los equipos de producto adivinan qué métricas realmente importan. Creamos un plugin de Figma con más de 100 KPIs probados en la industria para cambiar eso."
     },
     "kpis": {
       "title": "Por qué elegir los KPIs correctos marca toda la diferencia en el éxito del producto",
+      "pageTitle": "Por qué importan los KPIs",
+      "cardTitle": "Por qué importan los KPIs",
       "excerpt": "En el mundo acelerado del desarrollo de productos y diseño UX, el \"impacto\" no es solo jerga corporativa."
     },
     "containment": {
       "title": "Contención, no catástrofe: 9 formas prácticas de regular la IA antes de que nos regule",
+      "pageTitle": "Contención, no catástrofe",
+      "cardTitle": "Cómo regular la IA",
       "excerpt": "La pregunta crítica que enfrentamos ya no es si la IA debe ser regulada, sino cómo."
     },
     "everydayAI": {
@@ -570,6 +576,8 @@
     },
     "leanCanvas": {
       "title": "Plantillas interactivas de Lean Product Canvas para Figma",
+      "pageTitle": "El Lean Product Canvas",
+      "cardTitle": "El Lean Product Canvas",
       "excerpt": "Nos asociamos con Jeff Gothelf y Josh Seiden para llevar el Lean Product Canvas a un formato digital moderno e interactivo."
     },
     "dateAI": {
@@ -578,14 +586,20 @@
     },
     "figmaBrand": {
       "title": "Cómo usar Figma para gestionar tu marca",
+      "pageTitle": "Gestiona tu marca en Figma",
+      "cardTitle": "Tu marca en Figma",
       "excerpt": "Figma no es solo una herramienta de diseño. Es el centro de mando que tu marca estaba esperando."
     },
     "designersAI": {
       "title": "Lo que los diseñadores necesitan saber sobre la IA",
+      "pageTitle": "La IA y los diseñadores",
+      "cardTitle": "La IA y los diseñadores",
       "excerpt": "Tu trabajo puede estar contribuyendo al entrenamiento de modelos de IA, a menudo sin tu consentimiento explícito."
     },
     "publicPerception": {
       "title": "¿Emocionados o aterrados? Lo que la gente realmente piensa sobre la IA",
+      "pageTitle": "Lo que la gente piensa de la IA",
+      "cardTitle": "¿Emoción o miedo?",
       "excerpt": "El 52% de los estadounidenses están más preocupados que emocionados por la IA en la vida diaria."
     }
   },

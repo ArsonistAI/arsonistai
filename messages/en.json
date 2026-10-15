@@ -21,7 +21,7 @@
   },
   "home": {
     "heroSubtitle": "Design Augmented",
-    "heroTitle": "Our mission is to build an empowered future with advanced AI, making it accessible, scalable, and human-centered for the people who need it most.",
+    "heroTitle": "We want to build a future with AI that is open to all, built to grow, and made for the people who need it most.",
     "heroCta": "Check out our work",
     "heroTagline": "Your AI design firm — scale your business with AI",
     "servicesHeading": "Our Services",
@@ -554,22 +554,32 @@
     "published": "Published",
     "productKpisPlugin": {
       "title": "Introducing Product KPIs: Bringing Measurable Impact Into Your Design Workflow",
+      "pageTitle": "Introducing Product KPIs",
+      "cardTitle": "Introducing Product KPIs",
       "excerpt": "Most product teams are guessing which metrics actually matter. We built a Figma plugin with 100+ industry-tested KPIs to change that."
     },
     "kpis": {
       "title": "Why Choosing the Right KPIs Makes All the Difference in Product Success",
+      "pageTitle": "Why the Right KPIs Matter",
+      "cardTitle": "Why the Right KPIs Matter",
       "excerpt": "In the fast-paced world of product development and UX design, \"impact\" isn't just corporate jargon—it's the north star that guides every decision."
     },
     "containment": {
       "title": "Containment, Not Catastrophe: 9 Practical Ways to Regulate AI Before It Regulates Us",
+      "pageTitle": "Containment, Not Catastrophe",
+      "cardTitle": "Nine Ways to Regulate AI",
       "excerpt": "The critical question we face is no longer if AI should be regulated, but how."
     },
     "everydayAI": {
       "title": "10 Ways to Incorporate AI into Everyday Life",
+      "pageTitle": "10 Ways to Use AI Every Day",
+      "cardTitle": "10 Everyday Uses for AI",
       "excerpt": "AI has become an increasingly valuable tool in various aspects of life. Here are ten key ways to integrate it."
     },
     "leanCanvas": {
       "title": "Lean Product Canvas Interactive Figma Templates",
+      "pageTitle": "The Lean Product Canvas",
+      "cardTitle": "The Lean Product Canvas",
       "excerpt": "We partnered with Jeff Gothelf and Josh Seiden to bring the Lean Product Canvas into a modern, interactive digital format."
     },
     "dateAI": {
@@ -578,14 +588,20 @@
     },
     "figmaBrand": {
       "title": "How to Use Figma to Manage Your Brand",
+      "pageTitle": "Manage Your Brand in Figma",
+      "cardTitle": "Your Brand in Figma",
       "excerpt": "Figma is not just a design tool. It's the command center your brand has been waiting for."
     },
     "designersAI": {
       "title": "What Designers Need to Know About AI",
+      "pageTitle": "What Designers Should Know",
+      "cardTitle": "Designers and AI",
       "excerpt": "Your work may already be contributing to AI model training—often without your explicit consent."
     },
     "publicPerception": {
       "title": "Excited or Terrified? What People Really Think About AI",
+      "pageTitle": "Excited or Terrified by AI?",
+      "cardTitle": "Excited or Terrified?",
       "excerpt": "52% of Americans are more concerned than excited about AI in daily life. The perceptions are complex."
     }
   },

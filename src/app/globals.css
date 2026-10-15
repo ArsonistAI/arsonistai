@@ -85,6 +85,10 @@
   .text-display-sm { font-size: 28px; line-height: 36px; }
   .text-headline-md { font-size: 24px; line-height: 32px; }
   .text-title-lg { font-size: 18px; line-height: 24px; }
+  /* Long statements (home headline, About intro and mission) step down
+     further, so a phone line still holds five words. */
+  .text-statement { font-size: 22px; line-height: 30px; }
+  .text-statement-sm { font-size: 20px; line-height: 28px; }
 }
 
 /* === M3 transition base === */

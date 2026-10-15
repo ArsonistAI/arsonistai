@@ -64,7 +64,7 @@ function AboutContent({ locale }: { locale: string }) {
             <h1 className="text-label-lg text-lava uppercase tracking-widest mb-6">
               {t("heading")}
             </h1>
-            <p className="text-headline-sm md:text-headline-md text-muted leading-relaxed max-w-3xl">
+            <p className="text-headline-sm md:text-headline-md text-statement-sm text-muted leading-relaxed max-w-3xl">
               {t("intro")}
             </p>
           </div>
@@ -79,7 +79,7 @@ function AboutContent({ locale }: { locale: string }) {
           <h2 className="text-label-lg text-lava uppercase tracking-widest mb-6">
             {t("missionHeading")}
           </h2>
-          <p className="text-headline-md md:text-headline-lg font-bold leading-tight max-w-3xl">
+          <p className="text-headline-md md:text-headline-lg text-statement-sm font-bold leading-tight max-w-3xl">
             {t("missionText")}
           </p>
         </div>

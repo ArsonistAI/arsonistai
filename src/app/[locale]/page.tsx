@@ -60,7 +60,7 @@ function HomeContent() {
             <p className="text-label-lg text-lava uppercase tracking-widest mb-6">
               {t("heroSubtitle")}
             </p>
-            <h1 className="text-display-sm md:text-display-md lg:text-display-lg font-bold leading-tight max-w-4xl mb-10">
+            <h1 className="text-display-sm md:text-display-md lg:text-display-lg text-statement font-bold leading-tight max-w-4xl mb-10">
               {t("heroTitle")}
             </h1>
             <div className="flex flex-col sm:flex-row gap-5 items-start">

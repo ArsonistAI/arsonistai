@@ -78,6 +78,7 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
   const ti = useTranslations("insights");
   const t = useTranslations();
   const tp = useTranslations("posts");
+  const pageTitleKey = post.titleKey.replace(/\.title$/, ".pageTitle");
 
   // Two most recent other posts, so no article is a dead end for crawlers.
   const relatedPosts = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
@@ -267,8 +268,9 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
           className="w-full aspect-[16/9] object-cover rounded-xl mb-8"
         />
 
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
-          {t(post.titleKey)}
+        <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
+          {/* A long title keeps its full form in metadata; the page heading can be shorter. */}
+          {t.has(pageTitleKey) ? t(pageTitleKey) : t(post.titleKey)}
         </h1>
 
         <div className="flex items-center gap-3 text-muted text-sm mb-12">

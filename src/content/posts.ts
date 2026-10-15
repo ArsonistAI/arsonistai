@@ -28,7 +28,7 @@ export const posts: Post[] = [
 
 The problem isn't a lack of data. It's a lack of shared language around what success looks like before the first pixel is placed.
 
-## The KPI Problem in Product Design
+## The KPI Problem
 
 Most product teams treat Key Performance Indicators as an afterthought, something that gets defined in a spreadsheet after the design is already locked, handed off, and halfway through development. By then, the opportunity to design for measurable outcomes has already passed.
 
@@ -68,13 +68,13 @@ Not everything lives in Figma, and we built for that reality. Product KPIs suppo
 
 Product KPIs is built for the teams sitting at the intersection of design and outcomes: product designers who want their mockups to carry a measurement plan, not just a visual spec, and product managers who need a shared vocabulary with design instead of translating requirements back and forth between tools. Founders and small teams who don't have a dedicated analytics function yet use it to make defensible bets without guessing. Agencies and consultancies working across multiple clients use it as a fast way to establish a measurement baseline without starting from a blank page on every engagement.
 
-## A Closer Look: From Wizard to Widget
+## From Wizard to Widget
 
 Here's what using the plugin actually looks like in practice. A designer opens a new Figma file for a subscription onboarding flow and launches Product KPIs. The wizard asks a handful of questions, product type, business model, primary goal for this specific flow, current stage of the product. Based on those answers, it surfaces a shortlist: activation rate, time-to-first-value, and onboarding completion rate, each with its definition, typical benchmark range, and a short note on why it's relevant to an onboarding flow specifically.
 
 The designer selects two of the three, and with one click, a tracking widget appears directly on the canvas next to the flow it measures. The widget carries the KPI definition, benchmark, an owner field, and a notes section, so when a stakeholder opens the file three weeks later, the measurement plan is sitting right where the design decisions were made, not buried in a separate doc nobody remembers to update.
 
-## What the Data Says About Getting This Right
+## What the Data Says
 
 The benchmarks back up why this matters. Current [PLG growth data](https://www.hooklead.com/saas-growth-library/2026-b2b-saas-growth-benchmarks) shows the average product activation rate sitting around 37.5%, with best-in-class teams pushing past 70%, and average time-to-value around 36 hours. Median net revenue retention across B2B SaaS hovers near 88–90%, while top performers exceed 120%. The gap between "average" and "best-in-class" on these numbers isn't about having smarter engineers, it's about teams that know exactly which KPI they're designing toward at every stage of the product, and design deliberately to move it.
 
@@ -94,11 +94,11 @@ Product KPIs is our attempt to make that alignment effortless, embedded directly
 
 A spreadsheet is static and lives outside your workflow, which means it's rarely consulted once the initial planning meeting ends. Product KPIs lives inside Figma, next to the actual design decisions it's meant to inform, with benchmarks and definitions built in so nobody has to go hunting for context.
 
-### Does the plugin work for early-stage products without much data yet?
+### Does it work with little data?
 
 Yes. The wizard is built to recommend appropriate leading indicators, like activation and time-to-value, for early-stage products, rather than assuming you already have the volume of data needed for lagging indicators like retention or net revenue retention.
 
-### Can I use Product KPIs outside of Figma?
+### Does it work outside Figma?
 
 Every KPI you select can be exported to common file formats, so you can bring your chosen metrics into project management tools, decks, or documentation outside of Figma.
 
@@ -106,11 +106,11 @@ Every KPI you select can be exported to common file formats, so you can bring yo
 
 Product KPIs is available now on the Figma Community, install it directly from Figma to see current pricing and plan details.
 
-### How does the plugin decide which KPIs to recommend for my product?
+### How does it pick KPIs?
 
 The wizard weighs your answers about product type, business model, and current goal against the same criteria a strong measurement plan should meet: whether a metric is genuinely tied to a business outcome, whether your team's decisions can actually move it, and whether it's appropriate for your product's current stage. Early-stage products get leading indicators like activation surfaced first; more mature products see retention and revenue-oriented KPIs surface higher in the recommendations.
 
-## Getting Buy-In From the Rest of Your Team
+## Getting Your Team on Board
 
 A measurement plan only works if it's actually shared, and the most common reason KPI initiatives stall isn't a lack of good metrics, it's that the metrics live in one person's head or one person's file. Bringing the plugin into a kickoff meeting rather than a solo planning session changes that dynamic immediately: when engineering and product are in the room while the KPIs get selected, there's no separate "translation" step later where design has to convince the rest of the team a metric matters. The widget being visible directly on the design file also means a stakeholder reviewing the work doesn't have to ask what success looks like, it's already annotated next to the flow it measures.
 
@@ -163,13 +163,13 @@ No todo vive en Figma, y construimos el plugin pensando en esa realidad. Product
 
 Product KPIs está pensado para los equipos que viven en la intersección entre diseño y resultados: diseñadores de producto que quieren que sus mockups incluyan un plan de medición, no solo una especificación visual, y product managers que necesitan un vocabulario compartido con diseño en lugar de traducir requisitos de un lado a otro. Fundadores y equipos pequeños sin una función de analítica dedicada lo usan para tomar decisiones defendibles sin adivinar. Agencias y consultoras que trabajan con múltiples clientes lo usan como una forma rápida de establecer una línea base de medición sin partir de cero en cada proyecto.
 
-## Una mirada de cerca: del asistente al widget
+## Del asistente al widget
 
 Así se ve usar el plugin en la práctica. Una diseñadora abre un nuevo archivo de Figma para un flujo de onboarding de suscripción y lanza Product KPIs. El asistente hace algunas preguntas, tipo de producto, modelo de negocio, objetivo principal de este flujo específico, etapa actual del producto. Con esas respuestas, muestra una lista corta: tasa de activación, tiempo hasta el primer valor y tasa de finalización del onboarding, cada una con su definición, rango de benchmark típico y una nota breve sobre por qué es relevante para un flujo de onboarding en particular.
 
 La diseñadora selecciona dos de las tres, y con un clic, un widget de seguimiento aparece directamente en el lienzo, junto al flujo que mide. El widget incluye la definición del KPI, el benchmark, un campo de responsable y una sección de notas, así que cuando alguien del equipo abre el archivo tres semanas después, el plan de medición está justo donde se tomaron las decisiones de diseño, no perdido en un documento aparte que nadie recuerda actualizar.
 
-## Lo que dicen los datos sobre hacerlo bien
+## Lo que dicen los datos
 
 Los benchmarks respaldan por qué esto importa. Datos actuales de [crecimiento PLG](https://www.hooklead.com/saas-growth-library/2026-b2b-saas-growth-benchmarks) muestran que la tasa de activación promedio ronda el 37.5%, con los equipos de mejor desempeño superando el 70%, y un tiempo hasta el primer valor promedio de 36 horas. La retención neta de ingresos mediana en SaaS B2B se ubica cerca del 88–90%, mientras que los mejores equipos superan el 120%. La diferencia entre "promedio" y "el mejor de su clase" en estos números no se trata de tener ingenieros más inteligentes, se trata de equipos que saben exactamente hacia qué KPI están diseñando en cada etapa del producto, y diseñan de forma deliberada para moverlo.
 
@@ -185,27 +185,27 @@ Product KPIs es nuestro intento de hacer esa alineación sencilla, integrada dir
 
 ## Preguntas frecuentes
 
-### ¿Qué hace diferente a Product KPIs de una hoja de cálculo con métricas?
+### ¿Por qué no una hoja de cálculo?
 
 Una hoja de cálculo es estática y vive fuera de tu flujo de trabajo, lo que significa que rara vez se consulta después de la reunión inicial de planeación. Product KPIs vive dentro de Figma, junto a las decisiones de diseño reales que debe informar, con benchmarks y definiciones incorporados para que nadie tenga que buscar contexto por su cuenta.
 
-### ¿Funciona el plugin para productos en etapa temprana sin muchos datos aún?
+### ¿Sirve con pocos datos?
 
 Sí. El asistente está diseñado para recomendar indicadores adelantados apropiados, como activación y tiempo hasta el primer valor, para productos en etapa temprana, en lugar de asumir que ya tienes el volumen de datos necesario para indicadores rezagados como retención o retención neta de ingresos.
 
-### ¿Puedo usar Product KPIs fuera de Figma?
+### ¿Funciona fuera de Figma?
 
 Cada KPI que selecciones se puede exportar a formatos de archivo comunes, para que puedas llevar tus métricas elegidas a herramientas de gestión de proyectos, presentaciones o documentación fuera de Figma.
 
-### ¿Product KPIs es gratis para probar?
+### ¿Se puede probar gratis?
 
 Product KPIs está disponible ahora en la Comunidad de Figma, instálalo directamente desde Figma para ver los detalles de precios y planes vigentes.
 
-### ¿Cómo decide el plugin qué KPIs recomendar para mi producto?
+### ¿Cómo elige los KPIs?
 
 El asistente evalúa tus respuestas sobre tipo de producto, modelo de negocio y objetivo actual contra los mismos criterios que debería cumplir un buen plan de medición: si una métrica está genuinamente ligada a un resultado de negocio, si las decisiones de tu equipo pueden realmente moverla, y si es apropiada para la etapa actual de tu producto. A los productos en etapa temprana se les muestran primero indicadores adelantados como la activación; a los productos más maduros se les muestran con mayor prioridad KPIs orientados a retención e ingresos.
 
-## Consigue el apoyo del resto de tu equipo
+## Suma a tu equipo
 
 Un plan de medición solo funciona si realmente se comparte, y la razón más común por la que las iniciativas de KPIs se estancan no es la falta de buenas métricas, es que las métricas viven solo en la cabeza de una persona o en el archivo de una persona. Llevar el plugin a una reunión de kickoff en lugar de a una sesión de planeación individual cambia esa dinámica de inmediato: cuando ingeniería y producto están en la sala mientras se seleccionan los KPIs, no hace falta un paso de "traducción" separado después, donde diseño tiene que convencer al resto del equipo de que una métrica importa. Que el widget sea visible directamente en el archivo de diseño también significa que un stakeholder que revisa el trabajo no tiene que preguntar cómo se ve el éxito, ya está anotado justo al lado del flujo que mide.
 
@@ -226,13 +226,13 @@ Nos encantaría saber cómo tu equipo aborda la elección de KPIs y qué te pare
     content: {
       en: `In product development and UX design, "impact" isn't just corporate jargon, it's the north star that guides every decision, feature, and design iteration. Yet without the right Key Performance Indicators (KPIs) serving as your compass, defining, measuring, and achieving meaningful impact becomes an expensive guessing game. The difference between successful products and failed launches often comes down to whether teams tracked the right metrics at the right time.
 
-## The Cost of Tracking the Wrong Things
+## The Cost of Wrong Metrics
 
 It's easy to mistake activity for progress. A dashboard full of green numbers feels productive, but if those numbers are page views, downloads, or social impressions, they may have nothing to do with whether the product is actually working. Teams that optimize for metrics that are easy to move, rather than metrics that matter, end up shipping features that look successful in a review meeting and fail to change user behavior in any lasting way.
 
 The real cost isn't just wasted engineering time. It's the opportunity cost of not knowing which of your bets actually paid off, which means the next roadmap gets built on guesswork instead of evidence. Recent [B2B SaaS growth benchmark data](https://www.hooklead.com/saas-growth-library/2026-b2b-saas-growth-benchmarks) puts a number on this: only about a third of B2B SaaS companies formally track activation rate, even though it's one of the strongest predictors of whether a free user ever becomes a paying customer. Most of the rest are, in effect, flying blind on the metric that matters most.
 
-## What Separates a Good KPI from a Vanity Metric
+## Good KPIs vs. Vanity Metrics
 
 A useful KPI has three properties: it's tied to a real business or user outcome, it's something your team's decisions can actually move, and it's comparable over time so you can tell whether you're improving. Vanity metrics fail at least one of these tests, they go up regardless of what you build, or they measure output instead of outcome.
 
@@ -242,7 +242,7 @@ Retention, activation rate, and time-to-value tend to hold up under this test. T
 - **Page views vs. time-to-value**, page views measure attention; time-to-value measures how quickly that attention turns into a real outcome.
 - **Total downloads vs. week-four retention**, downloads measure curiosity; retention measures whether the product earned a place in someone's routine.
 
-## Popular Frameworks for Choosing the Right Metric
+## Frameworks for Choosing
 
 You don't have to build a measurement framework from scratch. A few well-established approaches can shortcut the process:
 
@@ -253,25 +253,25 @@ You don't have to build a measurement framework from scratch. A few well-establi
 
 None of these frameworks is universally "correct." The [product-led growth metrics guide from ProductLed](https://www.productled.org/foundations/product-led-growth-metrics) is a useful starting point if you're deciding which one fits your product's current stage and business model.
 
-## Matching KPIs to the Stage of Your Product
+## KPIs for Each Stage
 
 The right KPI also depends on where your product is in its life. Early on, activation and qualitative feedback tell you more than revenue ever could, you're still validating that people get value from what you built. Current benchmarks put a healthy activation rate in the 20–40% range, with best-in-class products pushing past 70%.
 
 As the product matures, the questions shift toward retention, expansion, and efficiency. Median net revenue retention across B2B SaaS sits around 88–90%, while top performers exceed 120%, meaning their existing customer base is expanding faster than it's churning. A metric that was the right thing to obsess over at launch can become a distraction a year later if the team never revisits the framework.
 
-## Making KPIs Part of the Design Process, Not an Afterthought
+## KPIs From the Start
 
 The teams that get this right treat KPI selection as a design decision, not a reporting exercise that happens after launch. When product, design, and engineering agree on what success looks like before the first wireframe is drawn, every subsequent conversation, about scope, trade-offs, and priorities, gets sharper. Debates stop being about opinions and start being about evidence.
 
 This is exactly the gap we built [Product KPIs](/insights/introducing-product-kpis-bringing-measurable-impact-into-your-design-workflow) to close: a Figma plugin that puts industry-tested KPIs, definitions, and benchmarks directly inside the design workflow, so the metric conversation happens at the same table as the design conversation.
 
-## Common Mistakes Teams Make When Selecting KPIs
+## Common KPI Mistakes
 
 Even teams that know the theory make predictable mistakes in practice. The most common is treating a KPI as fixed once it's chosen, rather than revisiting it as the product changes, a metric that made sense under a free-trial-only pricing model can quietly stop making sense six months after a usage-based tier launches. Another is choosing a KPI that's already trending in the right direction regardless of the team's actions, which produces the comforting illusion of progress without ever being genuinely informative.
 
 A third mistake is optimizing a single metric in isolation without a guardrail metric attached to it. A team chasing activation rate without also watching retention can end up "activating" users through aggressive onboarding nudges that push someone through a flow without creating lasting value, the activation number goes up while the underlying business gets worse. Pairing every primary KPI with at least one guardrail metric helps catch this before it compounds into a real problem.
 
-## A Practical Example: Choosing KPIs for a New Feature
+## Example: KPIs for a Feature
 
 Say a team is shipping a collaboration feature inside an existing product, something like shared workspaces. Using the AARRR framework as a starting point, the team might identify three candidate metrics: activation (the percentage of users who create or join a shared workspace within their first week), retention (the percentage of workspace members still active 30 days later), and referral (the rate at which existing users invite new collaborators into a workspace).
 
@@ -287,15 +287,15 @@ Fewer than you'd think. Most teams do better tracking one primary metric per maj
 
 A leading indicator (like activation rate or time-to-value) predicts future outcomes and can be influenced quickly. A lagging indicator (like retention or revenue) confirms what already happened and moves slowly. Early-stage teams should lean on leading indicators simply because they don't have enough time-in-market yet for lagging indicators to be meaningful.
 
-### Should every team have a North Star Metric?
+### Does every team need one?
 
 It helps, but only if the metric is chosen carefully. A poorly chosen North Star Metric, one that can be inflated without actually delivering value, does more harm than having no single metric at all. It should be difficult to move without genuinely improving the product.
 
-### What's a reasonable timeframe to wait before deciding a KPI isn't working?
+### How long should I wait?
 
 It depends on the metric's natural cadence. A leading indicator like activation can be evaluated within weeks, since users either experience value quickly or they don't. A lagging indicator like net revenue retention needs at least a full quarter, often longer, before a trend is distinguishable from noise, judging it too early is one of the more common ways teams talk themselves out of a strategy that would have worked.
 
-### When should a team reconsider its choice of KPI?
+### When should a KPI change?
 
 Three signals usually mean it's time to revisit: the metric has been flat for several quarters despite real product changes (suggesting it's no longer measuring what the team thinks it is), the product has entered a new stage of maturity without the measurement framework being updated to match, or the team catches itself justifying decisions based on how the metric looks rather than the outcome it's supposed to represent. That last signal is the most telling, it's the exact moment a KPI starts becoming the vanity metric it was chosen to avoid.
 
@@ -304,7 +304,7 @@ Three signals usually mean it's time to revisit: the metric has been flat for se
 Choosing the right KPIs isn't a one-time exercise, it's an ongoing discipline that separates teams who learn from their launches from teams who just move on to the next one. Get the metrics right, and everything downstream, from design decisions to roadmap prioritization, gets easier to defend and easier to trust.`,
       es: `En el desarrollo de producto y el diseño UX, "impacto" no es solo una palabra de moda corporativa: es la estrella polar que guía cada decisión, funcionalidad e iteración de diseño. Sin embargo, sin los Indicadores Clave de Desempeño (KPIs) correctos como brújula, definir, medir y lograr un impacto real se convierte en un juego de adivinanzas costoso. La diferencia entre productos exitosos y lanzamientos fallidos suele reducirse a si el equipo midió las métricas correctas en el momento correcto.
 
-## El costo de medir las cosas equivocadas
+## El costo de medir mal
 
 Es fácil confundir actividad con progreso. Un dashboard lleno de números en verde se siente productivo, pero si esos números son vistas de página, descargas o impresiones en redes sociales, puede que no tengan nada que ver con si el producto realmente está funcionando. Los equipos que optimizan por métricas fáciles de mover, en lugar de métricas que realmente importan, terminan lanzando funcionalidades que se ven exitosas en una reunión de revisión, pero que no cambian el comportamiento del usuario de forma duradera.
 
@@ -320,7 +320,7 @@ La retención, la tasa de activación y el tiempo hasta el valor suelen resistir
 - **Vistas de página vs. tiempo hasta el valor**, las vistas de página miden atención; el tiempo hasta el valor mide qué tan rápido esa atención se convierte en un resultado real.
 - **Descargas totales vs. retención de la semana cuatro**, las descargas miden curiosidad; la retención mide si el producto se ganó un lugar en la rutina de alguien.
 
-## Marcos populares para elegir la métrica correcta
+## Marcos para elegir métricas
 
 No tienes que construir un marco de medición desde cero. Algunos enfoques ya establecidos pueden ahorrarte el proceso:
 
@@ -349,7 +349,7 @@ Incluso los equipos que conocen la teoría cometen errores predecibles en la pr�
 
 Un tercer error es optimizar una sola métrica de forma aislada sin una métrica de resguardo asociada. Un equipo que persigue la tasa de activación sin también vigilar la retención puede terminar "activando" usuarios mediante empujones agresivos de onboarding que llevan a alguien a través de un flujo sin crear valor duradero, el número de activación sube mientras el negocio subyacente empeora. Emparejar cada KPI principal con al menos una métrica de resguardo ayuda a detectar esto antes de que se convierta en un problema real.
 
-## Un ejemplo práctico: elegir KPIs para una nueva funcionalidad
+## Un ejemplo práctico
 
 Supongamos que un equipo lanza una funcionalidad de colaboración dentro de un producto existente, algo como espacios de trabajo compartidos. Usando el marco AARRR como punto de partida, el equipo podría identificar tres métricas candidatas: activación (el porcentaje de usuarios que crean o se unen a un espacio de trabajo compartido durante su primera semana), retención (el porcentaje de miembros del espacio de trabajo que siguen activos 30 días después) y referencia (la tasa a la que los usuarios existentes invitan a nuevos colaboradores a un espacio de trabajo).
 
@@ -361,19 +361,19 @@ En lugar de medir las tres con el mismo peso desde el primer día, el equipo eli
 
 Menos de lo que crees. A la mayoría de los equipos les va mejor midiendo una métrica principal por cada objetivo importante (un North Star Metric o un OMTM) junto con dos o tres métricas de apoyo que expliquen el movimiento de la principal. Medir una docena de KPIs a la vez tiende a diluir el foco en lugar de afinarlo.
 
-### ¿Cuál es la diferencia entre un indicador adelantado y uno rezagado?
+### ¿Adelantado o rezagado?
 
 Un indicador adelantado (como la tasa de activación o el tiempo hasta el valor) predice resultados futuros y se puede influir rápidamente. Un indicador rezagado (como la retención o los ingresos) confirma lo que ya ocurrió y se mueve lentamente. Los equipos en etapa temprana deberían apoyarse en indicadores adelantados simplemente porque aún no tienen suficiente tiempo en el mercado para que los indicadores rezagados sean significativos.
 
-### ¿Todo equipo debería tener un North Star Metric?
+### ¿Todo equipo necesita una?
 
 Ayuda, pero solo si la métrica se elige con cuidado. Un North Star Metric mal elegido, uno que se puede inflar sin entregar valor real, hace más daño que no tener ninguna métrica única. Debería ser difícil de mover sin mejorar genuinamente el producto.
 
-### ¿Cuánto tiempo es razonable esperar antes de decidir que un KPI no está funcionando?
+### ¿Cuánto debo esperar?
 
 Depende del ritmo natural de la métrica. Un indicador adelantado como la activación se puede evaluar en semanas, ya que los usuarios experimentan valor rápido o no lo hacen. Un indicador rezagado como la retención neta de ingresos necesita al menos un trimestre completo, a menudo más, antes de que una tendencia se distinga del ruido, juzgarlo demasiado pronto es una de las formas más comunes en que los equipos se autoconvencen de abandonar una estrategia que habría funcionado.
 
-### ¿Cuándo debería un equipo reconsiderar su elección de KPI?
+### ¿Cuándo cambiar de KPI?
 
 Tres señales suelen indicar que es momento de revisar: la métrica lleva varios trimestres estancada a pesar de cambios reales de producto (lo que sugiere que ya no está midiendo lo que el equipo cree), el producto entró en una nueva etapa de madurez sin que el marco de medición se haya actualizado, o el equipo se sorprende justificando decisiones basadas en cómo se ve la métrica en lugar de en el resultado que se supone debe representar. Esa última señal es la más reveladora, es el momento exacto en que un KPI empieza a convertirse en la métrica de vanidad que se suponía debía evitar.
 
@@ -394,9 +394,9 @@ Elegir los KPIs correctos no es un ejercicio de una sola vez, es una disciplina 
 
 The scale and speed of AI deployment across society has outpaced our regulatory frameworks by decades. Consider that the same algorithms deciding mortgage approvals, criminal sentencing recommendations, and medical diagnoses operate with less oversight than the approval process for a new breakfast cereal.
 
-## The Current Landscape: Documented Harms and Systemic Failures
+## Documented Harms So Far
 
-### Bias Amplification in Critical Systems
+### Bias in Critical Systems
 
 Recent studies have documented how AI systems systematically disadvantage marginalized communities. The landmark [Gender Shades study out of MIT](https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212) found commercial facial-analysis systems misclassified darker-skinned women at error rates as high as 34.7%, compared to error rates near zero for lighter-skinned men. The study's influence pushed major vendors to measurably improve accuracy for underserved groups, proof that scrutiny works, but also proof the harm was real and already shipping in commercial products.
 
@@ -406,7 +406,7 @@ Hiring algorithms trained on historical data raise similar concerns. In [Mobley 
 
 Modern AI surveillance extends far beyond traditional security cameras. Educational institutions deploy emotion recognition software to monitor student engagement, creating psychological profiles that follow students throughout their academic careers. Workplace surveillance systems track employee productivity, bathroom breaks, and social interactions, often with far less transparency than the hiring algorithms above, because monitoring tools are rarely subject to the same legal scrutiny as decisions like termination or promotion.
 
-## Where Regulation Actually Stands in 2026
+## Regulation in 2026
 
 Talk of AI regulation isn't hypothetical anymore, it's actively being written, delayed, and litigated in real time, and the picture is more mixed than either AI optimists or AI alarmists tend to admit.
 
@@ -414,9 +414,9 @@ In the European Union, most remaining provisions of the [EU AI Act took effect o
 
 In the United States, there is no federal AI law of comparable scope. Instead, regulation is happening state by state, and fast: as of early 2026, lawmakers in 45 states had introduced over 1,500 AI-related bills, more than in all of 2024 combined, according to the [multistate.ai legislation tracker](https://www.multistate.ai/artificial-intelligence-ai-legislation). The approaches vary sharply. California's SB 942 requires generative AI providers to offer watermarking and content-detection tools. Colorado replaced its original AI Act with a narrower automated-decision-making statute effective 2027, requiring consumer notice and a right to human review for high-stakes decisions. Texas, by contrast, passed a Responsible AI Governance Act that mostly limits obligations to government use of AI, leaving the private sector largely untouched. That patchwork is itself a preview of the coordination problem discussed below.
 
-## 9 Practical Strategies for AI Regulation
+## 9 Ways to Regulate AI
 
-### 1. Algorithmic Auditing and Transparency Requirements
+### 1. Audits and Transparency
 Mandate regular algorithmic audits for AI systems used in high-stakes decisions. These audits should examine training data, decision-making processes, and outcomes for bias and fairness, the kind of independent scrutiny that identified the accuracy disparities in the Gender Shades study years before regulation caught up.
 
 ### 2. Data Rights and Digital Dignity
@@ -431,23 +431,23 @@ Establish public AI research institutions and require public benefit considerati
 ### 5. Sectoral AI Governance
 Develop sector-specific AI governance frameworks that address the particular risks and requirements of each domain, healthcare, hiring, and criminal justice each need different guardrails, which is why Pennsylvania is pursuing healthcare-specific AI rules while New Jersey focuses on employment.
 
-### 6. Democratic Participation in AI Governance
+### 6. Public Say in AI Rules
 Create participatory governance mechanisms that give communities a voice in AI decisions that affect them, rather than leaving governance entirely to legislators and vendors negotiating without public input.
 
-### 7. Liability and Redress Mechanisms
+### 7. Liability and Redress
 Establish clear liability frameworks for AI harms, including strict liability for certain high-risk AI applications. Active litigation like Mobley v. Workday is, in effect, courts trying to build this framework case by case in the absence of clear statutes.
 
-### 8. International Cooperation and Standards
+### 8. Global Cooperation
 Develop international AI governance standards and cooperation mechanisms. The divergence between the EU's comprehensive-but-delayed approach and the US's fragmented state-by-state approach shows what happens without them: companies operating across borders face genuinely different rules depending on jurisdiction.
 
-### 9. Adaptive Regulation and Continuous Monitoring
+### 9. Adaptive Regulation
 Create adaptive regulatory frameworks that can evolve with technology, the EU's own decision to defer high-risk provisions by more than a year shows that even well-resourced regulators are still calibrating timelines against real-world implementation capacity.
 
-## What This Means for Businesses Building AI Products
+## What It Means for Business
 
 For companies building AI-powered products rather than legislating them, the practical implication of this patchwork is that compliance can no longer be an afterthought bolted on before a launch. A product using AI in hiring, credit, healthcare, or education needs to track requirements across every jurisdiction it operates in, not just its headquarters, and the safest working assumption in 2026 is that the requirements will keep changing under you. Building in audit logging, explainability, and human-review pathways from the start is significantly cheaper than retrofitting them once a regulator or a plaintiff's attorney asks for them.
 
-## What This Means for Individuals
+## What It Means for You
 
 Most people encountering AI-driven decisions, a loan application, a job screening, an insurance quote, still have very little visibility into when AI was involved at all, let alone how it reached its conclusion. The regulatory patchwork described above is starting to change that, but unevenly: a resident of Colorado will have meaningfully different rights to an explanation and human review than a resident of Texas, simply based on where they live, at least until federal legislation or interstate coordination catches up. Until that gap closes, the most practical protection available to most people is simply asking, directly, whether a decision that affects them involved an automated system, a question that a growing number of state laws now give people an explicit right to ask.
 
@@ -461,7 +461,7 @@ Not yet, as of 2026. Regulation is happening primarily at the state level, which
 
 Penalties can reach €35 million or 7% of global annual turnover, whichever is higher, a maximum fine that exceeds even the GDPR's, reflecting how seriously EU regulators are treating high-risk AI use cases.
 
-### Does AI regulation slow down innovation?
+### Does regulation slow innovation?
 
 It's a real trade-off, but not an automatic one. Well-designed sectoral rules, the kind we discuss above, tend to concentrate compliance burden on genuinely high-risk uses (hiring, healthcare, credit) rather than blanket restrictions, which is closer to the direction most 2026 state laws are actually taking.
 
@@ -476,9 +476,9 @@ We stand at a critical juncture in human history. The choices we make about AI g
 
 La escala y velocidad del despliegue de IA en la sociedad ha superado a los marcos regulatorios por décadas. Considera que los mismos algoritmos que deciden aprobaciones hipotecarias, recomendaciones de sentencias penales y diagnósticos médicos operan con menos supervisión que el proceso de aprobación de un nuevo cereal para desayuno.
 
-## El panorama actual: daños documentados y fallas sistémicas
+## Los daños documentados
 
-### Amplificación de sesgos en sistemas críticos
+### Sesgos en sistemas críticos
 
 Estudios recientes han documentado cómo los sistemas de IA perjudican sistemáticamente a comunidades marginadas. El histórico [estudio Gender Shades del MIT](https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212) encontró que los sistemas comerciales de análisis facial clasificaban erróneamente a mujeres de piel oscura con tasas de error de hasta 34.7%, comparado con tasas de error cercanas a cero para hombres de piel clara. La influencia del estudio llevó a los principales proveedores a mejorar de forma medible la precisión para grupos históricamente desatendidos, prueba de que el escrutinio funciona, pero también prueba de que el daño era real y ya estaba presente en productos comerciales.
 
@@ -488,7 +488,7 @@ Los algoritmos de contratación entrenados con datos históricos generan preocup
 
 La vigilancia moderna con IA va mucho más allá de las cámaras de seguridad tradicionales. Instituciones educativas despliegan software de reconocimiento de emociones para monitorear el compromiso de los estudiantes, creando perfiles psicológicos que los siguen a lo largo de su vida académica. Los sistemas de vigilancia laboral rastrean la productividad de los empleados, los descansos al baño y las interacciones sociales, a menudo con mucha menos transparencia que los algoritmos de contratación mencionados arriba, porque las herramientas de monitoreo rara vez están sujetas al mismo escrutinio legal que decisiones como el despido o el ascenso.
 
-## Dónde está realmente la regulación en 2026
+## La regulación en 2026
 
 Hablar de regulación de IA ya no es hipotético, se está escribiendo, retrasando y litigando activamente en tiempo real, y el panorama es más mixto de lo que tanto los optimistas como los alarmistas de la IA suelen admitir.
 
@@ -496,46 +496,46 @@ En la Unión Europea, la mayoría de las disposiciones restantes de la [Ley de I
 
 En Estados Unidos no existe una ley federal de IA de alcance comparable. En cambio, la regulación ocurre estado por estado, y rápido: a principios de 2026, legisladores de 45 estados habían presentado más de 1,500 proyectos de ley relacionados con IA, más que en todo 2024 combinado, según el [rastreador de legislación de multistate.ai](https://www.multistate.ai/artificial-intelligence-ai-legislation). Los enfoques varían drásticamente. La SB 942 de California exige que los proveedores de IA generativa ofrezcan marcas de agua y herramientas de detección de contenido. Colorado reemplazó su ley original de IA con un estatuto más específico sobre toma de decisiones automatizada, vigente desde 2027, que exige notificación al consumidor y derecho a revisión humana en decisiones de alto impacto. Texas, en cambio, aprobó una Ley de Gobernanza Responsable de IA que limita las obligaciones principalmente al uso gubernamental de IA, dejando al sector privado prácticamente sin regular. Ese mosaico normativo es, en sí mismo, un anticipo del problema de coordinación que se discute más abajo.
 
-## 9 estrategias prácticas para regular la IA
+## 9 formas de regular la IA
 
-### 1. Auditoría algorítmica y requisitos de transparencia
+### 1. Auditorías y transparencia
 Exigir auditorías algorítmicas periódicas para los sistemas de IA usados en decisiones de alto impacto. Estas auditorías deberían examinar los datos de entrenamiento, los procesos de toma de decisiones y los resultados en busca de sesgo e imparcialidad, el tipo de escrutinio independiente que identificó las disparidades de precisión en el estudio Gender Shades años antes de que la regulación las alcanzara.
 
-### 2. Derechos de datos y dignidad digital
+### 2. Derechos sobre los datos
 Implementar legislación integral de derechos de datos que incluya el derecho a una explicación algorítmica, el derecho a revisión humana de decisiones automatizadas y el derecho a la portabilidad de datos. La ley revisada de toma de decisiones automatizada de Colorado es un ejemplo temprano y acotado de este principio ya en un estatuto.
 
 ### 3. Derechos laborales algorítmicos
 Establecer derechos laborales para los trabajadores de IA, incluyendo salarios justos, condiciones de trabajo seguras y protección frente al daño psicológico, una categoría que incluye tanto a los evaluadores y moderadores humanos que entrenan los sistemas de IA como a los trabajadores cuyos empleos se están reestructurando en torno a ellos.
 
-### 4. Desarrollo de IA de interés público
+### 4. IA de interés público
 Establecer instituciones públicas de investigación en IA y exigir consideraciones de beneficio público en su desarrollo, en lugar de dejar la dirección de la tecnología enteramente en manos de un puñado de laboratorios comerciales.
 
 ### 5. Gobernanza sectorial de la IA
 Desarrollar marcos de gobernanza de IA específicos por sector que aborden los riesgos y requisitos particulares de cada ámbito, salud, contratación y justicia penal necesitan barreras distintas, por lo que Pensilvania está impulsando reglas específicas de IA en salud mientras Nueva Jersey se enfoca en el empleo.
 
-### 6. Participación democrática en la gobernanza de la IA
+### 6. Voz pública en la IA
 Crear mecanismos de gobernanza participativa que le den voz a las comunidades en las decisiones de IA que las afectan, en lugar de dejar la gobernanza enteramente en manos de legisladores y proveedores que negocian sin aporte público.
 
-### 7. Mecanismos de responsabilidad y reparación
+### 7. Responsabilidad y reparación
 Establecer marcos claros de responsabilidad por daños causados por IA, incluyendo responsabilidad estricta para ciertas aplicaciones de alto riesgo. Litigios activos como Mobley v. Workday son, en la práctica, tribunales tratando de construir este marco caso por caso ante la ausencia de estatutos claros.
 
-### 8. Cooperación internacional y estándares
+### 8. Cooperación global
 Desarrollar estándares y mecanismos de cooperación internacional en gobernanza de IA. La divergencia entre el enfoque integral (pero aplazado) de la UE y el enfoque fragmentado estado por estado de EE. UU. muestra lo que ocurre sin ellos: las empresas que operan a través de fronteras enfrentan reglas genuinamente distintas según la jurisdicción.
 
-### 9. Regulación adaptativa y monitoreo continuo
+### 9. Reglas que se adaptan
 Crear marcos regulatorios adaptativos que puedan evolucionar con la tecnología, la propia decisión de la UE de aplazar más de un año las disposiciones de alto riesgo muestra que incluso los reguladores mejor dotados de recursos todavía están calibrando los plazos frente a la capacidad real de implementación.
 
-## Lo que esto significa para las empresas que construyen productos de IA
+## Qué significa para empresas
 
 Para las empresas que construyen productos impulsados por IA, en lugar de legislarlos, la implicación práctica de este mosaico normativo es que el cumplimiento ya no puede ser una idea de último momento añadida justo antes de un lanzamiento. Un producto que usa IA en contratación, crédito, salud o educación necesita rastrear los requisitos de cada jurisdicción en la que opera, no solo la de su sede central, y el supuesto de trabajo más seguro en 2026 es que esos requisitos seguirán cambiando. Incorporar registro de auditoría, explicabilidad y vías de revisión humana desde el inicio resulta significativamente más barato que adaptarlos después, cuando un regulador o el abogado de un demandante los exija.
 
-## Lo que esto significa para las personas
+## Qué significa para ti
 
 La mayoría de las personas que se enfrentan a decisiones impulsadas por IA, una solicitud de préstamo, un filtro de contratación, una cotización de seguro, todavía tienen muy poca visibilidad sobre cuándo intervino la IA, y mucho menos sobre cómo llegó a su conclusión. El mosaico regulatorio descrito arriba está empezando a cambiar eso, pero de forma desigual: un residente de Colorado tendrá derechos significativamente distintos a una explicación y a revisión humana que un residente de Texas, simplemente según dónde viva, al menos hasta que la legislación federal o la coordinación entre estados se ponga al día. Hasta que esa brecha se cierre, la protección más práctica disponible para la mayoría de las personas es simplemente preguntar, directamente, si una decisión que las afecta involucró un sistema automatizado, una pregunta que un número creciente de leyes estatales ahora les da el derecho explícito de hacer.
 
 ## Preguntas frecuentes
 
-### ¿Existe una ley federal de IA en Estados Unidos?
+### ¿Hay una ley federal de IA?
 
 Todavía no, a partir de 2026. La regulación ocurre principalmente a nivel estatal, por lo que los requisitos varían significativamente según dónde opere una empresa y a qué residentes estatales atienda.
 
@@ -543,11 +543,11 @@ Todavía no, a partir de 2026. La regulación ocurre principalmente a nivel esta
 
 Las sanciones pueden alcanzar los 35 millones de euros o el 7% de la facturación anual global, lo que sea mayor, una multa máxima que supera incluso a la del GDPR, lo que refleja qué tan en serio están tomando los reguladores europeos los casos de uso de IA de alto riesgo.
 
-### ¿La regulación de IA frena la innovación?
+### ¿Regular frena la innovación?
 
 Es una compensación real, pero no automática. Las reglas sectoriales bien diseñadas, del tipo que discutimos arriba, tienden a concentrar la carga de cumplimiento en usos genuinamente de alto riesgo (contratación, salud, crédito) en lugar de restricciones generales, que es la dirección hacia la que realmente se están moviendo la mayoría de las leyes estatales de 2026.
 
-### ¿Cómo puede una empresa rastrear qué regulaciones de IA le aplican?
+### ¿Qué reglas me aplican?
 
 Dado lo rápido que se mueve el panorama estado por estado en EE. UU. junto con el calendario cambiante de la propia UE, la mayoría de las empresas que operan en múltiples jurisdicciones dependen de una función legal o de cumplimiento dedicada en lugar de rastrear los cambios de forma improvisada. Para equipos más pequeños sin ese recurso, seguir un rastreador establecido como los citados arriba y revisarlo trimestralmente es un mínimo razonable, especialmente para cualquier producto que toque contratación, crédito, salud o educación.
 
@@ -568,43 +568,43 @@ Estamos en un momento crítico de la historia humana. Las decisiones que tomemos
 
 Here are ten practical, low-effort ways AI is already showing up in daily life, and what makes each one worth trying if you haven't already.
 
-## 1. Language Translation and Learning Assistant
+## 1. Translation and Language
 AI-powered language translation tools have revolutionized how people learn new languages and communicate across language barriers. With tools like Google Translate or AI-driven apps like Duolingo, users can quickly and accurately translate words, sentences, or entire paragraphs, and even hold real-time conversations with speakers of another language. For travelers and multilingual households, this has quietly closed a communication gap that used to require a phrasebook or a translator on call.
 
-## 2. Personalized Cooking Assistance
+## 2. Help in the Kitchen
 AI can be a tremendous help in the kitchen. AI-powered apps can suggest recipes based on available ingredients, dietary preferences, or even health goals, cutting down on both food waste and the nightly "what should we make" debate. Some go a step further, adjusting portion sizes and substitutions automatically for allergies or macro targets, which turns a generic recipe into something closer to a personal meal plan.
 
 ## 3. Smart Home Automation
 From smart thermostats like Nest to voice-controlled smart assistants like Amazon Alexa and Google Assistant, AI can streamline day-to-day home management. These systems learn your routines over time, adjusting lighting, temperature, and security without you having to lift a finger. Over months of use, the energy savings from a thermostat that actually learns your schedule can add up to a meaningfully lower utility bill, not just convenience.
 
-## 4. Personal Finance Management
+## 4. Managing Your Money
 AI can simplify personal finance management by automating budgeting and tracking expenses. Apps can flag unusual spending, forecast cash flow, and surface savings opportunities you'd likely miss scanning a statement by hand. The value here isn't replacing financial judgment, it's catching the small recurring charges and spending patterns that are easy to miss until they've compounded over months.
 
-## 5. Enhanced Customer Service with AI Chatbots
+## 5. Customer Service Chatbots
 AI chatbots are transforming customer service by offering immediate assistance through messaging platforms, websites, and apps. For simple, repetitive questions, this means no more waiting on hold, and for companies, it means human agents can focus on the issues that actually need a person. The best implementations make it obvious and easy to escalate to a human the moment a question gets complicated, rather than trapping users in a loop.
 
-## 6. Virtual Health Assistants and Wellness Monitoring
+## 6. Health and Wellness
 AI-driven health assistants are playing an increasingly significant role in healthcare and wellness. Wearables and apps now track sleep, activity, and vital signs continuously, surfacing patterns a once-a-year checkup would never catch. This kind of continuous monitoring is most useful as an early-warning system, flagging a trend worth mentioning to a doctor, not replacing the doctor.
 
-## 7. Productivity Tools and Task Automation
+## 7. Productivity and Tasks
 Tools like scheduling assistants can help manage appointments, coordinate meetings, and optimize calendars. AI can also draft routine emails, summarize long documents, and handle the small administrative tasks that quietly eat up a workday. The realistic win here is time, not magic, reclaiming the twenty minutes spent finding a meeting slot across five calendars adds up fast across a year.
 
-## 8. Smart Shopping and Price Comparisons
+## 8. Smarter Shopping
 AI tools can automatically compare prices across different retailers, ensuring the best deals for consumers. Some go further, tracking price history and alerting you when an item you're watching hits its lowest point, which turns "maybe I'll catch a sale" into an automated, passive habit instead of something you have to remember to check.
 
-## 9. Entertainment and Content Recommendations
+## 9. What to Watch Next
 Platforms like Netflix, Spotify, and YouTube use AI algorithms to recommend content based on a user's history. The better these systems get at understanding taste, the less time you spend browsing and the more time you spend actually watching or listening. The trade-off to understand is the filter bubble effect: these systems optimize for what keeps you engaged, not necessarily what broadens your taste, so it helps to deliberately search outside your usual recommendations now and then.
 
-## 10. Enhanced Travel Experiences
+## 10. Smarter Travel
 AI-powered travel apps offer personalized recommendations for flights, hotels, restaurants, and activities. Some can even monitor fare changes and rebook automatically when a cheaper option appears after you've already purchased, effectively giving you a price-watching assistant that never sleeps.
 
-## What These Tools Have in Common
+## What These Tools Share
 
 Underneath the variety, most of the tools above share the same basic mechanism: they get more useful the more data you give them, whether that's your calendar, your spending history, your recipe preferences, or your health metrics. That's the appeal and the trade-off in the same package. A budgeting app that sees every transaction can catch a fraudulent charge in real time; the same access is exactly why it matters which company built it and how they handle that data.
 
 This is also why the 2026 Pew data on rising AI usage reads differently alongside the finding that about half of Americans worry AI will worsen people's ability to think creatively and connect with each other. The tools in this list are, for the most part, the low-stakes end of that spectrum, a smart thermostat isn't going to erode your relationships. But the habit of defaulting to an AI recommendation, whether it's a recipe or a travel itinerary, is something to notice in yourself over time, if only so it stays a convenience rather than becoming the only way you make small decisions.
 
-## Getting Started Without Overwhelming Yourself
+## Start Small
 
 Trying to adopt all ten of these at once is a good way to abandon all of them within a month. A more durable approach is picking the one or two that solve a genuine recurring annoyance, not a hypothetical one, and giving it a few weeks before adding anything else. Someone who already dreads grocery planning will get more out of an AI cooking assistant in month one than someone adding it on top of eight other new habits simultaneously.
 
@@ -620,11 +620,11 @@ No. Nearly all of the tools above, translation apps, smart thermostats, budgetin
 
 It depends on the app's privacy practices, not on AI itself. Read the permissions an app requests, check whether data is shared with third parties, and prefer apps that are explicit about what they store and for how long, the same due diligence you'd apply to any app handling sensitive information.
 
-### Which of these is worth trying first?
+### Which should I try first?
 
 Start with whichever solves a recurring annoyance rather than a novelty. A smart thermostat or a budgeting app tends to deliver measurable value within the first month, while something like an AI recipe assistant is lower-stakes and easier to simply try.
 
-### Will relying on AI for these tasks make me worse at doing them myself?
+### Will AI make me rusty?
 
 It depends on which tasks and how much you offload. Outsourcing price comparisons or fare-tracking doesn't cost you a skill you were building anyway. Outsourcing something like drafting every piece of writing you do, on the other hand, can genuinely blunt a skill over time if it replaces practice rather than freeing up time for higher-value work, so it helps to be deliberate about which category a given habit falls into.
 
@@ -638,37 +638,37 @@ AI is no longer a futuristic concept; it's a practical tool that can be incorpor
 
 Aquí van diez formas prácticas y de bajo esfuerzo en las que la IA ya está presente en la vida diaria, y qué hace que cada una valga la pena probar si aún no lo has hecho.
 
-## 1. Traducción de idiomas y asistente de aprendizaje
+## 1. Traducir y aprender idiomas
 Las herramientas de traducción impulsadas por IA han revolucionado cómo la gente aprende nuevos idiomas y se comunica a través de barreras lingüísticas. Con herramientas como Google Translate o apps impulsadas por IA como Duolingo, los usuarios pueden traducir palabras, oraciones o párrafos completos de forma rápida y precisa, e incluso sostener conversaciones en tiempo real con hablantes de otro idioma. Para viajeros y hogares multilingües, esto ha cerrado silenciosamente una brecha de comunicación que antes requería un diccionario de bolsillo o un traductor disponible.
 
-## 2. Asistencia personalizada para cocinar
+## 2. Ayuda en la cocina
 La IA puede ser una gran ayuda en la cocina. Las apps impulsadas por IA pueden sugerir recetas según los ingredientes disponibles, preferencias alimenticias o incluso objetivos de salud, reduciendo tanto el desperdicio de comida como el debate nocturno de "¿qué hacemos de cenar?". Algunas van más allá, ajustando porciones y sustituciones automáticamente por alergias o metas de macronutrientes, convirtiendo una receta genérica en algo más parecido a un plan de comidas personalizado.
 
-## 3. Automatización del hogar inteligente
+## 3. Hogar inteligente
 Desde termostatos inteligentes como Nest hasta asistentes controlados por voz como Amazon Alexa y Google Assistant, la IA puede simplificar la gestión diaria del hogar. Estos sistemas aprenden tus rutinas con el tiempo, ajustando iluminación, temperatura y seguridad sin que tengas que mover un dedo. Con meses de uso, el ahorro energético de un termostato que realmente aprende tu horario puede traducirse en una factura de servicios notablemente más baja, no solo en comodidad.
 
-## 4. Gestión de finanzas personales
+## 4. Finanzas personales
 La IA puede simplificar la gestión de finanzas personales automatizando presupuestos y el seguimiento de gastos. Las apps pueden marcar gastos inusuales, proyectar flujo de efectivo y detectar oportunidades de ahorro que probablemente pasarías por alto revisando un estado de cuenta a mano. El valor aquí no es reemplazar el criterio financiero, es detectar los cargos recurrentes pequeños y los patrones de gasto que son fáciles de pasar por alto hasta que se acumulan durante meses.
 
-## 5. Servicio al cliente mejorado con chatbots de IA
+## 5. Chatbots de atención
 Los chatbots de IA están transformando el servicio al cliente al ofrecer asistencia inmediata a través de plataformas de mensajería, sitios web y apps. Para preguntas simples y repetitivas, esto significa no más esperas en línea telefónica, y para las empresas, significa que los agentes humanos pueden enfocarse en los problemas que realmente necesitan una persona. Las mejores implementaciones hacen que sea obvio y fácil escalar a un humano en el momento en que una pregunta se complica, en lugar de atrapar a los usuarios en un bucle.
 
-## 6. Asistentes de salud virtuales y monitoreo de bienestar
+## 6. Salud y bienestar
 Los asistentes de salud impulsados por IA están jugando un papel cada vez más importante en la salud y el bienestar. Los wearables y las apps ahora rastrean el sueño, la actividad y los signos vitales de forma continua, revelando patrones que un chequeo anual jamás detectaría. Este tipo de monitoreo continuo es más útil como sistema de alerta temprana, señalando una tendencia que vale la pena mencionarle a un médico, no reemplazando al médico.
 
-## 7. Herramientas de productividad y automatización de tareas
+## 7. Productividad y tareas
 Herramientas como los asistentes de programación pueden ayudar a gestionar citas, coordinar reuniones y optimizar calendarios. La IA también puede redactar correos rutinarios, resumir documentos extensos y encargarse de las pequeñas tareas administrativas que silenciosamente consumen una jornada laboral. La ganancia realista aquí es tiempo, no magia, recuperar los veinte minutos que se van en encontrar un horario de reunión entre cinco calendarios se acumula rápido a lo largo de un año.
 
-## 8. Compras inteligentes y comparación de precios
+## 8. Compras más listas
 Las herramientas de IA pueden comparar precios automáticamente entre distintos retailers, asegurando las mejores ofertas para los consumidores. Algunas van más allá, rastreando el historial de precios y avisándote cuando un artículo que sigues llega a su precio más bajo, convirtiendo el "quizás encuentre una oferta" en un hábito automatizado y pasivo en lugar de algo que tienes que recordar revisar.
 
-## 9. Entretenimiento y recomendaciones de contenido
+## 9. Qué ver después
 Plataformas como Netflix, Spotify y YouTube usan algoritmos de IA para recomendar contenido según el historial del usuario. Cuanto mejor entienden estos sistemas tus gustos, menos tiempo pasas explorando y más tiempo pasas realmente viendo o escuchando. La contrapartida a entender es el efecto de burbuja de filtro: estos sistemas optimizan para lo que te mantiene enganchado, no necesariamente para lo que amplía tu gusto, así que ayuda buscar deliberadamente fuera de tus recomendaciones habituales de vez en cuando.
 
-## 10. Experiencias de viaje mejoradas
+## 10. Viajes más fáciles
 Las apps de viaje impulsadas por IA ofrecen recomendaciones personalizadas de vuelos, hoteles, restaurantes y actividades. Algunas incluso monitorean cambios de tarifa y reservan automáticamente cuando aparece una opción más barata después de que ya compraste, dándote en la práctica un asistente de vigilancia de precios que nunca duerme.
 
-## Lo que estas herramientas tienen en común
+## Lo que tienen en común
 
 Debajo de la variedad, la mayoría de las herramientas mencionadas comparten el mismo mecanismo básico: se vuelven más útiles cuanta más información les des, ya sea tu calendario, tu historial de gastos, tus preferencias de recetas o tus métricas de salud. Ese es el atractivo y la contrapartida en el mismo paquete. Una app de presupuesto que ve cada transacción puede detectar un cargo fraudulento en tiempo real; ese mismo acceso es exactamente por qué importa qué empresa la construyó y cómo maneja esos datos.
 
@@ -682,7 +682,7 @@ También existe una distinción útil entre herramientas que requieren una relac
 
 ## Preguntas frecuentes
 
-### ¿Necesito habilidades técnicas para empezar a usar IA en el día a día?
+### ¿Necesito saber de tecnología?
 
 No. Casi todas las herramientas mencionadas, apps de traducción, termostatos inteligentes, apps de presupuesto, recomendaciones de streaming, están diseñadas para uso cotidiano sin más configuración que descargar una app o conectar un dispositivo.
 
@@ -690,11 +690,11 @@ No. Casi todas las herramientas mencionadas, apps de traducción, termostatos in
 
 Depende de las prácticas de privacidad de la app, no de la IA en sí. Lee los permisos que solicita una app, verifica si comparte datos con terceros y prefiere apps que sean explícitas sobre qué almacenan y por cuánto tiempo, la misma diligencia que aplicarías a cualquier app que maneje información sensible.
 
-### ¿Cuál de estas vale la pena probar primero?
+### ¿Cuál pruebo primero?
 
 Empieza con la que resuelva una molestia recurrente en lugar de una novedad. Un termostato inteligente o una app de presupuesto suele entregar valor medible dentro del primer mes, mientras que algo como un asistente de recetas con IA es de menor riesgo y más fácil de simplemente probar.
 
-### ¿Depender de la IA para estas tareas me hará peor haciéndolas por mi cuenta?
+### ¿Perderé estas habilidades?
 
 Depende de qué tareas y de cuánto delegues. Delegar la comparación de precios o el seguimiento de tarifas no te cuesta una habilidad que estuvieras desarrollando de todos modos. Delegar algo como redactar todo lo que escribes, en cambio, sí puede debilitar genuinamente una habilidad con el tiempo si reemplaza la práctica en lugar de liberar tiempo para trabajo de mayor valor, así que ayuda ser deliberado sobre en qué categoría cae cada hábito.
 
@@ -718,13 +718,13 @@ La IA ya no es un concepto futurista; es una herramienta práctica que se puede 
 
 At the heart of this collaboration was their vision: to bring the newly evolved [Lean Product Canvas](https://jeffgothelf.com/blog/the-lean-product-canvas/), the successor to the widely-used [Lean UX Canvas](https://leanuxbook.com/), into a modern, flexible, and fully interactive digital format.
 
-## From Lean UX Canvas to Lean Product Canvas
+## From Lean UX to Lean Product
 
 What originally began as the Lean UX Canvas has now evolved into a more comprehensive framework: the Lean Product Canvas. This new format broadens its focus beyond UX execution and into organizational alignment, business goals, and long-term strategy, giving teams a single artifact that connects why they're building something to what they're actually shipping.
 
 The shift reflects something Gothelf and Seiden have argued for years in Lean UX and Sense & Respond: that design, product, and strategy conversations shouldn't live in separate documents owned by separate teams. A canvas is only as useful as the shared understanding it creates, and a canvas that only designers open isn't doing that job.
 
-## A Deep Collaboration with Jeff Gothelf and Josh Seiden
+## Built With Gothelf and Seiden
 
 Throughout the collaboration, we worked directly with Jeff Gothelf to translate the Lean Product Canvas into an actionable, facilitation-friendly experience tailored for Figma and FigJam. Every field, prompt, and layout decision was tested against how real teams actually run workshops, not just how the framework looks on a slide.
 
@@ -739,7 +739,7 @@ That distinction matters more than it might sound. A canvas that looks clean in 
 
 Because the canvas lives natively in Figma and FigJam, it's not a document that gets filled out once and forgotten, it stays in the same workspace where the actual design and planning work happens, so it gets revisited as the product evolves. That's a meaningful departure from how most strategy artifacts get used in practice: filled in once during a kickoff, exported to a slide, and never opened again.
 
-## Inside the Canvas: What Each Section Covers
+## Inside the Canvas
 
 The Lean Product Canvas is organized around a sequence of questions that build on each other, rather than a grid of disconnected boxes. It typically opens with Business Outcomes, the measurable result the organization actually cares about, which forces the team to articulate success in terms leadership would recognize, not just in terms of shipped features. From there it moves to Users and Customers, then User Outcomes, what the person using the product needs to achieve for the business outcome to follow, which is the step most teams skip when they jump straight from a business goal to a solution.
 
@@ -757,7 +757,7 @@ The Lean Product Canvas is built for cross-functional teams at the point where a
 
 At Arsonist AI, we believe design tools should do more than look polished, they should amplify team clarity, inspire action, and fuel momentum. The Lean Product Canvas is the first of several collaborations we're building with practitioners whose frameworks have already earned trust in the field. If you're managing brand and template assets more broadly in Figma beyond strategy work, we've also written about [how to use Figma to manage your brand](/insights/how-to-use-figma-to-manage-your-brand).
 
-## Running a Session With a Remote or Hybrid Team
+## Running a Remote Session
 
 Most of the facilitation challenges above get harder, not easier, when a team isn't in the same room. FigJam's live-cursor visibility helps close some of that gap, everyone can see who's actively contributing in real time, which makes it obvious when one person is dominating the canvas the way it wouldn't be in a video call with cameras off. We generally recommend running remote sessions in shorter blocks than an in-person workshop, 45 minutes with a clear section to complete, rather than a single unbroken 90-minute session, since sustained collaborative focus is harder to hold over a video call.
 
@@ -765,7 +765,7 @@ Assigning a dedicated facilitator who isn't also filling in the canvas themselve
 
 ## Frequently Asked Questions
 
-### How is the Lean Product Canvas different from the original Lean UX Canvas?
+### How is it different from Lean UX?
 
 The Lean UX Canvas focused primarily on UX execution, assumptions, hypotheses, and experiments at the feature level. The Lean Product Canvas broadens that scope to include business goals and organizational strategy, so the same artifact can guide both what gets designed and why it's worth building in the first place.
 
@@ -773,15 +773,15 @@ The Lean UX Canvas focused primarily on UX execution, assumptions, hypotheses, a
 
 No. The canvas is built to be facilitation-friendly for teams encountering these concepts for the first time, with prompts that guide a group through the thinking rather than assuming prior familiarity with the framework.
 
-### Can the canvas be used for an existing product, not just a new one?
+### Does it work for existing products?
 
 Yes. Teams often use it to re-align on a product that's already shipped but has drifted from its original goals, the canvas works as well for a strategy reset as it does for a kickoff.
 
-### How long does a full canvas session typically take?
+### How long does a session take?
 
 For a first pass, plan for two to three hours with a cross-functional group, ideally split across two sessions rather than one marathon block, teams consistently produce sharper thinking on Business Outcomes and User Outcomes when they're not rushing to also finish Hypotheses and Experiments in the same sitting. Revisiting the canvas after initial experiments run typically takes far less time, closer to 45 minutes, since the team is updating and refining rather than starting from a blank page.
 
-### Does the canvas replace other planning tools like roadmaps or OKRs?
+### Does it replace roadmaps or OKRs?
 
 No, it complements them. The canvas operates at the layer just above execution tools, capturing the reasoning that a roadmap or an OKR document usually assumes but rarely states explicitly. Teams typically keep using their existing roadmap and OKR process alongside the canvas, with the canvas serving as the shared reference that keeps those other artifacts grounded in the same underlying logic.
 
@@ -792,19 +792,19 @@ The Lean Product Canvas is available as an interactive Figma and FigJam template
 
 En el corazón de esta colaboración estaba su visión: llevar el recién evolucionado [Lean Product Canvas](https://jeffgothelf.com/blog/the-lean-product-canvas/), sucesor del ampliamente usado [Lean UX Canvas](https://leanuxbook.com/), a un formato digital moderno, flexible y completamente interactivo.
 
-## Del Lean UX Canvas al Lean Product Canvas
+## Del Lean UX al Lean Product
 
 Lo que originalmente comenzó como el Lean UX Canvas ha evolucionado hacia un marco más completo: el Lean Product Canvas. Este nuevo formato amplía su enfoque más allá de la ejecución de UX hacia la alineación organizacional, los objetivos de negocio y la estrategia de largo plazo, dándole a los equipos un único artefacto que conecta por qué están construyendo algo con qué es lo que realmente están lanzando.
 
 Este cambio refleja algo que Gothelf y Seiden han defendido durante años en Lean UX y Sense & Respond: que las conversaciones de diseño, producto y estrategia no deberían vivir en documentos separados propiedad de equipos separados. Un canvas es tan útil como la comprensión compartida que crea, y un canvas que solo abren los diseñadores no está cumpliendo esa función.
 
-## Una colaboración profunda con Jeff Gothelf y Josh Seiden
+## Con Jeff Gothelf y Josh Seiden
 
 A lo largo de la colaboración, trabajamos directamente con Jeff Gothelf para traducir el Lean Product Canvas en una experiencia accionable y fácil de facilitar, adaptada a Figma y FigJam. Cada campo, cada indicación y cada decisión de layout se puso a prueba contra cómo los equipos reales facilitan talleres, no solo cómo se ve el marco en una diapositiva.
 
 Esa distinción importa más de lo que parece. Un canvas que se ve limpio en un capítulo de libro puede desmoronarse en el momento en que ocho personas intentan completarlo juntas en una sesión de 90 minutos. Construimos y reconstruimos el layout en torno a restricciones reales de facilitación: cuánto se puede completar razonablemente por sección antes de que un equipo pierda impulso, dónde las contribuciones estilo notas adhesivas necesitan espacio para agruparse, y cómo mantener el canvas legible cuando se está co-editando en vivo en lugar de presentarse después de los hechos.
 
-## Lo que los equipos están desbloqueando
+## Lo que logran los equipos
 
 - **Ejecución más precisa**: la estrategia y la entrega se conectan mediante un lenguaje y una referencia visual compartidos.
 - **Detección temprana de obstáculos**: los puntos de fricción y las brechas salen a la luz antes de que comience el desarrollo.
@@ -813,13 +813,13 @@ Esa distinción importa más de lo que parece. Un canvas que se ve limpio en un 
 
 Debido a que el canvas vive de forma nativa en Figma y FigJam, no es un documento que se llena una vez y se olvida, permanece en el mismo espacio de trabajo donde ocurre el diseño y la planeación real, por lo que se revisita a medida que el producto evoluciona. Esto es una diferencia significativa frente a cómo se usan la mayoría de los artefactos de estrategia en la práctica: se llenan una vez durante el kickoff, se exportan a una diapositiva y nunca se vuelven a abrir.
 
-## Dentro del canvas: qué cubre cada sección
+## Dentro del canvas
 
 El Lean Product Canvas está organizado alrededor de una secuencia de preguntas que se construyen unas sobre otras, en lugar de una cuadrícula de casillas desconectadas. Suele comenzar con Resultados de Negocio, el resultado medible que realmente le importa a la organización, lo que obliga al equipo a articular el éxito en términos que el liderazgo reconocería, no solo en términos de funcionalidades lanzadas. De ahí pasa a Usuarios y Clientes, y luego a Resultados de Usuario, lo que la persona que usa el producto necesita lograr para que se dé el resultado de negocio, que es el paso que la mayoría de los equipos se salta cuando pasan directamente de un objetivo de negocio a una solución.
 
 Solo después de definir eso, el canvas llega a Soluciones, seguido de Hipótesis, declaraciones explícitas y falseables sobre lo que el equipo cree que pasará si se lanza la solución, y Experimentos, la forma más rápida y económica de poner a prueba cada hipótesis antes de comprometer tiempo significativo de ingeniería. Ese orden es deliberado: los equipos que empiezan por una solución y trabajan hacia atrás para justificarla tienden a autoconvencerse de construir lo que ya querían construir de todos modos, mientras que los equipos que empiezan por los resultados se ven obligados a justificar la solución por sus propios méritos.
 
-## Errores comunes de facilitación
+## Errores al facilitar
 
 Facilitar bien una sesión de canvas es más difícil de lo que parece, y aprendimos algunos patrones de fallo consistentes mientras construíamos esto junto con Gothelf. El más común es que un equipo llene primero la sección de Soluciones y luego haga ingeniería inversa de los resultados e hipótesis para que encajen, lo que anula por completo el propósito del ejercicio. Un segundo es que una sola voz senior en la sala llene la mayor parte del canvas mientras todos los demás asienten; el canvas solo cumple su función cuando captura desacuerdo genuino, no un consenso alcanzado por deferencia. Un tercero es tratar el canvas terminado como un artefacto de una sola vez en lugar de una referencia viva, los equipos que lo revisitan después de cada ronda de experimentos obtienen mucho más valor de él que los que lo llenan una vez y pasan directo a la ejecución.
 
@@ -831,7 +831,7 @@ El Lean Product Canvas está pensado para equipos multidisciplinarios en el mome
 
 En Arsonist AI creemos que las herramientas de diseño deberían hacer más que verse pulidas, deberían amplificar la claridad del equipo, inspirar acción y generar impulso. El Lean Product Canvas es la primera de varias colaboraciones que estamos construyendo con profesionales cuyos marcos ya se han ganado la confianza en el campo. Si además administras activos de marca y plantillas de forma más amplia en Figma más allá del trabajo de estrategia, también hemos escrito sobre [cómo usar Figma para gestionar tu marca](/insights/how-to-use-figma-to-manage-your-brand).
 
-## Facilitar una sesión con un equipo remoto o híbrido
+## Sesiones remotas o híbridas
 
 La mayoría de los retos de facilitación mencionados arriba se vuelven más difíciles, no más fáciles, cuando un equipo no está en la misma sala. La visibilidad de cursores en vivo de FigJam ayuda a cerrar parte de esa brecha, todos pueden ver quién está contribuyendo activamente en tiempo real, lo que hace evidente cuando una persona está dominando el canvas de una forma que no sería tan obvia en una videollamada con las cámaras apagadas. Generalmente recomendamos ejecutar sesiones remotas en bloques más cortos que un taller presencial, 45 minutos con una sección clara para completar, en lugar de una sola sesión ininterrumpida de 90 minutos, ya que sostener el enfoque colaborativo es más difícil durante una videollamada.
 
@@ -839,23 +839,23 @@ Asignar un facilitador dedicado que no esté también llenando el canvas importa
 
 ## Preguntas frecuentes
 
-### ¿En qué se diferencia el Lean Product Canvas del Lean UX Canvas original?
+### ¿En qué difiere del Lean UX?
 
 El Lean UX Canvas se enfocaba principalmente en la ejecución de UX, suposiciones, hipótesis y experimentos a nivel de funcionalidad. El Lean Product Canvas amplía ese alcance para incluir objetivos de negocio y estrategia organizacional, de modo que el mismo artefacto pueda guiar tanto qué se diseña como por qué vale la pena construirlo en primer lugar.
 
-### ¿Necesito conocer Lean UX de antemano para usar el canvas de forma efectiva?
+### ¿Necesito saber Lean UX antes?
 
 No. El canvas está diseñado para ser fácil de facilitar con equipos que encuentran estos conceptos por primera vez, con indicaciones que guían al grupo a través del razonamiento en lugar de asumir familiaridad previa con el marco.
 
-### ¿Se puede usar el canvas para un producto existente, no solo para uno nuevo?
+### ¿Solo para productos nuevos?
 
 Sí. Los equipos suelen usarlo para realinearse en torno a un producto que ya se lanzó pero que se ha desviado de sus objetivos originales, el canvas funciona tan bien para un reinicio de estrategia como para un kickoff.
 
-### ¿Cuánto dura típicamente una sesión completa de canvas?
+### ¿Cuánto dura una sesión?
 
 Para una primera pasada, planea de dos a tres horas con un grupo multidisciplinario, idealmente divididas en dos sesiones en lugar de un bloque maratónico, los equipos consistentemente producen un pensamiento más agudo sobre Resultados de Negocio y Resultados de Usuario cuando no tienen prisa por terminar también Hipótesis y Experimentos en la misma sesión. Revisar el canvas después de que corren los primeros experimentos suele tomar mucho menos tiempo, más cerca de 45 minutos, ya que el equipo está actualizando y refinando en lugar de empezar desde una página en blanco.
 
-### ¿El canvas reemplaza otras herramientas de planeación como roadmaps u OKRs?
+### ¿Reemplaza roadmaps u OKRs?
 
 No, las complementa. El canvas opera en la capa justo por encima de las herramientas de ejecución, capturando el razonamiento que un roadmap o un documento de OKRs suele asumir pero rara vez expresa de forma explícita. Los equipos generalmente siguen usando su proceso existente de roadmap y OKRs junto con el canvas, con el canvas funcionando como la referencia compartida que mantiene esos otros artefactos anclados en la misma lógica subyacente.
 
@@ -880,7 +880,7 @@ For most of AI's public life, the relationship was transactional: ask a question
 
 The scale of this shift has been fast even by AI standards. Between 2022 and mid-2025, the number of AI companion apps [surged by roughly 700%](https://www.adalovelaceinstitute.org/blog/ai-companions/), and the category has grown into an estimated $49 billion market in under three years. Character.AI reports over 233 million registered users, with more than half of its 20 million monthly active users under the age of 24. Replika has surpassed 30 million downloads. This is no longer a fringe behavior, it's a mainstream product category with a genuinely large, mostly young user base.
 
-## What the Research Actually Shows
+## What the Research Shows
 
 The research on outcomes is more mixed than either the enthusiasts or the critics tend to admit. A [Harvard Business School working paper by Julian De Freitas](https://www.hbs.edu/ris/Publication%20Files/24-078_a3d2e2c7-eca1-4767-8543-122e818bf2e5.pdf) found that AI companions can measurably reduce loneliness for users, in some cases performing comparably to talking with another person. At the same time, a widely cited survey found that 90% of the American students using Replika reported experiencing loneliness, significantly above the national average of 53%, yet 63.3% of those same users said their AI companion helped reduce their loneliness or anxiety. Read together, the data suggests these tools are disproportionately reaching people who are already lonely, and that many of them genuinely benefit, even as researchers continue investigating who is helped, who isn't, and at what point continued reliance starts working against someone rather than for them.
 
@@ -890,43 +890,43 @@ The [Ada Lovelace Institute has flagged real risks](https://www.adalovelaceinsti
 
 This isn't happening in a vacuum. Rates of loneliness have been climbing for years, and the same technology that makes AI companions possible, large language models capable of sustained, emotionally responsive conversation, has only existed at consumer scale for a few years. The [American Psychological Association's own reporting on the trend](https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection) notes that people forming these attachments aren't a fringe group; they're often quite articulate about what the relationship gives them and what it doesn't. Many describe it as a supplement to human connection during a hard stretch, not a replacement for it, closer to journaling or a support app than to a substitute for their social life.
 
-## The Questions We Haven't Answered Yet
+## Open Questions
 
 What's less settled is what happens at scale. If an AI companion is designed, intentionally or not, to maximize engagement, whose interest does that serve when the user is emotionally invested? What obligation does a company have when someone treats a chatbot as their primary source of emotional support, and what happens to that person when a feature gets deprecated or a company changes its product roadmap? And as these systems get better at reading and responding to emotion, the line between "tool" and "companion" will keep moving, not stay fixed. These are the same categories of accountability question we explore in more detail in [our piece on AI regulation](/insights/containment-not-catastrophe-9-practical-ways-to-regulate-ai-before-it-regulates-us), companion apps are simply one of the more emotionally immediate places those questions show up.
 
-## What This Means for Product and Design Teams
+## For Product and Design Teams
 
 This trend isn't only a psychology story, it's also a design story, and one that matters for anyone building conversational or companion-style products. The features that make an AI companion feel real, like persistent memory, responsive tone, and the sense of being "known" over time, are deliberate design decisions, not emergent side effects. Every choice about how quickly a companion responds, how much it remembers, and how it handles a user's bad day is a product decision with real emotional consequences attached, whether or not the team building it thought of it that way.
 
 That puts a different kind of responsibility on product and design teams working in this space than on teams building a productivity tool. A dark pattern in a subscription flow costs someone money; a dark pattern in a companion app's engagement design can cost someone something closer to a relationship. Teams building in this category need to be explicit, internally, about where the line sits between "designed to be genuinely helpful" and "designed to maximize time in app regardless of whether that time is good for the user."
 
-## A Framework for Evaluating AI Companion Products
+## A Framework for Companions
 
 For teams building or evaluating products in this space, a few questions tend to surface what actually matters. Does the product make it easy for a user to see and control how much they're using it, or does it obscure that information? Does the business model reward genuine user wellbeing, or does it reward engagement regardless of outcome? And critically, what happens to a user's relationship with the product when a feature changes or the company pivots? The Replika romantic-feature removal in 2023 remains the clearest cautionary example: a company treated a feature change as a routine product decision, and a meaningful number of users experienced it as something closer to a loss.
 
 ## Frequently Asked Questions
 
-### Can an AI companion actually reduce loneliness?
+### Can AI ease loneliness?
 
 Early research, including the HBS working paper referenced above, suggests yes for many users, at least in the short term. The open question is what happens with long-term, heavy use, and whether it complements or gradually substitutes for human relationships depending on how it's used.
 
-### Are AI companion apps mostly used by young people?
+### Do mostly young people use them?
 
 Usage skews young but isn't exclusive to it. Character.AI's own reported figures show more than half of its monthly users are under 24, but the broader companion app market spans a much wider age range, including older adults using these tools for company or routine conversation.
 
-### What should someone consider before relying heavily on an AI companion?
+### Before you rely on one
 
 Whether the relationship is expanding your capacity for connection or quietly replacing it. The research so far suggests the difference often comes down to whether the app is used alongside human relationships and other coping tools, or instead of them.
 
-### Why did removing Replika's romantic features cause such a strong reaction?
+### Why did the Replika change sting?
 
 Because for many users, the relationship had become emotionally real regardless of what was happening technically under the hood. Removing a feature is a routine product decision from a company's perspective; from a user's perspective who had built months of perceived intimacy with that version of the companion, it functioned more like the sudden change of a real relationship. That mismatch in perceived stakes is a big part of why this category of product carries more responsibility than a typical software update.
 
-### Should parents be concerned about younger users on these platforms?
+### Should parents worry?
 
 Given that more than half of Character.AI's monthly users are reportedly under 24, this is a reasonable concern rather than a hypothetical one. The research isn't settled on long-term effects for younger users specifically, but the same principle applies with more urgency: whether the relationship is expanding a young person's social capacity or substituting for it is the question worth watching, and it's one that benefits from an adult being aware the relationship exists at all, given how private and text-based these interactions typically are.
 
-### Are AI companion apps regulated at all?
+### Are these apps regulated?
 
 Not specifically, in most places, though that's starting to shift. General consumer-protection and data-privacy laws still apply, and some of the state AI legislation described in our regulation piece touches on algorithmic transparency broadly, but purpose-built rules for companion apps specifically, covering things like engagement-maximizing design or protections for emotionally vulnerable users, remain rare. It's an open regulatory gap rather than a settled one.
 
@@ -941,17 +941,17 @@ Durante la mayor parte de la vida pública de la IA, la relación fue transaccio
 
 La escala de este cambio ha sido rápida incluso para los estándares de la IA. Entre 2022 y mediados de 2025, el número de apps de compañía con IA [aumentó cerca de un 700%](https://www.adalovelaceinstitute.org/blog/ai-companions/), y la categoría creció hasta convertirse en un mercado estimado de 49 mil millones de dólares en menos de tres años. Character.AI reporta más de 233 millones de usuarios registrados, con más de la mitad de sus 20 millones de usuarios activos mensuales menores de 24 años. Replika ha superado las 30 millones de descargas. Ya no es un comportamiento marginal, es una categoría de producto mainstream con una base de usuarios genuinamente grande y en su mayoría joven.
 
-## Lo que realmente muestra la investigación
+## Qué dicen los estudios
 
 La investigación sobre resultados es más mixta de lo que tanto los entusiastas como los críticos suelen admitir. Un [estudio de la Harvard Business School de Julian De Freitas](https://www.hbs.edu/ris/Publication%20Files/24-078_a3d2e2c7-eca1-4767-8543-122e818bf2e5.pdf) encontró que los compañeros de IA pueden reducir de forma medible la soledad de los usuarios, en algunos casos con resultados comparables a hablar con otra persona. Al mismo tiempo, una encuesta ampliamente citada encontró que el 90% de los estudiantes estadounidenses que usan Replika reportó experimentar soledad, significativamente por encima del promedio nacional del 53%, y sin embargo el 63.3% de esos mismos usuarios dijo que su compañero de IA ayudó a reducir su soledad o ansiedad. Leídos en conjunto, los datos sugieren que estas herramientas llegan de forma desproporcionada a personas que ya están solas, y que muchas de ellas realmente se benefician, mientras los investigadores siguen estudiando a quién ayuda, a quién no, y en qué punto la dependencia continua empieza a jugar en contra de alguien en lugar de a su favor.
 
 El [Ada Lovelace Institute ha señalado riesgos reales](https://www.adalovelaceinstitute.org/blog/ai-companions/) junto a estos beneficios: el uso excesivo puede, para algunos usuarios, empeorar la soledad y erosionar las habilidades sociales fuera de línea con el tiempo, en lugar de complementarlas. La evidencia más clara de qué tan reales emocionalmente se han vuelto estas relaciones llegó en 2023, cuando Replika eliminó sus funciones de rol romántico y erótico: la reacción incluyó usuarios reportando duelo agudo y síntomas similares a la abstinencia, una respuesta más propia de perder una relación que de perder una función.
 
-## Por qué esto está pasando ahora
+## Por qué ahora
 
 Esto no ocurre en el vacío. Las tasas de soledad han venido en aumento durante años, y la misma tecnología que hace posibles a los compañeros de IA, modelos de lenguaje capaces de sostener conversaciones prolongadas y emocionalmente sensibles, solo ha existido a escala de consumo masivo durante unos pocos años. La [propia cobertura de la American Psychological Association sobre esta tendencia](https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection) señala que las personas que forman estos vínculos no son un grupo marginal; suelen ser bastante articuladas sobre lo que la relación les da y lo que no. Muchas la describen como un complemento a la conexión humana durante una etapa difícil, no como un reemplazo, más parecido a llevar un diario o usar una app de apoyo emocional que a un sustituto de su vida social.
 
-## Las preguntas que aún no hemos respondido
+## Preguntas abiertas
 
 Lo que está menos resuelto es qué pasa a gran escala. Si un compañero de IA está diseñado, de forma intencional o no, para maximizar el engagement, ¿a favor de quién juega eso cuando el usuario está emocionalmente involucrado? ¿Qué obligación tiene una empresa cuando alguien trata a un chatbot como su principal fuente de apoyo emocional, y qué le pasa a esa persona cuando una función se descontinúa o una empresa cambia su hoja de ruta de producto? Y a medida que estos sistemas se vuelven mejores para leer y responder a las emociones, la línea entre "herramienta" y "compañía" seguirá moviéndose, no se mantendrá fija. Estas son las mismas categorías de preguntas sobre responsabilidad que exploramos con más detalle en [nuestro artículo sobre regulación de IA](/insights/containment-not-catastrophe-9-practical-ways-to-regulate-ai-before-it-regulates-us), las apps de compañía son simplemente uno de los lugares donde esas preguntas se sienten de forma más inmediata a nivel emocional.
 
@@ -961,29 +961,29 @@ Esta tendencia no es solo una historia de psicología, también es una historia 
 
 Eso impone un tipo de responsabilidad distinto a los equipos de producto y diseño que trabajan en este espacio, comparado con los equipos que construyen una herramienta de productividad. Un patrón oscuro en un flujo de suscripción le cuesta dinero a alguien; un patrón oscuro en el diseño de engagement de una app de compañía puede costarle a alguien algo más parecido a una relación. Los equipos que construyen en esta categoría necesitan ser explícitos, internamente, sobre dónde está la línea entre "diseñado para ser genuinamente útil" y "diseñado para maximizar el tiempo en la app sin importar si ese tiempo le hace bien al usuario".
 
-## Un marco para evaluar productos de compañía con IA
+## Cómo evaluar una app
 
 Para los equipos que construyen o evalúan productos en este espacio, algunas preguntas suelen revelar lo que realmente importa. ¿El producto le facilita al usuario ver y controlar cuánto lo está usando, o esconde esa información? ¿El modelo de negocio premia el bienestar genuino del usuario, o premia el engagement sin importar el resultado? Y de forma crítica, ¿qué le pasa a la relación de un usuario con el producto cuando una función cambia o la empresa pivota? La eliminación de la función romántica de Replika en 2023 sigue siendo el ejemplo cautelar más claro: una empresa trató un cambio de función como una decisión de producto rutinaria, y una cantidad significativa de usuarios lo vivió como algo más parecido a una pérdida.
 
 ## Preguntas frecuentes
 
-### ¿Puede un compañero de IA realmente reducir la soledad?
+### ¿Alivia la IA la soledad?
 
 La investigación inicial, incluido el estudio de HBS mencionado arriba, sugiere que sí para muchos usuarios, al menos en el corto plazo. La pregunta abierta es qué pasa con el uso intenso y prolongado, y si complementa o gradualmente sustituye a las relaciones humanas dependiendo de cómo se use.
 
-### ¿Las apps de compañía con IA las usan principalmente jóvenes?
+### ¿Las usan sobre todo jóvenes?
 
 El uso se inclina hacia los jóvenes, pero no es exclusivo de ellos. Las cifras reportadas por Character.AI muestran que más de la mitad de sus usuarios mensuales son menores de 24 años, pero el mercado más amplio de apps de compañía abarca un rango de edad mucho más amplio, incluyendo adultos mayores que usan estas herramientas para tener compañía o conversación rutinaria.
 
-### ¿Qué debería considerar alguien antes de depender mucho de un compañero de IA?
+### ¿Qué pensar antes de depender?
 
 Si la relación está ampliando su capacidad de conexión o silenciosamente reemplazándola. La investigación hasta ahora sugiere que la diferencia suele depender de si la app se usa junto con relaciones humanas y otras herramientas de afrontamiento, o en lugar de ellas.
 
-### ¿Por qué eliminar las funciones románticas de Replika provocó una reacción tan fuerte?
+### ¿Por qué reaccionó así la gente?
 
 Porque para muchos usuarios, la relación se había vuelto emocionalmente real sin importar lo que ocurriera técnicamente por dentro. Eliminar una función es una decisión de producto rutinaria desde la perspectiva de una empresa; desde la perspectiva de un usuario que había construido meses de intimidad percibida con esa versión del compañero, funcionó más como el cambio repentino de una relación real. Ese desajuste en lo que está en juego, percibido de forma tan distinta, es gran parte de por qué esta categoría de producto conlleva más responsabilidad que una actualización de software típica.
 
-### ¿Deberían los padres preocuparse por los usuarios más jóvenes en estas plataformas?
+### ¿Deben preocuparse los padres?
 
 Dado que más de la mitad de los usuarios mensuales de Character.AI reportadamente son menores de 24 años, esta es una preocupación razonable y no hipotética. La investigación no está resuelta sobre los efectos a largo plazo específicamente en usuarios jóvenes, pero el mismo principio aplica con más urgencia: si la relación está ampliando la capacidad social de un joven o sustituyéndola es la pregunta que vale la pena vigilar, y es una que se beneficia de que un adulto esté al tanto de que la relación existe en absoluto, dado lo privadas y basadas en texto que suelen ser estas interacciones.
 
@@ -1006,11 +1006,11 @@ Nada de esto significa que la tendencia sea buena o mala en sí misma, significa
     content: {
       en: `Figma is not just a design tool. It's the command center your brand has been waiting for. Speed, clarity, and collaboration matter more than ever, and Figma has quietly evolved into one of the most essential platforms for managing modern businesses, even beyond the design team.
 
-## The Problem With Traditional Asset Management
+## Old-School Asset Management
 
 Remember the days of losing time digging through disorganized folders named things like "final_final2.pdf"? Every rebrand, every new hire, every "wait, which logo is current?" moment compounds the mess. Figma offers an elegant solution: one living source of truth instead of a folder tree nobody trusts.
 
-## Pages + Components = Organized Brand Power
+## Pages Plus Components
 
 One of the most underutilized features in Figma is its Pages panel. When paired with Figma Components, you get a system where updates are universally applied, assets are always in sync, and anyone on your team can find what they need, fast. Change a logo once at the component level, and every deck, template, and social post that references it updates automatically.
 
@@ -1019,31 +1019,31 @@ One of the most underutilized features in Figma is its Pages panel. When paired 
 - Page: Logos & Icons – All your branding marks, componentized
 - Page: Brand Guidelines – Colors, fonts, and rules
 
-## What's New in Figma for Brand Management
+## What's New in Figma
 
 Figma's recent updates make this system meaningfully stronger for non-designers managing brand assets, not just designers building them. New [AI-native design tokens](https://www.dodefy.com/articles-posts/figma-2026-complete-breakdown-of-new-products-and-how-to-use-them-effectively) let a team define a brand's core color palette once and generate a full, accessible tonal range automatically, respecting WCAG 3.0 contrast requirements without anyone manually checking every shade. [Library branching](https://www.sashikiran.com/blog/figma-2026-updates.html) lets a team experiment with a rebrand or a seasonal variation in a fork of the shared component library, without the risk of breaking the live brand system everyone else depends on.
 
 For day-to-day asset work, built-in tools like Vectorize (turning a raster logo or scanned mark into an editable vector), Remove Background, and Erase Object mean a lot of routine asset cleanup no longer requires exporting to a separate app and back. For teams with large brand libraries, hundreds of pages, thousands of components, Figma's newer rendering architecture also means those files now load in seconds rather than minutes, which matters more than it sounds like once a brand system has been in active use for a couple of years.
 
-## Beyond the Design Team: Figma for Everyone
+## Figma for Everyone
 
 What started as a design-first platform is now being adopted by marketers, operations leads, startup founders, and even HR departments. A well-structured Figma file becomes a shared language across the company, anyone can duplicate a template, drop in their own copy, and produce something on-brand without pinging a designer.
 
 This matters more as teams grow. In a five-person startup, brand consistency is easy because one person is doing most of the design work. At fifty people, with marketing, sales, and recruiting all producing their own decks and social assets, brand drift happens fast unless there's a shared, accessible system everyone actually uses instead of routing around.
 
-## Setting Up Naming Conventions and Permissions
+## Names and Permissions
 
 The system falls apart quietly if naming and access aren't decided upfront. A simple, enforced convention, something like Type/Category/Name, for example "Logo/Primary/Horizontal" or "Template/Social/Instagram-Post", makes a library searchable months later, when the person who built it may no longer be the one maintaining it. Permissions matter just as much: give most of the team edit access to draft and duplicate templates, but restrict who can publish changes to the shared library itself, so a well-meaning edit doesn't silently update every file that references a component.
 
-## Measuring Whether It's Actually Working
+## Is It Working?
 
 A brand system is working if two things are true: someone outside the design team can find and use an on-brand asset without asking a designer for help, and it takes less time to update a brand element across every file than it used to take to find all the places that element lived. If either of those isn't true a few months after setup, it's usually a sign the file is over-organized for how the team actually works, or under-componentized in the places people reach for most often. Social templates and pitch decks tend to get used far more than brand guideline pages, so those deserve the most polish and the tightest component structure.
 
-## Setting This Up Without a Dedicated Design Team
+## Setup Without Designers
 
 You don't need a full design department to get most of the benefit here. Start with the four-page structure above, build out core components for your logo lockups, color tokens, and type styles first, and resist the urge to componentize everything on day one. A brand system with ten well-maintained components beats one with a hundred half-finished ones. If you want a structured starting point rather than building from a blank file, that's exactly what our [Figma New Business Toolkit](/products) was built to provide.
 
-## Common Reasons Brand Systems Fall Apart
+## Why Brand Systems Fail
 
 Even well-intentioned setups tend to fail in a few predictable ways. The most common is nobody being explicitly responsible for the library once the initial setup excitement fades, components drift out of date, nobody notices, and six months later half the team is quietly working from exported copies instead of the live library because they've stopped trusting it. A second is over-engineering the initial structure: teams that try to componentize every possible variation before anyone has actually used the system in practice tend to build something too rigid for how work really happens, and abandon it in favor of ad hoc files.
 
@@ -1059,7 +1059,7 @@ Components, pages, and shared libraries are available on Figma's free and paid t
 
 A PDF is static the moment it's exported, if the logo changes, every copy of that PDF is instantly out of date. A Figma-based brand system updates everywhere at once when a component changes, so there's no "which version is current" problem to manage.
 
-### Can non-designers actually use this without breaking the brand system?
+### Can non-designers use it?
 
 Yes, if it's set up correctly. The key is locking core components so they can only be duplicated and customized within defined limits (like swapping copy or an image) rather than left fully editable, which is what keeps a marketer's version of a social template on-brand without a designer reviewing every file.
 
@@ -1067,24 +1067,24 @@ Yes, if it's set up correctly. The key is locking core components so they can on
 
 Quarterly is a reasonable starting point for most teams, frequent enough to catch stale templates or duplicate components before they pile up, but not so frequent that the review itself becomes a maintenance burden. Companies going through frequent rebranding or product launches usually benefit from lighter monthly check-ins focused specifically on the highest-traffic pages, like social templates and pitch decks.
 
-### What's the biggest sign a Figma-based brand system needs an overhaul, not just a review?
+### When does it need an overhaul?
 
 When people outside the design team have quietly stopped using it and gone back to exporting static copies or building assets from scratch. That behavior usually means the system stopped matching how the team actually works well before anyone said so out loud, and a review alone won't fix it. At that point it's typically worth restructuring the page hierarchy and component set from the ground up, rather than patching the existing one.
 
-### Can a small team realistically maintain a full brand system in Figma?
+### Can a small team keep it up?
 
 Yes, as long as the scope matches the team's size. A three-person team doesn't need all four pages described above on day one; starting with just Logos & Icons and Social Templates, then adding Documents and Brand Guidelines once they're actually needed, avoids building infrastructure for a volume of work that doesn't exist yet. The discipline that matters isn't the size of the system, it's that every component in it actually gets used and maintained.
 
-## The Figma New Business Toolkit
+## The New Business Toolkit
 
 A collection of 30+ easy-to-use, continually updated, interactive templates and assets designed to help you rapidly kickstart or supplement your business. From pitch decks to social kits, the goal is the same one behind everything above: get your brand out of scattered files and into a single, organized system that anyone on the team can use with confidence. If you're also thinking about how to bring strategic planning into the same workspace, we've written about how we did exactly that with the [Lean Product Canvas](/insights/lean-product-canvas-interactive-figma-templates).`,
       es: `Figma no es solo una herramienta de diseño. Es el centro de comando que tu marca ha estado esperando. La velocidad, la claridad y la colaboración importan más que nunca, y Figma se ha convertido silenciosamente en una de las plataformas más esenciales para gestionar negocios modernos, incluso más allá del equipo de diseño.
 
-## El problema con la gestión tradicional de activos
+## El problema del método viejo
 
 ¿Recuerdas los días perdidos buscando en carpetas desordenadas con nombres como "final_final2.pdf"? Cada rebranding, cada nueva contratación, cada momento de "espera, ¿cuál logo es el actual?" agrava el desorden. Figma ofrece una solución elegante: una única fuente de verdad viva en lugar de un árbol de carpetas en el que nadie confía.
 
-## Páginas + Componentes = poder de marca organizado
+## Páginas y componentes
 
 Una de las funciones más subutilizadas en Figma es su panel de Páginas. Combinado con los Componentes de Figma, obtienes un sistema donde las actualizaciones se aplican de forma universal, los activos siempre están sincronizados y cualquiera en tu equipo puede encontrar lo que necesita, rápido. Cambia un logo una sola vez a nivel de componente, y cada presentación, plantilla y publicación social que lo referencia se actualiza automáticamente.
 
@@ -1099,25 +1099,25 @@ Las actualizaciones recientes de Figma hacen este sistema notablemente más fuer
 
 Para el trabajo diario con activos, herramientas integradas como Vectorize (que convierte un logo rasterizado o una marca escaneada en un vector editable), Remove Background y Erase Object significan que gran parte de la limpieza rutinaria de activos ya no requiere exportar a una app aparte y volver a importar. Para equipos con bibliotecas de marca grandes, cientos de páginas, miles de componentes, la nueva arquitectura de renderizado de Figma también significa que esos archivos ahora cargan en segundos en lugar de minutos, algo que importa más de lo que parece una vez que un sistema de marca lleva un par de años en uso activo.
 
-## Más allá del equipo de diseño: Figma para todos
+## Figma para todos
 
 Lo que comenzó como una plataforma centrada en el diseño ahora la están adoptando marketing, operaciones, fundadores de startups e incluso departamentos de RR. HH. Un archivo de Figma bien estructurado se convierte en un lenguaje compartido en toda la empresa, cualquiera puede duplicar una plantilla, poner su propio contenido y producir algo alineado con la marca sin tener que recurrir a un diseñador.
 
 Esto importa cada vez más a medida que los equipos crecen. En una startup de cinco personas, la consistencia de marca es fácil porque una sola persona hace la mayor parte del trabajo de diseño. En una de cincuenta, con marketing, ventas y reclutamiento produciendo sus propias presentaciones y activos sociales, la marca se desvía rápido a menos que haya un sistema compartido y accesible que todos realmente usen en lugar de evitar.
 
-## Configurar convenciones de nombres y permisos
+## Nombres y permisos
 
 El sistema se desmorona silenciosamente si los nombres y el acceso no se deciden desde el principio. Una convención simple y aplicada, algo como Tipo/Categoría/Nombre, por ejemplo "Logo/Principal/Horizontal" o "Plantilla/Social/Instagram-Post", hace que una biblioteca sea buscable meses después, cuando la persona que la construyó ya no sea quien la mantiene. Los permisos importan igual de mucho: dale a la mayoría del equipo acceso de edición para redactar y duplicar plantillas, pero restringe quién puede publicar cambios en la biblioteca compartida misma, para que una edición bien intencionada no actualice silenciosamente cada archivo que referencia un componente.
 
-## Medir si realmente está funcionando
+## ¿Está funcionando?
 
 Un sistema de marca está funcionando si se cumplen dos cosas: alguien fuera del equipo de diseño puede encontrar y usar un activo alineado con la marca sin pedirle ayuda a un diseñador, y toma menos tiempo actualizar un elemento de marca en todos los archivos de lo que antes tomaba encontrar todos los lugares donde vivía ese elemento. Si alguna de esas dos cosas no se cumple unos meses después de la implementación, suele ser señal de que el archivo está sobreorganizado para cómo trabaja realmente el equipo, o poco componentizado en los lugares que más se usan. Las plantillas sociales y las presentaciones tienden a usarse mucho más que las páginas de lineamientos de marca, así que merecen el mayor pulido y la estructura de componentes más sólida.
 
-## Cómo implementarlo sin un equipo de diseño dedicado
+## Sin un equipo de diseño
 
 No necesitas un departamento de diseño completo para obtener la mayor parte del beneficio aquí. Empieza con la estructura de cuatro páginas de arriba, construye primero los componentes centrales para tus combinaciones de logo, tokens de color y estilos tipográficos, y resiste la tentación de componentizar todo desde el primer día. Un sistema de marca con diez componentes bien mantenidos es mejor que uno con cien a medio terminar. Si prefieres un punto de partida estructurado en lugar de construir desde un archivo en blanco, para eso exactamente construimos nuestro [Kit de Nuevo Negocio para Figma](/products).
 
-## Razones comunes por las que los sistemas de marca se desmoronan
+## Por qué fallan las marcas
 
 Incluso las configuraciones bien intencionadas suelen fallar de algunas formas predecibles. La más común es que nadie sea explícitamente responsable de la biblioteca una vez que pasa el entusiasmo inicial de la implementación, los componentes se desactualizan, nadie lo nota, y seis meses después la mitad del equipo trabaja silenciosamente desde copias exportadas en lugar de la biblioteca en vivo, porque dejaron de confiar en ella. Una segunda es sobrediseñar la estructura inicial: los equipos que intentan componentizar cada variación posible antes de que alguien haya usado realmente el sistema en la práctica tienden a construir algo demasiado rígido para cómo ocurre el trabajo de verdad, y terminan abandonándolo en favor de archivos improvisados.
 
@@ -1125,11 +1125,11 @@ Una tercera falla, más sutil, es tratar el sistema de marca como un canal de pu
 
 ## Preguntas frecuentes
 
-### ¿Necesito un plan pago de Figma para gestionar activos de marca así?
+### ¿Necesito un plan de pago?
 
 Los componentes, páginas y bibliotecas compartidas están disponibles en los planes gratuito y de pago de Figma, aunque la publicación de bibliotecas para todo el equipo y algunas funciones de gobernanza están limitadas a los planes de pago. Para la mayoría de los equipos pequeños, el plan gratuito es suficiente para empezar; los equipos más grandes generalmente necesitan un plan pago para compartir bibliotecas entre varios proyectos.
 
-### ¿En qué se diferencia esto de un PDF tradicional de lineamientos de marca?
+### ¿Qué lo hace mejor que un PDF?
 
 Un PDF queda estático en el momento en que se exporta, si el logo cambia, cada copia de ese PDF queda desactualizada al instante. Un sistema de marca basado en Figma se actualiza en todas partes a la vez cuando un componente cambia, así que no hay que gestionar el problema de "cuál versión es la vigente".
 
@@ -1137,19 +1137,19 @@ Un PDF queda estático en el momento en que se exporta, si el logo cambia, cada 
 
 Sí, si está configurado correctamente. La clave es bloquear los componentes centrales para que solo puedan duplicarse y personalizarse dentro de límites definidos (como cambiar el texto o una imagen) en lugar de dejarlos completamente editables, que es lo que mantiene la versión de una plantilla social hecha por alguien de marketing alineada con la marca sin que un diseñador revise cada archivo.
 
-### ¿Con qué frecuencia debería revisarse y actualizarse un sistema de marca?
+### ¿Cada cuánto se revisa?
 
 Trimestralmente es un buen punto de partida para la mayoría de los equipos, suficientemente seguido para detectar plantillas desactualizadas o componentes duplicados antes de que se acumulen, pero no tan seguido como para convertirse en una carga de mantenimiento en sí misma. Las empresas que pasan por cambios frecuentes de marca o lanzamientos de producto suelen beneficiarse de revisiones mensuales más ligeras, enfocadas específicamente en las páginas de mayor uso, como plantillas sociales y presentaciones.
 
-### ¿Cuál es la señal más clara de que un sistema de marca en Figma necesita una reestructuración, no solo una revisión?
+### ¿Cuándo hay que rehacerlo?
 
 Cuando personas fuera del equipo de diseño dejaron de usarlo silenciosamente y volvieron a exportar copias estáticas o a construir activos desde cero. Ese comportamiento generalmente significa que el sistema dejó de coincidir con cómo trabaja realmente el equipo mucho antes de que alguien lo dijera en voz alta, y una revisión sola no lo va a arreglar. En ese punto suele valer la pena reestructurar la jerarquía de páginas y el conjunto de componentes desde cero, en lugar de parchar el existente.
 
-### ¿Puede un equipo pequeño de verdad mantener un sistema de marca completo en Figma?
+### ¿Puede un equipo pequeño?
 
 Sí, siempre que el alcance coincida con el tamaño del equipo. Un equipo de tres personas no necesita las cuatro páginas completas descritas arriba desde el primer día; empezar solo con Logos e Íconos y Plantillas Sociales, y agregar Documentos y Lineamientos de Marca cuando realmente se necesiten, evita construir infraestructura para un volumen de trabajo que todavía no existe. La disciplina que importa no es el tamaño del sistema, sino que cada componente que existe se use y se mantenga de verdad.
 
-## El Kit de Nuevo Negocio para Figma
+## El kit de nuevo negocio
 
 Una colección de más de 30 plantillas y activos interactivos, fáciles de usar y actualizados continuamente, diseñados para ayudarte a arrancar o complementar tu negocio rápidamente. Desde presentaciones hasta kits sociales, el objetivo es el mismo que está detrás de todo lo anterior: sacar tu marca de archivos dispersos y llevarla a un sistema único y organizado que cualquiera en el equipo pueda usar con confianza. Si además estás pensando en cómo llevar la planeación estratégica al mismo espacio de trabajo, hemos escrito sobre cómo hicimos exactamente eso con el [Lean Product Canvas](/insights/lean-product-canvas-interactive-figma-templates).`,
     },
@@ -1164,17 +1164,17 @@ Una colección de más de 30 plantillas y activos interactivos, fáciles de usar
     content: {
       en: `Every time a designer uploads work to a portfolio site, publishes a Figma community file, or ships an asset to a stock library, there's a real chance that work is being used to train the next generation of AI design models, often without their explicit consent. AI models require vast amounts of data to learn how to generate designs, UI layouts, and illustrations, and that data often comes from the same publicly available images, creative communities, and software tools designers use every day.
 
-## How AI Models Use Designer-Generated Content
+## How AI Uses Design Work
 
 Adobe faced significant backlash after users discovered Firefly was trained on Adobe Stock and Behance content. Dribbble has not explicitly confirmed whether its content is used for AI training. While Figma has not disclosed its AI data use, its community files and third-party plugins likely contribute to training datasets, meaning the exact files designers share to help each other work faster may also be feeding the models built to compete with them.
 
-## The Legal Battles Have Already Begun
+## The Legal Battles Have Begun
 
 The most closely watched training-data case in design so far reached a verdict in November 2025: [Getty Images v. Stability AI](https://www.mayerbrown.com/en/insights/publications/2025/11/getty-images-v-stability-ai-what-the-high-courts-decision-means-for-rights-holders-and-ai-developers), decided in the UK's High Court. Getty alleged Stability AI copied more than 12 million of its photographs, along with metadata and descriptions, to train Stable Diffusion. The court rejected Getty's core copyright claim, because the model doesn't store training images directly, it couldn't be proven that outputs were directly derived from Getty's specific photos, but did find limited trademark infringement, since some early Stable Diffusion outputs reproduced watermarks resembling Getty's and iStock's. For designers, the practical takeaway is sobering: the ruling suggests training on copyrighted images may not itself be infringement under UK law, even though it can still create downstream trademark exposure.
 
 The [New York Times' lawsuit against OpenAI and Microsoft](https://legalclarity.org/new-york-times-vs-openai-lawsuit-status-and-timeline/), filed in December 2023 over the use of copyrighted journalism in ChatGPT's training data, remains active and unresolved, still in discovery as of mid-2026, with no trial date set. As recently as July 2026, the Times and other publishers filed a legal memorandum accusing OpenAI of withholding evidence about how its systems were trained, requesting court sanctions. A separate class-action still accuses Stability AI, Midjourney, and DeviantArt of scraping millions of artworks without consent. Together, these cases make one thing clear: the legal framework for consent and compensation in AI training data is still being written in real time, case by case, and outcomes are genuinely inconsistent across jurisdictions.
 
-## What This Means If You Publish Design Work Publicly
+## If You Share Work Publicly
 
 The Getty ruling in particular changes the calculus for designers who assumed copyright alone would eventually protect their published work from being used as training data. It may not, at least not automatically, and not everywhere. That doesn't mean there's nothing you can do; it means the protection has to be more deliberate than simply owning the copyright and hoping the law catches up.
 
@@ -1187,23 +1187,23 @@ The Getty ruling in particular changes the calculus for designers who assumed co
 
 None of these steps are foolproof, but together they meaningfully reduce how much of a designer's public output ends up in a training set without their knowledge. Watermarking in particular has an interesting secondary benefit post-Getty: the ruling's finding on trademark infringement suggests visible marks can matter legally in ways invisible copyright claims currently don't.
 
-## How Design Platforms Are Responding
+## How Platforms Respond
 
 Different platforms have taken different stances, and the differences matter for where designers choose to publish. Adobe now offers an explicit opt-out setting for Adobe Stock contributors and has stated that Firefly is trained only on licensed and public-domain content going forward, following the earlier backlash over Behance and Stock data. Other platforms have been far less transparent, which is itself informative, a platform's silence on its AI training policy is generally not a sign that one doesn't exist.
 
 This unevenness has pushed some of the response outside individual platforms entirely. Artist and designer advocacy groups have pushed for industry-wide standards around consent and attribution, and tools like Glaze and Nightshade, built by researchers specifically to make images resistant to being cleanly used as AI training data, have seen real adoption among illustrators and designers who want a technical safeguard rather than relying solely on a platform's policy.
 
-## What Designers Can Realistically Expect Going Forward
+## What Designers Can Expect
 
 None of the current legal uncertainty is likely to resolve quickly. The Getty and New York Times cases alone could take years to reach final rulings, and even once they do, an outcome in one jurisdiction won't automatically apply in another. In the meantime, the most realistic posture for a working designer is treating AI training risk the way you'd treat any other business risk, not ignorable, not paralyzing, just something to factor into where and how you publish, the same way you'd think about licensing terms or client contracts.
 
-## Building AI Awareness Into a Design Practice
+## Building AI Awareness
 
 Beyond individual protective steps, the designers navigating this best treat AI-training risk as an ongoing part of their practice rather than a one-time settings change. That means periodically re-checking a platform's terms of service, since policies shift as litigation and public pressure evolve, Adobe's current opt-out options didn't exist a few years ago, and other platforms will likely follow a similar path under enough pressure. It also means being deliberate about what gets published where: portfolio pieces meant to attract clients may be worth the exposure, while process files, unused concepts, or client work under NDA generally shouldn't be public regardless of AI training concerns.
 
 ## Frequently Asked Questions
 
-### Does opting out of AI training actually stop my work from being used?
+### Does opting out work?
 
 It reduces the risk but doesn't eliminate it. Opt-out settings only apply to platforms that respect them, and don't retroactively remove work already scraped before the setting was enabled. Combining opt-out settings with private portfolios for your most sensitive work is a more reliable approach than either alone.
 
@@ -1211,15 +1211,15 @@ It reduces the risk but doesn't eliminate it. Opt-out settings only apply to pla
 
 It depends heavily on jurisdiction and is actively being litigated. The Getty v. Stability AI ruling found no copyright infringement under UK law in that specific case, but the outcome could differ under US law, where the New York Times case is still unresolved, so "legal" currently varies by court and by case.
 
-### Should I stop posting work publicly because of this?
+### Should I stop posting work?
 
 Not necessarily, visibility still matters for building a career, and pulling everything private has real professional costs. The more practical approach is being deliberate about which platforms you use, checking their AI training policies, and treating watermarking and licensing terms as part of your workflow rather than an afterthought.
 
-### Do watermarks or AI-blocking tools actually work?
+### Do watermarks actually work?
 
 Imperfectly, but not uselessly. Tools like Glaze work by subtly perturbing an image in ways that are invisible to a human viewer but disrupt how an AI model interprets it during training, which raises the cost and difficulty of using that image cleanly. None of these tools offer a guarantee, and techniques on both sides continue to evolve, but combined with an opt-out setting and a platform's stated policy, they meaningfully shift the odds rather than leaving your work completely unprotected.
 
-### Does this apply to work made for clients, not just personal portfolio pieces?
+### Does this cover client work?
 
 Yes, and arguably more so. Client work typically carries contractual obligations around confidentiality and ownership that make unauthorized AI training use a bigger liability question, not just a personal one. Adding explicit language to client contracts about how deliverables can and can't be used for AI training closes that gap, since most standard contract templates predate this issue entirely and say nothing about it either way.
 
@@ -1227,22 +1227,22 @@ Yes, and arguably more so. Client work typically carries contractual obligations
 
 Not reliably, in most cases. A handful of tools let you search whether an image resembles content in a known training dataset, but coverage is partial and most major AI labs don't publish searchable records of their full training sets. That gap is itself one of the central complaints in the ongoing lawsuits: without transparency into what a model was actually trained on, individual creators have very little ability to verify their own exposure, let alone seek redress for it.
 
-## The Future of AI and Design Ethics
+## AI and Design Ethics
 
 The intersection of AI and design raises complex ethical and legal questions that won't be settled quickly. Designers must remain informed about how their work is being used, not because the answers are simple, but because the platforms hosting their work rarely make the trade-offs obvious. The same accountability gap shows up across other domains too, which is part of why we've argued that [AI regulation needs to move faster than it currently is](/insights/containment-not-catastrophe-9-practical-ways-to-regulate-ai-before-it-regulates-us). If you're navigating how AI fits into your team's design process rather than just your personal portfolio, that's exactly the kind of question our [product design work](/services) is built to help answer.`,
       es: `Cada vez que un diseñador sube trabajo a un portafolio, publica un archivo comunitario en Figma o envía un activo a una biblioteca de stock, existe una posibilidad real de que ese trabajo se esté usando para entrenar la próxima generación de modelos de IA para diseño, muchas veces sin su consentimiento explícito. Los modelos de IA requieren enormes cantidades de datos para aprender a generar diseños, layouts de interfaz e ilustraciones, y esos datos suelen provenir de las mismas imágenes públicas, comunidades creativas y herramientas de software que los diseñadores usan todos los días.
 
-## Cómo usan los modelos de IA el contenido generado por diseñadores
+## Cómo usa la IA tu trabajo
 
 Adobe enfrentó una reacción significativa después de que los usuarios descubrieran que Firefly había sido entrenado con contenido de Adobe Stock y Behance. Dribbble no ha confirmado explícitamente si su contenido se usa para entrenamiento de IA. Aunque Figma no ha revelado su uso de datos para IA, es probable que sus archivos comunitarios y plugins de terceros contribuyan a conjuntos de datos de entrenamiento, lo que significa que los mismos archivos que los diseñadores comparten para ayudarse mutuamente a trabajar más rápido también podrían estar alimentando a los modelos construidos para competir con ellos.
 
-## Las batallas legales ya comenzaron
+## Ya hay batallas legales
 
 El caso de datos de entrenamiento más observado en el mundo del diseño hasta ahora llegó a un veredicto en noviembre de 2025: [Getty Images v. Stability AI](https://www.mayerbrown.com/en/insights/publications/2025/11/getty-images-v-stability-ai-what-the-high-courts-decision-means-for-rights-holders-and-ai-developers), resuelto en el Tribunal Superior del Reino Unido. Getty alegó que Stability AI copió más de 12 millones de sus fotografías, junto con metadatos y descripciones, para entrenar Stable Diffusion. El tribunal rechazó el reclamo principal de infracción de derechos de autor de Getty, porque el modelo no almacena las imágenes de entrenamiento directamente, no se pudo probar que los resultados se derivaran directamente de las fotos específicas de Getty, pero sí encontró una infracción de marca limitada, ya que algunos de los primeros resultados de Stable Diffusion reproducían marcas de agua parecidas a las de Getty e iStock. Para los diseñadores, la conclusión práctica es preocupante: el fallo sugiere que entrenar con imágenes protegidas por derechos de autor podría no constituir en sí mismo una infracción bajo la ley del Reino Unido, aunque sí puede generar exposición legal por marca registrada.
 
 La [demanda de The New York Times contra OpenAI y Microsoft](https://legalclarity.org/new-york-times-vs-openai-lawsuit-status-and-timeline/), presentada en diciembre de 2023 por el uso de periodismo protegido por derechos de autor en los datos de entrenamiento de ChatGPT, sigue activa y sin resolver, todavía en fase de descubrimiento de pruebas a mediados de 2026, sin fecha de juicio fijada. Tan recientemente como julio de 2026, el Times y otros editores presentaron un memorial legal acusando a OpenAI de retener evidencia sobre cómo se entrenaron sus sistemas, solicitando sanciones judiciales. Una demanda colectiva aparte sigue acusando a Stability AI, Midjourney y DeviantArt de extraer millones de obras de arte sin consentimiento. En conjunto, estos casos dejan algo claro: el marco legal para el consentimiento y la compensación en datos de entrenamiento de IA todavía se está escribiendo en tiempo real, caso por caso, y los resultados son genuinamente inconsistentes entre jurisdicciones.
 
-## Qué significa esto si publicas tu trabajo de diseño públicamente
+## Si publicas tu trabajo
 
 El fallo de Getty en particular cambia el cálculo para los diseñadores que asumían que el derecho de autor por sí solo eventualmente protegería su trabajo publicado de ser usado como datos de entrenamiento. Puede que no sea así, al menos no automáticamente, y no en todas partes. Eso no significa que no haya nada que puedas hacer; significa que la protección tiene que ser más deliberada que simplemente poseer el derecho de autor y esperar que la ley se ponga al día.
 
@@ -1255,17 +1255,17 @@ El fallo de Getty en particular cambia el cálculo para los diseñadores que asu
 
 Ninguno de estos pasos es infalible, pero juntos reducen de forma significativa cuánto del trabajo público de un diseñador termina en un conjunto de entrenamiento sin su conocimiento. Las marcas de agua en particular tienen un beneficio secundario interesante después del caso Getty: el hallazgo del fallo sobre infracción de marca sugiere que las marcas visibles pueden importar legalmente de formas en que actualmente los reclamos invisibles de derechos de autor no lo hacen.
 
-## Cómo están respondiendo las plataformas de diseño
+## Qué hacen las plataformas
 
 Distintas plataformas han tomado posturas distintas, y esas diferencias importan a la hora de decidir dónde publicar. Adobe ahora ofrece una configuración explícita de exclusión para los colaboradores de Adobe Stock y ha declarado que Firefly se entrena de aquí en adelante solo con contenido licenciado y de dominio público, tras la reacción anterior por los datos de Behance y Stock. Otras plataformas han sido mucho menos transparentes, lo cual es en sí mismo revelador, el silencio de una plataforma sobre su política de entrenamiento de IA generalmente no es señal de que no exista una.
 
 Esta desigualdad ha llevado parte de la respuesta fuera de las plataformas individuales por completo. Grupos de defensa de artistas y diseñadores han impulsado estándares a nivel de industria en torno al consentimiento y la atribución, y herramientas como Glaze y Nightshade, construidas por investigadores específicamente para hacer que las imágenes sean resistentes a usarse limpiamente como datos de entrenamiento de IA, han visto una adopción real entre ilustradores y diseñadores que quieren una salvaguarda técnica en lugar de depender únicamente de la política de una plataforma.
 
-## Qué pueden esperar realmente los diseñadores de aquí en adelante
+## Lo que viene
 
 Es poco probable que la incertidumbre legal actual se resuelva rápido. Solo los casos de Getty y The New York Times podrían tardar años en llegar a fallos finales, e incluso una vez que lo hagan, un resultado en una jurisdicción no aplicará automáticamente en otra. Mientras tanto, la postura más realista para un diseñador en activo es tratar el riesgo de entrenamiento de IA como trataría cualquier otro riesgo de negocio, no ignorable, pero tampoco paralizante, simplemente algo a tener en cuenta al decidir dónde y cómo publicar, de la misma forma en que pensarías en los términos de licencia o los contratos con clientes.
 
-## Incorporar la conciencia sobre IA a la práctica de diseño
+## La IA en tu práctica de diseño
 
 Más allá de los pasos individuales de protección, los diseñadores que navegan esto mejor tratan el riesgo de entrenamiento de IA como una parte continua de su práctica en lugar de un cambio de configuración de una sola vez. Eso significa revisar periódicamente los términos de servicio de una plataforma, ya que las políticas cambian a medida que evolucionan los litigios y la presión pública, las opciones actuales de exclusión de Adobe no existían hace unos años, y es probable que otras plataformas sigan un camino similar bajo suficiente presión. También significa ser deliberado sobre qué se publica y dónde: las piezas de portafolio pensadas para atraer clientes pueden justificar la exposición, mientras que los archivos de proceso, los conceptos sin usar o el trabajo de clientes bajo NDA generalmente no deberían ser públicos, independientemente de las preocupaciones sobre entrenamiento de IA.
 
@@ -1275,15 +1275,15 @@ Más allá de los pasos individuales de protección, los diseñadores que navega
 
 Reduce el riesgo, pero no lo elimina. Las configuraciones de exclusión solo aplican en plataformas que las respetan, y no eliminan retroactivamente trabajo ya extraído antes de activar la configuración. Combinar la exclusión con portafolios privados para tu trabajo más sensible es un enfoque más confiable que cualquiera de los dos por separado.
 
-### ¿Es legal que las empresas de IA entrenen con trabajo de diseño publicado públicamente?
+### ¿Es legal entrenar con mi trabajo?
 
 Depende en gran medida de la jurisdicción y actualmente se está litigando de forma activa. El fallo de Getty v. Stability AI no encontró infracción de derechos de autor bajo la ley del Reino Unido en ese caso específico, pero el resultado podría ser distinto bajo la ley de EE. UU., donde el caso de The New York Times sigue sin resolverse, así que "legal" actualmente varía según el tribunal y el caso.
 
-### ¿Debería dejar de publicar trabajo públicamente por esto?
+### ¿Dejo de publicar mi trabajo?
 
 No necesariamente, la visibilidad sigue siendo importante para construir una carrera, y hacer todo privado tiene costos profesionales reales. El enfoque más práctico es ser deliberado sobre qué plataformas usas, revisar sus políticas de entrenamiento de IA, y tratar las marcas de agua y los términos de licencia como parte de tu flujo de trabajo en lugar de una idea de último momento.
 
-### ¿Las marcas de agua o las herramientas que bloquean IA realmente funcionan?
+### ¿Sirven las marcas de agua?
 
 De forma imperfecta, pero no inútil. Herramientas como Glaze funcionan alterando sutilmente una imagen de formas invisibles para un ojo humano pero que interrumpen cómo un modelo de IA la interpreta durante el entrenamiento, lo que eleva el costo y la dificultad de usar esa imagen de forma limpia. Ninguna de estas herramientas ofrece una garantía, y las técnicas de ambos lados siguen evolucionando, pero combinadas con una configuración de exclusión y la política declarada de una plataforma, cambian de forma significativa las probabilidades en lugar de dejar tu trabajo completamente desprotegido.
 
@@ -1310,7 +1310,7 @@ La intersección entre la IA y el diseño plantea preguntas éticas y legales co
     content: {
       en: `Artificial Intelligence (AI) has rapidly integrated into various facets of daily life, prompting a spectrum of reactions from the general public. The picture that emerges from the data isn't simple optimism or simple fear, it's both, often held by the same people at the same time, and the latest 2026 research makes that tension sharper, not simpler.
 
-## Adoption Is Rising Faster Than Comfort
+## Use Outpaces Comfort
 
 Usage and unease are climbing together. According to [Pew Research Center's 2026 survey](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/), 31% of Americans now interact with AI several times a day, up from 22% just two years earlier, and 44% of U.S. adults report using ChatGPT specifically, up from 34% the prior year. Workplace adoption is climbing too, the share of U.S. workers who say at least some of their job is done with AI rose from 16% in 2024 to 21% in a September 2025 survey.
 
@@ -1336,19 +1336,19 @@ Support for AI regulation in the UK is not just strong, it's growing. A [2026 su
 
 The picture isn't uniformly negative. Public opinion research consistently finds strong majority support for AI applications with a clear, tangible public benefit, cancer risk assessment, educational tools, and climate research chief among them, evidence that concern and optimism about AI aren't mutually exclusive; they coexist depending on the specific application and who benefits from it. People are considerably more comfortable with AI helping a doctor read a scan than with AI making decisions about their job or their data.
 
-## Generational Differences in AI Sentiment
+## How Generations Differ
 
 Age is one of the more consistent predictors of AI sentiment within any single country, not just between countries. Younger adults tend to report higher day-to-day usage and somewhat more comfort experimenting with new AI tools, while older adults report both lower usage and, in several surveys, deeper skepticism about AI's role in high-stakes decisions like healthcare or credit. That gap narrows on specific applications with a clear personal benefit, interest in AI-assisted health monitoring, for instance, tends to be strong across age groups once the benefit is concrete rather than abstract.
 
 This generational pattern matters for anyone building AI products: a single "public" attitude toward AI doesn't really exist. A product aimed at younger, more AI-fluent users can lean into more autonomous, less explained AI behavior, while a product for an older or more skeptical audience typically needs more visible control, explanation, and an easy way to fall back to a human option.
 
-## What Businesses Should Take From This Data
+## Lessons for Businesses
 
 For any company building AI-powered products, the throughline across all of this research is consistent: usage and skepticism are rising together, and treating them as contradictory is a mistake. The businesses seeing the best reception aren't the ones downplaying AI's risks or overselling its capabilities, they're the ones being specific and honest about what their AI actually does, giving users real visibility into and control over how it's used, and building toward the kind of transparency regulators and the public are both independently asking for. Trust, on this data, isn't won by convincing people AI has no downsides; it's won by demonstrating that the downsides are being taken seriously.
 
 ## Frequently Asked Questions
 
-### Is public trust in AI increasing or decreasing over time?
+### Is trust in AI growing?
 
 Both usage and specific concerns are rising together, rather than one replacing the other. More people use AI daily than two years ago, but Pew's 2026 data shows worry about AI's effect on creativity and relationships also increased over the same period, familiarity hasn't resolved unease so much as sharpened people's sense of what specifically concerns them.
 
@@ -1360,11 +1360,11 @@ Differences in trust track closely with differences in institutional trust more 
 
 Not in practice. Surveys consistently find the same population reporting high AI usage and strong support for stricter safety rules simultaneously, people generally want the benefits of the technology alongside real accountability for how it's built and deployed, not one or the other.
 
-### Which AI applications see the strongest public support?
+### Which uses do people back?
 
 Applications with a clear, tangible benefit to an identifiable person tend to poll best, medical diagnostics, educational tools, and climate or scientific research consistently outperform more abstract or self-interested use cases like advertising personalization or workplace monitoring. The common thread isn't the sophistication of the technology; it's whether the person affected can see who benefits and how.
 
-### How reliable are one-off statistics about AI attitudes reported in the news?
+### Can I trust one-off polls?
 
 Treat a single number with some caution, especially without a source, sample size, or date attached. Public sentiment on AI has moved quickly enough that a statistic from 2023 can already be stale, and different survey methodologies (a nationally representative panel versus an opt-in online poll) can produce meaningfully different results on the same question. The figures cited throughout this piece are drawn from named research organizations for exactly that reason: so the underlying methodology and date are checkable rather than taken on faith.
 
@@ -1377,13 +1377,13 @@ Not always, and that gap says something on its own. Plenty of survey respondents
 Public perception of AI is complex and multifaceted, and 2026's data shows that complexity deepening rather than resolving as adoption grows. As AI continues to evolve, addressing ethical considerations, ensuring transparency, and implementing robust regulations, several approaches to which we cover in more detail in [our piece on practical AI regulation](/insights/containment-not-catastrophe-9-practical-ways-to-regulate-ai-before-it-regulates-us), will be crucial to closing the gap between where public trust is today and where the technology is headed.`,
       es: `La Inteligencia Artificial (IA) se ha integrado rápidamente en distintos aspectos de la vida diaria, provocando un espectro de reacciones en el público general. El panorama que surge de los datos no es simple optimismo ni simple temor, es ambos a la vez, sostenidos muchas veces por las mismas personas al mismo tiempo, y la investigación más reciente de 2026 muestra esa tensión de forma más marcada, no más simple.
 
-## La adopción crece más rápido que la comodidad
+## El uso supera a la confianza
 
 El uso y la inquietud están creciendo juntos. Según la [encuesta 2026 del Pew Research Center](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/), el 31% de los estadounidenses ahora interactúa con IA varias veces al día, frente al 22% de hace apenas dos años, y el 44% de los adultos en EE. UU. reporta usar específicamente ChatGPT, frente al 34% del año anterior. La adopción en el lugar de trabajo también crece, la proporción de trabajadores estadounidenses que dice que al menos parte de su trabajo lo hace con IA subió del 16% en 2024 al 21% en una encuesta de septiembre de 2025.
 
 Sin embargo, esa misma investigación encontró que aproximadamente la mitad de los estadounidenses cree que la IA empeorará la capacidad de las personas para pensar de forma creativa y formar relaciones significativas con otros, con muchos menos diciendo que las mejorará. La familiaridad claramente está creciendo más rápido que la confianza.
 
-## Preocupaciones de privacidad y ética
+## Privacidad y ética
 
 Las preocupaciones sobre cómo la IA maneja los datos personales persisten incluso mientras crece la adopción. Datos anteriores de Pew encontraron que más de la mitad de los estadounidenses cree que la IA dificulta mantener la privacidad personal, y una investigación de consumo por separado encontró que solo cerca de un tercio de los consumidores en el Reino Unido se siente seguro usando IA generativa de forma responsable, lo que sugiere que la brecha no es solo sobre si la gente confía en las empresas de IA, sino sobre si confía en su propio criterio al usar las herramientas.
 
@@ -1403,19 +1403,19 @@ El apoyo a la regulación de IA en el Reino Unido no solo es fuerte, está creci
 
 El panorama no es uniformemente negativo. La investigación de opinión pública encuentra consistentemente un fuerte apoyo mayoritario a las aplicaciones de IA con un beneficio público claro y tangible, la evaluación de riesgo de cáncer, las herramientas educativas y la investigación climática entre las principales, evidencia de que la preocupación y el optimismo sobre la IA no son mutuamente excluyentes; coexisten dependiendo de la aplicación específica y de quién se beneficia de ella. La gente se siente considerablemente más cómoda con que la IA ayude a un médico a leer un escáner que con que la IA tome decisiones sobre su empleo o sus datos.
 
-## Diferencias generacionales en la percepción de la IA
+## Diferencias entre generaciones
 
 La edad es uno de los predictores más consistentes de la actitud hacia la IA dentro de un mismo país, no solo entre países. Los adultos más jóvenes tienden a reportar mayor uso cotidiano y algo más de comodidad experimentando con nuevas herramientas de IA, mientras que los adultos mayores reportan tanto menor uso como, en varias encuestas, un escepticismo más profundo sobre el papel de la IA en decisiones de alto impacto como salud o crédito. Esa brecha se reduce en aplicaciones específicas con un beneficio personal claro, el interés en el monitoreo de salud asistido por IA, por ejemplo, tiende a ser fuerte en todos los grupos de edad una vez que el beneficio es concreto y no abstracto.
 
 Este patrón generacional importa para cualquiera que construya productos de IA: una sola actitud "pública" hacia la IA realmente no existe. Un producto dirigido a usuarios más jóvenes y familiarizados con la IA puede apoyarse en un comportamiento de IA más autónomo y menos explicado, mientras que un producto para una audiencia mayor o más escéptica generalmente necesita más control visible, más explicación y una forma fácil de recurrir a una opción humana.
 
-## Qué deberían aprender las empresas de estos datos
+## Lecciones para las empresas
 
 Para cualquier empresa que construya productos impulsados por IA, el hilo conductor de toda esta investigación es consistente: el uso y el escepticismo están creciendo juntos, y tratarlos como contradictorios es un error. Las empresas que reciben la mejor acogida no son las que minimizan los riesgos de la IA ni las que exageran sus capacidades, son las que son específicas y honestas sobre lo que realmente hace su IA, las que le dan a los usuarios visibilidad y control reales sobre cómo se usa, y las que avanzan hacia el tipo de transparencia que tanto los reguladores como el público están pidiendo, de forma independiente. La confianza, según estos datos, no se gana convenciendo a la gente de que la IA no tiene desventajas; se gana demostrando que esas desventajas se están tomando en serio.
 
 ## Preguntas frecuentes
 
-### ¿La confianza pública en la IA está aumentando o disminuyendo con el tiempo?
+### ¿Crece la confianza en la IA?
 
 Tanto el uso como preocupaciones específicas están aumentando juntos, en lugar de que uno reemplace al otro. Más personas usan IA a diario que hace dos años, pero los datos de Pew de 2026 muestran que la preocupación por el efecto de la IA en la creatividad y las relaciones también aumentó en el mismo período, la familiaridad no ha resuelto la inquietud tanto como ha afinado el sentido de la gente sobre qué es específicamente lo que le preocupa.
 
@@ -1427,15 +1427,15 @@ Las diferencias en confianza siguen de cerca las diferencias en la confianza ins
 
 En la práctica, no. Las encuestas encuentran consistentemente que la misma población reporta un alto uso de IA y un fuerte apoyo a reglas de seguridad más estrictas al mismo tiempo, la gente generalmente quiere los beneficios de la tecnología junto con una responsabilidad real sobre cómo se construye y se despliega, no una cosa u otra.
 
-### ¿Qué aplicaciones de IA tienen el mayor apoyo público?
+### ¿Qué usos apoya la gente?
 
 Las aplicaciones con un beneficio claro y tangible para una persona identificable suelen tener mejor recepción en las encuestas, el diagnóstico médico, las herramientas educativas y la investigación climática o científica superan consistentemente a casos de uso más abstractos o de interés propio, como la personalización publicitaria o el monitoreo laboral. El hilo común no es la sofisticación de la tecnología; es si la persona afectada puede ver quién se beneficia y cómo.
 
-### ¿Qué tan confiables son las estadísticas sueltas sobre actitudes hacia la IA que aparecen en las noticias?
+### ¿Puedo fiarme de una encuesta?
 
 Trata con cierta cautela una cifra aislada, especialmente si no viene con fuente, tamaño de muestra o fecha. La percepción pública sobre la IA se ha movido lo suficientemente rápido como para que una estadística de 2023 ya esté desactualizada, y distintas metodologías de encuesta (un panel representativo a nivel nacional frente a una encuesta en línea de participación voluntaria) pueden producir resultados significativamente distintos sobre la misma pregunta. Las cifras citadas a lo largo de este artículo provienen de organizaciones de investigación identificadas exactamente por esa razón: para que la metodología y la fecha subyacentes se puedan verificar en lugar de tomarse como un acto de fe.
 
-### ¿Las preocupaciones expresadas por la gente sobre la IA realmente cambian su comportamiento?
+### ¿Esas dudas cambian la conducta?
 
 No siempre, y esa brecha dice algo por sí sola. Muchos encuestados reportan preocupación real por el efecto de la IA en la privacidad o el empleo mientras siguen usando herramientas de IA a diario, lo cual no es necesariamente contradictorio. Refleja un público que en gran medida ha concluido que la tecnología ya es inevitable en la vida diaria y en el trabajo, así que la pregunta práctica para la mayoría de las personas ha pasado de si involucrarse con la IA a cuánta supervisión y capacidad de elección tienen mientras lo hacen. Ese cambio, más que cualquier estadística aislada en este artículo, es probablemente la señal más clara de hacia dónde se dirige realmente la opinión pública sobre la IA. Esto también explica por qué las empresas y los reguladores que prestan más atención a estos datos no intentan convencer a la gente de dejar de lado sus preocupaciones, sino que construyen la supervisión que permitiría a las personas sostener a la vez el uso y el escepticismo sin contradicción, lo cual es una meta más útil que perseguir un entusiasmo universal que, según los datos, no parece estar en camino.
 

@@ -10,6 +10,9 @@ interface Props {
 export default function InsightCard({ post }: Props) {
   const t = useTranslations();
   const tHome = useTranslations("home");
+  // Cards are narrow, so a long title can carry a shorter card title.
+  const cardTitleKey = post.titleKey.replace(/\.title$/, ".cardTitle");
+  const cardTitle = t.has(cardTitleKey) ? t(cardTitleKey) : t(post.titleKey);
 
   return (
     <article className="bg-surface rounded-shape-lg overflow-hidden border border-border hover:border-lava/40 m3-card">
@@ -29,7 +32,7 @@ export default function InsightCard({ post }: Props) {
         </div>
         <div className="p-6">
           <h3 className="text-lg font-medium mb-2 group-hover:text-lava m3-transition transition-colors leading-snug">
-            {t(post.titleKey)}
+            {cardTitle}
           </h3>
           <p className="text-body-md text-muted leading-relaxed mb-4">
             {t(post.excerptKey)}
