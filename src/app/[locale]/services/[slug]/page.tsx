@@ -187,7 +187,7 @@ function ServiceDetailContent({
           </h2>
           <ol className="space-y-10">
             {steps.map((step, i) => (
-              <li key={i} className="flex gap-6">
+              <li key={i} className="flex flex-col gap-3 sm:flex-row sm:gap-6">
                 <span
                   aria-hidden="true"
                   className="flex-shrink-0 w-10 h-10 rounded-shape-full bg-lava/15 text-lava font-bold flex items-center justify-center"
@@ -252,7 +252,7 @@ function ServiceDetailContent({
           <h2 className="text-headline-sm font-bold mb-10">
             {t("services.heading")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {otherServices.map((other) => {
               const otherKey = serviceMessageKey(other);
               return (

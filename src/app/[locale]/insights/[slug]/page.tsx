@@ -181,7 +181,7 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
         elements.push(
           <h2
             key={`h2-${i}`}
-            className="text-2xl font-bold mt-12 mb-4 text-foreground"
+            className="text-xl sm:text-2xl font-bold mt-12 mb-4 text-foreground"
           >
             {parseInline(line.replace("## ", ""), `h2-${i}`)}
           </h2>
@@ -194,7 +194,7 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
         elements.push(
           <h3
             key={`h3-${i}`}
-            className="text-xl font-semibold mt-8 mb-3 text-foreground"
+            className="text-lg sm:text-xl font-semibold mt-8 mb-3 text-foreground"
           >
             {parseInline(line.replace("### ", ""), `h3-${i}`)}
           </h3>
@@ -267,7 +267,7 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
           className="w-full aspect-[16/9] object-cover rounded-xl mb-8"
         />
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
           {t(post.titleKey)}
         </h1>
 

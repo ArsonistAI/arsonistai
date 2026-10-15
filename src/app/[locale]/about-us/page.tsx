@@ -90,13 +90,13 @@ function AboutContent({ locale }: { locale: string }) {
           <h2 className="text-label-lg text-lava uppercase tracking-widest mb-14">
             {t("valuesHeading")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {values.map((v, i) => (
               <div
                 key={i}
                 className="p-8 bg-surface rounded-shape-xl border border-border m3-card"
               >
-                <h3 className="text-title-lg mb-3">{v.title}</h3>
+                <h3 className="text-lg font-medium mb-3">{v.title}</h3>
                 <p className="text-body-md text-muted leading-relaxed">{v.text}</p>
               </div>
             ))}

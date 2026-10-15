@@ -63,7 +63,7 @@ export default function ServiceCard({ service }: Props) {
       <div className="w-12 h-12 rounded-shape-xl bg-lava/10 text-lava flex items-center justify-center mb-5 group-hover:bg-lava/20 m3-transition transition-colors">
         {icons[service.icon]}
       </div>
-      <h3 className="text-title-lg mb-2">{t(service.titleKey)}</h3>
+      <h3 className="text-lg font-medium mb-2">{t(service.titleKey)}</h3>
       <p className="text-body-md text-muted leading-relaxed">
         {t(service.descriptionKey)}
       </p>

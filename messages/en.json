@@ -30,7 +30,7 @@
     "why1Title": "We're experts in AI",
     "why1Text": "We stay on top of the latest and greatest in AI tools so you don't have to.",
     "why2Title": "We adapt to your needs",
-    "why2Text": "Rather than using a one-size-fits-all model we study your business and customize.",
+    "why2Text": "We do not use one model for all of our clients. We study your business and shape the work to fit.",
     "why3Title": "We service at scale",
     "why3Text": "Using AI allows us to analyze and design for problems ranging from micro to global.",
     "productsHeading": "Products",
@@ -46,17 +46,17 @@
   },
   "about": {
     "heading": "about us",
-    "intro": "We are an AI-first company helping businesses unlock human potential through emerging technology. Using cutting-edge tools, we build scalable, ethical solutions that empower organizations to adopt AI with clarity, confidence, and purpose.",
+    "intro": "We are an AI-first firm that helps a business bring out the best in its people with new tools. We build safe and fair systems that grow with you, so that your team can use AI with a plan, with trust, and with a goal in mind.",
     "missionHeading": "our mission",
-    "missionText": "Our mission is to build the future with advanced AI, making it accessible, scalable, and human-centered for the people who need it most.",
+    "missionText": "Our aim is to build the future with AI that is easy to use, made to grow, and made for the people who need it most.",
     "valuesHeading": "our values",
     "value1Title": "We use AI for good",
-    "value1Text": "AI is incredibly powerful and requires adherence to ethical usage standards.",
-    "value2Title": "We don't take just any clients",
-    "value2Text": "We prioritize work which is top quality, collaborative, and high-impact.",
+    "value1Text": "AI is very powerful, so we use it only under clear ethical rules.",
+    "value2Title": "We choose our clients",
+    "value2Text": "We take on work that is top quality, done as a team, and has a real impact.",
     "value3Title": "We are a diverse team",
     "value3Text": "We mean that in every possible way it could be interpreted.",
-    "careersHeading": "Interested in building the future?",
+    "careersHeading": "Want to build the future?",
     "careersText": "Tell us why and how by dropping us an email:",
     "careersEmail": "careers@arsonistai.com",
     "copied": "Copied!"
@@ -67,15 +67,15 @@
     "label": "AI Services",
     "contentGeneration": {
       "title": "Content Generation",
-      "short": "You are starting from scratch and want high quality ideas for products and services.",
-      "long": "Need fresh ideas fast? Our AI-powered content and idea generation service helps creators, entrepreneurs, and teams spark innovation in seconds. Whether you're brainstorming product names, social media content, startup concepts, or campaign slogans, our AI delivers tailored, high-quality suggestions based on your goals and audience. No more creative blocks—just endless possibilities.",
+      "short": "You are starting from scratch and want strong, fresh ideas for new products and services.",
+      "long": "Need fresh ideas fast? Our content and idea service uses AI to help creators, founders, and teams find new ideas in seconds. From product names and social posts to startup concepts and campaign slogans, you get strong ideas built around your goals and your audience. No more creative blocks, just more options than you can use.",
       "detail": {
         "intro": "Most teams do not have an idea problem. They have a throughput problem. The concepts that would have worked never get written down, because the hours it takes to produce fifty viable options are hours nobody has. Our content generation service closes that gap: we build the prompt systems, brand constraints, and review loops that let your team produce a large volume of on-brand starting points and then choose well among them.",
         "body": "This is not a request to hand your voice over to a model. We start from what you already sound like, encode it, and use AI to widen the field of options rather than to replace the judgment that picks the winner. The output is a working system your team keeps, not a one-time delivery of copy.",
         "steps": [
           {
             "title": "Capture your voice",
-            "body": "We audit existing copy, positioning, and audience research to build a written brand and tone specification. That specification becomes the constraint every generated option is measured against, so volume never costs you consistency."
+            "body": "We study your copy, positioning, and audience research and write down your brand voice and tone. That written spec is the bar every new option has to clear, so making more never costs you a consistent voice."
           },
           {
             "title": "Build the generation system",
@@ -87,18 +87,18 @@
           }
         ],
         "deliverables": [
-          "A written brand voice and tone specification",
-          "Prompt libraries and generation workflows tuned to your categories",
+          "A written guide to your brand voice",
+          "Prompt libraries tuned to your work",
           "A filtered set of ready-to-use concepts from your live briefs",
           "A working session so your team can run the system independently"
         ],
         "faq": [
           {
-            "q": "Will the output sound like everyone else's AI copy?",
+            "q": "Will it sound like generic AI copy?",
             "a": "That is the failure mode we build against. The voice specification and reference library are what keep generated options inside your brand rather than inside the model's defaults. Generic output usually means nobody encoded the constraints, and encoding them is the first phase of the work."
           },
           {
-            "q": "Do we keep the prompts and systems you build?",
+            "q": "Do we keep what you build?",
             "a": "Yes. Everything we build is documented and handed over. The point of the engagement is that your team can keep generating after it ends."
           },
           {
@@ -106,7 +106,7 @@
             "a": "We select per task rather than committing to one vendor, and we tell you why. Reasoning-heavy work and high-volume drafting have different cost and quality profiles."
           },
           {
-            "q": "How do you handle factual accuracy?",
+            "q": "How do you check the facts?",
             "a": "Generated drafts are treated as candidates, never as finished claims. Any factual assertion goes through human review before it ships, and we build that checkpoint into the workflow rather than leaving it to discipline."
           }
         ]
@@ -116,11 +116,11 @@
     },
     "conceptVisualization": {
       "title": "Concept Visualization",
-      "short": "You have some abstract ideas but need to add detail and amazing visuals.",
-      "long": "Bring your ideas to life with our AI-powered concept visualization service. We use the latest and greatest AI tools to transform rough concepts into stunning, high-impact visuals—fast. Whether you're crafting product designs, moodboards, 3D interfaces, or campaign imagery, we help you move from idea to visual clarity in minutes.",
+      "short": "You have rough ideas and need detail and strong visuals to go with them.",
+      "long": "Bring your ideas to life with our concept visualization service. We use the newest AI tools to turn rough concepts into bold, high-impact visuals, fast. Whether you need product designs, moodboards, 3D interfaces, or campaign images, we help you get from a loose idea to a clear picture of it in minutes.",
       "detail": {
         "intro": "The distance between an idea described in a meeting and an idea everyone can see is where most projects stall. Written concepts get nodded at and then interpreted six different ways. Our concept visualization service compresses that distance: we turn abstract direction into concrete, high-fidelity visuals fast enough to use inside the decision, not after it.",
-        "body": "We work across product design, moodboards, 3D interfaces, environments, and campaign imagery. The goal is alignment. When a stakeholder can point at something, the conversation changes from what did you mean to whether this is right.",
+        "body": "We work on product design, moodboards, 3D interfaces, scenes, and campaign art. The aim is shared understanding. When people can point at an image, the question stops being what did you mean and becomes whether this is right.",
         "steps": [
           {
             "title": "Pin down the direction",
@@ -136,9 +136,9 @@
           }
         ],
         "deliverables": [
-          "Multiple distinct visual directions, not variations on one guess",
-          "High-fidelity renders or moodboards at the resolution you need",
-          "Source files and the prompts and references behind each direction",
+          "Several distinct visual directions",
+          "Renders or moodboards in full detail",
+          "The source files and prompts",
           "A documented rationale for why each direction reads the way it does"
         ],
         "faq": [
@@ -147,7 +147,7 @@
             "a": "First directions typically land within days rather than weeks, because generating breadth is cheap once the brief is specific. The timeline depends far more on how quickly the brief gets pinned down than on production."
           },
           {
-            "q": "Can you match an existing visual identity?",
+            "q": "Can you match our visual identity?",
             "a": "Yes. Working inside an established identity is the common case. We build a reference set from your existing assets and treat it as a constraint on every direction we generate."
           },
           {
@@ -155,7 +155,7 @@
             "a": "Yes, along with the prompts and reference images behind them, so your team can continue the direction without starting over."
           },
           {
-            "q": "Is this a replacement for a design team?",
+            "q": "Does this replace a design team?",
             "a": "No. It is a way to get a design team to the right starting point faster. The judgment about which direction is right remains a human decision, and usually yours."
           }
         ]
@@ -165,8 +165,8 @@
     },
     "explorationScaling": {
       "title": "Exploration Scaling",
-      "short": "You have some ideas visualized but want to create a wider set of variations.",
-      "long": "Expand your creative horizons with our AI-powered exploration scaling service. If you've got a solid concept or a few visual ideas, we help you rapidly generate high-quality variations—stylistic, structural, or conceptual. Using the latest AI models, we scale your initial direction into a broader landscape of possibilities.",
+      "short": "You have some ideas on screen and want a wider set of variations.",
+      "long": "Widen your creative range with our exploration scaling service. If you have a solid concept or a few visual ideas, we use the newest AI models to quickly make strong variations in style, structure, or concept, and grow your first direction into a much broader set of options.",
       "detail": {
         "intro": "A single good concept is a risk. Without alternatives, you cannot tell whether it is the right answer or the first answer. Our exploration scaling service takes a direction you already believe in and expands it into a broad, structured landscape of variations, so the option you ship is one you chose rather than one you settled for.",
         "body": "Variation can be stylistic, structural, or conceptual. We decide with you which axis actually matters for the decision in front of you, then generate along it deliberately instead of producing noise.",
@@ -185,14 +185,14 @@
           }
         ],
         "deliverables": [
-          "A structured exploration set organized by a named axis of variation",
-          "Clustered families with the distinguishing logic written down",
-          "A shortlist sized for an actual review meeting",
+          "A structured set of options, laid out along one named axis of variation",
+          "Families of options, each explained",
+          "A shortlist sized for one meeting",
           "The generation setup, so you can rerun the exploration later"
         ],
         "faq": [
           {
-            "q": "How many variations do you produce?",
+            "q": "How many variations do we get?",
             "a": "Enough to make the axis legible, which is usually dozens rather than a handful. What you receive is the clustered shortlist, not the raw pile."
           },
           {
@@ -201,10 +201,10 @@
           },
           {
             "q": "Does this work for non-visual work?",
-            "a": "Yes. The same method applies to information architecture, messaging structure, and product concepts. The axis changes, the discipline does not."
+            "a": "Yes. The same method works for site structure, messaging, and product concepts as well. The axis of variation changes, but the way we work does not."
           },
           {
-            "q": "What if none of the variations are right?",
+            "q": "What if none of them are right?",
             "a": "That is a useful outcome, and it usually means the axis was wrong rather than the execution. We reset the axis and rerun, which is fast once the system is built."
           }
         ]
@@ -214,8 +214,8 @@
     },
     "experienceOptimization": {
       "title": "Experience Optimization",
-      "short": "Audit and improve your digital products to ensure resonance and usability.",
-      "long": "Optimize every user touchpoint of your digital product. We audit using advanced AI and UX principles to uncover friction, missed opportunities, and areas for deeper user engagement. From UI clarity to flow efficiency, we identify what's working—and what's not—then generate smart, actionable improvements.",
+      "short": "Audit your digital products and make them easier to use.",
+      "long": "Improve every point where users touch your digital product. We audit with AI and proven UX principles to find friction, missed chances, and places to engage users more deeply. From clear screens to smooth flows, we find what works and what does not, then suggest smart fixes you can act on.",
       "detail": {
         "intro": "Products rarely fail at one dramatic moment. They lose people across dozens of small frictions that no one inside the team can still see. Our experience optimization service audits your digital product against AI analysis and established UX principles, then returns a prioritized, specific list of what to change and why.",
         "body": "The deliverable is not a document that describes your product back to you. It is a ranked set of changes, each tied to the friction it removes and the evidence behind the claim.",
@@ -234,14 +234,14 @@
           }
         ],
         "deliverables": [
-          "A ranked findings list scored by impact and implementation cost",
-          "Evidence for each finding, not just an assertion",
-          "Concrete recommended fixes for the highest-impact items",
-          "Revised interface designs where a written recommendation is not enough"
+          "A list of findings, each scored by its impact and by what it would cost to fix",
+          "Evidence behind every finding",
+          "Clear fixes for the top problems",
+          "Redesigns where words fall short"
         ],
         "faq": [
           {
-            "q": "Do you need access to our analytics?",
+            "q": "Do you need our analytics?",
             "a": "It helps and it sharpens the ranking, but it is not required. A heuristic and AI-assisted audit finds most structural friction without it."
           },
           {
@@ -263,11 +263,11 @@
     },
     "productDesign": {
       "title": "Product Design",
-      "short": "Our team of experts will help you through all stages of product development.",
+      "short": "Our team will guide you through every stage of building your product.",
       "long": "Transform your ideas into beautifully functional products with our AI-powered product design service. We combine the speed of AI with the insight of human-centered design to help you visualize, iterate, and refine digital experiences faster than ever.",
       "detail": {
-        "intro": "Our product design service pairs the speed of AI generation with the judgment of human-centered design. You get the iteration velocity that makes exploring real alternatives affordable, and the structural thinking that keeps a fast-moving product coherent instead of accumulating decisions nobody meant to make.",
-        "body": "We work across the full arc: early concept, information architecture, interface design, and design system work. Which parts you need depends on where the product actually is, and we scope to that rather than to a fixed package.",
+        "intro": "Our product design service pairs the speed of AI with the judgment of human-centered design. You get the pace that makes exploring real options affordable, and the structural thinking that keeps a fast-moving product coherent instead of piling up decisions that nobody meant to make.",
+        "body": "We cover the full arc: early concept, site structure, interface design, and design systems. Which parts you need depends on where the product is today, and we scope the work to that instead of to a fixed package.",
         "steps": [
           {
             "title": "Frame the problem",
@@ -279,30 +279,30 @@
           },
           {
             "title": "Systematize and hand off",
-            "body": "We consolidate the result into components, patterns, and documented decisions so the product stays coherent after we leave and your engineers are not reverse-engineering intent from a mockup."
+            "body": "We turn the result into components, patterns, and written decisions, so the product stays coherent after we leave and your engineers are not guessing at intent from a mockup."
           }
         ],
         "deliverables": [
-          "A written problem frame with measurable success criteria",
-          "Interface designs across the flows that matter",
-          "Components and patterns documented for engineering handoff",
-          "The reasoning behind structural decisions, written down"
+          "A written problem frame and goals",
+          "Designs for the flows that matter",
+          "Documented parts for engineers",
+          "The reasoning, written down"
         ],
         "faq": [
           {
-            "q": "Do you work with existing design systems?",
+            "q": "Can you use our design system?",
             "a": "Yes, and it is usually the better path. We extend what you have rather than replacing it, unless replacing it is genuinely the cheaper option."
           },
           {
-            "q": "What do you hand off to engineering?",
-            "a": "Designs, components, and the reasoning behind the structural decisions. The written rationale is what stops the intent from decaying during implementation."
+            "q": "What do engineers get?",
+            "a": "Designs, components, and the reasons behind the main decisions. Writing those reasons down is what keeps the intent from getting lost while it is built."
           },
           {
             "q": "How is AI actually used here?",
-            "a": "Mostly to make iteration cheap: generating alternatives, testing structures, and producing variations fast enough that exploration is affordable. Structural decisions stay human."
+            "a": "Mainly to make iteration cheap. It generates options, tests structures, and makes variations fast enough that exploring is affordable. The structural decisions stay with people."
           },
           {
-            "q": "Can you work alongside our in-house designers?",
+            "q": "Can you work with our designers?",
             "a": "Yes. Embedding with an existing team is common, and the systematization step is designed to leave that team better equipped than it started."
           }
         ]
@@ -312,10 +312,10 @@
     },
     "operationsConsulting": {
       "title": "Operations Consulting",
-      "short": "Harness the power of AI to improve business efficiency and scalability.",
-      "long": "Streamline and scale with our AI-powered business operations consulting service. We use cutting-edge AI tools to analyze workflows, identify inefficiencies, and deliver data-driven recommendations that boost productivity and reduce costs.",
+      "short": "Use AI to make your business run better and grow with less effort.",
+      "long": "Run leaner and grow with our AI operations consulting service. We use the newest AI tools to study how work flows, find the waste, and give you advice, backed by data, that helps your team get more done and spend less.",
       "detail": {
-        "intro": "Most operational inefficiency is invisible from the inside, because the workarounds have been normal for years. Our AI operations consulting service maps how work actually moves through your organization, identifies where time and money leak, and returns recommendations specific enough to act on this quarter.",
+        "intro": "Most of the waste in how a company runs is invisible from inside, because the workarounds have been normal for years. Our AI operations service maps how work really moves through your team, finds where time and money leak, and gives you advice specific enough to act on this quarter.",
         "body": "We are interested in the processes your team actually runs, not the ones on the org chart. That distinction is usually where the recoverable cost is hiding.",
         "steps": [
           {
@@ -332,10 +332,10 @@
           }
         ],
         "deliverables": [
-          "A documented map of how work actually moves today",
-          "Quantified inefficiencies with the cost of each written down",
-          "Ranked recommendations with expected return and difficulty",
-          "A sequenced implementation order, not an undifferentiated backlog"
+          "A map of how work moves today",
+          "Every inefficiency we find, with what each one costs you written down",
+          "Ranked fixes with return and effort",
+          "An order to do the work in"
         ],
         "faq": [
           {
@@ -351,7 +351,7 @@
             "a": "The method scales from a single team to a department. Below a certain size the recoverable cost usually does not justify the engagement, and we will tell you if that is the case."
           },
           {
-            "q": "Do you help implement the recommendations?",
+            "q": "Do you help with the fixes?",
             "a": "Yes, as a separate engagement. The assessment is deliberately useful on its own so you are not locked into a follow-on."
           }
         ]
@@ -362,15 +362,15 @@
     "applicationServicesHeading": "Application services",
     "openclawInstallation": {
       "title": "Openclaw Installation & Integration",
-      "short": "Full installation and integration of Openclaw with 30-day support.",
-      "long": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you're covered from day one. Includes setup, configuration, and knowledge transfer. $3,000.",
+      "short": "Full Openclaw install and integration, with 30 days of support.",
+      "long": "We handle the full Openclaw install and integration for your environment, with 30 days of support so you are covered from day one. It includes setup, configuration, and knowledge transfer, all for $3,000.",
       "detail": {
-        "intro": "We handle full Openclaw installation and integration tailored to your environment, with a 30-day support policy so you are covered from the moment it goes live. The engagement includes setup, configuration, and knowledge transfer, and is priced at $3,000.",
+        "intro": "We handle the full Openclaw install and integration, built around your environment, and support it for 30 days so you are covered from the day it goes live. Setup, configuration, and knowledge transfer are all included, for a price of $3,000.",
         "body": "The point is not just a working install. It is that your team understands the configuration well enough to change it without calling us, which is what the knowledge transfer step exists to guarantee.",
         "steps": [
           {
             "title": "Assess the environment",
-            "body": "We review your existing stack, access model, and constraints so the installation fits what you actually run rather than a reference architecture that assumes otherwise."
+            "body": "We review your current stack, access model, and limits so the install fits what you really run, not a reference design that assumes something else."
           },
           {
             "title": "Install and configure",
@@ -382,18 +382,18 @@
           }
         ],
         "deliverables": [
-          "A complete, configured Openclaw installation in your environment",
-          "Integration with the tools your team already uses",
-          "Written configuration documentation and a walkthrough session",
-          "30 days of support after go-live"
+          "Openclaw, installed and configured",
+          "Links to the tools you already use",
+          "Written docs for the setup, plus a live session that walks your team through it",
+          "30 days of support after launch"
         ],
         "faq": [
           {
             "q": "What does the engagement cost?",
-            "a": "$3,000, covering installation, integration, configuration, knowledge transfer, and 30 days of post-launch support."
+            "a": "It costs $3,000, which covers the install, the integration, the setup, knowledge transfer, and 30 days of support after it goes live."
           },
           {
-            "q": "What does the 30-day support policy cover?",
+            "q": "What does support cover?",
             "a": "Issues arising from the installation and configuration we delivered, including the problems that only appear once the team is using it for real."
           },
           {
@@ -402,7 +402,7 @@
           },
           {
             "q": "What happens after the 30 days?",
-            "a": "Your team owns a documented configuration they understand. Ongoing support can be arranged separately, but the handover is designed so you do not need it."
+            "a": "Your team owns a documented setup they understand. We can arrange ongoing support if you want it, but the handover is built so you should not need it."
           }
         ]
       },
@@ -411,10 +411,10 @@
     },
     "claudeCursorTraining": {
       "title": "Claude Code and Cursor Training",
-      "short": "Get your team up to speed on Claude Code and Cursor for AI-augmented development.",
-      "long": "Structured training on using Claude Code and Cursor effectively for development workflows. We cover best practices, prompts, and integration so your team can ship faster with AI assistance. Sessions can be tailored to your stack and processes.",
+      "short": "Get your whole team up to speed on building with Claude Code and Cursor.",
+      "long": "Hands-on training on using Claude Code and Cursor well. We cover the best habits, prompts, and setup so your team can ship faster with help from AI. We shape each session around your stack and the way your team works.",
       "detail": {
-        "intro": "Structured training on using Claude Code and Cursor effectively inside real development workflows. We cover the practices, prompting patterns, and integration decisions that separate teams that ship faster with AI assistance from teams that generate more code and review more of it.",
+        "intro": "Structured training on using Claude Code and Cursor well in real day-to-day work. We cover the habits, prompts, and setup choices that split teams who ship faster with AI from teams who just write more code and then review more of it.",
         "body": "Sessions are tailored to your stack and your processes. Generic AI training produces generic results, so we build the material around the codebase your team actually works in.",
         "steps": [
           {
@@ -423,27 +423,27 @@
           },
           {
             "title": "Run tailored sessions",
-            "body": "Training uses your codebase and your workflows, not toy examples. The exercises are drawn from work your team recognizes."
+            "body": "Training uses your own code and the way you work, not toy examples. Every exercise comes from work your team will recognize."
           },
           {
             "title": "Establish working practice",
-            "body": "We leave behind documented conventions covering when to reach for AI assistance, how to review its output, and where it should stay out of the way."
+            "body": "We leave written conventions for when to reach for AI help, how to review what it writes, and where it should stay out of the way."
           }
         ],
         "deliverables": [
-          "Training sessions built around your codebase and workflows",
-          "Documented prompting and review conventions for your team",
-          "Integration guidance for your existing development process",
-          "A written practice guide your team keeps"
+          "Training built on your own codebase",
+          "Written rules for prompting and review that your team can follow",
+          "Guidance on how the tools fit into the way you build software now",
+          "A written guide your team keeps"
         ],
         "faq": [
           {
-            "q": "How technical does the team need to be?",
+            "q": "How technical must the team be?",
             "a": "The training targets working developers. We adjust depth to experience level, but it assumes people who write and review code."
           },
           {
             "q": "Claude Code, Cursor, or both?",
-            "a": "Whichever fits your workflow. They solve overlapping problems differently, and part of the training is knowing which to reach for and when."
+            "a": "Whichever fits your workflow. They solve similar problems in different ways, and part of the training is knowing which one to use and when."
           },
           {
             "q": "How long is the training?",
@@ -460,7 +460,7 @@
     },
     "chatbotAudit": {
       "title": "Chatbot\u00a0Audit",
-      "short": "Test your customer support chatbot before it talks to\u00a0customers\u00a0in\u00a0your\u00a0name.",
+      "short": "Test your customer support chatbot before it talks to a single customer in your name.",
       "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in\u00a0ten\u00a0minutes.\u00a0From\u00a0$295.",
       "detail": {
         "intro": "Your support chatbot is about to talk to customers in your name. The questions that matter most are the ones your documents do not answer. A bot that invents a refund policy, a price, or a warranty does more harm than one that says it does not know, and customers will hold you to what it said. Most of the audit is\u00a0aimed\u00a0at\u00a0that\u00a0failure.",
@@ -480,7 +480,7 @@
           }
         ],
         "deliverables": [
-          "A report with every question, the bot's exact reply, and the\u00a0reason\u00a0for\u00a0each\u00a0verdict",
+          "A report of every question with the bot's exact reply",
           "The three most serious failures, explained in plain words at the\u00a0top\u00a0of\u00a0the\u00a0report",
           "The question set, so you can run the same test again after\u00a0every\u00a0change\u00a0you\u00a0make",
           "A short call or written note on what to fix first, and in what\u00a0order\u00a0to\u00a0fix\u00a0it"
@@ -532,7 +532,7 @@
   },
   "partnerships": {
     "heading": "Partnerships",
-    "text": "At Arsonist AI, collaboration is at the core of everything we do. We believe the best ideas emerge when diverse minds come together, which is why we're always seeking partnerships with forward-thinking teams and individuals in the AI space. Whether it's co-developing tools, exploring new applications, or exchanging insights, we're excited to build alongside others who share our passion for pushing boundaries."
+    "text": "At Arsonist AI, working together is at the core of all we do. We believe the best ideas come when different minds meet, which is why we are always looking for partners among forward-thinking teams and people in AI. Whether we build tools together, try new uses, or trade what we know, we are excited to work beside others who share our drive to push past limits."
   },
   "caseStudies": {
     "heading": "Case Studies",
@@ -604,7 +604,7 @@
   },
   "newsletter": {
     "heading": "Newsletter",
-    "description": "Stay up to date with AI insights and news.",
+    "description": "Get AI insights and news by email.",
     "placeholder": "Your email",
     "subscribe": "Subscribe",
     "submitting": "Subscribing...",

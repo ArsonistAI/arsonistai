@@ -28,7 +28,7 @@ export default function InsightCard({ post }: Props) {
           />
         </div>
         <div className="p-6">
-          <h3 className="text-title-lg mb-2 group-hover:text-lava m3-transition transition-colors leading-snug">
+          <h3 className="text-lg font-medium mb-2 group-hover:text-lava m3-transition transition-colors leading-snug">
             {t(post.titleKey)}
           </h3>
           <p className="text-body-md text-muted leading-relaxed mb-4">

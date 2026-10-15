@@ -79,6 +79,14 @@
 .text-label-md { font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; }
 .text-label-sm { font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; }
 
+/* Phones: the larger title sizes drop one step, so a heading that wraps can
+   still hold five words to a line (the rule LineFitter enforces). */
+@media (max-width: 639px) {
+  .text-display-sm { font-size: 28px; line-height: 36px; }
+  .text-headline-md { font-size: 24px; line-height: 32px; }
+  .text-title-lg { font-size: 18px; line-height: 24px; }
+}
+
 /* === M3 transition base === */
 .m3-transition {
   transition-timing-function: var(--ease-standard);

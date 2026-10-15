@@ -77,12 +77,11 @@ function setBreaks(node: HTMLElement, full: number): boolean {
     for (const word of text.data.matchAll(/\S+/g)) {
       range.setStart(text, word.index);
       range.setEnd(text, word.index + word[0].length);
-      words.push({
-        text,
-        at: word.index,
-        width: range.getBoundingClientRect().width,
-        open: word.index > 0 || spaced,
-      });
+      // A hyphenated word the browser has split across two lines has a
+      // bounding box as wide as both lines; its pieces give its true width.
+      let width = 0;
+      for (const piece of range.getClientRects()) width += piece.width;
+      words.push({ text, at: word.index, width, open: word.index > 0 || spaced });
     }
     if (text.data.length) spaced = /\s$/.test(text.data);
   }

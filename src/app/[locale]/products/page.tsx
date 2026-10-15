@@ -83,7 +83,7 @@ function ProductsContent({ locale }: { locale: string }) {
         <h1 className="text-display-sm md:text-display-md font-bold mb-14">
           {t("heading")}
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

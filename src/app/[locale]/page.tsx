@@ -112,13 +112,13 @@ function HomeContent() {
           <h2 className="text-headline-lg font-bold mb-14 text-center">
             {t("whyHeading")}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div
                 key={i}
                 className="p-8 bg-surface rounded-shape-xl border border-border text-center m3-card"
               >
-                <h3 className="text-title-lg mb-3">
+                <h3 className="text-lg font-medium mb-3">
                   {t(`why${i}Title`)}
                 </h3>
                 <p className="text-body-md text-muted leading-relaxed">
@@ -144,7 +144,7 @@ function HomeContent() {
               {t("allProducts")} &rarr;
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

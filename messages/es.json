@@ -28,9 +28,9 @@
     "servicesSubheading": "Ya sea que estés comenzando o liderando una empresa establecida, estamos comprometidos a entender tus objetivos y ayudarte a alcanzarlos.",
     "whyHeading": "¿Por qué elegirnos?",
     "why1Title": "Somos expertos en IA",
-    "why1Text": "Nos mantenemos al día con las últimas y mejores herramientas de IA para que tú no tengas que hacerlo.",
-    "why2Title": "Nos adaptamos a tus necesidades",
-    "why2Text": "En lugar de usar un modelo único, estudiamos tu negocio y personalizamos.",
+    "why1Text": "Seguimos de cerca las mejores y más nuevas herramientas de IA para que tú no tengas que hacerlo.",
+    "why2Title": "Nos adaptamos a ti",
+    "why2Text": "No usamos un modelo para todos: estudiamos tu negocio y hacemos el trabajo a tu medida.",
     "why3Title": "Servimos a escala",
     "why3Text": "Usar IA nos permite analizar y diseñar para problemas que van desde lo micro hasta lo global.",
     "productsHeading": "Productos",
@@ -51,13 +51,13 @@
     "missionText": "Nuestra misión es construir el futuro con IA avanzada, haciéndola accesible, escalable y centrada en las personas que más la necesitan.",
     "valuesHeading": "nuestros valores",
     "value1Title": "Usamos IA para el bien",
-    "value1Text": "La IA es increíblemente poderosa y requiere adherencia a estándares éticos de uso.",
-    "value2Title": "No aceptamos cualquier cliente",
+    "value1Text": "La IA es muy potente, así que la usamos con reglas éticas claras.",
+    "value2Title": "Elegimos a quién ayudar",
     "value2Text": "Priorizamos trabajo de alta calidad, colaborativo y de alto impacto.",
     "value3Title": "Somos un equipo diverso",
-    "value3Text": "Lo decimos en todas las formas posibles en que se pueda interpretar.",
-    "careersHeading": "¿Interesado en construir el futuro?",
-    "careersText": "Cuéntanos por qué y cómo enviándonos un email:",
+    "value3Text": "Y lo decimos en todos los sentidos en que se pueda entender.",
+    "careersHeading": "¿Quieres crear el futuro?",
+    "careersText": "Cuéntanos por qué y cómo, por email:",
     "careersEmail": "careers@arsonistai.com",
     "copied": "¡Copiado!"
   },
@@ -67,19 +67,19 @@
     "label": "Servicios de IA",
     "contentGeneration": {
       "title": "Generación de Contenido",
-      "short": "Estás empezando desde cero y quieres ideas de alta calidad para productos y servicios.",
-      "long": "¿Necesitas ideas frescas rápido? Nuestro servicio de generación de contenido e ideas potenciado por IA ayuda a creadores, emprendedores y equipos a innovar en segundos. Ya sea que estés haciendo lluvia de ideas para nombres de productos, contenido de redes sociales, conceptos de startups o eslóganes de campañas, nuestra IA entrega sugerencias personalizadas y de alta calidad.",
+      "short": "Estás empezando desde cero y quieres ideas nuevas y sólidas para tus productos y servicios.",
+      "long": "¿Te faltan ideas y las necesitas ya? Con nuestro servicio de IA, creadores, emprendedores y equipos dan con ideas en segundos. Sean nombres de producto, posts para redes, ideas de startup o lemas de campaña, recibes ideas buenas y pensadas para ti.",
       "detail": {
         "intro": "La mayoría de los equipos no tiene un problema de ideas. Tiene un problema de volumen. Los conceptos que habrían funcionado nunca se escriben, porque producir cincuenta opciones viables cuesta horas que nadie tiene. Nuestro servicio de generación de contenido cierra esa brecha: construimos los sistemas de prompts, las restricciones de marca y los ciclos de revisión que permiten a tu equipo producir muchos puntos de partida fieles a tu marca y luego elegir bien entre ellos.",
         "body": "Esto no significa entregar tu voz a un modelo. Partimos de cómo suenas hoy, lo codificamos y usamos la IA para ampliar el campo de opciones, no para sustituir el criterio que elige la ganadora. El resultado es un sistema que tu equipo conserva, no una entrega puntual de textos.",
         "steps": [
           {
             "title": "Capturar tu voz",
-            "body": "Auditamos los textos, el posicionamiento y la investigación de audiencia existentes para construir una especificación escrita de marca y tono. Esa especificación se convierte en la restricción con la que se mide cada opción generada, de modo que el volumen nunca te cueste consistencia."
+            "body": "Leemos tus textos, tu posicionamiento y lo que sabes de tu público, y con eso escribimos una guía de voz y tono. Cada opción nueva se mide con esa guía, así que hacer más nunca te hace perder una voz que suene a ti."
           },
           {
             "title": "Construir el sistema de generación",
-            "body": "Armamos cadenas de prompts, bibliotecas de referencia y criterios de evaluación ajustados a tus categorías, ya sea naming de producto, líneas de campaña, contenido editorial largo o social. Recibes el sistema, los prompts y el razonamiento detrás de ambos."
+            "body": "Creamos prompts, ejemplos y reglas para juzgar cada opción según lo que hagas, sean nombres de producto, frases de campaña, textos largos o redes. Te llevas el sistema, los prompts y el porqué de todo ello."
           },
           {
             "title": "Generar, filtrar y transferir",
@@ -87,27 +87,27 @@
           }
         ],
         "deliverables": [
-          "Una especificación escrita de voz y tono de marca",
-          "Bibliotecas de prompts y flujos de generación ajustados a tus categorías",
-          "Un conjunto filtrado de conceptos listos para usar a partir de tus briefs reales",
-          "Una sesión de trabajo para que tu equipo opere el sistema de forma autónoma"
+          "Una guía escrita de tu voz de marca",
+          "Bibliotecas de prompts y flujos de trabajo ajustados a las categorías en las que trabajas",
+          "Conceptos listos para usar",
+          "Una sesión de trabajo para que tu equipo pueda usar el sistema por su cuenta"
         ],
         "faq": [
           {
-            "q": "¿El resultado sonará como el contenido con IA de todos los demás?",
+            "q": "¿Sonará genérico?",
             "a": "Ese es exactamente el fallo que buscamos evitar. La especificación de voz y la biblioteca de referencia son lo que mantiene las opciones generadas dentro de tu marca y no dentro de los valores por defecto del modelo. Cuando el resultado es genérico suele ser porque nadie codificó las restricciones, y codificarlas es la primera fase del trabajo."
           },
           {
-            "q": "¿Nos quedamos con los prompts y sistemas que construyen?",
-            "a": "Sí. Todo lo que construimos queda documentado y se entrega. El sentido del proyecto es que tu equipo pueda seguir generando cuando termine."
+            "q": "¿Nos quedamos con los prompts?",
+            "a": "Sí. Todo lo que hacemos queda por escrito y es tuyo. El objetivo es que tu equipo pueda seguir generando ideas por su cuenta cuando el proyecto termine."
           },
           {
             "q": "¿Qué modelos utilizan?",
             "a": "Elegimos según la tarea en lugar de casarnos con un proveedor, y te explicamos por qué. El trabajo que exige razonamiento y el de alto volumen tienen perfiles de coste y calidad distintos."
           },
           {
-            "q": "¿Cómo garantizan la exactitud de los datos?",
-            "a": "Los borradores generados se tratan como candidatos, nunca como afirmaciones terminadas. Toda afirmación factual pasa por revisión humana antes de publicarse, y ese control está integrado en el flujo en lugar de depender de la disciplina de cada persona."
+            "q": "¿Cómo revisan los datos?",
+            "a": "Los borradores son propuestas, nunca textos ya cerrados. Cada dato lo revisa una persona antes de que salga, y esa revisión es parte del proceso, no algo que dependa de que cada uno se acuerde."
           }
         ]
       },
@@ -116,10 +116,10 @@
     },
     "conceptVisualization": {
       "title": "Visualización de Conceptos",
-      "short": "Tienes algunas ideas abstractas pero necesitas agregar detalle y visuales increíbles.",
+      "short": "Tienes ideas sueltas y quieres darles forma, con detalle y con visuales que se vean bien.",
       "long": "Da vida a tus ideas con nuestro servicio de visualización de conceptos potenciado por IA. Usamos las últimas y mejores herramientas de IA para transformar conceptos en bruto en visuales impactantes y de alto impacto—rápido.",
       "detail": {
-        "intro": "La distancia entre una idea descrita en una reunión y una idea que todos pueden ver es donde se atascan la mayoría de los proyectos. Los conceptos escritos reciben asentimientos y luego se interpretan de seis maneras distintas. Nuestro servicio de visualización de conceptos comprime esa distancia: convertimos una dirección abstracta en visuales concretos y de alta fidelidad con la rapidez suficiente para usarlos dentro de la decisión, no después.",
+        "intro": "La mayoría de los proyectos se atascan entre la idea que se describe en una reunión y la idea que todos pueden ver. Los conceptos escritos reciben asentimientos y luego cada uno los entiende a su manera. Nuestro servicio de visualización de conceptos acorta esa distancia: convertimos una idea abstracta en visuales claros y detallados, tan rápido que sirven para tomar la decisión, no para después.",
         "body": "Trabajamos en diseño de producto, moodboards, interfaces 3D, entornos e imágenes de campaña. El objetivo es la alineación. Cuando alguien puede señalar algo, la conversación pasa de qué querías decir a si esto es lo correcto.",
         "steps": [
           {
@@ -128,7 +128,7 @@
           },
           {
             "title": "Generar en amplitud",
-            "body": "Producimos varias direcciones visuales distintas en lugar de refinar una única apuesta. Ver tres opciones reales lado a lado revela preferencias que ninguna cantidad de discusión saca a la luz."
+            "body": "Creamos varias direcciones distintas en lugar de pulir una sola idea. Ver tres opciones reales una junto a otra revela gustos que ninguna conversación consigue sacar a la luz."
           },
           {
             "title": "Refinar hasta la fidelidad necesaria",
@@ -136,18 +136,18 @@
           }
         ],
         "deliverables": [
-          "Varias direcciones visuales distintas, no variaciones de una sola apuesta",
-          "Renders o moodboards de alta fidelidad en la resolución que necesites",
-          "Archivos fuente junto con los prompts y referencias de cada dirección",
-          "Un razonamiento documentado de por qué cada dirección se lee como se lee"
+          "Varias direcciones visuales distintas",
+          "Renders o moodboards con detalle",
+          "Los archivos fuente, junto con los prompts y las referencias de cada una de las direcciones",
+          "Por escrito, qué transmite cada una"
         ],
         "faq": [
           {
-            "q": "¿Qué tan rápida es la primera ronda?",
+            "q": "¿Cuándo llega la primera ronda?",
             "a": "Las primeras direcciones suelen llegar en días y no en semanas, porque generar amplitud es barato una vez que el brief es específico. El plazo depende mucho más de la rapidez con que se concrete el brief que de la producción."
           },
           {
-            "q": "¿Pueden respetar una identidad visual existente?",
+            "q": "¿Respetan nuestra identidad?",
             "a": "Sí. Trabajar dentro de una identidad establecida es el caso habitual. Construimos un set de referencia a partir de tus piezas actuales y lo tratamos como restricción de cada dirección que generamos."
           },
           {
@@ -155,7 +155,7 @@
             "a": "Sí, junto con los prompts y las imágenes de referencia, para que tu equipo pueda continuar la dirección sin empezar de cero."
           },
           {
-            "q": "¿Esto reemplaza a un equipo de diseño?",
+            "q": "¿Reemplaza a un equipo de diseño?",
             "a": "No. Es una forma de que un equipo de diseño llegue antes al punto de partida correcto. El criterio sobre qué dirección es la adecuada sigue siendo una decisión humana, y normalmente tuya."
           }
         ]
@@ -165,11 +165,11 @@
     },
     "explorationScaling": {
       "title": "Escalado de Exploración",
-      "short": "Tienes algunas ideas visualizadas pero quieres crear un conjunto más amplio de variaciones.",
-      "long": "Expande tus horizontes creativos con nuestro servicio de escalado de exploración potenciado por IA. Si tienes un concepto sólido o algunas ideas visuales, te ayudamos a generar rápidamente variaciones de alta calidad—estilísticas, estructurales o conceptuales.",
+      "short": "Tienes unas ideas visuales y quieres muchas más variaciones de ellas para poder elegir bien.",
+      "long": "Abre tu abanico creativo con nuestro servicio de exploración con IA. Si ya tienes un concepto sólido o algunas ideas visuales, te ayudamos a crear rápido muchas variaciones de calidad en estilo, estructura o concepto.",
       "detail": {
         "intro": "Un único concepto bueno es un riesgo. Sin alternativas no puedes saber si es la respuesta correcta o simplemente la primera. Nuestro servicio de escalado de exploración toma una dirección en la que ya crees y la expande en un panorama amplio y estructurado de variaciones, para que la opción que lances sea una que elegiste y no una con la que te conformaste.",
-        "body": "La variación puede ser estilística, estructural o conceptual. Decidimos contigo qué eje importa de verdad para la decisión que tienes delante y generamos a lo largo de ese eje de forma deliberada, en lugar de producir ruido.",
+        "body": "Se puede variar el estilo, la estructura o el concepto. Elegimos contigo el eje que de verdad importa para tu decisión y generamos sobre ese eje a propósito, en vez de llenar la mesa de ruido.",
         "steps": [
           {
             "title": "Definir el eje de variación",
@@ -177,18 +177,18 @@
           },
           {
             "title": "Generar de forma sistemática",
-            "body": "Producimos variaciones a lo largo del eje elegido en volumen, manteniendo fijas las demás variables para que las comparaciones sean significativas. Eso distingue una exploración real de una muestra aleatoria."
+            "body": "Hacemos muchas variaciones sobre el eje elegido y dejamos fijo todo lo demás, para que comparar tenga sentido. Eso es lo que separa una exploración real de una muestra al azar."
           },
           {
             "title": "Agrupar y reducir",
-            "body": "Agrupamos el resultado en familias coherentes, nombramos qué las distingue y reducimos a una lista corta que tu equipo pueda evaluar de verdad en una sala."
+            "body": "Agrupamos el resultado en familias coherentes, explicamos qué las hace distintas y lo reducimos a una lista corta que tu equipo pueda evaluar de verdad en una reunión."
           }
         ],
         "deliverables": [
-          "Un set de exploración estructurado y organizado por un eje de variación con nombre",
+          "Un conjunto de opciones bien ordenado a lo largo de un único eje de variación con nombre",
           "Familias agrupadas con la lógica que las distingue por escrito",
           "Una lista corta del tamaño de una reunión de revisión real",
-          "El montaje de generación, para que puedas repetir la exploración más adelante"
+          "El montaje, para repetirlo después"
         ],
         "faq": [
           {
@@ -196,7 +196,7 @@
             "a": "Las suficientes para que el eje resulte legible, normalmente decenas y no un puñado. Lo que recibes es la lista corta agrupada, no el montón en bruto."
           },
           {
-            "q": "¿Qué necesitan de nosotros para empezar?",
+            "q": "¿Qué necesitan para empezar?",
             "a": "Una dirección en la que ya creas y una declaración clara de qué decisión debe informar la exploración."
           },
           {
@@ -204,7 +204,7 @@
             "a": "Sí. El mismo método aplica a arquitectura de información, estructura de mensajes y conceptos de producto. Cambia el eje, no la disciplina."
           },
           {
-            "q": "¿Y si ninguna variación es la correcta?",
+            "q": "¿Y si ninguna es la correcta?",
             "a": "Es un resultado útil, y casi siempre significa que el eje estaba mal, no la ejecución. Reajustamos el eje y repetimos, algo rápido una vez construido el sistema."
           }
         ]
@@ -230,18 +230,18 @@
           },
           {
             "title": "Especificar las soluciones",
-            "body": "Para los hallazgos principales producimos recomendaciones concretas y, cuando ayuda, la propia interfaz revisada, de modo que tu equipo implemente una decisión en lugar de interpretar una crítica."
+            "body": "Para los hallazgos clave entregamos soluciones concretas y, si ayuda, la pantalla ya rediseñada, de modo que tu equipo aplique una decisión y no tenga que descifrar una crítica."
           }
         ],
         "deliverables": [
           "Una lista de hallazgos ordenada por impacto y coste de implementación",
-          "Evidencia para cada hallazgo, no solo una afirmación",
-          "Soluciones concretas recomendadas para los puntos de mayor impacto",
+          "Pruebas de cada hallazgo",
+          "Soluciones para lo más importante",
           "Diseños de interfaz revisados cuando una recomendación escrita no basta"
         ],
         "faq": [
           {
-            "q": "¿Necesitan acceso a nuestra analítica?",
+            "q": "¿Necesitan nuestra analítica?",
             "a": "Ayuda y afina la priorización, pero no es imprescindible. Una auditoría heurística asistida por IA encuentra la mayor parte de la fricción estructural sin ella."
           },
           {
@@ -249,11 +249,11 @@
             "a": "Escala con el número de flujos distintos, no de pantallas. El alcance empieza con una conversación sobre qué recorridos importan de verdad al negocio."
           },
           {
-            "q": "¿Implementan ustedes los cambios?",
+            "q": "¿Hacen ustedes los cambios?",
             "a": "Podemos hacerlo, y el diseño de producto es un servicio aparte si prefieres que las soluciones se construyan en lugar de especificarse. La auditoría se sostiene por sí sola en cualquier caso."
           },
           {
-            "q": "¿Y si no estamos de acuerdo con un hallazgo?",
+            "q": "¿Y si no estamos de acuerdo?",
             "a": "Cada hallazgo llega con su evidencia para que puedas discutirlo. Un hallazgo que no puedes interrogar no merece que actúes sobre él."
           }
         ]
@@ -263,11 +263,11 @@
     },
     "productDesign": {
       "title": "Diseño de Producto",
-      "short": "Nuestro equipo de expertos te ayudará en todas las etapas del desarrollo de productos.",
-      "long": "Transforma tus ideas en productos bellamente funcionales con nuestro servicio de diseño de producto potenciado por IA. Combinamos la velocidad de la IA con la perspectiva del diseño centrado en el ser humano.",
+      "short": "Nuestro equipo te acompaña en cada etapa de crear tu producto.",
+      "long": "Haz de tus ideas productos bellos y que funcionan, con nuestro servicio de diseño de producto con IA. Sumamos la velocidad de la IA a la mirada del diseño centrado en las personas.",
       "detail": {
         "intro": "Nuestro servicio de diseño de producto combina la velocidad de la generación con IA y el criterio del diseño centrado en las personas. Obtienes la velocidad de iteración que hace asequible explorar alternativas reales, y el pensamiento estructural que mantiene coherente un producto que avanza rápido en lugar de acumular decisiones que nadie tomó a propósito.",
-        "body": "Trabajamos todo el arco: concepto temprano, arquitectura de información, diseño de interfaz y sistemas de diseño. Qué partes necesitas depende de dónde esté realmente el producto, y ajustamos el alcance a eso y no a un paquete fijo.",
+        "body": "Cubrimos todo el arco: concepto inicial, arquitectura de información, diseño de interfaz y sistemas de diseño. Las partes que necesitas dependen de dónde esté hoy el producto, y ajustamos el alcance a eso y no a un paquete fijo.",
         "steps": [
           {
             "title": "Enmarcar el problema",
@@ -279,30 +279,30 @@
           },
           {
             "title": "Sistematizar y entregar",
-            "body": "Consolidamos el resultado en componentes, patrones y decisiones documentadas para que el producto siga coherente cuando nos vayamos y tus ingenieros no tengan que deducir la intención a partir de una maqueta."
+            "body": "Dejamos el resultado en componentes, patrones y decisiones escritas, para que el producto siga coherente cuando ya no estemos y tus ingenieros nunca tengan que adivinar qué quería decir una maqueta."
           }
         ],
         "deliverables": [
           "Un encuadre escrito del problema con criterios de éxito medibles",
-          "Diseños de interfaz para los flujos que importan",
-          "Componentes y patrones documentados para la entrega a ingeniería",
-          "El razonamiento detrás de las decisiones estructurales, por escrito"
+          "Diseños de los flujos clave",
+          "Componentes listos para ingeniería",
+          "Por qué decidimos así, por escrito"
         ],
         "faq": [
           {
-            "q": "¿Trabajan con sistemas de diseño existentes?",
+            "q": "¿Usan nuestro sistema de diseño?",
             "a": "Sí, y suele ser el mejor camino. Extendemos lo que ya tienes en lugar de reemplazarlo, salvo que reemplazarlo sea realmente la opción más barata."
           },
           {
             "q": "¿Qué entregan a ingeniería?",
-            "a": "Diseños, componentes y el razonamiento detrás de las decisiones estructurales. Ese razonamiento escrito es lo que evita que la intención se degrade durante la implementación."
+            "a": "Diseños, componentes y las razones de cada decisión de estructura. Dejar esas razones por escrito es lo que evita que la idea original se pierda al construirla."
           },
           {
             "q": "¿Cómo se usa la IA realmente aquí?",
-            "a": "Sobre todo para abaratar la iteración: generar alternativas, probar estructuras y producir variaciones con la rapidez suficiente para que explorar sea asequible. Las decisiones estructurales siguen siendo humanas."
+            "a": "Sobre todo para abaratar cada ronda de cambios. Genera alternativas, prueba estructuras y crea variaciones tan rápido que explorar sale a cuenta. Las decisiones de fondo siguen en manos de personas."
           },
           {
-            "q": "¿Pueden trabajar junto a nuestros diseñadores internos?",
+            "q": "¿Trabajan con nuestro equipo?",
             "a": "Sí. Integrarnos con un equipo existente es habitual, y el paso de sistematización está pensado para dejar a ese equipo mejor equipado que al principio."
           }
         ]
@@ -312,8 +312,8 @@
     },
     "operationsConsulting": {
       "title": "Consultoría de Operaciones",
-      "short": "Aprovecha el poder de la IA para mejorar la eficiencia y escalabilidad empresarial.",
-      "long": "Optimiza y escala con nuestro servicio de consultoría de operaciones empresariales potenciado por IA. Usamos herramientas de IA de vanguardia para analizar flujos de trabajo, identificar ineficiencias y entregar recomendaciones basadas en datos.",
+      "short": "Usa la IA para que tu empresa sea más eficiente y pueda crecer más fácil.",
+      "long": "Trabaja mejor y crece con nuestra consultoría de operaciones con IA. Usamos las herramientas más nuevas para estudiar cómo se mueve el trabajo, ver dónde se pierde tiempo y darte consejos basados en datos.",
       "detail": {
         "intro": "La mayor parte de la ineficiencia operativa es invisible desde dentro, porque los apaños llevan años siendo lo normal. Nuestro servicio de consultoría de operaciones con IA mapea cómo se mueve el trabajo realmente en tu organización, identifica dónde se fuga tiempo y dinero, y devuelve recomendaciones lo bastante concretas para actuar este trimestre.",
         "body": "Nos interesan los procesos que tu equipo ejecuta de verdad, no los del organigrama. Esa diferencia suele ser donde se esconde el coste recuperable.",
@@ -328,18 +328,18 @@
           },
           {
             "title": "Recomendar y secuenciar",
-            "body": "Recibes recomendaciones ordenadas por retorno y dificultad, secuenciadas en un orden que funciona de verdad, porque algunas soluciones son requisito de otras."
+            "body": "Recibes las mejoras ordenadas por lo que aportan y lo que cuestan, en un orden que tiene sentido, porque hay cambios que necesitan que otros vayan primero."
           }
         ],
         "deliverables": [
-          "Un mapa documentado de cómo se mueve el trabajo hoy",
-          "Ineficiencias cuantificadas con el coste de cada una por escrito",
-          "Recomendaciones ordenadas con retorno esperado y dificultad",
-          "Un orden de implementación secuenciado, no una lista indiferenciada"
+          "Un mapa por escrito de cómo se mueve hoy el trabajo dentro de tu empresa",
+          "Cada ineficiencia, con su coste",
+          "Mejoras ordenadas por retorno",
+          "Un orden claro para el trabajo"
         ],
         "faq": [
           {
-            "q": "¿Se trata de reemplazar personas con IA?",
+            "q": "¿Se trata de reemplazar personas?",
             "a": "No. Se trata de encontrar el trabajo repetitivo que está consumiendo a personas que deberían estar haciendo algo más difícil. Donde automatizar sea la respuesta correcta lo diremos, y donde no lo sea también."
           },
           {
@@ -347,11 +347,11 @@
             "a": "El suficiente para observar flujos reales, lo que normalmente implica entrevistas y acceso a las herramientas por donde pasa el trabajo. Definimos ese acceso de forma explícita al inicio."
           },
           {
-            "q": "¿Para qué tamaño de organización es esto?",
+            "q": "¿Para qué tamaño de empresa es?",
             "a": "El método escala desde un solo equipo hasta un departamento. Por debajo de cierto tamaño el coste recuperable no suele justificar el proyecto, y te lo diremos si es el caso."
           },
           {
-            "q": "¿Ayudan a implementar las recomendaciones?",
+            "q": "¿Ayudan a aplicar los cambios?",
             "a": "Sí, como proyecto aparte. El diagnóstico es deliberadamente útil por sí solo para que no quedes atado a una continuación."
           }
         ]
@@ -363,9 +363,9 @@
     "openclawInstallation": {
       "title": "Instalación e integración de Openclaw",
       "short": "Instalación e integración completa de Openclaw con 30 días de soporte.",
-      "long": "Realizamos la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el primer día. Incluye configuración, puesta a punto y transferencia de conocimiento. $3,000.",
+      "long": "Nos encargamos de instalar e integrar Openclaw a la medida de tu entorno, con 30 días de soporte para cubrirte desde el primer día. Incluye configuración, puesta a punto y transferencia de conocimiento, todo por $3,000.",
       "detail": {
-        "intro": "Nos encargamos de la instalación e integración completa de Openclaw adaptada a tu entorno, con una política de soporte de 30 días para que estés cubierto desde el momento en que entra en producción. El trabajo incluye configuración, integración y transferencia de conocimiento, con un precio de 3.000 dólares.",
+        "intro": "Nos encargamos de instalar Openclaw y de conectarlo a todo lo que ya usas, a la medida de tu entorno, con 30 días de soporte para que estés cubierto desde el día en que arranca. Incluye la puesta a punto y la formación de tu equipo, y cuesta 3.000 dólares.",
         "body": "El objetivo no es solo una instalación que funcione. Es que tu equipo entienda la configuración lo bastante bien como para cambiarla sin llamarnos, y para eso existe el paso de transferencia de conocimiento.",
         "steps": [
           {
@@ -378,23 +378,23 @@
           },
           {
             "title": "Transferir y dar soporte",
-            "body": "Documentamos la configuración, la explicamos a tu equipo y quedamos disponibles durante 30 días para atender lo que surja cuando empiece el uso real."
+            "body": "Documentamos la configuración, se la explicamos a tu equipo y seguimos disponibles 30 días para resolver lo que surja cuando empiece el uso real."
           }
         ],
         "deliverables": [
-          "Una instalación de Openclaw completa y configurada en tu entorno",
-          "Integración con las herramientas que tu equipo ya usa",
-          "Documentación escrita de la configuración y una sesión explicativa",
-          "30 días de soporte tras la puesta en producción"
+          "Openclaw instalado y configurado",
+          "Conexión con tus herramientas",
+          "Documentación y una sesión guiada",
+          "Soporte durante 30 días después de que el sistema entre en producción"
         ],
         "faq": [
           {
             "q": "¿Cuánto cuesta el servicio?",
-            "a": "3.000 dólares, que cubren instalación, integración, configuración, transferencia de conocimiento y 30 días de soporte posterior al lanzamiento."
+            "a": "3.000 dólares, que cubren la instalación, la integración, la configuración, la transferencia de conocimiento y 30 días de soporte tras el lanzamiento."
           },
           {
-            "q": "¿Qué cubre la política de soporte de 30 días?",
-            "a": "Las incidencias derivadas de la instalación y la configuración que entregamos, incluidos los problemas que solo aparecen cuando el equipo la usa de verdad."
+            "q": "¿Qué cubre el soporte de 30 días?",
+            "a": "Los problemas que vengan de la instalación y la configuración que entregamos, incluidos los que solo aparecen cuando el equipo empieza a usarla de verdad."
           },
           {
             "q": "¿Cuánto tarda la instalación?",
@@ -402,7 +402,7 @@
           },
           {
             "q": "¿Qué pasa después de los 30 días?",
-            "a": "Tu equipo se queda con una configuración documentada que entiende. El soporte continuado puede acordarse aparte, pero la entrega está diseñada para que no lo necesites."
+            "a": "Tu equipo se queda con un sistema bien documentado que entiende. Podemos acordar más soporte aparte, pero lo dejamos todo para que no lo tengas que pedir."
           }
         ]
       },
@@ -411,7 +411,7 @@
     },
     "claudeCursorTraining": {
       "title": "Capacitación en Claude Code y Cursor",
-      "short": "Capacita a tu equipo en Claude Code y Cursor para desarrollo aumentado por IA.",
+      "short": "Prepara a tu equipo para desarrollar software con Claude Code y Cursor.",
       "long": "Capacitación estructurada en el uso efectivo de Claude Code y Cursor en flujos de desarrollo. Cubrimos mejores prácticas, prompts e integración para que tu equipo pueda entregar más rápido con asistencia de IA. Las sesiones se adaptan a tu stack y procesos.",
       "detail": {
         "intro": "Formación estructurada sobre el uso efectivo de Claude Code y Cursor dentro de flujos de desarrollo reales. Cubrimos las prácticas, los patrones de prompting y las decisiones de integración que separan a los equipos que entregan más rápido con asistencia de IA de los que solo generan más código y revisan más.",
@@ -427,19 +427,19 @@
           },
           {
             "title": "Establecer una práctica de trabajo",
-            "body": "Dejamos convenciones documentadas sobre cuándo recurrir a la asistencia de IA, cómo revisar su resultado y dónde conviene que no intervenga."
+            "body": "Dejamos reglas escritas sobre cuándo usar la IA, cómo revisar lo que produce y en qué casos es mejor que no intervenga."
           }
         ],
         "deliverables": [
-          "Sesiones de formación construidas sobre tu código y tus flujos de trabajo",
-          "Convenciones documentadas de prompting y revisión para tu equipo",
-          "Guía de integración con tu proceso de desarrollo actual",
-          "Una guía de práctica escrita que tu equipo conserva"
+          "Sesiones de formación hechas a partir de tu código y de la forma en que trabaja tu equipo",
+          "Reglas escritas para prompts",
+          "Guía para encajarlo en tu proceso",
+          "Una guía escrita para tu equipo"
         ],
         "faq": [
           {
-            "q": "¿Qué nivel técnico necesita el equipo?",
-            "a": "La formación está dirigida a desarrolladores en activo. Ajustamos la profundidad al nivel de experiencia, pero asume personas que escriben y revisan código."
+            "q": "¿Qué nivel necesita el equipo?",
+            "a": "La formación es para desarrolladores en activo. Ajustamos la profundidad a la experiencia de cada equipo, pero damos por hecho que escriben y revisan código."
           },
           {
             "q": "¿Claude Code, Cursor o ambos?",
@@ -481,9 +481,9 @@
         ],
         "deliverables": [
           "Un informe con cada pregunta, la respuesta exacta del bot y el\u00a0motivo\u00a0de\u00a0cada\u00a0veredicto",
-          "Los tres fallos más graves, explicados en palabras sencillas\u00a0al\u00a0principio\u00a0del\u00a0informe",
-          "El conjunto de preguntas, para repetir la misma prueba después de\u00a0cada\u00a0cambio\u00a0que\u00a0hagas",
-          "Una llamada breve o una nota escrita sobre qué corregir primero\u00a0y\u00a0en\u00a0qué\u00a0orden"
+          "Los tres fallos más graves, explicados con palabras sencillas al principio de todo el informe",
+          "Las preguntas, para reusarlas",
+          "Una nota con las prioridades"
         ],
         "faq": [
           {
@@ -532,7 +532,7 @@
   },
   "partnerships": {
     "heading": "Alianzas",
-    "text": "En Arsonist AI, la colaboración está en el centro de todo lo que hacemos. Creemos que las mejores ideas surgen cuando mentes diversas se unen, por eso siempre buscamos alianzas con equipos e individuos visionarios en el espacio de la IA. Ya sea co-desarrollando herramientas, explorando nuevas aplicaciones o intercambiando ideas, estamos emocionados de construir junto a otros que comparten nuestra pasión por superar los límites."
+    "text": "En Arsonist AI, el trabajo en equipo está en el centro de todo. Creemos que las mejores ideas nacen cuando se juntan mentes distintas, y por eso siempre buscamos socios en la IA, sean equipos o personas que miran lejos. Ya sea al crear herramientas, probar nuevos usos o compartir lo que sabemos, nos encanta construir con quien quiere, como nosotros, ir más allá."
   },
   "caseStudies": {
     "heading": "Casos de estudio",
@@ -604,7 +604,7 @@
   },
   "newsletter": {
     "heading": "Boletín",
-    "description": "Mantente al día con noticias e ideas sobre IA.",
+    "description": "Ideas y noticias de IA en tu correo.",
     "placeholder": "Tu correo",
     "subscribe": "Suscribirse",
     "submitting": "Suscribiendo...",
