@@ -7,6 +7,8 @@ export interface Service {
   image: string;
   /** Optional section key for grouping (e.g. "applicationServices"). Services with the same key are grouped under one subsection heading. */
   sectionKey?: string;
+  /** Last substantive copy change (YYYY-MM-DD), used by the sitemap. Defaults to the date the service pages launched. */
+  lastModified?: string;
 }
 
 export const services: Service[] = [
@@ -57,6 +59,15 @@ export const services: Service[] = [
     longDescriptionKey: "services.operationsConsulting.long",
     icon: "settings",
     image: "/images/services/factory.png",
+  },
+  {
+    id: "custom-mcp-servers",
+    titleKey: "services.customMcpServers.title",
+    descriptionKey: "services.customMcpServers.short",
+    longDescriptionKey: "services.customMcpServers.long",
+    icon: "plug",
+    image: "/images/services/fisheye.png",
+    lastModified: "2026-10-14",
   },
   // Application services subsection
   {

@@ -67,6 +67,7 @@ export default async function LocaleLayout({
       "Content Generation",
       "Concept Visualization",
       "Operations Consulting",
+      "Custom MCP Server Development",
     ],
     // Keep in sync with the social links in Footer.tsx.
     sameAs: [

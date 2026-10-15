@@ -359,6 +359,55 @@
       "metaTitle": "Consultoría de Operaciones con IA",
       "metaDescription": "Mapeamos cómo se mueve el trabajo en tu organización, cuantificamos dónde se fuga tiempo y dinero, y secuenciamos las soluciones que valen más."
     },
+    "customMcpServers": {
+      "title": "Servidores MCP",
+      "short": "Da a Claude, Cursor y otros agentes de IA un acceso seguro y directo a tus propios datos y herramientas.",
+      "long": "Construimos un servidor MCP pensado para el trabajo que tus agentes de IA necesitan hacer, no para la forma en que tus datos están guardados. Los agentes reciben respuestas que pueden citar, y una negativa clara en lugar de una suposición cuando los datos no bastan para responder. Dos niveles de desarrollo, cada uno con 30 días de soporte. Desde $2,500.",
+      "detail": {
+        "intro": "Un servidor MCP permite que herramientas de IA como Claude y Cursor lean tus datos y usen tus sistemas directamente, en lugar de depender de lo que alguien pegue en un chat. La mayoría de los servidores se limitan a reflejar una base de datos o una carpeta, y el agente tiene que adivinar qué tabla o archivo necesita. Diseñamos las herramientas en torno a las preguntas que un agente hará de verdad, para que la respuesta correcta esté a una sola llamada.",
+        "body": "Cada respuesta indica el registro del que salió, para que una persona pueda comprobarla. Cuando una petición es ambigua, o los datos detrás de ella faltan o están desactualizados, el servidor lo dice claramente y no adivina. En los servidores que funcionan delante de tu aplicación, los agentes tienen exactamente los permisos que ya tienen tus usuarios, y nada más.",
+        "steps": [
+          {
+            "title": "Definir qué necesitan los agentes",
+            "body": "Listamos las tareas que harán tus agentes, los datos y sistemas que esas tareas tocan, y quién puede ver qué. Ese mapa decide la lista de herramientas, y tú la apruebas antes de escribir una sola línea de código."
+          },
+          {
+            "title": "Construir y probar",
+            "body": "Construimos el servidor y lo probamos con un cliente MCP real, llamando a cada herramienta como lo haría un agente. También rompemos los datos a propósito para demostrar que el servidor se niega en lugar de adivinar cuando algo está mal."
+          },
+          {
+            "title": "Entregar y dar soporte",
+            "body": "Lo conectamos a las herramientas que usa tu equipo, explicamos a todos cómo funciona y cómo ampliarlo, y seguimos disponibles durante 30 días mientras se asienta el uso real."
+          }
+        ],
+        "deliverables": [
+          "Todo el código fuente del servidor, en tu propio repositorio, para que tu equipo sea su dueño y pueda cambiarlo cuando lo necesite",
+          "La conexión con Claude Desktop, Claude Code, Cursor y cualquier otro cliente MCP que use tu equipo, probada en cada uno antes de la entrega",
+          "Un conjunto de pruebas automáticas que usa el servidor como lo haría un agente real",
+          "Guías escritas, una sesión en vivo con tu equipo y 30 días de soporte después del lanzamiento para resolver dudas y fallos"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "$2,500 por un servidor de datos, que da a los agentes acceso de solo lectura a tus documentos o tu base de datos y funciona en tus propias máquinas. $6,000 por una integración con tu aplicación, alojada por HTTP, con inicio de sesión de usuarios y respetando los permisos que tu aplicación ya aplica. Ambos incluyen 30 días de soporte. El soporte continuo después cuesta $400 al mes."
+          },
+          {
+            "q": "¿Con qué herramientas funciona?",
+            "a": "Cualquier herramienta compatible con el Model Context Protocol, como Claude Desktop, Claude Code y Cursor. MCP es un estándar abierto, así que el servidor sigue funcionando aunque tu equipo añada herramientas nuevas o cambie de una a otra."
+          },
+          {
+            "q": "¿Pueden cambiar mis datos?",
+            "a": "Solo si tú quieres. Los servidores son de solo lectura por defecto. Las herramientas que escriben se añaden solo cuando las incluyes en el alcance, y una integración con tu aplicación nunca deja que un agente haga más de lo que podría hacer el usuario conectado."
+          },
+          {
+            "q": "¿Qué necesitan de mí?",
+            "a": "Acceso a los datos o la API que el servidor tendrá delante, una persona de contacto que sepa cómo están organizados, y una lista breve de las tareas que quieres que hagan los agentes. El resto lo resolvemos en el primer paso."
+          }
+        ]
+      },
+      "metaTitle": "Desarrollo de Servidores MCP a Medida",
+      "metaDescription": "Desarrollo de servidores MCP a medida: da a Claude, Cursor y otros agentes de IA acceso seguro y citable a tus datos. Desde $2,500 con 30 días de soporte."
+    },
     "applicationServicesHeading": "Servicios de aplicaciones",
     "openclawInstallation": {
       "title": "Instalación e integración de Openclaw",
@@ -645,7 +694,7 @@
     },
     "services": {
       "title": "Servicios de Diseño con IA",
-      "description": "Servicios de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones para tu equipo.",
+      "description": "Servicios de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto, servidores MCP y consultoría de operaciones.",
       "ogTitle": "Servicios de Diseño con IA — ArsonistAI",
       "ogDescription": "Servicios de diseño potenciados por IA incluyendo generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones."
     },

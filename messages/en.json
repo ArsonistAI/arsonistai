@@ -359,6 +359,55 @@
       "metaTitle": "AI Operations Consulting",
       "metaDescription": "We map how work actually moves through your organization, quantify where time and money leak, and sequence the fixes worth making first."
     },
+    "customMcpServers": {
+      "title": "Custom MCP Servers",
+      "short": "Give Claude, Cursor, and other AI agents safe, direct access to your own data and tools.",
+      "long": "We build an MCP server shaped around the work your AI agents need to do, not around how your data happens to be stored. Agents get answers they can cite, and a clear refusal instead of a guess when the data cannot settle a question. Two build tiers, each with 30 days of support. From $2,500.",
+      "detail": {
+        "intro": "An MCP server lets AI tools like Claude and Cursor read your data and use your systems directly, instead of relying on whatever someone pastes into a chat. Most servers simply mirror a database or a folder, which leaves the agent guessing which table or file it needs. We design the tools around the questions an agent will actually ask, so the right answer is one call away.",
+        "body": "Every answer names the record it came from, so a person can check it. When a request is ambiguous, or the data behind it is missing or out of date, the server says so plainly and does not guess. For servers that sit in front of your app, agents get exactly the permissions your users already have, and nothing more.",
+        "steps": [
+          {
+            "title": "Map what agents need",
+            "body": "We list the jobs your agents will do, the data and systems those jobs touch, and who is allowed to see what. That map decides the tool list, and you approve it before any code is written."
+          },
+          {
+            "title": "Build and test it",
+            "body": "We build the server and test it with a real MCP client, calling every tool the way an agent would. We also break the data on purpose to prove the server refuses instead of guessing when something is wrong."
+          },
+          {
+            "title": "Hand over and support",
+            "body": "We connect it to the tools your team uses, walk everyone through how it works and how to extend it, then stay on call for 30 days while real usage settles in."
+          }
+        ],
+        "deliverables": [
+          "The server's full source code, committed to your own repository, so your team owns it outright and can change it whenever it needs to",
+          "Setup in Claude Desktop, Claude Code, Cursor, and any other MCP client your team uses, tested in each one before handover",
+          "An automated test suite that drives the server the way a real agent would",
+          "Written docs, a live walkthrough, and 30 days of support after launch"
+        ],
+        "faq": [
+          {
+            "q": "What does it cost?",
+            "a": "$2,500 for a data server, which gives agents read-only access to your documents or database and runs on your own machines. $6,000 for an app integration, which is hosted over HTTP, signs users in, and honors the permissions your app already enforces. Both include 30 days of support. Ongoing support after that is $400 a month."
+          },
+          {
+            "q": "Which AI tools can use it?",
+            "a": "Any tool that supports the Model Context Protocol, which includes Claude Desktop, Claude Code, and Cursor. MCP is an open standard, so the server keeps working as your team adds tools or switches between them."
+          },
+          {
+            "q": "Can agents change my data?",
+            "a": "Only if you want them to. Servers are read-only by default. Tools that write are added only when you scope them in, and an app integration never lets an agent do more than the signed-in user could."
+          },
+          {
+            "q": "What do you need?",
+            "a": "Access to the data or API the server will sit in front of, a contact who knows how it is organized, and a short list of the jobs you want agents to do. We work out the rest in the first step."
+          }
+        ]
+      },
+      "metaTitle": "Custom MCP Server Development",
+      "metaDescription": "Custom MCP server development: give Claude, Cursor, and other AI agents safe, cited access to your data and tools. From $2,500 with 30 days of support."
+    },
     "applicationServicesHeading": "Application services",
     "openclawInstallation": {
       "title": "Openclaw Installation & Integration",
@@ -647,7 +696,7 @@
     },
     "services": {
       "title": "AI Design Services",
-      "description": "AI design services from ArsonistAI: content generation, concept visualization, exploration scaling, product design, and operations consulting.",
+      "description": "AI design services from ArsonistAI: content generation, concept visualization, product design, custom MCP servers, and operations consulting.",
       "ogTitle": "AI Design Services — ArsonistAI",
       "ogDescription": "AI-powered design services including content generation, concept visualization, product design, and operations consulting."
     },

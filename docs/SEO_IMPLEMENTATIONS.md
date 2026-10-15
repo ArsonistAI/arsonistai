@@ -261,9 +261,9 @@ Every page setting `openGraph: { title, description }` was dropping the site-wid
 ### 19. Sitemap corrections
 
 - `/case-studies` was missing entirely and is now included.
-- `/services/[slug]` routes added (8 services x 2 locales).
+- `/services/[slug]` routes added (10 services x 2 locales).
 - `lastModified` used `new Date()`, marking the whole site as changed on every deploy. It now reads real per-entry dates from `staticPages`, `post.lastModified`, and `CaseStudy.lastModified`.
-- All 54 entries carry `x-default` alternates.
+- All 58 entries carry `x-default` alternates.
 
 ### 20. Structured data
 
@@ -296,7 +296,7 @@ Every page setting `openGraph: { title, description }` was dropping the site-wid
 
 ### 25. Service detail pages
 
-`/services` was a single URL carrying eight services, so no page could rank for any individual service term. Each service now has its own indexable route at `/services/[slug]` with unique metadata, an `h1`, a three-step process section, a deliverables list, four FAQs, `Service` and `FAQPage` schema, and links to sibling services. `/services` became the hub linking to all eight.
+`/services` was a single URL carrying eight services (ten as of October 2026), so no page could rank for any individual service term. Each service now has its own indexable route at `/services/[slug]` with unique metadata, an `h1`, a three-step process section, a deliverables list, four FAQs, `Service` and `FAQPage` schema, and links to sibling services. `/services` became the hub linking to all of them.
 
 ---
 

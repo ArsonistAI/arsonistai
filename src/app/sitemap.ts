@@ -13,7 +13,7 @@ import { SITE_URL, LOCALES, DEFAULT_LOCALE } from "@/lib/seo";
 const staticPages: { path: string; lastModified: string; priority: number }[] = [
   { path: "", lastModified: "2026-02-28", priority: 1.0 },
   { path: "/about-us", lastModified: "2026-02-28", priority: 0.8 },
-  { path: "/services", lastModified: "2026-03-18", priority: 0.9 },
+  { path: "/services", lastModified: "2026-10-14", priority: 0.9 },
   { path: "/products", lastModified: "2026-02-28", priority: 0.8 },
   { path: "/partnerships", lastModified: "2026-02-28", priority: 0.8 },
   { path: "/insights", lastModified: "2026-02-28", priority: 0.8 },
@@ -57,7 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const serviceEntries = services.flatMap((service) =>
-    entriesFor(`/services/${service.id}`, "2026-03-18", "monthly", 0.8)
+    entriesFor(
+      `/services/${service.id}`,
+      service.lastModified ?? "2026-03-18",
+      "monthly",
+      0.8
+    )
   );
 
   const postEntries = posts.flatMap((post) =>
