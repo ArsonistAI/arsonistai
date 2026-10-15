@@ -9,6 +9,7 @@ import CustomCursor from "@/components/CustomCursor";
 import EmberBackgroundWrapper from "@/components/EmberBackgroundWrapper";
 import HeatWaveFilter from "@/components/HeatWaveFilter";
 import SecurityGuard from "@/components/SecurityGuard";
+import LineFitter from "@/components/LineFitter";
 import { SITE_URL, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 import "../globals.css";
 
@@ -133,6 +134,7 @@ export default async function LocaleLayout({
         </NextIntlClientProvider>
         <CustomCursor />
         <SecurityGuard />
+        <LineFitter />
       </body>
     </html>
   );

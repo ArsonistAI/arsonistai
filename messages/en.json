@@ -461,7 +461,7 @@
     "chatbotAudit": {
       "title": "Chatbot\u00a0Audit",
       "short": "Test your customer support chatbot before it talks to\u00a0customers\u00a0in\u00a0your\u00a0name.",
-      "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in\u00a0ten\u00a0minutes.\u00a0From\u00a0$250.",
+      "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in\u00a0ten\u00a0minutes.\u00a0From\u00a0$295.",
       "detail": {
         "intro": "Your support chatbot is about to talk to customers in your name. The questions that matter most are the ones your documents do not answer. A bot that invents a refund policy, a price, or a warranty does more harm than one that says it does not know, and customers will hold you to what it said. Most of the audit is\u00a0aimed\u00a0at\u00a0that\u00a0failure.",
         "body": "The checks are rules wherever a rule can decide. Where only judgment can tell whether an answer is wrong, an AI model looks for contradictions with your documents, quotes the exact line it relied on, and is labeled as a model's verdict so you can check it yourself. Anything the checks cannot settle is listed for a person to read and is never\u00a0counted\u00a0as\u00a0a\u00a0pass.",
@@ -488,7 +488,7 @@
         "faq": [
           {
             "q": "What\u00a0does\u00a0it\u00a0cost?",
-            "a": "$250 for a 30-question check in 3 days, $550 for the full 60-question audit in 5 days, and $800 for the full audit plus a retest after your fixes, delivered within 14 days including the time you take to make them. Fixing the bot is separate work, quoted once you\u00a0have\u00a0seen\u00a0the\u00a0report."
+            "a": "$295 for a 30-question check in 3 days, $650 for the full 60-question audit in 5 days, and $950 for the full audit plus a retest after your fixes, delivered within 14 days including the time you take to make them. Fixing the bot is separate work, quoted once you\u00a0have\u00a0seen\u00a0the\u00a0report."
           },
           {
             "q": "What\u00a0do\u00a0you\u00a0need?",

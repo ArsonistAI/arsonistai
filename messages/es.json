@@ -461,7 +461,7 @@
     "chatbotAudit": {
       "title": "Test\u00a0de\u00a0Chatbot",
       "short": "Pon a prueba tu chatbot de atención al cliente antes de que hable con tus\u00a0clientes\u00a0en\u00a0tu\u00a0nombre.",
-      "long": "Antes de que tu chatbot de soporte salga en vivo, le hacemos las preguntas que suelen hacer fallar a los bots y comprobamos cada respuesta con tus propias políticas y páginas de producto. Cada precio, fecha, teléfono y enlace que da se compara con tus documentos, y todo lo que se inventó queda señalado. Recibes un informe en lenguaje claro que puedes leer en\u00a0diez\u00a0minutos.\u00a0Desde\u00a0$250.",
+      "long": "Antes de que tu chatbot de soporte salga en vivo, le hacemos las preguntas que suelen hacer fallar a los bots y comprobamos cada respuesta con tus propias políticas y páginas de producto. Cada precio, fecha, teléfono y enlace que da se compara con tus documentos, y todo lo que se inventó queda señalado. Recibes un informe en lenguaje claro que puedes leer en\u00a0diez\u00a0minutos.\u00a0Desde\u00a0$295.",
       "detail": {
         "intro": "Tu chatbot de soporte está a punto de hablar con tus clientes en tu nombre. Las preguntas que más importan son las que tus documentos no responden. Un bot que inventa una política de reembolso, un precio o una garantía hace más daño que uno que admite no saber, y tus clientes te harán cumplir lo que dijo. La mayor parte de la auditoría\u00a0apunta\u00a0a\u00a0ese\u00a0fallo.",
         "body": "Las comprobaciones son reglas siempre que una regla pueda decidir. Cuando solo el criterio puede saber si una respuesta es incorrecta, un modelo de IA busca contradicciones con tus documentos, cita la línea exacta en la que se basa y queda marcado como veredicto de un modelo para que puedas revisarlo tú mismo. Lo que las comprobaciones no pueden resolver se lista para que lo lea una persona y\u00a0nunca\u00a0cuenta\u00a0como\u00a0aprobado.",
@@ -488,7 +488,7 @@
         "faq": [
           {
             "q": "¿Cuánto\u00a0cuesta?",
-            "a": "$250 por una revisión de 30 preguntas en 3 días, $550 por la auditoría completa de 60 preguntas en 5 días y $800 por la auditoría completa más una nueva prueba después de tus correcciones, entregada en 14 días contando el tiempo que tardes en hacerlas. Corregir el bot es un trabajo aparte, que se cotiza cuando\u00a0hayas\u00a0visto\u00a0el\u00a0informe."
+            "a": "$295 por una revisión de 30 preguntas en 3 días, $650 por la auditoría completa de 60 preguntas en 5 días y $950 por la auditoría completa más una nueva prueba después de tus correcciones, entregada en 14 días contando el tiempo que tardes en hacerlas. Corregir el bot es un trabajo aparte, que se cotiza cuando\u00a0hayas\u00a0visto\u00a0el\u00a0informe."
           },
           {
             "q": "¿Qué\u00a0necesitan?",
