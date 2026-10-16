@@ -105,6 +105,14 @@ export const services: Service[] = [
     icon: "chat",
     image: "/images/services/phone.png",
     sectionKey: "applicationServices",
+  },  {
+    id: "ai-workflow-automation",
+    titleKey: "services.aiWorkflowAutomation.title",
+    descriptionKey: "services.aiWorkflowAutomation.short",
+    longDescriptionKey: "services.aiWorkflowAutomation.long",
+    icon: "settings",
+    image: "/images/services/factory.png",
+    sectionKey: "applicationServices",
   },
 ];
 

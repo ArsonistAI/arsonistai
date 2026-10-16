@@ -606,6 +606,56 @@
       "metaTitle": "Diseño de Conversación para Agentes de Voz con IA",
       "metaDescription": "Rediseñamos el flujo de llamada y las instrucciones de tu agente telefónico de IA, con tus llamadas reales como base y pruebas de antes y después. Retell AI, Vapi, ElevenLabs y GoHighLevel."
     },
+    "aiWorkflowAutomation": {
+      "title": "Automatización con IA",
+      "short": "Un flujo de trabajo con IA que libera a su equipo de una tarea repetitiva, construido en sus propias cuentas.",
+      "long": "Copiar datos de correos a una hoja, clasificar solicitudes, escribir el mismo seguimiento: un flujo con IA puede leer y archivar, y dejar a una persona las decisiones que importan. Mapeamos la tarea, construimos el flujo que conecta sus aplicaciones, datos y un modelo de IA, y lo probamos con sus ejemplos reales antes de ponerlo en marcha. Desde $720.",
+      "detail": {
+        "intro": "Casi todo el trabajo repetitivo de oficina sigue el mismo patrón: algo llega, alguien lo lee, copia lo importante en otro lugar, decide qué tan urgente es y escribe una respuesta. Un modelo de IA puede leer y copiar. Un flujo bien construido hace esa parte y le deja a una persona las decisiones que tienen un costo real.",
+        "body": "Construimos en n8n, Make, Zapier o código, según lo que ya usa, y siempre en sus propias cuentas con sus propias claves de API. El flujo es suyo y usted paga sus herramientas directamente, así que cada costo queda a la vista y nada depende de nosotros después de la entrega. Reembolsos y decisiones legales, médicas o de contratación siempre pasan por una revisión humana.",
+        "steps": [
+          {
+            "title": "Mapear la tarea",
+            "body": "Una llamada corta, o una grabación de usted haciendo la tarea. Anotamos cada paso y cada decisión, y acordamos un diagrama del flujo que muestra dónde actúa la IA y dónde revisa una persona. No se construye nada hasta que usted lo apruebe."
+          },
+          {
+            "title": "Construir y probar",
+            "body": "El flujo se construye en su cuenta: un disparador, pasos de IA que leen, clasifican, extraen o redactan, conexiones a sus aplicaciones por sus API, manejo de errores y una revisión humana donde un error le costaría. Se prueba con veinte o más de sus ejemplos reales, y usted ve cada resultado."
+          },
+          {
+            "title": "Entregarlo",
+            "body": "Se pone en marcha con un documento de entrega que explica cómo funciona, para qué sirve cada credencial, cómo pausarlo y qué hacer cuando algo falla. Los proyectos más grandes incluyen un video explicativo y treinta días de correcciones."
+          }
+        ],
+        "deliverables": [
+          "Un flujo que ya funciona, construido en sus cuentas y con sus propias claves de API",
+          "Un mapa del flujo con cada paso, cada aplicación que toca y dónde revisa una persona",
+          "Un registro de pruebas con sus ejemplos, qué hizo el flujo con cada uno y qué se corrigió",
+          "Un documento de entrega sobre cómo operarlo, pausarlo, sus credenciales y qué hacer si falla",
+          "En los proyectos grandes, también un video y treinta días de correcciones"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "$720 por un flujo de hasta tres pasos, probado con 20 de sus ejemplos, en 5 días. $1,800 por un flujo de hasta ocho pasos con manejo de errores, revisión humana, registros y un video explicativo, en 10 días. $3,600 por hasta tres flujos conectados con base de datos, monitoreo y 30 días de correcciones, en 21 días."
+          },
+          {
+            "q": "¿Qué herramientas usan?",
+            "a": "n8n, Make, Zapier o código en Node o Python, según lo que ya usa. Si todavía no tiene ninguna, recomendamos n8n: es de código abierto y no cobra por tarea cuando usted mismo lo aloja."
+          },
+          {
+            "q": "¿Quién paga las herramientas y el uso de la IA?",
+            "a": "Usted, en sus propias cuentas. Nunca ponemos su flujo en las nuestras, así que el costo de uso le llega directamente y el flujo sigue funcionando aunque no vuelva a trabajar con nosotros."
+          },
+          {
+            "q": "¿Están seguros nuestros datos?",
+            "a": "Sus datos se quedan en sus propias cuentas. Los ejemplos que envía para las pruebas pueden ir sin datos personales, y los borramos después de la entrega."
+          }
+        ]
+      },
+      "metaTitle": "Automatización de flujos con IA: n8n, Make y Zapier",
+      "metaDescription": "Un flujo con IA que automatiza una tarea repetitiva y conecta sus aplicaciones, datos y modelos de IA. En n8n, Make, Zapier o código, en sus propias cuentas."
+    },
     "detail": {
       "processHeading": "Cómo funciona",
       "deliverablesHeading": "Qué recibes",

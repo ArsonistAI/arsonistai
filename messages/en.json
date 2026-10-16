@@ -606,6 +606,56 @@
       "metaTitle": "AI Voice Agent Conversation Design",
       "metaDescription": "Redesign your AI phone agent's call flow and instructions, graded on your real calls and tested before and after. Retell AI, Vapi, ElevenLabs, and GoHighLevel."
     },
+    "aiWorkflowAutomation": {
+      "title": "AI Workflow Automation",
+      "short": "An AI workflow that takes a repetitive task off your team, built in your own accounts.",
+      "long": "Copying details from emails into a sheet, sorting requests, writing the same follow-up: an AI workflow can do the reading and filing, and leave the decisions that matter to a person. We map the task, build the workflow that connects your apps, data and an AI model, and test it on your real examples before it goes live. From $720.",
+      "detail": {
+        "intro": "Most repetitive office work follows the same pattern: something arrives, someone reads it, types the important parts somewhere else, decides how urgent it is, and writes a reply. An AI model can do the reading and the typing. A well-built workflow does that part and hands a person the decisions that carry real cost.",
+        "body": "We build in n8n, Make, Zapier, or plain code, whichever fits your stack, and always in your own accounts with your own API keys. You own the workflow and pay your tools directly, so every cost stays visible and nothing depends on us after handover. Refunds, legal, medical and hiring decisions always get a human review step.",
+        "steps": [
+          {
+            "title": "Map the task",
+            "body": "A short call, or a recording of you doing the task. We write down every step and decision, then agree one diagram of the workflow that shows where the AI acts and where a person checks. Nothing is built until you approve it."
+          },
+          {
+            "title": "Build and test",
+            "body": "The workflow is built in your account: a trigger, AI steps that read, sort, extract or draft, connections to your apps through their APIs, error handling, and a review step wherever a mistake would cost you. It runs on twenty or more of your real examples, and you see every result."
+          },
+          {
+            "title": "Hand it over",
+            "body": "It goes live with a handover document that explains how it runs, what each credential is for, how to pause it, and what to do when something fails. Larger builds add a walkthrough video and thirty days of fixes."
+          }
+        ],
+        "deliverables": [
+          "A working workflow, built and running in your own accounts with your own API keys",
+          "A workflow map that shows each step, each app it touches, and where a person reviews",
+          "A test log with your examples, what the workflow did with each one, and what was fixed",
+          "A handover document that covers running, pausing, credentials, and what to do when it fails",
+          "On the larger builds, a walkthrough video and thirty days of fixes after the launch"
+        ],
+        "faq": [
+          {
+            "q": "What does it cost?",
+            "a": "$720 for one workflow of up to three steps, tested on 20 of your examples, in 5 days. $1,800 for one workflow of up to eight steps with error handling, a human review step, logging, and a walkthrough video, in 10 days. $3,600 for up to three connected workflows with a database, monitoring, and 30 days of fixes, in 21 days."
+          },
+          {
+            "q": "Which tools do you use?",
+            "a": "n8n, Make, Zapier, or code in Node or Python, chosen to fit what you already run. If you have no tool yet, we recommend n8n: it is open source and has no per-task fees when you host it yourself."
+          },
+          {
+            "q": "Who pays for the tools and the AI?",
+            "a": "You do, on your own accounts. We never put your workflow on ours, so the usage bill goes straight to you and the workflow keeps running whether or not you work with us again."
+          },
+          {
+            "q": "Is our data safe?",
+            "a": "Your data stays in your own accounts. Examples you send for testing can have personal details removed, and we delete them after delivery."
+          }
+        ]
+      },
+      "metaTitle": "AI Workflow Automation with n8n, Make and Zapier",
+      "metaDescription": "An AI workflow that automates a repetitive task, connecting your apps, data and AI models. Built in n8n, Make, Zapier or code, in your own accounts."
+    },
     "detail": {
       "processHeading": "How it works",
       "deliverablesHeading": "What you get",
