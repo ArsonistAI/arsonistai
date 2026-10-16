@@ -86,11 +86,13 @@ function CaseStudyContent({
     datePublished: study.lastModified,
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
-    about: {
-      "@type": "Organization",
-      name: study.client,
-      ...(study.url && { url: study.url }),
-    },
+    ...(study.client && {
+      about: {
+        "@type": "Organization",
+        name: study.client,
+        ...(study.url && { url: study.url }),
+      },
+    }),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": absoluteUrl(locale, `/work/${study.slug}`),
@@ -135,21 +137,23 @@ function CaseStudyContent({
         <h1 className="text-headline-lg md:text-display-sm font-bold mb-4">
           {title}
         </h1>
-        <p className="text-body-md text-muted mb-2">
-          {t("client")}:{" "}
-          {study.url ? (
-            <a
-              href={study.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lava hover:underline"
-            >
-              {study.client}
-            </a>
-          ) : (
-            study.client
-          )}
-        </p>
+        {study.client && (
+          <p className="text-body-md text-muted mb-2">
+            {t("client")}:{" "}
+            {study.url ? (
+              <a
+                href={study.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lava hover:underline"
+              >
+                {study.client}
+              </a>
+            ) : (
+              study.client
+            )}
+          </p>
+        )}
 
         <p className="text-body-lg text-muted leading-relaxed mt-10 mb-14">
           {summary}

@@ -18,7 +18,8 @@ export interface CaseStudy {
   title: LocalizedText;
   /** Optional display name for listing pages (e.g. "Hello Cloud IT") */
   displayName?: string;
-  client: string;
+  /** Omitted for our own products, which have no client to credit. */
+  client?: string;
   /** Public site for the work. Omitted for private builds with nothing to visit. */
   url?: string;
   heroImage: string;
@@ -52,7 +53,6 @@ export const caseStudies: CaseStudy[] = [
       es: "Moneyball ATS",
     },
     displayName: "Moneyball ATS",
-    client: "ArsonistAI",
     heroImage: "/images/work/ats-hero.jpg",
     lastModified: "2026-10-15",
     metaDescription: {
@@ -192,6 +192,132 @@ export const caseStudies: CaseStudy[] = [
         body: {
           en: "The ATS runs on Next.js 15, React 19 and TypeScript, with SQLite for storage and Tailwind CSS for styling. It ships as a web app or as a Mac desktop app built with Tauri. The models run through Ollama on the same machine, with qwen3.6 by default and llama3.2 as a lighter option, and a single setting turns the model off entirely. Funnel and pass-through numbers come from an event log of stage changes rather than from current state, so reports never shift after the fact. The interface was audited against WCAG 2.2 AA, and its weakest text pairing has a contrast ratio of 7.22 to 1.",
           es: "El sistema usa Next.js 15, React 19 y TypeScript, con SQLite para los datos y Tailwind CSS para los estilos. Funciona como aplicación web o como aplicación de escritorio para Mac hecha con Tauri. Los modelos corren con Ollama en el mismo equipo, con qwen3.6 por defecto y llama3.2 como opción más ligera, y un solo ajuste apaga el modelo por completo. Las cifras del embudo y de paso entre etapas salen de un registro de eventos de cada cambio de etapa y no del estado actual, así que los informes nunca cambian a posteriori. La interfaz se auditó según WCAG 2.2 AA, y su combinación de texto más débil tiene un contraste de 7,22 a 1.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "design-engineer-ide",
+    title: { en: "Design Engineer IDE", es: "Design Engineer IDE" },
+    heroImage: "/images/work/dide-hero.jpg",
+    lastModified: "2026-10-15",
+    metaDescription: {
+      en: "How ArsonistAI built Design Engineer IDE, a local-first workspace that shows designers what changed, what waits on them, and what their agents did.",
+      es: "Cómo ArsonistAI creó Design Engineer IDE, un entorno local que muestra a los diseñadores qué cambió, qué los espera y qué hicieron sus agentes.",
+    },
+    summary: {
+      en: "dide, the Design Engineer IDE, is a project workspace for designers who build: the people who ship interface code, review pull requests, follow tickets across teams, and run several AI coding agents at once. Instead of another dashboard, dide keeps a local record of everything that happens across Linear, GitHub and a markdown knowledge base, joins it into one thread per piece of work, and lets you act on it from the same screen. It answers the questions that cost the most time: what changed since I last looked, what is waiting on me, what is quietly stalling, and what did the agents do while I was in a meeting. All of it runs and stays on the user's own machine.",
+      es: "dide, el Design Engineer IDE, es un entorno de proyectos para diseñadores que también construyen: quienes publican código de interfaz, revisan pull requests, siguen tickets entre equipos y usan varios agentes de IA a la vez. En lugar de otro panel de control, dide guarda un registro local de todo lo que pasa en Linear, GitHub y una base de conocimiento en markdown, lo une en un solo hilo por cada trabajo y permite actuar desde la misma pantalla. Responde a las preguntas que más tiempo cuestan: qué cambió desde la última vez que miré, qué me está esperando, qué se está estancando sin ruido y qué hicieron los agentes mientras yo estaba en una reunión. Todo funciona y se queda en el propio equipo del usuario.",
+    },
+    stats: [
+      {
+        value: "3",
+        label: { en: "work sources in one record", es: "fuentes en un solo registro" },
+      },
+      {
+        value: "3",
+        label: { en: "AI coding agents metered", es: "agentes de IA medidos" },
+      },
+      {
+        value: "7:1",
+        label: { en: "minimum text contrast", es: "contraste mínimo del texto" },
+      },
+      {
+        value: "680+",
+        label: { en: "automated tests", es: "pruebas automáticas" },
+      },
+    ],
+    sections: [
+      {
+        heading: { en: "The Challenge", es: "El reto" },
+        body: {
+          en: "A design engineer is the maker, the reviewer and the orchestrator at once. In a single morning they ship interface code, review pull requests, follow tickets across several teams, keep notes in a knowledge base and run three or four AI coding sessions whose output no other tool shows. Answering \"what needs me right now?\" meant opening four apps and rebuilding the picture by hand. Dashboards that tried to help failed because you could look but not act, and team tools failed by fighting the systems teams already use.",
+          es: "Un ingeniero de diseño crea, revisa y coordina al mismo tiempo. En una sola mañana publica código de interfaz, revisa pull requests, sigue tickets de varios equipos, toma notas en una base de conocimiento y lanza tres o cuatro sesiones de agentes de IA cuyo trabajo ninguna otra herramienta muestra. Responder a \"¿qué me necesita ahora mismo?\" obligaba a abrir cuatro aplicaciones y rehacer el panorama a mano. Los paneles que intentaron ayudar fracasaron porque solo dejaban mirar y no actuar, y las herramientas de equipo fracasaron al competir con los sistemas que los equipos ya usan.",
+        },
+      },
+      {
+        heading: { en: "Our Approach", es: "Nuestro enfoque" },
+        body: {
+          en: "We treated work as a stream to replay, not a pile to sort. dide works like a flight recorder: one append-only event log on the user's machine takes in every change from Linear, GitHub and the knowledge base, and every screen is a query over that log. A ticket, its pull requests and the notes that mention it join into one thread through links that already exist, such as a ticket ID in a branch name or a URL in a note. Fuzzy matches are only ever suggested and never joined on their own, because a wrong join destroys trust faster than a missing one. dide also remembers when your own eyes last touched each item, so every screen can show what changed since you last looked.",
+          es: "Tratamos el trabajo como una secuencia que se puede repasar, no como una pila que hay que ordenar. dide funciona como una caja negra: un único registro de eventos en el equipo del usuario recoge cada cambio de Linear, GitHub y la base de conocimiento, y cada pantalla es una consulta sobre ese registro. Un ticket, sus pull requests y las notas que lo mencionan se unen en un solo hilo gracias a enlaces que ya existen, como el código de un ticket en el nombre de una rama o una URL en una nota. Las coincidencias aproximadas solo se sugieren y nunca se unen por sí solas, porque una unión errónea destruye la confianza más rápido que una que falta. dide también recuerda cuándo miraste cada elemento por última vez, así que cada pantalla puede mostrar qué cambió desde entonces.",
+        },
+      },
+      {
+        heading: { en: "Catch-Up", es: "Ponerse al día" },
+        body: {
+          en: "Catch-Up is the first screen after any time away, and it is titled with the gap it covers, such as \"Since Fri 15:20, 7h ago\". It separates direct requests, like review requests and assignments, from social signals like mentions, then lists the requests you made of others and the pull requests you have open. Each row shows who is waiting and for how long. A detail pane shows what changed since your last scan, and acknowledging an item moves your read point forward, so the list shrinks as you work through it. Nothing is ever labeled as blocked unless a source can prove the dependency.",
+          es: "Catch-Up es la primera pantalla después de cualquier ausencia, y su título indica el tiempo que abarca, como \"Desde el viernes a las 15:20, hace 7 h\". Separa las peticiones directas, como revisiones y asignaciones, de las señales sociales como las menciones, y luego muestra lo que pediste a otros y los pull requests que tienes abiertos. Cada fila indica quién espera y desde hace cuánto. Un panel de detalle muestra qué cambió desde tu última revisión, y al confirmar un elemento tu punto de lectura avanza, así que la lista se reduce a medida que trabajas. Nada se marca nunca como bloqueado si una fuente no puede probar la dependencia.",
+        },
+        image: {
+          src: "/images/work/dide-catchup.webp",
+          width: 1540,
+          height: 1300,
+          alt: {
+            en: "Catch-Up sections for review requests, assignments, social signals, requests you made and pull requests you have open, each row with a person and a wait time",
+            es: "Secciones de Catch-Up con revisiones, asignaciones, señales sociales, peticiones propias y pull requests abiertos, cada fila con una persona y un tiempo de espera",
+          },
+          caption: {
+            en: "Direct requests come first, each with the person waiting and how long they have waited. Empty sections say so plainly.",
+            es: "Las peticiones directas van primero, cada una con quién espera y desde hace cuánto. Las secciones vacías lo dicen con claridad.",
+          },
+        },
+      },
+      {
+        heading: { en: "The Traverse", es: "La línea de tiempo" },
+        body: {
+          en: "The Traverse draws work as time. Each thread is a line running left to right, grouped by project, with a live marker for now. Busy stretches grow thicker and warmer, so a thread that has gone flat and cool is a stall you can spot without reading a word. A mark on every line shows where you last looked, and knowledge base entries settle along the bottom as a band of sediment beneath the faster work above. For first-day users and portfolio viewers, a designed synthetic week fills the view, and it is labeled on screen as synthetic data.",
+          es: "El Traverse dibuja el trabajo como tiempo. Cada hilo es una línea que avanza de izquierda a derecha, agrupada por proyecto, con un marcador en vivo del momento actual. Los tramos con más actividad se vuelven más gruesos y cálidos, así que un hilo plano y frío es un estancamiento que se ve sin leer una palabra. Una marca en cada línea indica dónde miraste por última vez, y las entradas de la base de conocimiento se asientan abajo como un sedimento, bajo el trabajo más rápido de arriba. Para los usuarios nuevos y para quien ve el portafolio, una semana sintética diseñada llena la vista y aparece en pantalla como datos sintéticos.",
+        },
+        image: {
+          src: "/images/work/dide-traverse.webp",
+          width: 1720,
+          height: 472,
+          alt: {
+            en: "Three threads drawn as lines across a week, grouped under two projects, with thicker blocks where there was activity and a now marker on the right",
+            es: "Tres hilos dibujados como líneas a lo largo de una semana, agrupados en dos proyectos, con bloques más gruesos donde hubo actividad y un marcador del momento actual a la derecha",
+          },
+          caption: {
+            en: "Each line is one piece of work across the week, grouped by project. Thicker, warmer stretches mean more activity.",
+            es: "Cada línea es un trabajo a lo largo de la semana, agrupado por proyecto. Los tramos más gruesos y cálidos indican más actividad.",
+          },
+        },
+      },
+      {
+        heading: { en: "Writing Back Safely", es: "Escritura segura" },
+        body: {
+          en: "dide acts as well as reports. From the same screen you can comment on a Linear ticket, change its state, or approve a GitHub pull request or request changes on it. Every write is optimistic, goes through a visible outbox, and is never allowed to fail in silence. While building it, we found and fixed the cases that quietly break trust: a retry that could post a comment twice while the first request was still in flight, a failure that left a row looking pending, and a comment that reached Linear but was shown as failed. Each fix was proven against a real ticket.",
+          es: "dide actúa además de informar. Desde la misma pantalla puedes comentar un ticket de Linear, cambiar su estado, o aprobar un pull request de GitHub o pedir cambios en él. Cada escritura es optimista, pasa por una bandeja de salida visible y nunca puede fallar en silencio. Durante el desarrollo encontramos y corregimos los casos que rompen la confianza sin avisar: un reintento que podía publicar un comentario dos veces mientras la primera petición seguía en curso, un fallo que dejaba una fila como pendiente y un comentario que llegó a Linear pero se mostraba como fallido. Cada corrección se probó contra un ticket real.",
+        },
+      },
+      {
+        heading: { en: "Watching the Agents", es: "Los agentes a la vista" },
+        body: {
+          en: "The sidebar carries gauges for the work, from review debt to unpushed code, and for the AI agents behind it. Token spend adds up the last 30 days of Claude Code, Codex and Cursor usage from each agent's own records. Weekly allowance gauges show a percentage only when the provider publishes one, and they drop a reading once its cycle resets, because a bar measured against a guessed limit is worse than one that admits it does not know. A Projects view scans the local code folder and flags work at risk, such as uncommitted changes, unpushed commits or a repo with no remote, ordered by how much work is at stake.",
+          es: "La barra lateral tiene indicadores del trabajo, de las revisiones pendientes al código sin subir, y de los agentes de IA que hay detrás. El gasto de tokens suma los últimos 30 días de uso de Claude Code, Codex y Cursor a partir de los registros de cada agente. Los indicadores de cuota semanal solo muestran un porcentaje cuando el proveedor lo publica, y descartan una lectura cuando su ciclo se reinicia, porque una barra medida contra un límite adivinado es peor que una que admite no saberlo. Una vista de proyectos revisa la carpeta de código local y señala el trabajo en riesgo, como cambios sin confirmar, commits sin subir o un repositorio sin remoto, ordenado según cuánto trabajo está en juego.",
+        },
+      },
+      {
+        heading: { en: "Room for AI, with Rules", es: "IA con reglas claras" },
+        body: {
+          en: "dide uses a model only where code cannot do the job, such as reading long comment threads or turning a sentence into a query. The model layer was built and tested before the first feature, under rules set in advance. Every generated sentence must cite the events it came from, or it is dropped. Attention data such as your read history never leaves the machine, and a test enforces that. Every call is logged with its cost, and dide counts its own usage on the same gauge as the agents it meters. One switch turns AI off, and every screen is complete without it.",
+          es: "dide usa un modelo solo donde el código no puede hacer el trabajo, como leer hilos largos de comentarios o convertir una frase en una consulta. La capa del modelo se construyó y se probó antes de la primera función, con reglas fijadas de antemano. Cada frase generada debe citar los eventos de los que sale o se descarta. Los datos de atención, como tu historial de lectura, nunca salen del equipo, y una prueba lo garantiza. Cada llamada se registra con su coste, y dide cuenta su propio uso en el mismo indicador que los agentes que mide. Un solo ajuste apaga la IA, y cada pantalla está completa sin ella.",
+        },
+      },
+      {
+        heading: { en: "Built to a Standard", es: "Hecho con criterio" },
+        body: {
+          en: "Every color in dide is generated in the LCH color space to meet its contrast floor, 7:1 for text and 3:1 for other marks, and tests check it on every surface. The type scale, weights, corner radii, icons and line lengths are enforced by tests in the same way, so a stray font size or a hand-drawn icon fails the build. dide never shows a pop-up, badge or toast you did not ask for. Each view ships with designed empty, loading, error and offline states, and being offline is treated as normal rather than as an error.",
+          es: "Cada color de dide se genera en el espacio de color LCH para cumplir su contraste mínimo, 7:1 para el texto y 3:1 para otras marcas, y las pruebas lo comprueban en cada superficie. La escala tipográfica, los pesos, los radios de las esquinas, los iconos y la longitud de las líneas también se controlan con pruebas, así que un tamaño de letra suelto o un icono dibujado a mano rompe la compilación. dide nunca muestra una ventana emergente, una insignia o un aviso que no hayas pedido. Cada vista incluye estados diseñados para vacío, carga, error y sin conexión, y estar sin conexión se trata como algo normal y no como un error.",
+        },
+      },
+      {
+        heading: {
+          en: "Technology & Deployment",
+          es: "Tecnología y despliegue",
+        },
+        body: {
+          en: "dide is a macOS desktop app built with Tauri 2, with a Rust backend and a React and TypeScript front end. All data lives in one local SQLite file with full-text search. Each source has its own ingest lane, with no sync server in between, and GitHub access reuses the developer's existing GitHub CLI login, so no new token is stored. A command-line companion, didectl, can drive every backend path without opening the window, and more than 680 automated tests cover the front end and the backend.",
+          es: "dide es una aplicación de escritorio para macOS hecha con Tauri 2, con un backend en Rust y una interfaz en React y TypeScript. Todos los datos viven en un único archivo SQLite local con búsqueda de texto completo. Cada fuente tiene su propia vía de ingesta, sin un servidor de sincronización de por medio, y el acceso a GitHub reutiliza la sesión que el desarrollador ya tiene en la CLI de GitHub, así que no se guarda ningún token nuevo. Una herramienta de línea de comandos, didectl, puede ejecutar cada parte del backend sin abrir la ventana, y más de 680 pruebas automáticas cubren la interfaz y el backend.",
         },
       },
     ],
