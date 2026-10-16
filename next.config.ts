@@ -47,6 +47,16 @@ const nextConfig: NextConfig = {
     // Retired services keep their indexed URLs pointing somewhere useful.
     return [
       {
+        source: "/:locale(en|es)/services/product-design",
+        destination: "/:locale/services",
+        permanent: true,
+      },
+      {
+        source: "/services/product-design",
+        destination: "/en/services",
+        permanent: true,
+      },
+      {
         source: "/:locale(en|es)/work/moneyball-ats",
         destination: "/:locale/work/evidence-based-ats",
         permanent: true,

@@ -11,7 +11,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 - **metadataBase** — Set to the production URL (`https://arsonistai.com`) so relative URLs in metadata resolve correctly.
 - **Title** — Default title and template (`%s — ArsonistAI`) for consistent branding in tabs and search results.
 - **Description** — Single, keyword-rich default description for the site.
-- **Keywords** — Array of target phrases (e.g. "AI design firm", "AI design agency", "AI consulting") for discovery.
+- **Keywords** — Array of target phrases (e.g. "AI integration firm", "AI integration services", "AI consulting"; repositioned from "AI design firm" in October 2026) for discovery.
 - **Authors / creator / publisher** — Set to the brand for attribution.
 - **Icons** — Favicon path for browser tabs and bookmarks.
 - **Open Graph** — Default `type`, `locale`, `alternateLocale`, `url`, `siteName`, `title`, `description`, and `images` (1200×630 OG image) for social sharing.
@@ -122,7 +122,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 ## 7. Open Graph & social
 
 - **Default OG/Twitter** — Set in root `layout.tsx` (title, description, image).
-- **OG image** — `public/images/og-image.jpg` (1200×630, 88 KB), branded (e.g. logo + “AI Design Firm”), dark theme and accent color.
+- **OG image** — `public/images/og-image.jpg` (1200×630, 40 KB), branded (logo + “AI Integration Firm”, regenerated October 2026), dark theme and accent color.
 - **Per-page OG** — Optional overrides in each page’s `generateMetadata` (e.g. `openGraph.title`, `openGraph.description`) using translated strings.
 
 **Best practice:** Provide one high-quality OG image per site or section; use locale-aware titles/descriptions for shared links.
@@ -143,7 +143,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 
 ## 9. Visible keyword content
 
-- **Homepage hero** — The phrase “AI design firm” (and Spanish equivalent) appears in the visible hero tagline, not only in metadata (e.g. “Your AI design firm — scale your business with AI” / “Tu firma de diseño con IA — escala tu negocio con IA”).
+- **Homepage hero** — The `home.heroTagline` message (“Your AI integration firm. Scale your business with AI.” / “Tu firma de integración de IA. Escala tu negocio con IA.”) is not rendered anywhere as of October 2026; the visible hero shows `heroSubtitle` instead.
 
 **Best practice:** Include primary target phrases in the main body content (e.g. above the fold) so rankings and snippets align with what users see.
 
@@ -261,9 +261,9 @@ Every page setting `openGraph: { title, description }` was dropping the site-wid
 ### 19. Sitemap corrections
 
 - `/case-studies` was missing entirely and is now included.
-- `/services/[slug]` routes added (10 services x 2 locales).
+- `/services/[slug]` routes added (9 services x 2 locales; Product Design was retired in October 2026 and its URL redirects to `/services`).
 - `lastModified` used `new Date()`, marking the whole site as changed on every deploy. It now reads real per-entry dates from `staticPages`, `post.lastModified`, and `CaseStudy.lastModified`.
-- All 58 entries carry `x-default` alternates.
+- All 56 entries carry `x-default` alternates.
 
 ### 20. Structured data
 
@@ -296,7 +296,7 @@ Every page setting `openGraph: { title, description }` was dropping the site-wid
 
 ### 25. Service detail pages
 
-`/services` was a single URL carrying eight services (ten as of October 2026), so no page could rank for any individual service term. Each service now has its own indexable route at `/services/[slug]` with unique metadata, an `h1`, a three-step process section, a deliverables list, four FAQs, `Service` and `FAQPage` schema, and links to sibling services. `/services` became the hub linking to all of them.
+`/services` was a single URL carrying eight services (nine as of October 2026), so no page could rank for any individual service term. Each service now has its own indexable route at `/services/[slug]` with unique metadata, an `h1`, a three-step process section, a deliverables list, four FAQs, `Service` and `FAQPage` schema, and links to sibling services. `/services` became the hub linking to all of them.
 
 ---
 

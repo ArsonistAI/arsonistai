@@ -51,7 +51,7 @@ export default async function LocaleLayout({
     },
     image: `${SITE_URL}/images/og-image.jpg`,
     description:
-      "AI design firm building accessible, scalable, and human-centered AI solutions.",
+      "AI integration firm building accessible, scalable, and human-centered AI solutions.",
     email: "hello@arsonistai.com",
     contactPoint: {
       "@type": "ContactPoint",
@@ -61,13 +61,14 @@ export default async function LocaleLayout({
     },
     areaServed: "Worldwide",
     serviceType: [
-      "AI Design",
+      "AI Integration",
       "AI Consulting",
-      "Product Design",
+      "Custom MCP Server Development",
+      "Openclaw Installation",
+      "Claude and Cursor Training",
       "Content Generation",
       "Concept Visualization",
       "Operations Consulting",
-      "Custom MCP Server Development",
     ],
     // Keep in sync with the social links in Footer.tsx.
     sameAs: [
@@ -76,9 +77,9 @@ export default async function LocaleLayout({
     ],
     knowsAbout: [
       "Artificial Intelligence",
-      "AI Design",
-      "Product Design",
-      "UX Design",
+      "AI Integration",
+      "AI Agents",
+      "Model Context Protocol",
       "AI Consulting",
       "Content Generation",
       "Concept Visualization",
@@ -94,7 +95,7 @@ export default async function LocaleLayout({
     publisher: { "@id": ORG_ID },
     inLanguage: [locale === "es" ? "es" : "en"],
     description:
-      "AI design firm specializing in content generation, concept visualization, product design, and operations consulting.",
+      "AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, and operations consulting.",
   };
 
   return (

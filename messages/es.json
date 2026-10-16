@@ -23,7 +23,7 @@
     "heroSubtitle": "Diseño Aumentado",
     "heroTitle": "Nuestra meta es una IA para todos, que crezca con cada uno y que sirva a quien más la necesita.",
     "heroCta": "Conoce nuestro trabajo",
-    "heroTagline": "Tu firma de diseño con IA — escala tu negocio con IA",
+    "heroTagline": "Tu firma de integración de IA. Escala tu negocio con IA.",
     "servicesHeading": "Nuestros Servicios",
     "servicesSubheading": "Ya sea que estés comenzando o liderando una empresa establecida, estamos comprometidos a entender tus objetivos y ayudarte a alcanzarlos.",
     "whyHeading": "¿Por qué elegirnos?",
@@ -250,7 +250,7 @@
           },
           {
             "q": "¿Hacen ustedes los cambios?",
-            "a": "Podemos hacerlo, y el diseño de producto es un servicio aparte si prefieres que las soluciones se construyan en lugar de especificarse. La auditoría se sostiene por sí sola en cualquier caso."
+            "a": "Podemos plantear las correcciones como un proyecto aparte si prefieres que se construyan en lugar de especificarse. La auditoría se sostiene por sí sola en cualquier caso."
           },
           {
             "q": "¿Y si no estamos de acuerdo?",
@@ -260,55 +260,6 @@
       },
       "metaTitle": "Optimización de Experiencia con IA",
       "metaDescription": "Una auditoría UX que devuelve soluciones ordenadas y respaldadas por evidencia, puntuadas por impacto y coste, no un documento descriptivo."
-    },
-    "productDesign": {
-      "title": "Diseño de Producto",
-      "short": "Nuestro equipo te acompaña en cada etapa de crear tu producto.",
-      "long": "Haz de tus ideas productos bellos y que funcionan, con nuestro servicio de diseño de producto con IA. Sumamos la velocidad de la IA a la mirada del diseño centrado en las personas.",
-      "detail": {
-        "intro": "Nuestro servicio de diseño de producto combina la velocidad de la generación con IA y el criterio del diseño centrado en las personas. Obtienes la velocidad de iteración que hace asequible explorar alternativas reales, y el pensamiento estructural que mantiene coherente un producto que avanza rápido en lugar de acumular decisiones que nadie tomó a propósito.",
-        "body": "Cubrimos todo el arco: concepto inicial, arquitectura de información, diseño de interfaz y sistemas de diseño. Las partes que necesitas dependen de dónde esté hoy el producto, y ajustamos el alcance a eso y no a un paquete fijo.",
-        "steps": [
-          {
-            "title": "Enmarcar el problema",
-            "body": "Establecemos para qué sirve el producto, a quién sirve y cómo se ve el éxito en términos medibles antes de dibujar nada. La mayoría de los problemas de diseño que se resisten son problemas de encuadre disfrazados."
-          },
-          {
-            "title": "Diseñar e iterar",
-            "body": "Avanzamos por concepto, estructura e interfaz, usando IA para que cada iteración sea barata y así probar alternativas reales en lugar de defender la primera."
-          },
-          {
-            "title": "Sistematizar y entregar",
-            "body": "Dejamos el resultado en componentes, patrones y decisiones escritas, para que el producto siga coherente cuando ya no estemos y tus ingenieros nunca tengan que adivinar qué quería decir una maqueta."
-          }
-        ],
-        "deliverables": [
-          "Un encuadre escrito del problema con criterios de éxito medibles",
-          "Diseños de los flujos clave",
-          "Componentes listos para ingeniería",
-          "Por qué decidimos así, por escrito"
-        ],
-        "faq": [
-          {
-            "q": "¿Usan nuestro sistema de diseño?",
-            "a": "Sí, y suele ser el mejor camino. Extendemos lo que ya tienes en lugar de reemplazarlo, salvo que reemplazarlo sea realmente la opción más barata."
-          },
-          {
-            "q": "¿Qué entregan a ingeniería?",
-            "a": "Diseños, componentes y las razones de cada decisión de estructura. Dejar esas razones por escrito es lo que evita que la idea original se pierda al construirla."
-          },
-          {
-            "q": "¿Cómo se usa la IA realmente aquí?",
-            "a": "Sobre todo para abaratar cada ronda de cambios. Genera alternativas, prueba estructuras y crea variaciones tan rápido que explorar sale a cuenta. Las decisiones de fondo siguen en manos de personas."
-          },
-          {
-            "q": "¿Trabajan con nuestro equipo?",
-            "a": "Sí. Integrarnos con un equipo existente es habitual, y el paso de sistematización está pensado para dejar a ese equipo mejor equipado que al principio."
-          }
-        ]
-      },
-      "metaTitle": "Diseño de Producto con IA",
-      "metaDescription": "Diseño de producto que combina la velocidad de iteración de la IA con criterio humano: concepto, arquitectura de información, interfaz y sistemas."
     },
     "operationsConsulting": {
       "title": "Consultoría de Operaciones",
@@ -832,21 +783,21 @@
   },
   "meta": {
     "home": {
-      "title": "ArsonistAI: Firma de Diseño con IA y Consultoría",
-      "description": "ArsonistAI es una firma de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones.",
-      "ogDescription": "Firma de diseño con IA especializada en generación de contenido, visualización de conceptos, diseño de productos y consultoría de operaciones."
+      "title": "ArsonistAI: Firma de Integración de IA y Consultoría",
+      "description": "ArsonistAI es una firma de integración de IA: servidores MCP, instalación de Openclaw, formación en Claude y Cursor, y consultoría de operaciones.",
+      "ogDescription": "Firma de integración de IA especializada en servidores MCP, instalación y formación en herramientas de IA, generación de contenido y consultoría."
     },
     "about": {
-      "title": "Sobre Nuestra Firma de Diseño con IA",
-      "description": "ArsonistAI es una firma de diseño con IA con la misión de hacer la inteligencia artificial accesible, escalable y centrada en las personas.",
-      "ogTitle": "Sobre ArsonistAI — Firma de Diseño con IA",
-      "ogDescription": "Una firma de diseño AI-first que hace la inteligencia artificial accesible, escalable y centrada en las personas."
+      "title": "Sobre Nuestra Firma de Integración de IA",
+      "description": "ArsonistAI es una firma de integración de IA con la misión de hacer la inteligencia artificial accesible, escalable y centrada en las personas.",
+      "ogTitle": "Sobre ArsonistAI, Firma de Integración de IA",
+      "ogDescription": "Una firma de integración de IA que hace la inteligencia artificial accesible, escalable y centrada en las personas."
     },
     "services": {
-      "title": "Servicios de Diseño con IA",
-      "description": "Servicios de diseño con IA: generación de contenido, visualización de conceptos, diseño de producto, servidores MCP y consultoría de operaciones.",
-      "ogTitle": "Servicios de Diseño con IA — ArsonistAI",
-      "ogDescription": "Servicios de diseño potenciados por IA incluyendo generación de contenido, visualización de conceptos, diseño de producto y consultoría de operaciones."
+      "title": "Servicios de Integración de IA",
+      "description": "Servicios de integración de IA: servidores MCP, instalación de Openclaw, formación en Claude y Cursor, generación de contenido y consultoría.",
+      "ogTitle": "Servicios de Integración de IA | ArsonistAI",
+      "ogDescription": "Servicios de integración de IA, incluyendo servidores MCP, instalación y formación en herramientas de IA, generación de contenido y consultoría."
     },
     "products": {
       "title": "Productos y Herramientas con IA",

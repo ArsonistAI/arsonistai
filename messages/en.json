@@ -23,7 +23,7 @@
     "heroSubtitle": "Design Augmented",
     "heroTitle": "We want to build a future with AI that is open to all, built to grow, and made for the people who need it most.",
     "heroCta": "Check out our work",
-    "heroTagline": "Your AI design firm — scale your business with AI",
+    "heroTagline": "Your AI integration firm. Scale your business with AI.",
     "servicesHeading": "Our Services",
     "servicesSubheading": "Whether you're just starting out or leading an established enterprise, we're committed to understanding your goals and helping you achieve them.",
     "whyHeading": "Why Choose Us?",
@@ -250,7 +250,7 @@
           },
           {
             "q": "Will you implement the changes?",
-            "a": "We can, and product design is a separate service if you want the fixes built rather than specified. The audit stands on its own either way."
+            "a": "We can scope the fixes as a separate project if you want them built rather than specified. The audit stands on its own either way."
           },
           {
             "q": "What if we disagree with a finding?",
@@ -260,55 +260,6 @@
       },
       "metaTitle": "AI Experience Optimization",
       "metaDescription": "A UX audit that returns ranked, evidence-backed fixes scored by impact and cost, not a document describing your product back to you."
-    },
-    "productDesign": {
-      "title": "Product Design",
-      "short": "Our team will guide you through every stage of building your product.",
-      "long": "Transform your ideas into beautifully functional products with our AI-powered product design service. We combine the speed of AI with the insight of human-centered design to help you visualize, iterate, and refine digital experiences faster than ever.",
-      "detail": {
-        "intro": "Our product design service pairs the speed of AI with the judgment of human-centered design. You get the pace that makes exploring real options affordable, and the structural thinking that keeps a fast-moving product coherent instead of piling up decisions that nobody meant to make.",
-        "body": "We cover the full arc: early concept, site structure, interface design, and design systems. Which parts you need depends on where the product is today, and we scope the work to that instead of to a fixed package.",
-        "steps": [
-          {
-            "title": "Frame the problem",
-            "body": "We establish what the product is for, who it serves, and what success looks like in measurable terms before anything gets drawn. Most design problems that resist solving are framing problems wearing a costume."
-          },
-          {
-            "title": "Design and iterate",
-            "body": "We move through concept, structure, and interface, using AI to make each iteration cheap enough that we test real alternatives instead of defending the first one."
-          },
-          {
-            "title": "Systematize and hand off",
-            "body": "We turn the result into components, patterns, and written decisions, so the product stays coherent after we leave and your engineers are not guessing at intent from a mockup."
-          }
-        ],
-        "deliverables": [
-          "A written problem frame and goals",
-          "Designs for the flows that matter",
-          "Documented parts for engineers",
-          "The reasoning, written down"
-        ],
-        "faq": [
-          {
-            "q": "Can you use our design system?",
-            "a": "Yes, and it is usually the better path. We extend what you have rather than replacing it, unless replacing it is genuinely the cheaper option."
-          },
-          {
-            "q": "What do engineers get?",
-            "a": "Designs, components, and the reasons behind the main decisions. Writing those reasons down is what keeps the intent from getting lost while it is built."
-          },
-          {
-            "q": "How is AI actually used here?",
-            "a": "Mainly to make iteration cheap. It generates options, tests structures, and makes variations fast enough that exploring is affordable. The structural decisions stay with people."
-          },
-          {
-            "q": "Can you work with our designers?",
-            "a": "Yes. Embedding with an existing team is common, and the systematization step is designed to leave that team better equipped than it started."
-          }
-        ]
-      },
-      "metaTitle": "AI Product Design Services",
-      "metaDescription": "Product design pairing AI iteration speed with human-centered judgment. Concept, information architecture, interface, and design system work."
     },
     "operationsConsulting": {
       "title": "Operations Consulting",
@@ -834,21 +785,21 @@
   },
   "meta": {
     "home": {
-      "title": "ArsonistAI: AI Design Firm and AI Consulting",
-      "description": "ArsonistAI is an AI design firm building content generation, concept visualization, product design, and AI operations consulting for teams.",
-      "ogDescription": "AI design firm specializing in content generation, concept visualization, product design, and operations consulting."
+      "title": "ArsonistAI: AI Integration Firm and AI Consulting",
+      "description": "ArsonistAI is an AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, content generation, and AI operations consulting.",
+      "ogDescription": "AI integration firm specializing in custom MCP servers, AI tool setup and training, content generation, and operations consulting."
     },
     "about": {
-      "title": "About Our AI Design Firm",
-      "description": "ArsonistAI is an AI design firm on a mission to make artificial intelligence accessible, scalable, and human-centered. Meet our team and values.",
-      "ogTitle": "About ArsonistAI — AI Design Firm",
-      "ogDescription": "An AI-first design firm making artificial intelligence accessible, scalable, and human-centered."
+      "title": "About Our AI Integration Firm",
+      "description": "ArsonistAI is an AI integration firm on a mission to make artificial intelligence accessible, scalable, and human-centered. Meet our team and values.",
+      "ogTitle": "About ArsonistAI, an AI Integration Firm",
+      "ogDescription": "An AI integration firm making artificial intelligence accessible, scalable, and human-centered."
     },
     "services": {
-      "title": "AI Design Services",
-      "description": "AI design services from ArsonistAI: content generation, concept visualization, product design, custom MCP servers, and operations consulting.",
-      "ogTitle": "AI Design Services — ArsonistAI",
-      "ogDescription": "AI-powered design services including content generation, concept visualization, product design, and operations consulting."
+      "title": "AI Integration Services",
+      "description": "AI integration services from ArsonistAI: custom MCP servers, Openclaw setup, Claude and Cursor training, content generation, and operations consulting.",
+      "ogTitle": "AI Integration Services | ArsonistAI",
+      "ogDescription": "AI integration services including custom MCP servers, AI tool setup and training, content generation, and operations consulting."
     },
     "products": {
       "title": "AI-Powered Products & Tools",

@@ -40,7 +40,7 @@ export const OG_IMAGE = {
   width: 1200,
   height: 630,
   type: "image/jpeg",
-  alt: "ArsonistAI — AI Design Firm",
+  alt: "ArsonistAI: AI Integration Firm",
 };
 
 type OpenGraph = NonNullable<Metadata["openGraph"]>;

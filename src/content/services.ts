@@ -45,14 +45,6 @@ export const services: Service[] = [
     image: "/images/services/phone.png",
   },
   {
-    id: "product-design",
-    titleKey: "services.productDesign.title",
-    descriptionKey: "services.productDesign.short",
-    longDescriptionKey: "services.productDesign.long",
-    icon: "pen-tool",
-    image: "/images/services/product.png",
-  },
-  {
     id: "operations-consulting",
     titleKey: "services.operationsConsulting.title",
     descriptionKey: "services.operationsConsulting.short",

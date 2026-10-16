@@ -23,7 +23,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta.home" });
   return {
-    title: t("title"),
+    // The home title already leads with the brand, so skip the template's brand suffix.
+    title: { absolute: t("title") },
     description: t("description"),
     openGraph: openGraphFor({
       locale,

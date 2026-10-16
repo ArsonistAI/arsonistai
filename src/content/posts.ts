@@ -787,7 +787,7 @@ No, it complements them. The canvas operates at the layer just above execution t
 
 ## Get Started
 
-The Lean Product Canvas is available as an interactive Figma and FigJam template. If you'd like support running your team through it, [our product design services](/services) are built around exactly this kind of collaborative strategy work, whether that means facilitating the first session with your team or helping translate the canvas into an ongoing part of how you plan and ship.`,
+The Lean Product Canvas is available as an interactive Figma and FigJam template, so your team can fill it in together during the first planning session and keep it open as an ongoing part of how you plan and ship.`,
       es: `Cuando nos asociamos con dos de las voces más influyentes del pensamiento moderno de producto, Jeff Gothelf y Josh Seiden, coautores de Lean UX, Sense & Respond y Who Does What By How Much?, reconocimos la oportunidad de colaborar en algo que podía tener un impacto real en cómo los equipos de producto trabajan, se alinean y construyen en todo el mundo.
 
 En el corazón de esta colaboración estaba su visión: llevar el recién evolucionado [Lean Product Canvas](https://jeffgothelf.com/blog/the-lean-product-canvas/), sucesor del ampliamente usado [Lean UX Canvas](https://leanuxbook.com/), a un formato digital moderno, flexible y completamente interactivo.
@@ -861,7 +861,7 @@ No, las complementa. El canvas opera en la capa justo por encima de las herramie
 
 ## Empieza ahora
 
-El Lean Product Canvas está disponible como plantilla interactiva de Figma y FigJam. Si quieres apoyo para guiar a tu equipo a través de él, [nuestros servicios de diseño de producto](/services) están construidos exactamente en torno a este tipo de trabajo colaborativo de estrategia, ya sea facilitando la primera sesión con tu equipo o ayudando a convertir el canvas en una parte continua de cómo planeas y lanzas.`,
+El Lean Product Canvas está disponible como plantilla interactiva de Figma y FigJam, para que tu equipo pueda completarlo en conjunto durante la primera sesión de planificación y mantenerlo como una parte continua de cómo planeas y lanzas.`,
     },
   },
   {
