@@ -114,6 +114,15 @@ export const services: Service[] = [
     image: "/images/services/factory.png",
     sectionKey: "applicationServices",
   },
+  {
+    id: "llm-cost-optimization",
+    titleKey: "services.llmCostOptimization.title",
+    descriptionKey: "services.llmCostOptimization.short",
+    longDescriptionKey: "services.llmCostOptimization.long",
+    icon: "gauge",
+    image: "/images/services/content_service.png",
+    sectionKey: "applicationServices",
+  },
 ];
 
 /**

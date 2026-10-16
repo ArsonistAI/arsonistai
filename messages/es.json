@@ -656,6 +656,56 @@
       "metaTitle": "Automatización de flujos con IA: n8n, Make y Zapier",
       "metaDescription": "Un flujo con IA que automatiza una tarea repetitiva y conecta sus aplicaciones, datos y modelos de IA. En n8n, Make, Zapier o código, en sus propias cuentas."
     },
+    "llmCostOptimization": {
+      "title": "Optimización de costos de LLM",
+      "short": "Una factura más baja por los modelos de IA de su producto, con pruebas que demuestran que las respuestas siguen igual de buenas.",
+      "long": "La mayoría de los equipos usa el modelo más caro en cada solicitud, reenvía las mismas instrucciones largas cada vez y nunca mide si una opción más barata respondería igual de bien. Desglosamos su gasto, probamos opciones más baratas con sus propios prompts reales y calificamos la calidad de cada una antes de cambiar nada. Desde $630.",
+      "detail": {
+        "intro": "La factura de una función de IA crece con cada usuario, y casi todo ese gasto se puede evitar. Las solicitudes fáciles usan el modelo más caro, las instrucciones largas se pagan en cada llamada y el trabajo que podría esperar hasta la noche se cobra a precio de tiempo real. Los proveedores ofrecen caché de prompts y procesamiento por lotes para resolverlo, pero pocos equipos los usan.",
+        "body": "Las herramientas de costos le dicen qué es más barato. No le dicen si la opción más barata sigue respondiendo bien a sus usuarios. Probamos cada cambio con sus propios prompts contra un estándar escrito de lo que es una buena respuesta, y solo recomendamos lo que aprueba. Las pruebas usan su clave de API, y nada nuestro se interpone entre usted y su proveedor.",
+        "steps": [
+          {
+            "title": "Leer la factura",
+            "body": "Su exportación de uso o una muestra de registros, desglosada por función, modelo y tipo de token, para que vea exactamente adónde va el dinero y qué lo provoca."
+          },
+          {
+            "title": "Probar las opciones",
+            "body": "Un conjunto de pruebas con 50 a 150 de sus prompts reales, y cada opción evaluada con él: modelos más pequeños, caché de prompts, prompts más cortos, procesamiento por lotes y enrutamiento. Cada una recibe una calificación de calidad y un costo por cada mil solicitudes."
+          },
+          {
+            "title": "Cambiar sin riesgo",
+            "body": "Un plan de ahorro con una cifra en dólares para cada cambio, o el cambio hecho en su código. Los proyectos más grandes incluyen un script que repite las pruebas cada vez que cambia un prompt o un modelo, y una revisión de la factura treinta días después."
+          }
+        ],
+        "deliverables": [
+          "Un desglose de costos que muestra su gasto por función, por modelo y por tipo de token",
+          "Un plan de ahorro con cada cambio, su ahorro mensual en dólares y su efecto en la calidad",
+          "Un informe de pruebas que compara de tres a cinco modelos u opciones con sus propios prompts, citando los errores",
+          "En el proyecto más grande, enrutamiento y caché integrados en su código con un script de pruebas reutilizable",
+          "En el proyecto más grande, una comparación de la nueva factura con la anterior treinta días después"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "$630 por una auditoría de costos y un plan de ahorro con cifras en dólares, en 4 días. $1,350 para sumar pruebas de tres a cinco modelos u opciones con hasta 80 de sus prompts, en 8 días. $2,880 por pruebas con hasta 150 prompts, los cambios integrados en su código, un script de pruebas reutilizable y una revisión de la factura a los 30 días, en 18 días."
+          },
+          {
+            "q": "¿Cuánto vamos a ahorrar?",
+            "a": "Depende de su tráfico y de cómo sus funciones usan el modelo. La auditoría de costos pone una cifra en dólares a cada cambio antes de que se comprometa con algo más grande."
+          },
+          {
+            "q": "¿Empeorarán las respuestas?",
+            "a": "No con un cambio que recomendemos. Cada cambio se prueba con sus propios prompts contra un estándar escrito, y cualquier opción que falle se descarta, aunque sea más barata."
+          },
+          {
+            "q": "¿Con qué proveedores trabajan?",
+            "a": "OpenAI, Anthropic y Google, y modelos abiertos servidos por cualquier API. Las pruebas usan su propia clave de API y suelen costar unos pocos dólares."
+          }
+        ]
+      },
+      "metaTitle": "Optimización de costos de LLM para OpenAI, Anthropic y Google",
+      "metaDescription": "Reduzca su factura de API de LLM con enrutamiento de modelos, caché de prompts y procesamiento por lotes, cada cambio probado con sus propios prompts."
+    },
     "detail": {
       "processHeading": "Cómo funciona",
       "deliverablesHeading": "Qué recibes",

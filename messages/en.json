@@ -656,6 +656,56 @@
       "metaTitle": "AI Workflow Automation with n8n, Make and Zapier",
       "metaDescription": "An AI workflow that automates a repetitive task, connecting your apps, data and AI models. Built in n8n, Make, Zapier or code, in your own accounts."
     },
+    "llmCostOptimization": {
+      "title": "LLM Cost Optimization",
+      "short": "A lower bill for the AI models behind your product, with tests that prove the answers stay as good.",
+      "long": "Most teams pay for a top model on every request, resend the same long instructions each time, and never measure whether a cheaper setup would answer as well. We break your spend down, test cheaper options on your own real prompts, and grade each one on answer quality before anything changes. From $630.",
+      "detail": {
+        "intro": "The bill for an AI feature grows with every user, and most of it is avoidable. Easy requests run on the most expensive model, long instructions are paid for on every call, and work that could wait overnight is billed at the real-time price. Provider features like prompt caching and batch processing exist to fix this, but few teams use them.",
+        "body": "Cost tools tell you what is cheaper. They do not tell you whether the cheaper setup still answers your users correctly. We test every change on your own prompts against a written standard for a good answer, and we only recommend what passes. Test runs use your API key, and nothing of ours sits between you and your provider.",
+        "steps": [
+          {
+            "title": "Read the bill",
+            "body": "Your usage export or a sample of request logs, broken down by feature, model and token type, so you can see exactly where the money goes and what drives it."
+          },
+          {
+            "title": "Test the options",
+            "body": "A test set built from 50 to 150 of your real prompts, then each candidate setup run against it: smaller models, prompt caching, shorter prompts, batch processing and routing. Each gets a quality score and a cost per thousand requests."
+          },
+          {
+            "title": "Switch safely",
+            "body": "A savings plan with a dollar figure for each change, or the change made in your code. Larger engagements add a script that reruns the tests whenever a prompt or model changes, and a check of the bill thirty days later."
+          }
+        ],
+        "deliverables": [
+          "A cost breakdown that shows your spend by feature, by model and by token type",
+          "A savings plan that lists each change, its monthly saving in dollars, and its effect on quality",
+          "A test report comparing three to five models or setups on your own prompts, with failures quoted",
+          "On the largest engagement, routing and caching built into your code with a rerunnable test script",
+          "On the largest engagement, a comparison of the new bill against the old one thirty days later"
+        ],
+        "faq": [
+          {
+            "q": "What does it cost?",
+            "a": "$630 for a cost audit and savings plan with dollar figures, in 4 days. $1,350 to add tests of three to five models or setups on up to 80 of your prompts, in 8 days. $2,880 for tests on up to 150 prompts, the changes built into your code, a rerunnable test script, and a bill check 30 days later, in 18 days."
+          },
+          {
+            "q": "How much will we save?",
+            "a": "It depends on your traffic and on how your features use the model. The cost audit puts a dollar figure on each change before you commit to anything larger."
+          },
+          {
+            "q": "Will the answers get worse?",
+            "a": "Not from a change we recommend. Every change is tested on your own prompts against a written standard, and any setup that fails is rejected, even when it is cheaper."
+          },
+          {
+            "q": "Which providers do you work with?",
+            "a": "OpenAI, Anthropic and Google, and open models served through any API. Test runs use your own API key and usually cost a few dollars."
+          }
+        ]
+      },
+      "metaTitle": "LLM Cost Optimization for OpenAI, Anthropic and Google",
+      "metaDescription": "Cut your LLM API bill with model routing, prompt caching and batch processing, each change tested on your own prompts so answer quality stays the same."
+    },
     "detail": {
       "processHeading": "How it works",
       "deliverablesHeading": "What you get",
