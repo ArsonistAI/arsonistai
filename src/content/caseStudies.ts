@@ -205,7 +205,7 @@ export const caseStudies: CaseStudy[] = [
     displayName: "Hello Cloud IT",
     client: "Hello CIT",
     url: "https://www.hellocit.com/",
-    heroImage: "/images/work/hello-cit-hero.png",
+    heroImage: "/images/work/hello-cit-hero.jpg",
     lastModified: "2026-03-06",
     metaDescription: {
       en: "How ArsonistAI built Hello CIT a bilingual Next.js marketing site with reliable Brevo email delivery, full SEO, and a Vercel deployment.",
