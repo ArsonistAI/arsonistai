@@ -362,7 +362,7 @@
     "customMcpServers": {
       "title": "Servidores MCP",
       "short": "Da a Claude, Cursor y otros agentes de IA un acceso seguro y directo a tus propios datos y herramientas.",
-      "long": "Construimos un servidor MCP pensado para el trabajo que tus agentes de IA necesitan hacer, no para la forma en que tus datos están guardados. Los agentes reciben respuestas que pueden citar, y una negativa clara en lugar de una suposición cuando los datos no bastan para responder. Dos niveles de desarrollo, cada uno con 30 días de soporte. Desde $2,500.",
+      "long": "Construimos un servidor MCP pensado para el trabajo que tus agentes de IA necesitan hacer, no para la forma en que tus datos están guardados. Los agentes reciben respuestas que pueden citar, y una negativa clara en lugar de una suposición cuando los datos no bastan para responder. Tres niveles de desarrollo, cada uno con 30 días de soporte. Desde $1,350.",
       "detail": {
         "intro": "Un servidor MCP permite que herramientas de IA como Claude y Cursor lean tus datos y usen tus sistemas directamente, en lugar de depender de lo que alguien pegue en un chat. La mayoría de los servidores se limitan a reflejar una base de datos o una carpeta, y el agente tiene que adivinar qué tabla o archivo necesita. Diseñamos las herramientas en torno a las preguntas que un agente hará de verdad, para que la respuesta correcta esté a una sola llamada.",
         "body": "Cada respuesta indica el registro del que salió, para que una persona pueda comprobarla. Cuando una petición es ambigua, o los datos detrás de ella faltan o están desactualizados, el servidor lo dice claramente y no adivina. En los servidores que funcionan delante de tu aplicación, los agentes tienen exactamente los permisos que ya tienen tus usuarios, y nada más.",
@@ -389,7 +389,7 @@
         "faq": [
           {
             "q": "¿Cuánto cuesta?",
-            "a": "$2,500 por un servidor de datos, que da a los agentes acceso de solo lectura a tus documentos o tu base de datos y funciona en tus propias máquinas. $6,000 por una integración con tu aplicación, alojada por HTTP, con inicio de sesión de usuarios y respetando los permisos que tu aplicación ya aplica. Ambos incluyen 30 días de soporte. El soporte continuo después cuesta $400 al mes."
+            "a": "$1,350 por un servidor de solo lectura sobre una fuente de datos con hasta tres herramientas, en 7 días. $2,700 por un servidor de datos completo sobre tus documentos o una base de datos, en 14 días. $4,500 por hasta tres fuentes de datos unidas en un solo servidor, en 21 días. Cada uno incluye 30 días de soporte, y otros 30 días cuestan $360. Una integración alojada con inicio de sesión se cotiza a pedido."
           },
           {
             "q": "¿Con qué herramientas funciona?",
@@ -406,7 +406,7 @@
         ]
       },
       "metaTitle": "Desarrollo de Servidores MCP a Medida",
-      "metaDescription": "Desarrollo de servidores MCP a medida: da a Claude, Cursor y otros agentes de IA acceso seguro y citable a tus datos. Desde $2,500 con 30 días de soporte."
+      "metaDescription": "Desarrollo de servidores MCP a medida: da a Claude, Cursor y otros agentes de IA acceso seguro y citable a tus datos. Desde $1,350 con 30 días de soporte."
     },
     "applicationServicesHeading": "Servicios de aplicaciones",
     "openclawInstallation": {
@@ -508,48 +508,48 @@
       "metaDescription": "Formación estructurada en Claude Code y Cursor construida sobre tu propio código y tu proceso de revisión, para entregar más rápido de verdad."
     },
     "chatbotAudit": {
-      "title": "Test\u00a0de\u00a0Chatbot",
-      "short": "Pon a prueba tu chatbot de atención al cliente antes de que hable con tus\u00a0clientes\u00a0en\u00a0tu\u00a0nombre.",
-      "long": "Antes de que tu chatbot de soporte salga en vivo, le hacemos las preguntas que suelen hacer fallar a los bots y comprobamos cada respuesta con tus propias políticas y páginas de producto. Cada precio, fecha, teléfono y enlace que da se compara con tus documentos, y todo lo que se inventó queda señalado. Recibes un informe en lenguaje claro que puedes leer en\u00a0diez\u00a0minutos.\u00a0Desde\u00a0$295.",
+      "title": "Test de Chatbot",
+      "short": "Pon a prueba tu chatbot de atención al cliente antes de que hable con tus clientes en tu nombre.",
+      "long": "Antes de que tu chatbot de soporte salga en vivo, le hacemos las preguntas que suelen hacer fallar a los bots y comprobamos cada respuesta con tus propias políticas y páginas de producto. Cada precio, fecha, teléfono y enlace que da se compara con tus documentos, y todo lo que se inventó queda señalado. Recibes un informe en lenguaje claro que puedes leer en diez minutos. Desde $270.",
       "detail": {
-        "intro": "Tu chatbot de soporte está a punto de hablar con tus clientes en tu nombre. Las preguntas que más importan son las que tus documentos no responden. Un bot que inventa una política de reembolso, un precio o una garantía hace más daño que uno que admite no saber, y tus clientes te harán cumplir lo que dijo. La mayor parte de la auditoría\u00a0apunta\u00a0a\u00a0ese\u00a0fallo.",
-        "body": "Las comprobaciones son reglas siempre que una regla pueda decidir. Cuando solo el criterio puede saber si una respuesta es incorrecta, un modelo de IA busca contradicciones con tus documentos, cita la línea exacta en la que se basa y queda marcado como veredicto de un modelo para que puedas revisarlo tú mismo. Lo que las comprobaciones no pueden resolver se lista para que lo lea una persona y\u00a0nunca\u00a0cuenta\u00a0como\u00a0aprobado.",
+        "intro": "Tu chatbot de soporte está a punto de hablar con tus clientes en tu nombre. Las preguntas que más importan son las que tus documentos no responden. Un bot que inventa una política de reembolso, un precio o una garantía hace más daño que uno que admite no saber, y tus clientes te harán cumplir lo que dijo. La mayor parte de la auditoría apunta a ese fallo.",
+        "body": "Las comprobaciones son reglas siempre que una regla pueda decidir. Cuando solo el criterio puede saber si una respuesta es incorrecta, un modelo de IA busca contradicciones con tus documentos, cita la línea exacta en la que se basa y queda marcado como veredicto de un modelo para que puedas revisarlo tú mismo. Lo que las comprobaciones no pueden resolver se lista para que lo lea una persona y nunca cuenta como aprobado.",
         "steps": [
           {
-            "title": "Escribir\u00a0las\u00a0preguntas",
-            "body": "Preparamos unas 60 preguntas a partir de tus documentos: las que responden, las cercanas que no responden, políticas que no tienes, peticiones fuera de la función del bot, intentos de hacerle romper sus reglas y preguntas sobre el pedido de un cliente concreto. Apruebas la lista antes de que se envíe\u00a0nada\u00a0a\u00a0tu\u00a0bot."
+            "title": "Escribir las preguntas",
+            "body": "Preparamos unas 60 preguntas a partir de tus documentos: las que responden, las cercanas que no responden, políticas que no tienes, peticiones fuera de la función del bot, intentos de hacerle romper sus reglas y preguntas sobre el pedido de un cliente concreto. Apruebas la lista antes de que se envíe nada a tu bot."
           },
           {
-            "title": "Revisar\u00a0respuestas",
-            "body": "Las preguntas llegan a tu bot de una en una, algunas como conversaciones cortas, porque un bot que responde bien a un mensaje puede ceder a lo largo de tres. Cada precio, porcentaje, número de días, fecha, teléfono, correo electrónico y enlace de sus respuestas se compara con tus documentos. Si\u00a0no\u00a0está,\u00a0lo\u00a0marcamos."
+            "title": "Revisar respuestas",
+            "body": "Las preguntas llegan a tu bot de una en una, algunas como conversaciones cortas, porque un bot que responde bien a un mensaje puede ceder a lo largo de tres. Cada precio, porcentaje, número de días, fecha, teléfono, correo electrónico y enlace de sus respuestas se compara con tus documentos. Si no está, lo marcamos."
           },
           {
-            "title": "Qué\u00a0corregir\u00a0primero",
-            "body": "Recibes un informe que se abre en cualquier navegador y se imprime bien: cuántas respuestas aprobaron y fallaron, los tres fallos más graves en palabras sencillas y después cada pregunta con la respuesta exacta del bot y el motivo de su veredicto. Una llamada breve o una nota escrita te\u00a0dice\u00a0qué\u00a0va\u00a0primero."
+            "title": "Qué corregir primero",
+            "body": "Recibes un informe que se abre en cualquier navegador y se imprime bien: cuántas respuestas aprobaron y fallaron, los tres fallos más graves en palabras sencillas y después cada pregunta con la respuesta exacta del bot y el motivo de su veredicto. Una llamada breve o una nota escrita te dice qué va primero."
           }
         ],
         "deliverables": [
-          "Un informe con cada pregunta, la respuesta exacta del bot y el\u00a0motivo\u00a0de\u00a0cada\u00a0veredicto",
+          "Un informe con cada pregunta, la respuesta exacta del bot y el motivo de cada veredicto",
           "Los tres fallos más graves, explicados con palabras sencillas al principio de todo el informe",
           "Las preguntas, para reusarlas",
           "Una nota con las prioridades"
         ],
         "faq": [
           {
-            "q": "¿Cuánto\u00a0cuesta?",
-            "a": "$295 por una revisión de 30 preguntas en 3 días, $650 por la auditoría completa de 60 preguntas en 5 días y $950 por la auditoría completa más una nueva prueba después de tus correcciones, entregada en 14 días contando el tiempo que tardes en hacerlas. Corregir el bot es un trabajo aparte, que se cotiza cuando\u00a0hayas\u00a0visto\u00a0el\u00a0informe."
+            "q": "¿Cuánto cuesta?",
+            "a": "$270 por una revisión de 30 preguntas en 3 días, $630 por la auditoría completa de 60 preguntas en 5 días y $900 por la auditoría completa más una nueva prueba después de tus correcciones, entregada en 14 días contando el tiempo que tardes en hacerlas. Corregir el bot es un trabajo aparte, que se cotiza cuando hayas visto el informe."
           },
           {
-            "q": "¿Qué\u00a0necesitan?",
-            "a": "Los documentos con los que el bot debe responder, como políticas, envíos y devoluciones, datos de producto e información de contacto. Una forma de llegar al bot, ya sea la dirección en la que responde o la página web donde está su ventana de chat. Y una confirmación por escrito de que el bot es tuyo o de que tienes permiso para que\u00a0lo\u00a0pongamos\u00a0a\u00a0prueba."
+            "q": "¿Qué necesitan?",
+            "a": "Los documentos con los que el bot debe responder, como políticas, envíos y devoluciones, datos de producto e información de contacto. Una forma de llegar al bot, ya sea la dirección en la que responde o la página web donde está su ventana de chat. Y una confirmación por escrito de que el bot es tuyo o de que tienes permiso para que lo pongamos a prueba."
           },
           {
-            "q": "¿Es\u00a0un\u00a0test\u00a0de\u00a0seguridad?",
-            "a": "No. Incluye un conjunto básico de intentos de hacer que el bot rompa sus reglas, pero no es una prueba de seguridad ni de penetración, y tampoco es una prueba de carga. Las preguntas se envían de una en una, con\u00a0una\u00a0pausa\u00a0entre\u00a0ellas."
+            "q": "¿Es un test de seguridad?",
+            "a": "No. Incluye un conjunto básico de intentos de hacer que el bot rompa sus reglas, pero no es una prueba de seguridad ni de penetración, y tampoco es una prueba de carga. Las preguntas se envían de una en una, con una pausa entre ellas."
           },
           {
-            "q": "¿Aprobar\u00a0es\u00a0una\u00a0garantía?",
-            "a": "No. Un aprobado es una buena respuesta, no una promesa. Cada pregunta se hace una vez, y un bot puede responder de otra forma la próxima vez. El conjunto de preguntas es tuyo, así que puedes repetirlo\u00a0después\u00a0de\u00a0cada\u00a0cambio."
+            "q": "¿Aprobar es una garantía?",
+            "a": "No. Un aprobado es una buena respuesta, no una promesa. Cada pregunta se hace una vez, y un bot puede responder de otra forma la próxima vez. El conjunto de preguntas es tuyo, así que puedes repetirlo después de cada cambio."
           }
         ]
       },
@@ -559,7 +559,7 @@
     "voiceAgentDesign": {
       "title": "Agentes de Voz",
       "short": "Rediseñamos lo que tu agente telefónico de IA dice a quienes llaman, y lo probamos con tus llamadas reales.",
-      "long": "Tu agente telefónico de IA contesta, pero quienes llaman cuelgan, se repiten o piden hablar con una persona. Calificamos tus llamadas reales con una rúbrica escrita, encontramos el momento exacto en que fallan y después rediseñamos el flujo de la llamada y reescribimos las instrucciones del agente. La nueva versión se prueba con los mismos escenarios y ves las puntuaciones de antes y después. Desde $395.",
+      "long": "Tu agente telefónico de IA contesta, pero quienes llaman cuelgan, se repiten o piden hablar con una persona. Calificamos tus llamadas reales con una rúbrica escrita, encontramos el momento exacto en que fallan y después rediseñamos el flujo de la llamada y reescribimos las instrucciones del agente. La nueva versión se prueba con los mismos escenarios y ves las puntuaciones de antes y después. Desde $360.",
       "detail": {
         "intro": "La mayoría de los agentes de voz que decepcionan a quienes llaman no están rotos. El código funciona y la plataforma funciona. Lo que falla es la conversación: un saludo que no dice qué puede hacer el agente, preguntas en el orden equivocado, un número de teléfono mal entendido sin forma de corregirlo, una persona a la que el agente interrumpe, o un traspaso que llega tarde o nunca llega. Son problemas de diseño, y se oyen en las grabaciones.",
         "body": "Trabajamos en la plataforma que ya usas, como Retell AI, Vapi, ElevenLabs Agents o el agente de voz de GoHighLevel. No reconstruimos tu sistema telefónico ni tus servidores. La latencia se ajusta con la configuración de tu plataforma y recortando lo que dice el agente, y el agente siempre dice que es una IA cuando alguien se lo pregunta.",
@@ -587,7 +587,7 @@
         "faq": [
           {
             "q": "¿Cuánto cuesta?",
-            "a": "$395 por la revisión de 25 llamadas con una lista ordenada de correcciones, en 3 días. $1,400 por el rediseño completo con mapa del flujo, instrucciones reescritas y pruebas de antes y después, en 7 días. $2,600 por el rediseño aplicado en tu plataforma con la configuración ajustada, más una segunda revisión de 25 llamadas reales dos semanas después del lanzamiento, en 14 días."
+            "a": "$360 por la revisión de 25 llamadas con una lista ordenada de correcciones, en 3 días. $1,260 por el rediseño completo con mapa del flujo, instrucciones reescritas y pruebas de antes y después, en 7 días. $2,340 por el rediseño aplicado en tu plataforma con la configuración ajustada, más una segunda revisión de 25 llamadas reales dos semanas después del lanzamiento, en 14 días."
           },
           {
             "q": "¿Qué necesitan?",

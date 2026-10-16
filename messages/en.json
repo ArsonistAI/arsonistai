@@ -362,7 +362,7 @@
     "customMcpServers": {
       "title": "Custom MCP Servers",
       "short": "Give Claude, Cursor, and other AI agents safe, direct access to your own data and tools.",
-      "long": "We build an MCP server shaped around the work your AI agents need to do, not around how your data happens to be stored. Agents get answers they can cite, and a clear refusal instead of a guess when the data cannot settle a question. Two build tiers, each with 30 days of support. From $2,500.",
+      "long": "We build an MCP server shaped around the work your AI agents need to do, not around how your data happens to be stored. Agents get answers they can cite, and a clear refusal instead of a guess when the data cannot settle a question. Three build tiers, each with 30 days of support. From $1,350.",
       "detail": {
         "intro": "An MCP server lets AI tools like Claude and Cursor read your data and use your systems directly, instead of relying on whatever someone pastes into a chat. Most servers simply mirror a database or a folder, which leaves the agent guessing which table or file it needs. We design the tools around the questions an agent will actually ask, so the right answer is one call away.",
         "body": "Every answer names the record it came from, so a person can check it. When a request is ambiguous, or the data behind it is missing or out of date, the server says so plainly and does not guess. For servers that sit in front of your app, agents get exactly the permissions your users already have, and nothing more.",
@@ -389,7 +389,7 @@
         "faq": [
           {
             "q": "What does it cost?",
-            "a": "$2,500 for a data server, which gives agents read-only access to your documents or database and runs on your own machines. $6,000 for an app integration, which is hosted over HTTP, signs users in, and honors the permissions your app already enforces. Both include 30 days of support. Ongoing support after that is $400 a month."
+            "a": "$1,350 for a read-only server over one data source with up to three tools, in 7 days. $2,700 for a full data server over your documents or a database, in 14 days. $4,500 for up to three data sources joined behind one server, in 21 days. Each includes 30 days of support, and another 30 days costs $360. A hosted app integration with sign-in is quoted on request."
           },
           {
             "q": "Which AI tools can use it?",
@@ -406,7 +406,7 @@
         ]
       },
       "metaTitle": "Custom MCP Server Development",
-      "metaDescription": "Custom MCP server development: give Claude, Cursor, and other AI agents safe, cited access to your data and tools. From $2,500 with 30 days of support."
+      "metaDescription": "Custom MCP server development: give Claude, Cursor, and other AI agents safe, cited access to your data and tools. From $1,350 with 30 days of support."
     },
     "applicationServicesHeading": "Application services",
     "openclawInstallation": {
@@ -508,48 +508,48 @@
       "metaDescription": "Structured Claude Code and Cursor training built around your codebase and review process, so your team ships faster instead of reviewing more."
     },
     "chatbotAudit": {
-      "title": "Chatbot\u00a0Audit",
+      "title": "Chatbot Audit",
       "short": "Test your customer support chatbot before it talks to a single customer in your name.",
-      "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in\u00a0ten\u00a0minutes.\u00a0From\u00a0$295.",
+      "long": "Before your support chatbot goes live, we ask it the questions that catch bots out and check every answer against your own policies and product pages. Every price, date, phone number, and link it gives is compared with your documents, and anything it made up is flagged. You get a plain-English report you can read in ten minutes. From $270.",
       "detail": {
-        "intro": "Your support chatbot is about to talk to customers in your name. The questions that matter most are the ones your documents do not answer. A bot that invents a refund policy, a price, or a warranty does more harm than one that says it does not know, and customers will hold you to what it said. Most of the audit is\u00a0aimed\u00a0at\u00a0that\u00a0failure.",
-        "body": "The checks are rules wherever a rule can decide. Where only judgment can tell whether an answer is wrong, an AI model looks for contradictions with your documents, quotes the exact line it relied on, and is labeled as a model's verdict so you can check it yourself. Anything the checks cannot settle is listed for a person to read and is never\u00a0counted\u00a0as\u00a0a\u00a0pass.",
+        "intro": "Your support chatbot is about to talk to customers in your name. The questions that matter most are the ones your documents do not answer. A bot that invents a refund policy, a price, or a warranty does more harm than one that says it does not know, and customers will hold you to what it said. Most of the audit is aimed at that failure.",
+        "body": "The checks are rules wherever a rule can decide. Where only judgment can tell whether an answer is wrong, an AI model looks for contradictions with your documents, quotes the exact line it relied on, and is labeled as a model's verdict so you can check it yourself. Anything the checks cannot settle is listed for a person to read and is never counted as a pass.",
         "steps": [
           {
-            "title": "Write\u00a0the\u00a0questions",
-            "body": "We build about 60 questions from your documents: ones they answer, ones close to them that they do not, policies you do not have, requests outside the bot's job, attempts to make it break its rules, and questions about one customer's own order. You approve the list before anything is\u00a0sent\u00a0to\u00a0your\u00a0bot."
+            "title": "Write the questions",
+            "body": "We build about 60 questions from your documents: ones they answer, ones close to them that they do not, policies you do not have, requests outside the bot's job, attempts to make it break its rules, and questions about one customer's own order. You approve the list before anything is sent to your bot."
           },
           {
-            "title": "Check\u00a0every\u00a0answer",
-            "body": "Questions go to your bot one at a time, some as short conversations, because a bot that is fine with one message can be talked round over three. Every price, percentage, number of days, date, phone number, email address, and link in its replies is compared with your documents. If it is not\u00a0there,\u00a0we\u00a0flag\u00a0it."
+            "title": "Check every answer",
+            "body": "Questions go to your bot one at a time, some as short conversations, because a bot that is fine with one message can be talked round over three. Every price, percentage, number of days, date, phone number, email address, and link in its replies is compared with your documents. If it is not there, we flag it."
           },
           {
-            "title": "Rank\u00a0what\u00a0to\u00a0fix",
-            "body": "You get one report that opens in any browser and prints cleanly: the pass and fail counts, the three most serious failures in plain words, then every question with the bot's exact reply and the reason for its verdict. A short call or written note covers\u00a0what\u00a0to\u00a0fix\u00a0first."
+            "title": "Rank what to fix",
+            "body": "You get one report that opens in any browser and prints cleanly: the pass and fail counts, the three most serious failures in plain words, then every question with the bot's exact reply and the reason for its verdict. A short call or written note covers what to fix first."
           }
         ],
         "deliverables": [
           "A report of every question with the bot's exact reply",
-          "The three most serious failures, explained in plain words at the\u00a0top\u00a0of\u00a0the\u00a0report",
-          "The question set, so you can run the same test again after\u00a0every\u00a0change\u00a0you\u00a0make",
-          "A short call or written note on what to fix first, and in what\u00a0order\u00a0to\u00a0fix\u00a0it"
+          "The three most serious failures, explained in plain words at the top of the report",
+          "The question set, so you can run the same test again after every change you make",
+          "A short call or written note on what to fix first, and in what order to fix it"
         ],
         "faq": [
           {
-            "q": "What\u00a0does\u00a0it\u00a0cost?",
-            "a": "$295 for a 30-question check in 3 days, $650 for the full 60-question audit in 5 days, and $950 for the full audit plus a retest after your fixes, delivered within 14 days including the time you take to make them. Fixing the bot is separate work, quoted once you\u00a0have\u00a0seen\u00a0the\u00a0report."
+            "q": "What does it cost?",
+            "a": "$270 for a 30-question check in 3 days, $630 for the full 60-question audit in 5 days, and $900 for the full audit plus a retest after your fixes, delivered within 14 days including the time you take to make them. Fixing the bot is separate work, quoted once you have seen the report."
           },
           {
-            "q": "What\u00a0do\u00a0you\u00a0need?",
-            "a": "The documents the bot is meant to answer from, such as policies, shipping and returns, product facts, and contact details. A way to reach the bot, either the address it answers on or the web page its chat window is on. And written confirmation that you own the bot or are allowed\u00a0to\u00a0have\u00a0it\u00a0tested."
+            "q": "What do you need?",
+            "a": "The documents the bot is meant to answer from, such as policies, shipping and returns, product facts, and contact details. A way to reach the bot, either the address it answers on or the web page its chat window is on. And written confirmation that you own the bot or are allowed to have it tested."
           },
           {
-            "q": "Is\u00a0it\u00a0a\u00a0security\u00a0test?",
-            "a": "No. It includes a basic set of attempts to make the bot break its rules, but it is not a security or penetration test, and it is not a load test. Questions are sent one at a time with\u00a0a\u00a0pause\u00a0between\u00a0them."
+            "q": "Is it a security test?",
+            "a": "No. It includes a basic set of attempts to make the bot break its rules, but it is not a security or penetration test, and it is not a load test. Questions are sent one at a time with a pause between them."
           },
           {
-            "q": "Is\u00a0a\u00a0pass\u00a0a\u00a0guarantee?",
-            "a": "No. A pass is one good answer, not a promise. Each question is asked once, and a bot can answer differently next time. The question set is yours to keep, so you can run it\u00a0again\u00a0after\u00a0every\u00a0change."
+            "q": "Is a pass a guarantee?",
+            "a": "No. A pass is one good answer, not a promise. Each question is asked once, and a bot can answer differently next time. The question set is yours to keep, so you can run it again after every change."
           }
         ]
       },
@@ -559,7 +559,7 @@
     "voiceAgentDesign": {
       "title": "Voice Agent Design",
       "short": "Redesign the conversation your AI phone agent has with callers, and prove it works on real calls.",
-      "long": "Your AI phone agent answers, but callers hang up, repeat themselves, or ask for a person. We grade your real calls against a written rubric, find the exact moments they go wrong, then redesign the call flow and rewrite the agent's instructions. The new version is tested on the same scenarios, and you see the scores before and after. From $395.",
+      "long": "Your AI phone agent answers, but callers hang up, repeat themselves, or ask for a person. We grade your real calls against a written rubric, find the exact moments they go wrong, then redesign the call flow and rewrite the agent's instructions. The new version is tested on the same scenarios, and you see the scores before and after. From $360.",
       "detail": {
         "intro": "Most voice agents that disappoint callers are not broken. The code works and the platform works. What fails is the conversation: an opening that does not say what the agent can do, questions asked in the wrong order, a misheard phone number with no recovery, a caller talked over, a handoff that comes too late or never. Those are design problems, and they show up in the recordings.",
         "body": "We work in the platform you already use, including Retell AI, Vapi, ElevenLabs Agents, and the GoHighLevel voice agent. We do not rebuild your phone system or your servers. Latency is tuned with your platform's settings and by cutting what the agent says, and the agent always says it is an AI when a caller asks.",
@@ -587,7 +587,7 @@
         "faq": [
           {
             "q": "What does it cost?",
-            "a": "$395 for a review of 25 calls with a ranked list of fixes, in 3 days. $1,400 for the full redesign with flow map, rewritten instructions, and before and after tests, in 7 days. $2,600 for the redesign made in your platform with settings tuned, plus a second review of 25 live calls two weeks after launch, in 14 days."
+            "a": "$360 for a review of 25 calls with a ranked list of fixes, in 3 days. $1,260 for the full redesign with flow map, rewritten instructions, and before and after tests, in 7 days. $2,340 for the redesign made in your platform with settings tuned, plus a second review of 25 live calls two weeks after launch, in 14 days."
           },
           {
             "q": "What do you need from us?",
