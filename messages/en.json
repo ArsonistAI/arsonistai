@@ -556,6 +556,56 @@
       "metaTitle": "Pre-launch Chatbot Audit",
       "metaDescription": "Test your customer support chatbot before launch. Every answer is checked against your own documents, and invented prices, policies, and links are flagged."
     },
+    "voiceAgentDesign": {
+      "title": "Voice Agent Design",
+      "short": "Redesign the conversation your AI phone agent has with callers, and prove it works on real calls.",
+      "long": "Your AI phone agent answers, but callers hang up, repeat themselves, or ask for a person. We grade your real calls against a written rubric, find the exact moments they go wrong, then redesign the call flow and rewrite the agent's instructions. The new version is tested on the same scenarios, and you see the scores before and after. From $395.",
+      "detail": {
+        "intro": "Most voice agents that disappoint callers are not broken. The code works and the platform works. What fails is the conversation: an opening that does not say what the agent can do, questions asked in the wrong order, a misheard phone number with no recovery, a caller talked over, a handoff that comes too late or never. Those are design problems, and they show up in the recordings.",
+        "body": "We work in the platform you already use, including Retell AI, Vapi, ElevenLabs Agents, and the GoHighLevel voice agent. We do not rebuild your phone system or your servers. Latency is tuned with your platform's settings and by cutting what the agent says, and the agent always says it is an AI when a caller asks.",
+        "steps": [
+          {
+            "title": "Grade the calls",
+            "body": "You send 25 or more recent recordings or transcripts, including some that went badly. We grade every call against a rubric written for your business: the opening, the questions, mishearing and recovery, interruptions, booking, handoff, and how it sounds out loud. Each failure is marked at the moment it happened."
+          },
+          {
+            "title": "Redesign the conversation",
+            "body": "One diagram of how the call should go: the main path, every branch, the recovery lines, and the rules for passing to a person. Then new instructions and lines for your agent, written to be spoken rather than read, ready to paste into your platform."
+          },
+          {
+            "title": "Test before and after",
+            "body": "Thirty test scenarios, including callers who interrupt, change their minds, or ask for things the agent must not answer, run as test calls against the old agent and the new one. You get both scores side by side, and the scenarios to run again after every change."
+          }
+        ],
+        "deliverables": [
+          "A call review report with each call's grade and the exact moment each failure happened",
+          "The rubric, so your team can grade new calls the same way we did",
+          "A call flow diagram that covers every branch, every recovery line, and every rule for handing off",
+          "Rewritten instructions for your agent, ready to paste into the voice platform your team already uses",
+          "Thirty test scenarios with scores for the old agent and the new one"
+        ],
+        "faq": [
+          {
+            "q": "What does it cost?",
+            "a": "$395 for a review of 25 calls with a ranked list of fixes, in 3 days. $1,400 for the full redesign with flow map, rewritten instructions, and before and after tests, in 7 days. $2,600 for the redesign made in your platform with settings tuned, plus a second review of 25 live calls two weeks after launch, in 14 days."
+          },
+          {
+            "q": "What do you need from us?",
+            "a": "Recent call recordings or transcripts, what the agent is for and when it should hand off to a person, your business facts such as hours, services, and booking rules, and access to your voice platform. Viewer access is enough for a review; the top tier needs editor access."
+          },
+          {
+            "q": "What about our callers' privacy?",
+            "a": "Callers should have been told that calls are recorded. If your calls contain health or payment details, tell us first: we work from redacted transcripts and test calls only, and we keep nothing after delivery."
+          },
+          {
+            "q": "What if we have no voice agent yet?",
+            "a": "This service improves an agent you already run. For a new one, contact us for a quote, and the same grading method is used to test it before it takes its first real call."
+          }
+        ]
+      },
+      "metaTitle": "AI Voice Agent Conversation Design",
+      "metaDescription": "Redesign your AI phone agent's call flow and instructions, graded on your real calls and tested before and after. Retell AI, Vapi, ElevenLabs, and GoHighLevel."
+    },
     "detail": {
       "processHeading": "How it works",
       "deliverablesHeading": "What you get",

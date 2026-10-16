@@ -97,6 +97,15 @@ export const services: Service[] = [
     image: "/images/services/phone.png",
     sectionKey: "applicationServices",
   },
+  {
+    id: "voice-agent-design",
+    titleKey: "services.voiceAgentDesign.title",
+    descriptionKey: "services.voiceAgentDesign.short",
+    longDescriptionKey: "services.voiceAgentDesign.long",
+    icon: "chat",
+    image: "/images/services/phone.png",
+    sectionKey: "applicationServices",
+  },
 ];
 
 /**

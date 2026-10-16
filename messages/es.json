@@ -556,6 +556,56 @@
       "metaTitle": "Auditoría de Chatbot Previa al Lanzamiento",
       "metaDescription": "Pon a prueba tu chatbot de atención al cliente antes del lanzamiento. Cada respuesta se compara con tus documentos y se señalan precios, políticas y enlaces inventados."
     },
+    "voiceAgentDesign": {
+      "title": "Agentes de Voz",
+      "short": "Rediseñamos lo que tu agente telefónico de IA dice a quienes llaman, y lo probamos con tus llamadas reales.",
+      "long": "Tu agente telefónico de IA contesta, pero quienes llaman cuelgan, se repiten o piden hablar con una persona. Calificamos tus llamadas reales con una rúbrica escrita, encontramos el momento exacto en que fallan y después rediseñamos el flujo de la llamada y reescribimos las instrucciones del agente. La nueva versión se prueba con los mismos escenarios y ves las puntuaciones de antes y después. Desde $395.",
+      "detail": {
+        "intro": "La mayoría de los agentes de voz que decepcionan a quienes llaman no están rotos. El código funciona y la plataforma funciona. Lo que falla es la conversación: un saludo que no dice qué puede hacer el agente, preguntas en el orden equivocado, un número de teléfono mal entendido sin forma de corregirlo, una persona a la que el agente interrumpe, o un traspaso que llega tarde o nunca llega. Son problemas de diseño, y se oyen en las grabaciones.",
+        "body": "Trabajamos en la plataforma que ya usas, como Retell AI, Vapi, ElevenLabs Agents o el agente de voz de GoHighLevel. No reconstruimos tu sistema telefónico ni tus servidores. La latencia se ajusta con la configuración de tu plataforma y recortando lo que dice el agente, y el agente siempre dice que es una IA cuando alguien se lo pregunta.",
+        "steps": [
+          {
+            "title": "Calificar las llamadas",
+            "body": "Nos envías al menos 25 llamadas recientes, en audio o transcritas, incluidas algunas que salieron mal. Calificamos cada llamada con una rúbrica escrita para tu negocio: el saludo, las preguntas, los malentendidos y cómo se recupera, las interrupciones, las reservas, el traspaso y cómo suena en voz alta. Marcamos cada fallo en el momento exacto en que ocurre dentro de la llamada."
+          },
+          {
+            "title": "Rediseñar la conversación",
+            "body": "Un diagrama de cómo debe ir la llamada: el camino principal, cada rama, las frases para recuperarse y las reglas para pasar a una persona. Después, nuevas instrucciones y frases para tu agente, escritas para decirse en voz alta y no para leerse, listas para pegar en tu plataforma."
+          },
+          {
+            "title": "Probar antes y después",
+            "body": "Treinta escenarios de prueba, con personas que interrumpen, cambian de idea o piden cosas que el agente no debe responder, se ejecutan como llamadas de prueba con el agente anterior y con el nuevo. Recibes ambas puntuaciones lado a lado, y los escenarios para repetirlos después de cada cambio."
+          }
+        ],
+        "deliverables": [
+          "Un informe de revisión con la calificación de cada llamada y el momento exacto de cada fallo",
+          "La rúbrica, para que tu equipo califique cada llamada nueva con el mismo criterio que usamos",
+          "Un diagrama del flujo de la llamada con cada rama, frase de recuperación y regla de traspaso",
+          "Las instrucciones nuevas de tu agente, listas para pegar en la plataforma de voz que ya usas",
+          "Treinta escenarios de prueba, con la puntuación que obtiene el agente anterior y la que obtiene el nuevo"
+        ],
+        "faq": [
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "$395 por la revisión de 25 llamadas con una lista ordenada de correcciones, en 3 días. $1,400 por el rediseño completo con mapa del flujo, instrucciones reescritas y pruebas de antes y después, en 7 días. $2,600 por el rediseño aplicado en tu plataforma con la configuración ajustada, más una segunda revisión de 25 llamadas reales dos semanas después del lanzamiento, en 14 días."
+          },
+          {
+            "q": "¿Qué necesitan?",
+            "a": "Llamadas recientes, en audio o transcritas, para qué sirve el agente y cuándo debe pasar la llamada a una persona, los datos de tu negocio como horarios, servicios y reglas de reserva, y acceso a tu plataforma de voz. Para una revisión basta con acceso de lectura, y el nivel superior necesita acceso de edición."
+          },
+          {
+            "q": "¿Y la privacidad de quienes llaman?",
+            "a": "Quienes llaman deben saber que la llamada se graba. Si tus llamadas contienen datos de salud o de pago, avísanos antes: trabajamos solo con transcripciones anonimizadas y llamadas de prueba, y no guardamos nada después de la entrega."
+          },
+          {
+            "q": "¿Y si aún no tenemos agente?",
+            "a": "Este servicio mejora un agente que ya tienes funcionando. Para uno nuevo, pídenos un presupuesto, y usamos el mismo método de calificación para probarlo antes de que atienda su primera llamada real."
+          }
+        ]
+      },
+      "metaTitle": "Diseño de Conversación para Agentes de Voz con IA",
+      "metaDescription": "Rediseñamos el flujo de llamada y las instrucciones de tu agente telefónico de IA, con tus llamadas reales como base y pruebas de antes y después. Retell AI, Vapi, ElevenLabs y GoHighLevel."
+    },
     "detail": {
       "processHeading": "Cómo funciona",
       "deliverablesHeading": "Qué recibes",
