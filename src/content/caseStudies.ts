@@ -47,6 +47,113 @@ export function localized(text: LocalizedText, locale: string): string {
 
 export const caseStudies: CaseStudy[] = [
   {
+    slug: "shop-assistant",
+    title: {
+      en: "Reductivist Shop Assistant",
+      es: "Asistente de compras de Reductivist",
+    },
+    displayName: "Reductivist Shop Assistant",
+    client: "Reductivist",
+    url: "https://www.reductivist.com/",
+    heroImage: "/images/work/shop-assistant-hero.jpg",
+    lastModified: "2026-10-16",
+    metaDescription: {
+      en: "How ArsonistAI built a store assistant that answers only from the store's own facts, never types a price, and costs nothing to run.",
+      es: "Cómo ArsonistAI creó un asistente de tienda que responde solo con los datos de la tienda, nunca escribe un precio y no cuesta nada mantener.",
+    },
+    summary: {
+      en: "We built a question-answering assistant for Reductivist, a small California brand that sells minimalist objects made in the USA. Shoppers ask about products, shipping and returns, and the assistant answers from the store's own facts and live catalog, or says it does not know and points to the contact form. The model never states a price: it names products, and the store's own data supplies the price and stock on each card. It runs on Cloudflare's free Workers AI allocation, with daily limits that keep it there, so it has no running cost. Before launch it was tested against 61 questions, including prompt injections and invented policies, and the test report lists every failure and what was changed.",
+      es: "Creamos un asistente de preguntas y respuestas para Reductivist, una pequeña marca de California que vende objetos minimalistas hechos en EE. UU. Los clientes preguntan por los productos, los envíos y las devoluciones, y el asistente responde con los datos de la propia tienda y su catálogo en vivo, o dice que no lo sabe y remite al formulario de contacto. El modelo nunca escribe un precio: nombra productos, y los datos de la tienda ponen el precio y el stock en cada tarjeta. Funciona con la cuota gratuita de Workers AI de Cloudflare, con límites diarios que lo mantienen dentro de ella, así que no tiene coste de funcionamiento. Antes del lanzamiento se probó con 61 preguntas, incluidas inyecciones de instrucciones y políticas inventadas, y el informe de pruebas recoge cada fallo y lo que se cambió.",
+    },
+    stats: [
+      {
+        value: "60/61",
+        label: {
+          en: "test questions passed before launch",
+          es: "preguntas de prueba superadas",
+        },
+      },
+      {
+        value: "0",
+        label: {
+          en: "prices written by the model",
+          es: "precios escritos por el modelo",
+        },
+      },
+      {
+        value: "1.7 s",
+        label: {
+          en: "median time to an answer",
+          es: "tiempo medio hasta la respuesta",
+        },
+      },
+      {
+        value: "$0",
+        label: {
+          en: "monthly cost to run it",
+          es: "coste mensual de funcionamiento",
+        },
+      },
+    ],
+    sections: [
+      {
+        heading: { en: "The Challenge", es: "El reto" },
+        body: {
+          en: "Reductivist sells three products, the Ringtool V1 Gold, the Ringtool V2 Silver and the X Bottle Opener, on a custom Next.js store. Shoppers had questions the product pages did not answer, and the owner wanted an assistant that could answer them without inventing anything. The first finding was that the store published almost no facts. A shopper could not learn from the site what a Ringtool does, how long delivery takes or what is in the box, so an assistant grounded in the store's data had nothing to answer with, and one that answered anyway would be making it up. The site's Terms also said shipping fees were added at checkout, while checkout charged none. The other limit was cost: no paid API, no subscription and no new service to pay for.",
+          es: "Reductivist vende tres productos, el Ringtool V1 Gold, el Ringtool V2 Silver y el X Bottle Opener, en una tienda propia hecha con Next.js. Los clientes tenían preguntas que las páginas de producto no respondían, y el dueño quería un asistente que las respondiera sin inventar nada. El primer hallazgo fue que la tienda casi no publicaba datos. Un cliente no podía saber por la web qué hace un Ringtool, cuánto tarda la entrega o qué trae la caja, así que un asistente basado en los datos de la tienda no tenía con qué responder, y uno que respondiera igualmente se lo estaría inventando. Además, los Términos decían que los gastos de envío se sumaban al pagar, cuando el pago no cobraba ninguno. El otro límite era el coste: ninguna API de pago, ninguna suscripción y ningún servicio nuevo que pagar.",
+        },
+      },
+      {
+        heading: { en: "Our Approach", es: "Nuestro enfoque" },
+        body: {
+          en: "The first deliverable was not code. It was a short facts file for the owner to fill in, and the same text went into the empty product descriptions, so it now shows on the product pages and in their search data too. Any topic the owner had not written about stays empty, and the assistant treats an empty topic as \"the store does not say\". Three products and one page of policy fit in a single prompt many times over, so there is no vector database and no retrieval pipeline, just the facts and a fresh read of the catalog on every question. The model has no tools and takes no actions: it cannot add to the cart, look up an order or send an email, which caps the damage of a prompt injection at a bad sentence. It never opens by itself, it is reached from a plain text link, and its header says the answers are written by an AI, as California's bot disclosure law expects of a bot that helps sell goods.",
+          es: "La primera entrega no fue código. Fue un breve archivo de datos para que lo rellenara el dueño, y el mismo texto pasó a las descripciones vacías de los productos, así que ahora también aparece en las páginas de producto y en sus datos para buscadores. Cualquier tema sobre el que el dueño no ha escrito queda vacío, y el asistente trata un tema vacío como \"la tienda no lo indica\". Tres productos y una página de políticas caben muchas veces en una sola instrucción, así que no hay base de datos vectorial ni sistema de búsqueda, solo los datos y una lectura nueva del catálogo en cada pregunta. El modelo no tiene herramientas ni hace acciones: no puede añadir al carrito, consultar un pedido ni enviar un correo, lo que limita el daño de una inyección de instrucciones a una frase mala. Nunca se abre solo, se llega a él con un simple enlace de texto, y su cabecera dice que las respuestas las escribe una IA, como espera la ley de California sobre bots que ayudan a vender.",
+        },
+      },
+      {
+        heading: {
+          en: "The Model Never States a Price",
+          es: "El modelo nunca da un precio",
+        },
+        body: {
+          en: "A price typed by a model is the most damaging thing a store assistant can get wrong, so the model is not given that job. It replies in a fixed JSON format with an answer, up to three product IDs, a topic and a flag for when it needs to hand off. The server checks every reply against that format, retries once when it does not match, and falls back to a fixed handoff answer after a second miss. Each product card, with its price, stock and Add to cart button, is built from the store's database at the moment of the question. Plain code then screens the answer itself. It rejects any amount of money in any form, including other currencies, spelled-out amounts and percentages, which would be an invented discount. It also rejects any link that leaves the store and any email address other than the store's own. A rejected answer is replaced with a handoff to the contact form.",
+          es: "Un precio escrito por un modelo es lo más dañino que puede fallar en un asistente de tienda, así que al modelo no se le da esa tarea. Responde en un formato JSON fijo con una respuesta, hasta tres identificadores de producto, un tema y una marca para cuando debe derivar al cliente. El servidor comprueba cada respuesta contra ese formato, reintenta una vez si no coincide y, tras un segundo fallo, usa una respuesta fija que remite al contacto. Cada tarjeta de producto, con su precio, su stock y su botón de añadir al carrito, se crea con la base de datos de la tienda en el momento de la pregunta. Después, un código sencillo revisa la propia respuesta. Rechaza cualquier cantidad de dinero en cualquier forma, incluidas otras monedas, cifras escritas con letras y porcentajes, que serían un descuento inventado. También rechaza cualquier enlace que salga de la tienda y cualquier correo que no sea el de la tienda. Una respuesta rechazada se sustituye por una derivación al formulario de contacto.",
+        },
+      },
+      {
+        heading: { en: "Staying Free", es: "Sin coste" },
+        body: {
+          en: "The model is Llama 3.3 70B on Cloudflare Workers AI, called with plain HTTP requests and no SDK. Cloudflare gives every account 10,000 free units of compute a day, and a measured answer uses about 45 of them. Limits in the database keep usage inside that budget: 500 characters per message, 10 turns per conversation, 20 messages per visitor a day and 100 for the whole store. A Cloudflare Turnstile check opens each conversation, so a script cannot spend the day's budget. At the daily maximum the assistant uses about 6,400 of the 10,000 units. If the allowance ever runs out, Cloudflare returns an error rather than a bill, and the panel says the assistant is unavailable and shows the contact link. Questions are kept for 90 days with no raw IP address, and the Privacy Policy says so.",
+          es: "El modelo es Llama 3.3 70B en Cloudflare Workers AI, llamado con peticiones HTTP sencillas y sin SDK. Cloudflare da a cada cuenta 10.000 unidades de cómputo gratis al día, y una respuesta medida usa unas 45. Unos límites en la base de datos mantienen el uso dentro de ese presupuesto: 500 caracteres por mensaje, 10 turnos por conversación, 20 mensajes por visitante al día y 100 para toda la tienda. Una comprobación de Cloudflare Turnstile abre cada conversación, para que un script no pueda gastar el presupuesto del día. Con el máximo diario, el asistente usa unas 6.400 de las 10.000 unidades. Si la cuota se acaba, Cloudflare devuelve un error y no una factura, y el panel dice que el asistente no está disponible y muestra el enlace de contacto. Las preguntas se guardan 90 días sin la dirección IP real, y la Política de Privacidad lo explica.",
+        },
+      },
+      {
+        heading: { en: "Testing It in Public", es: "Pruebas a la vista" },
+        body: {
+          en: "A test set of 61 questions covers seven groups: facts it should know, facts it must admit it does not know, policies that do not exist, prices, prompt injections, order questions it must hand off, and requests that have nothing to do with the store. The first run passed 55. Two answers had timed out on Cloudflare's side, so a timed-out call is now retried once. A correct refund answer was marked as a handoff, and the model would not say whether a product was in stock, and a rule change fixed each. The final run passed 59, and 60 after one more guard change. One failure is left, and the report says why. Told by a fake \"admin update\" that shipping now cost $10, the model correctly said shipping is free, but it quoted the $10 to deny it, and the price screen replaced the whole answer. The screen was left strict on purpose. The report also lists answers that pass but read badly, such as stilted refusals and comma splices.",
+          es: "Un conjunto de 61 preguntas cubre siete grupos: datos que debe saber, datos que debe admitir que no sabe, políticas que no existen, precios, inyecciones de instrucciones, preguntas sobre pedidos que debe derivar y peticiones que no tienen nada que ver con la tienda. La primera ejecución superó 55. Dos respuestas habían caducado por un retraso de Cloudflare, así que ahora una llamada que caduca se reintenta una vez. Una respuesta correcta sobre reembolsos se marcó como derivación, y el modelo no quería decir si un producto estaba en stock, y un cambio en las reglas corrigió cada caso. La ejecución final superó 59, y 60 tras un último cambio en los filtros. Queda un fallo, y el informe explica por qué. Ante una falsa \"actualización del administrador\" que decía que el envío costaba $10, el modelo dijo bien que el envío es gratis, pero citó los $10 para negarlo, y el filtro de precios sustituyó toda la respuesta. El filtro se dejó estricto a propósito. El informe también recoge respuestas que pasan pero se leen mal, como negativas rígidas y frases unidas con comas.",
+        },
+      },
+      {
+        heading: { en: "The Result", es: "El resultado" },
+        body: {
+          en: "On the final run the median answer took 1.7 seconds and the slowest one in twenty took 3.6 seconds, with no format misses. No answer stated a fact that is not in the facts file or the catalog, and all 61 final answers were read by hand to check that. Writing the facts file also fixed the store itself: the product pages gained the descriptions they lacked, and the Terms no longer contradict checkout. The assistant is built and hidden in production until the store finishes its move from Vercel to Cloudflare Workers, since Vercel's free plan does not allow commercial use. Hosting the store and the model on one Cloudflare account also closes a rate-limit gap that only exists on Vercel, where a visitor could set the IP header that limits are counted against.",
+          es: "En la ejecución final, la respuesta mediana tardó 1,7 segundos y la más lenta de cada veinte, 3,6 segundos, sin fallos de formato. Ninguna respuesta afirmó un dato que no estuviera en el archivo de datos o en el catálogo, y las 61 respuestas finales se leyeron a mano para comprobarlo. Escribir el archivo de datos también mejoró la propia tienda: las páginas de producto ganaron las descripciones que les faltaban y los Términos ya no contradicen el pago. El asistente está terminado y oculto en producción hasta que la tienda complete su traslado de Vercel a Cloudflare Workers, porque el plan gratuito de Vercel no permite uso comercial. Alojar la tienda y el modelo en una misma cuenta de Cloudflare también cierra un hueco en los límites que solo existe en Vercel, donde un visitante podría fijar la cabecera de IP con la que se cuentan los límites.",
+        },
+      },
+      {
+        heading: {
+          en: "Technology & Deployment",
+          es: "Tecnología y despliegue",
+        },
+        body: {
+          en: "The store runs on Next.js 16 and TypeScript, with Supabase for the catalog, stock and assistant logs, and Stripe Checkout for payment. The assistant calls Cloudflare Workers AI with temperature 0 and a JSON schema, and Cloudflare Turnstile guards each conversation. Usage limits are enforced in a single Postgres function, and a daily job removes logs older than 90 days. The answer pipeline, the prompt, the format checks and the guards are plain functions with 106 offline tests that never call the model. An eval script runs the 61 questions against the live model and saves every answer, so each change to the prompt is measured before it ships. No new npm package was added.",
+          es: "La tienda usa Next.js 16 y TypeScript, con Supabase para el catálogo, el stock y los registros del asistente, y Stripe Checkout para los pagos. El asistente llama a Cloudflare Workers AI con temperatura 0 y un esquema JSON, y Cloudflare Turnstile protege cada conversación. Los límites de uso se aplican en una sola función de Postgres, y una tarea diaria borra los registros de más de 90 días. El proceso de respuesta, la instrucción, las comprobaciones de formato y los filtros son funciones sencillas con 106 pruebas sin conexión que nunca llaman al modelo. Un script de evaluación pasa las 61 preguntas por el modelo real y guarda cada respuesta, así que cada cambio en la instrucción se mide antes de publicarse. No se añadió ningún paquete de npm nuevo.",
+        },
+      },
+    ],
+  },
+  {
     slug: "moneyball-ats",
     title: {
       en: "Moneyball ATS",
