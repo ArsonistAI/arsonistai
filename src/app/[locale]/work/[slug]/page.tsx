@@ -86,7 +86,11 @@ function CaseStudyContent({
     datePublished: study.lastModified,
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
-    about: { "@type": "Organization", name: study.client, url: study.url },
+    about: {
+      "@type": "Organization",
+      name: study.client,
+      ...(study.url && { url: study.url }),
+    },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": absoluteUrl(locale, `/work/${study.slug}`),
@@ -133,19 +137,41 @@ function CaseStudyContent({
         </h1>
         <p className="text-body-md text-muted mb-2">
           {t("client")}:{" "}
-          <a
-            href={study.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lava hover:underline"
-          >
-            {study.client}
-          </a>
+          {study.url ? (
+            <a
+              href={study.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lava hover:underline"
+            >
+              {study.client}
+            </a>
+          ) : (
+            study.client
+          )}
         </p>
 
         <p className="text-body-lg text-muted leading-relaxed mt-10 mb-14">
           {summary}
         </p>
+
+        {study.stats && (
+          <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
+            {study.stats.map((stat, i) => (
+              <div
+                key={i}
+                className="flex flex-col-reverse gap-2 bg-surface border border-border rounded-shape-lg p-5"
+              >
+                <dt className="text-body-md text-muted">
+                  {localized(stat.label, locale)}
+                </dt>
+                <dd className="text-headline-md font-bold text-lava">
+                  {stat.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
 
         {study.sections.map((section, i) => (
           <div key={i} className="mb-12">
@@ -155,6 +181,23 @@ function CaseStudyContent({
             <p className="text-body-lg text-muted leading-relaxed">
               {localized(section.body, locale)}
             </p>
+            {section.image && (
+              <figure className="mt-8">
+                <Image
+                  src={section.image.src}
+                  alt={localized(section.image.alt, locale)}
+                  width={section.image.width}
+                  height={section.image.height}
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="w-full h-auto rounded-shape-lg border border-border"
+                />
+                {section.image.caption && (
+                  <figcaption className="text-body-md text-muted mt-3">
+                    {localized(section.image.caption, locale)}
+                  </figcaption>
+                )}
+              </figure>
+            )}
           </div>
         ))}
       </div>

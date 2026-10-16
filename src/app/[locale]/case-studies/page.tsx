@@ -104,14 +104,16 @@ function CaseStudiesContent({ locale }: { locale: string }) {
                       >
                         {t("readCaseStudy")} &rarr;
                       </Link>
-                      <a
-                        href={study.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-label-lg text-muted hover:text-lava hover:underline"
-                      >
-                        {t("visitSite")}
-                      </a>
+                      {study.url && (
+                        <a
+                          href={study.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-label-lg text-muted hover:text-lava hover:underline"
+                        >
+                          {t("visitSite")}
+                        </a>
+                      )}
                     </div>
                   </div>
                 </article>
