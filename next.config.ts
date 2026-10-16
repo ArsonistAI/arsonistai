@@ -43,6 +43,21 @@ const nextConfig: NextConfig = {
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
+  async redirects() {
+    // Retired services keep their indexed URLs pointing somewhere useful.
+    return [
+      {
+        source: "/:locale(en|es)/work/moneyball-ats",
+        destination: "/:locale/work/evidence-based-ats",
+        permanent: true,
+      },
+      {
+        source: "/work/moneyball-ats",
+        destination: "/en/work/evidence-based-ats",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

@@ -154,12 +154,123 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    slug: "moneyball-ats",
+    slug: "hiring-signal-pipeline",
     title: {
-      en: "Moneyball ATS",
-      es: "Moneyball ATS",
+      en: "Hiring Signal Pipeline",
+      es: "Hiring Signal Pipeline",
     },
-    displayName: "Moneyball ATS",
+    displayName: "Hiring Signal Pipeline",
+    heroImage: "/images/work/hiring-signal-hero.jpg",
+    lastModified: "2026-10-16",
+    metaDescription: {
+      en: "How ArsonistAI built a pipeline that finds companies that just started hiring, names who to write to, and shows where every fact came from.",
+      es: "Cómo ArsonistAI creó un sistema que detecta empresas que acaban de empezar a contratar, nombra a quién escribir y muestra de dónde sale cada dato.",
+    },
+    summary: {
+      en: "We built a daily lead engine for recruitment agencies. Each morning it scans public job boards for companies that have just started hiring for the roles an agency places, finds one named person to write to, researches one checkable reason to write now, and drafts an opening line from that fact. It runs on free public sources only, with no paid data provider and no fee per lead. Every name is kept with the page it came from and checked against that page, every address says whether it was published or guessed, and nothing is ever sent. A person reads the digest and decides who hears from them.",
+      es: "Creamos un motor diario de contactos para agencias de selección. Cada mañana revisa los portales de empleo públicos en busca de empresas que acaban de empezar a contratar para los puestos que cubre la agencia, encuentra a una persona con nombre a quien escribir, investiga un motivo comprobable para escribir ahora y redacta una primera frase a partir de ese dato. Funciona solo con fuentes públicas y gratuitas, sin proveedores de datos de pago ni costes por contacto. Cada nombre se guarda con la página de la que sale y se comprueba contra ella, cada correo indica si fue publicado o deducido, y nada se envía nunca. Una persona lee el resumen y decide a quién escribir.",
+    },
+    stats: [
+      {
+        value: "5,310",
+        label: {
+          en: "job postings scanned in one sweep",
+          es: "ofertas revisadas en un solo barrido",
+        },
+      },
+      {
+        value: "14/18",
+        label: {
+          en: "companies matched to a named person",
+          es: "empresas con una persona identificada",
+        },
+      },
+      {
+        value: "3",
+        label: {
+          en: "unconfirmed names dropped, not shipped",
+          es: "nombres sin confirmar que se descartaron",
+        },
+      },
+      {
+        value: "0",
+        label: {
+          en: "paid data providers or lead lists",
+          es: "proveedores de datos o listas de pago",
+        },
+      },
+    ],
+    sections: [
+      {
+        heading: { en: "The Challenge", es: "El reto" },
+        body: {
+          en: "A recruitment agency wins work by reaching a company in the weeks after it starts hiring, before an in-house team or a rival agency has the roles covered. The usual tools for this are paid lead databases and enrichment services that charge every month and promise a \"verified\" email they cannot always deliver. The cold email that most agencies send is also worn out: the same template, a guaranteed dollar figure, and a reason to write that the reader can tell was never checked. The goal was a system that finds real, recent hiring, puts a real person and a true reason behind every row, and costs nothing per lead.",
+          es: "Una agencia de selección gana clientes cuando llega a una empresa en las semanas después de que empieza a contratar, antes de que un equipo interno u otra agencia cubra los puestos. Las herramientas habituales son bases de datos de contactos y servicios de enriquecimiento de pago, que cobran cada mes y prometen un correo \"verificado\" que no siempre pueden dar. El correo en frío que envían casi todas las agencias también está gastado: la misma plantilla, una cifra garantizada y un motivo para escribir que el lector nota que nadie comprobó. El objetivo era un sistema que encuentre contrataciones reales y recientes, ponga una persona real y un motivo cierto detrás de cada fila, y no cueste nada por contacto.",
+        },
+      },
+      {
+        heading: { en: "Our Approach", es: "Nuestro enfoque" },
+        body: {
+          en: "Four rules shaped every stage. Free sources only, so the agency owns the whole system and pays no one per lead. Empty beats invented, so a missing fact or name leaves the field blank instead of filling it with something plausible. Every claim carries its source, so a recruiter can check any row in one click before writing to anyone. And the system drafts but never sends, because the account and the reputation at risk belong to the agency. The filter itself is a plain-English document the recruiter can read, listing the roles, regions and company sizes that count as a signal. It is also the file the pipeline runs, so editing it changes the next morning's list, and every row, kept or rejected, says why.",
+          es: "Cuatro reglas guiaron cada etapa. Solo fuentes gratuitas, para que la agencia sea dueña de todo el sistema y no pague a nadie por contacto. Mejor vacío que inventado, así que un dato o un nombre que falta deja el campo en blanco en vez de rellenarlo con algo creíble. Cada afirmación lleva su fuente, para que quien recluta pueda comprobar cualquier fila con un clic antes de escribir a nadie. Y el sistema redacta pero nunca envía, porque la cuenta y la reputación en juego son de la agencia. El filtro es un documento en lenguaje sencillo que la agencia puede leer, con los puestos, regiones y tamaños de empresa que cuentan como señal. También es el archivo que ejecuta el sistema, así que editarlo cambia la lista de la mañana siguiente, y cada fila, aceptada o rechazada, explica por qué.",
+        },
+      },
+      {
+        heading: {
+          en: "Finding New Hiring",
+          es: "Detectar contrataciones nuevas",
+        },
+        body: {
+          en: "The pipeline reads the public job board APIs of Greenhouse, Lever, Ashby and SmartRecruiters. Those boards are listed per company, so on their own they cannot say who just started hiring. The monthly Hacker News \"Who is hiring?\" thread fills that gap: it names new companies and links their boards, and the scrapers pick them up in the same run, so coverage grows every month. Postings are grouped by company and checked against the agency's own client list, so a company it already works with is flagged rather than pitched twice. A posting with no publish date keeps an empty date instead of today's, and a board that fails is named in the morning digest instead of quietly shrinking the list.",
+          es: "El sistema lee las API públicas de empleo de Greenhouse, Lever, Ashby y SmartRecruiters. Esos portales se consultan empresa por empresa, así que por sí solos no pueden decir quién acaba de empezar a contratar. El hilo mensual \"Who is hiring?\" de Hacker News cubre ese hueco: nombra empresas nuevas y enlaza sus portales, y los lectores las incorporan en la misma ejecución, así que la cobertura crece cada mes. Las ofertas se agrupan por empresa y se cruzan con la lista de clientes de la agencia, para que una empresa con la que ya trabaja quede marcada en vez de recibir dos propuestas. Una oferta sin fecha de publicación conserva la fecha vacía en lugar de la de hoy, y un portal que falla aparece en el resumen de la mañana en vez de reducir la lista sin avisar.",
+        },
+      },
+      {
+        heading: {
+          en: "A Person to Write To",
+          es: "Una persona a quien escribir",
+        },
+        body: {
+          en: "Job boards never list the hiring manager, so the first version found the company and the role but nobody to write to. The fix runs Claude with web search to find one named person per company, such as a founder, a head of talent, or the head of the team that is hiring, from the company's own site, press coverage or GitHub. The model's answer is not trusted on its own. Every page it cites is fetched, and the name has to appear on that page or it is dropped. LinkedIn is never used as a source. For the address, a person's own published email comes first. Next comes the company's format, learned from other addresses it has published, so a company that uses jdoe@ is not sent jane.doe@. A generic guess comes last, and only at a domain that matches the company's name. Guesses are labeled as guesses.",
+          es: "Los portales de empleo nunca indican quién contrata, así que la primera versión encontraba la empresa y el puesto, pero no a quién escribir. La solución usa Claude con búsqueda web para encontrar a una persona por empresa, como quien la fundó, quien dirige el talento o quien dirige el equipo que contrata, a partir de la web de la empresa, la prensa o GitHub. La respuesta del modelo no se acepta sin más. Cada página que cita se descarga, y el nombre tiene que aparecer en ella o se descarta. LinkedIn nunca se usa como fuente. Para el correo, va primero el que la propia persona publicó. Después va el formato de la empresa, aprendido de otras direcciones que ha publicado, para que una empresa que usa jdoe@ no reciba jane.doe@. Una suposición genérica va al final, y solo en un dominio que coincide con el nombre de la empresa. Las suposiciones se marcan como tales.",
+        },
+      },
+      {
+        heading: {
+          en: "A Reason to Write Now",
+          es: "Un motivo para escribir ahora",
+        },
+        body: {
+          en: "For each company, the research step asks for one specific fact from the last six months that a third party could check: a funding round with an amount and a month, a named launch, an acquisition, a new office. The prompt says an empty answer is the correct answer when nothing specific is known, and every reply then passes a screen in code. Hedges such as \"appears to\" or \"reportedly\" fail it, as do stock phrases such as \"growing team\" or \"competitive market\", and so does any sentence with no number, date, link or proper name a reader could look up. The opening line is drafted from that fact alone. When there is no fact, there is no line, rather than a template with the company's name dropped in.",
+          es: "Para cada empresa, la etapa de investigación pide un dato concreto de los últimos seis meses que un tercero pueda comprobar: una ronda de financiación con su importe y su mes, un lanzamiento con nombre, una adquisición, una oficina nueva. Las instrucciones dicen que una respuesta vacía es la correcta cuando no se sabe nada concreto, y cada respuesta pasa luego un filtro en el código. No lo pasan las evasivas como \"parece que\" o \"según se dice\", ni las frases hechas como \"equipo en crecimiento\" o \"mercado competitivo\", ni ninguna frase sin un número, una fecha, un enlace o un nombre propio que el lector pueda buscar. La primera frase del correo se redacta solo a partir de ese dato. Si no hay dato, no hay frase, en vez de una plantilla con el nombre de la empresa insertado.",
+        },
+      },
+      {
+        heading: { en: "The Result", es: "El resultado" },
+        body: {
+          en: "The first full sweep scanned 5,310 postings and returned 35 signals, all with real posting dates, but none named a person or carried an address. With the people lookup in place, a run on October 16, 2026 scanned 692 postings and produced 31 signals across 18 companies. 14 of the 18 now have a named person, each linked to the page that names them, and 3 names the model suggested were dropped because their page did not confirm them. 8 companies had a checkable reason to write, and the rest were left blank on purpose. The limits are stated in the output too. A guessed address is not a verified mailbox, since checking one needs a paid service, so guessed rows should be sent a few a day. At large companies the named person is often an executive found in press coverage, which can be out of date, and the source link is there so it can be checked.",
+          es: "El primer barrido completo revisó 5.310 ofertas y dio 35 señales, todas con fechas de publicación reales, pero ninguna nombraba a una persona ni tenía un correo. Con la búsqueda de personas en marcha, una ejecución del 16 de octubre de 2026 revisó 692 ofertas y produjo 31 señales en 18 empresas. 14 de las 18 tienen ahora una persona identificada, cada una enlazada a la página que la nombra, y 3 nombres que propuso el modelo se descartaron porque su página no los confirmaba. 8 empresas tenían un motivo comprobable para escribir, y las demás quedaron en blanco a propósito. Los límites también figuran en el resultado. Un correo deducido no es un buzón verificado, porque comprobarlo exige un servicio de pago, así que las filas con correos deducidos conviene enviarlas de pocas en pocas cada día. En las empresas grandes, la persona nombrada suele ser un directivo citado en la prensa, que puede estar desactualizado, y el enlace a la fuente está ahí para comprobarlo.",
+        },
+      },
+      {
+        heading: {
+          en: "Technology & Deployment",
+          es: "Tecnología y despliegue",
+        },
+        body: {
+          en: "The pipeline is a Node.js command-line tool with SQLite for storage. It runs in eight stages: scrape, dedupe, filter, enrich, research, draft, write and digest. A stage that fails is logged and skipped, so a broken lookup still leaves the agency a list and a digest that says what went wrong. Research and drafting call the local Claude command-line tool, and the pipeline still runs without it, just with those fields left empty. Each request has a hard time limit, and each job board gets one request at a time, spaced apart, so the free sources stay welcoming. Each morning produces a CSV, a JSON copy and a short digest, and re-running a day rewrites the same files without duplicate rows. The word \"verified\" cannot be stored at all: the database rejects it, and a test checks that it does. The suite has 50 tests and none touches the network.",
+          es: "El sistema es una herramienta de línea de comandos en Node.js con SQLite para los datos. Funciona en ocho etapas: lectura, deduplicación, filtro, enriquecimiento, investigación, redacción, exportación y resumen. Una etapa que falla queda registrada y se omite, así que una búsqueda rota aún deja a la agencia una lista y un resumen que explica qué falló. La investigación y la redacción usan la herramienta local de línea de comandos de Claude, y el sistema funciona sin ella, solo que con esos campos vacíos. Cada petición tiene un límite de tiempo estricto, y cada portal recibe una petición a la vez, con pausas entre ellas, para que las fuentes gratuitas sigan abiertas. Cada mañana genera un CSV, una copia en JSON y un resumen breve, y repetir un día reescribe los mismos archivos sin duplicar filas. La palabra \"verificado\" ni siquiera se puede guardar: la base de datos la rechaza, y una prueba comprueba que lo haga. El conjunto tiene 50 pruebas y ninguna usa la red.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "evidence-based-ats",
+    title: {
+      en: "Evidence-based ATS",
+      es: "Evidence-based ATS",
+    },
+    displayName: "Evidence-based ATS",
     heroImage: "/images/work/ats-hero.jpg",
     lastModified: "2026-10-15",
     metaDescription: {
