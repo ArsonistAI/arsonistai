@@ -34,6 +34,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // A stray lockfile higher up the tree makes Next guess the wrong workspace
+  // root, so pin it to this project.
+  turbopack: { root: __dirname },
   images: {
     // Vercel serves these through /_next/image, so modern formats and
     // responsive srcsets come for free. Leaving this unoptimized was shipping

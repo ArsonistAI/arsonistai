@@ -109,25 +109,45 @@ function HomeContent() {
 
       {/* Why Choose Us */}
       <section className="py-24">
-        <FadeInSection className="max-w-7xl mx-auto px-6">
-          <h2 className="text-headline-lg font-bold mb-14 text-center">
-            {t("whyHeading")}
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="p-8 bg-surface rounded-shape-xl border border-border text-center m3-card"
-              >
-                <h3 className="text-lg font-medium mb-3">
-                  {t(`why${i}Title`)}
-                </h3>
-                <p className="text-body-md text-muted leading-relaxed">
-                  {t(`why${i}Text`)}
-                </p>
-              </div>
-            ))}
+        <FadeInSection className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="lg:col-span-5 lg:sticky lg:top-32 self-start">
+            <p className="text-label-lg text-lava uppercase tracking-widest mb-6">
+              {t("whyLabel")}
+            </p>
+            <h2 className="text-display-sm md:text-display-md font-bold leading-tight mb-6">
+              {t("whyHeading")}
+            </h2>
+            <p className="text-body-lg text-muted max-w-md">
+              {t("whyIntro")}
+            </p>
           </div>
+          <ol className="lg:col-span-7 border-t border-border">
+            {[1, 2, 3].map((i) => (
+              <li
+                key={i}
+                className="group relative grid grid-cols-[auto_1fr] gap-6 md:gap-10 py-10 border-b border-border"
+              >
+                <span
+                  aria-hidden="true"
+                  className="absolute left-0 -top-px h-px w-0 bg-lava transition-[width] duration-500 ease-[var(--ease-emphasized)] group-hover:w-full"
+                />
+                <span
+                  aria-hidden="true"
+                  className="text-display-sm md:text-display-md font-bold text-lava tabular-nums"
+                >
+                  {String(i).padStart(2, "0")}
+                </span>
+                <div className="pt-1 md:pt-2">
+                  <h3 className="text-title-lg md:text-headline-sm font-medium mb-3">
+                    {t(`why${i}Title`)}
+                  </h3>
+                  <p className="text-body-lg text-muted leading-relaxed max-w-xl">
+                    {t(`why${i}Text`)}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </FadeInSection>
       </section>
 
