@@ -13,30 +13,6 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: "content-generation",
-    titleKey: "services.contentGeneration.title",
-    descriptionKey: "services.contentGeneration.short",
-    longDescriptionKey: "services.contentGeneration.long",
-    icon: "sparkles",
-    image: "/images/services/content_service.png",
-  },
-  {
-    id: "concept-visualization",
-    titleKey: "services.conceptVisualization.title",
-    descriptionKey: "services.conceptVisualization.short",
-    longDescriptionKey: "services.conceptVisualization.long",
-    icon: "eye",
-    image: "/images/services/car_service.png",
-  },
-  {
-    id: "exploration-scaling",
-    titleKey: "services.explorationScaling.title",
-    descriptionKey: "services.explorationScaling.short",
-    longDescriptionKey: "services.explorationScaling.long",
-    icon: "layers",
-    image: "/images/services/fisheye.png",
-  },
-  {
     id: "experience-optimization",
     titleKey: "services.experienceOptimization.title",
     descriptionKey: "services.experienceOptimization.short",
@@ -119,7 +95,7 @@ export const services: Service[] = [
 
 /**
  * Message namespace for a service, derived from its titleKey.
- * "services.contentGeneration.title" -> "services.contentGeneration"
+ * "services.chatbotAudit.title" -> "services.chatbotAudit"
  */
 export function serviceMessageKey(service: Service): string {
   return service.titleKey.split(".").slice(0, 2).join(".");

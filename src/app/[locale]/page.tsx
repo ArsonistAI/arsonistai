@@ -13,7 +13,7 @@ import ContactForm from "@/components/ContactForm";
 import ClientMarquee from "@/components/ClientMarquee";
 import DemoReel from "@/components/DemoReel";
 import FadeInSection from "@/components/FadeInSection";
-import { alternatesFor, openGraphFor } from "@/lib/seo";
+import { alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -26,7 +26,7 @@ export async function generateMetadata({
     // The home title already leads with the brand, so skip the template's brand suffix.
     title: { absolute: t("title") },
     description: t("description"),
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: "",
       title: t("title"),
@@ -58,12 +58,12 @@ function HomeContent() {
         <div className="absolute inset-0 bg-gradient-to-b from-lava/5 to-transparent" />
         <div className="max-w-7xl mx-auto px-6 relative flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="flex-1 min-w-0">
-            <p className="text-label-lg text-lava uppercase tracking-widest mb-6">
-              {t("heroSubtitle")}
-            </p>
-            <h1 className="text-display-sm md:text-display-md lg:text-display-lg text-statement font-bold leading-tight max-w-4xl mb-10">
-              {t("heroTitle")}
+            <h1 className="text-label-lg text-lava uppercase tracking-widest mb-6">
+              {t("heroTagline")}
             </h1>
+            <p className="text-display-sm md:text-display-md lg:text-display-lg text-statement font-bold leading-tight max-w-4xl mb-10">
+              {t("heroTitle")}
+            </p>
             <div className="flex flex-col sm:flex-row gap-5 items-start">
               <a
                 href="#demo-reel"

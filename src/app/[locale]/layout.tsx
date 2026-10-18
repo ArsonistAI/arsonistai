@@ -1,6 +1,6 @@
 import { routing } from "@/i18n/routing";
-import { setRequestLocale } from "next-intl/server";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -11,6 +11,7 @@ import HeatWaveFilter from "@/components/HeatWaveFilter";
 import SecurityGuard from "@/components/SecurityGuard";
 import LineFitter from "@/components/LineFitter";
 import { SITE_URL, ORG_ID, WEBSITE_ID } from "@/lib/seo";
+import { services } from "@/content/services";
 import "../globals.css";
 
 const inter = Inter({
@@ -36,6 +37,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const t = await getTranslations({ locale });
 
   // Declared once here with a stable @id. Every other page references it as
   // { "@id": ORG_ID } instead of restating a partial copy of the organization.
@@ -51,7 +53,7 @@ export default async function LocaleLayout({
     },
     image: `${SITE_URL}/images/og-image.jpg`,
     description:
-      "AI integration firm building accessible, scalable, and human-centered AI solutions.",
+      "AI integration firm building custom MCP servers, chatbot audits, voice agents, AI workflow automation, and LLM cost optimization.",
     email: "hello@arsonistai.com",
     contactPoint: {
       "@type": "ContactPoint",
@@ -60,16 +62,8 @@ export default async function LocaleLayout({
       availableLanguage: ["en", "es"],
     },
     areaServed: "Worldwide",
-    serviceType: [
-      "AI Integration",
-      "AI Consulting",
-      "Custom MCP Server Development",
-      "Openclaw Installation",
-      "Claude and Cursor Training",
-      "Content Generation",
-      "Concept Visualization",
-      "Operations Consulting",
-    ],
+    // Derived from the service catalog so the schema cannot drift from the site.
+    serviceType: services.map((service) => t(service.titleKey)),
     // Keep in sync with the social links in Footer.tsx.
     sameAs: [
       "https://www.instagram.com/arsonistai/",
@@ -81,8 +75,12 @@ export default async function LocaleLayout({
       "AI Agents",
       "Model Context Protocol",
       "AI Consulting",
-      "Content Generation",
-      "Concept Visualization",
+      "Chatbot Testing",
+      "Voice AI Agents",
+      "AI Workflow Automation",
+      "LLM Cost Optimization",
+      "Claude Code",
+      "Cursor",
     ],
   };
 
@@ -95,7 +93,7 @@ export default async function LocaleLayout({
     publisher: { "@id": ORG_ID },
     inLanguage: [locale === "es" ? "es" : "en"],
     description:
-      "AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, and operations consulting.",
+      "AI integration firm: custom MCP servers, chatbot audits, voice agents, workflow automation, LLM cost optimization, and Claude and Cursor training.",
   };
 
   return (

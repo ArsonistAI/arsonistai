@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const BUTTON_FILTER_ID = "heat-wave-button";
 const LOGO_FILTER_ID = "heat-wave-logo";
@@ -33,8 +33,6 @@ const SVG_MARKUP = `<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" s
 </svg>`;
 
 export default function HeatWaveFilter() {
-  const logoRafIds = useRef<number[]>([]);
-
   useEffect(() => {
     const wrapper = document.createElement("div");
     wrapper.innerHTML = SVG_MARKUP;
@@ -42,15 +40,18 @@ export default function HeatWaveFilter() {
     document.body.prepend(svg);
 
     const logoDisplacement = document.getElementById(LOGO_DISPLACEMENT_ID);
+    // Animation frame ids live in the effect, so cleanup cancels exactly the
+    // frames this mount scheduled.
+    const logoRafIds: number[] = [];
     const logoElements = new Set<Element>();
     const buttonElements = new Set<Element>();
 
-    function onEnter(this: Element) {
-      (this as HTMLElement).style.filter = `url(#${BUTTON_FILTER_ID})`;
+    function onEnter(event: Event) {
+      (event.currentTarget as HTMLElement).style.filter = `url(#${BUTTON_FILTER_ID})`;
     }
 
-    function onLeave(this: Element) {
-      (this as HTMLElement).style.filter = "";
+    function onLeave(event: Event) {
+      (event.currentTarget as HTMLElement).style.filter = "";
     }
 
     function runLogoRipple() {
@@ -79,7 +80,7 @@ export default function HeatWaveFilter() {
 
         if (elapsed < durationMs) {
           const id = window.requestAnimationFrame(tick);
-          logoRafIds.current.push(id);
+          logoRafIds.push(id);
           return;
         }
 
@@ -90,7 +91,7 @@ export default function HeatWaveFilter() {
       };
 
       const id = window.requestAnimationFrame(tick);
-      logoRafIds.current.push(id);
+      logoRafIds.push(id);
     }
 
     function attach() {
@@ -118,7 +119,7 @@ export default function HeatWaveFilter() {
     return () => {
       observer.disconnect();
       window.clearInterval(logoIntervalId);
-      logoRafIds.current.forEach((id) => window.cancelAnimationFrame(id));
+      logoRafIds.forEach((id) => window.cancelAnimationFrame(id));
       logoElements.forEach((el) => {
         (el as HTMLElement).style.filter = "";
       });

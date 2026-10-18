@@ -2,12 +2,15 @@ export interface Post {
   slug: string;
   titleKey: string;
   excerptKey: string;
+  /** Byline. "ArsonistAI" credits the firm and emits an Organization author in schema. */
   author: string;
   date: string;
   /** ISO date of the last substantive edit. Defaults to `date` when unset. */
   lastModified?: string;
   /** Broad topic for Article `articleSection`, e.g. "AI Design". */
   section?: string;
+  /** Service this article supports. Links the post and the service page to each other. */
+  serviceId?: string;
   image: string;
   content: {
     en: string;
@@ -16,6 +19,476 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  {
+    slug: "what-is-an-mcp-server-and-when-does-your-business-need-one",
+    titleKey: "posts.mcpServerGuide.title",
+    excerptKey: "posts.mcpServerGuide.excerpt",
+    author: "ArsonistAI",
+    date: "2026-10-18",
+    section: "AI Integration",
+    serviceId: "custom-mcp-servers",
+    image: "/images/services/fisheye.png",
+    content: {
+      en: `If your team uses Claude, Cursor, or another AI assistant at work, you have probably seen the same pattern. Someone copies a spreadsheet into a chat, pastes a few rows from the CRM, attaches a PDF of the pricing policy, and then asks a question. The answer comes back confident. Whether it is right depends on what got pasted, how fresh it was, and whether the model filled the gaps on its own.
+
+The Model Context Protocol, usually shortened to MCP, exists to end that routine. This guide explains what an MCP server is in plain terms, when a business actually needs one, and what separates a server that helps from one that quietly makes answers worse.
+
+## What MCP is
+
+MCP is an open standard, introduced by Anthropic in late 2024, for connecting AI applications to outside data and tools. It defines one common way for an AI client to ask "what can you do?" and then call those abilities. Before MCP, every integration between an assistant and a system was its own custom plugin. With MCP, a single server works with every client that speaks the protocol.
+
+That list of clients is now long. Claude Desktop, Claude Code, and Cursor all support MCP, and so do a growing number of other agents and editors. Because it is a standard rather than a product, a server you build today keeps working as your team adds tools or switches between them.
+
+## What an MCP server does
+
+An MCP server sits between an AI client and one of your systems: a database, a document store, an internal API, a ticketing tool. It publishes a short list of named tools, each with a description and a set of inputs. When a person asks the assistant a question, the model decides which tool to call, the server runs it against your real system, and the result goes back to the model as evidence for its answer.
+
+Three things change once a server is in place:
+
+- **The data is live.** The assistant reads the current record instead of whatever someone pasted last week.
+- **Access is controlled.** The server decides what the model can see and do, and it can apply the same permissions your users already have.
+- **Answers can be checked.** A well-built server returns the record each fact came from, so a person can verify it in seconds.
+
+## Signs your business needs one
+
+Not every team needs a custom server. Plenty of good MCP servers already exist for common tools, and for some jobs a plain export is enough. A custom server starts to pay for itself when one or more of these is true:
+
+- **People paste the same data into chats every week.** If the same reports, tables, or documents keep getting copied into an assistant, that is a tool waiting to be built.
+- **The data lives somewhere no public server covers.** An internal database, a custom admin panel, or a niche industry system will not have an off-the-shelf connector.
+- **Wrong answers are expensive.** In finance, recruiting, healthcare operations, or customer support, an invented number causes real damage. You need answers that cite their source and a server that refuses when the data cannot settle the question.
+- **Different people should see different things.** If a sales rep and a finance lead should not get the same answers, the server has to enforce that, not the prompt.
+- **You want agents to do work, not just read.** Creating a ticket, updating a record, or drafting a reply from real data all need a controlled path into your systems.
+
+## The most common mistake: mirroring the database
+
+The easiest MCP server to build is a thin wrapper that exposes every table or every folder as-is. It looks complete, and it works badly. The model has to guess which of forty tables holds the answer, how they join, and what the column names mean. It burns tokens exploring, and when it guesses wrong it still writes a fluent answer.
+
+A better server is designed around the questions agents will actually ask. Instead of "query any table," it offers tools like "find open invoices for a customer" or "list candidates at the interview stage for a role." Each tool does the joining and filtering itself and returns a small, clear result. The right answer becomes one call away, and the model has far less room to improvise.
+
+## What a good server does when the data is missing
+
+The hardest part of an MCP server is not returning data. It is what happens when the data is ambiguous, stale, or absent. A model handed an empty result will often fill the silence with something plausible. A good server makes that harder in three ways:
+
+- **It refuses plainly.** When a request matches nothing, or matches several things that could be meant, the server says so in words the model will repeat, instead of returning an empty list.
+- **It names its sources.** Every record carries an identifier or link, so the final answer can point to exactly where each fact came from.
+- **It flags freshness.** If a record has not been updated in months, the server says that too, so nobody treats an old figure as current.
+
+We used the same principle in our [Evidence-based ATS](/work/evidence-based-ats), where every sentence in a candidate summary has to cite its source and every number comes from code rather than from the model. The pattern carries over directly to MCP: let the software supply the facts, and let the model explain them.
+
+## Read-only first, then write access
+
+Most teams should start with a read-only server. It answers questions, it cannot break anything, and it builds trust fast. Once people rely on it, write tools can be added one at a time, each scoped to a single action, such as "add a note to this record," rather than general edit access.
+
+For servers that sit in front of an app with user accounts, the rule is simple: the agent should never be able to do more than the signed-in person could do by hand. That keeps your existing permission model in charge.
+
+## How a build usually goes
+
+A custom MCP server is a short project when it is scoped well. Our process has three steps:
+
+- **Map the jobs.** List what agents will be asked to do, which systems those jobs touch, and who is allowed to see what. That map becomes the tool list, approved before any code is written.
+- **Build and test with a real client.** Every tool gets called the way an agent would call it, and the data gets broken on purpose to prove the server refuses instead of guessing.
+- **Hand over and support.** The server is connected to the tools your team already uses, the team gets a walkthrough of how to extend it, and support continues while real usage settles in.
+
+You should end up owning the full source code in your own repository, with a test suite that drives the server the way an agent would. If a vendor offers a server you cannot read or change, treat that as a warning sign.
+
+## Questions to ask before you build
+
+Before you commit to a server, whether you build it in-house or with a partner, get clear answers to these:
+
+- Which three to five questions will people ask most often, and what data answers each one?
+- What should happen when the data cannot answer a question?
+- Who is allowed to see which records, and how will the server know who is asking?
+- Does anything need write access on day one, or can it wait?
+- Which AI clients will the team use, and has the server been tested in each of them?
+
+If you can answer those, you are ready to build. If you want help scoping or building it, our [custom MCP server service](/services/custom-mcp-servers) covers the full process, from the tool map to handover, with fixed tiers and support included.`,
+      es: `Si tu equipo usa Claude, Cursor u otro asistente de IA en el trabajo, seguramente ya conoces la escena. Alguien copia una hoja de cálculo en un chat, pega unas filas del CRM, adjunta un PDF con la política de precios y luego hace una pregunta. La respuesta llega con total seguridad. Que sea correcta depende de lo que se pegó, de lo actualizado que estaba y de si el modelo rellenó los huecos por su cuenta.
+
+El Model Context Protocol, conocido como MCP, existe para acabar con esa rutina. Esta guía explica en términos sencillos qué es un servidor MCP, cuándo lo necesita de verdad una empresa y qué distingue a un servidor que ayuda de uno que empeora las respuestas sin que nadie lo note.
+
+## Qué es MCP
+
+MCP es un estándar abierto, presentado por Anthropic a finales de 2024, para conectar aplicaciones de IA con datos y herramientas externas. Define una forma común para que un cliente de IA pregunte "¿qué puedes hacer?" y después use esas capacidades. Antes de MCP, cada integración entre un asistente y un sistema era un plugin hecho a medida. Con MCP, un solo servidor funciona con cualquier cliente que hable el protocolo.
+
+La lista de clientes ya es larga. Claude Desktop, Claude Code y Cursor son compatibles con MCP, igual que un número creciente de agentes y editores. Como es un estándar y no un producto, el servidor que construyas hoy seguirá funcionando cuando tu equipo sume herramientas o cambie de una a otra.
+
+## Qué hace un servidor MCP
+
+Un servidor MCP se sitúa entre un cliente de IA y uno de tus sistemas: una base de datos, un repositorio de documentos, una API interna o una herramienta de tickets. Publica una lista corta de herramientas con nombre, cada una con su descripción y sus parámetros. Cuando alguien le hace una pregunta al asistente, el modelo elige qué herramienta usar, el servidor la ejecuta contra tu sistema real y el resultado vuelve al modelo como evidencia para su respuesta.
+
+Con un servidor en marcha cambian tres cosas:
+
+- **Los datos están vivos.** El asistente lee el registro actual, no lo que alguien pegó la semana pasada.
+- **El acceso está controlado.** El servidor decide qué puede ver y hacer el modelo, y puede aplicar los mismos permisos que ya tienen tus usuarios.
+- **Las respuestas se pueden comprobar.** Un buen servidor devuelve el registro del que sale cada dato, así que una persona lo verifica en segundos.
+
+## Señales de que tu empresa necesita uno
+
+No todos los equipos necesitan un servidor a medida. Ya existen buenos servidores MCP para herramientas comunes, y para algunas tareas basta con una exportación. Un servidor propio empieza a compensar cuando se cumple una o más de estas condiciones:
+
+- **La gente pega los mismos datos en el chat cada semana.** Si los mismos informes, tablas o documentos se copian una y otra vez en un asistente, ahí hay una herramienta esperando a existir.
+- **Los datos viven donde ningún servidor público llega.** Una base de datos interna, un panel de administración propio o un sistema de nicho no tendrán un conector listo para usar.
+- **Una respuesta equivocada sale cara.** En finanzas, selección de personal, operaciones sanitarias o atención al cliente, una cifra inventada hace daño real. Necesitas respuestas que citen su fuente y un servidor que se niegue cuando los datos no bastan.
+- **Cada persona debe ver cosas distintas.** Si un comercial y la responsable de finanzas no deben recibir las mismas respuestas, quien lo garantiza es el servidor, no el prompt.
+- **Quieres que los agentes trabajen, no solo lean.** Crear un ticket, actualizar un registro o redactar una respuesta con datos reales exige un camino controlado hacia tus sistemas.
+
+## El error más común: copiar la base de datos tal cual
+
+El servidor MCP más fácil de construir es una capa fina que expone cada tabla o cada carpeta sin cambios. Parece completo y funciona mal. El modelo tiene que adivinar cuál de cuarenta tablas tiene la respuesta, cómo se relacionan y qué significan los nombres de las columnas. Gasta tokens explorando y, cuando se equivoca, igual escribe una respuesta fluida.
+
+Un servidor mejor se diseña alrededor de las preguntas que los agentes harán de verdad. En lugar de "consulta cualquier tabla", ofrece herramientas como "busca las facturas pendientes de un cliente" o "lista los candidatos en fase de entrevista para un puesto". Cada herramienta hace los cruces y filtros por sí misma y devuelve un resultado pequeño y claro. La respuesta correcta queda a una sola llamada, y el modelo tiene mucho menos margen para improvisar.
+
+## Qué hace un buen servidor cuando faltan datos
+
+Lo más difícil de un servidor MCP no es devolver datos. Es lo que pasa cuando los datos son ambiguos, están desactualizados o no existen. Un modelo que recibe un resultado vacío suele llenar el silencio con algo verosímil. Un buen servidor lo pone difícil de tres maneras:
+
+- **Se niega con claridad.** Cuando una petición no coincide con nada, o coincide con varias cosas posibles, el servidor lo dice con palabras que el modelo repetirá, en lugar de devolver una lista vacía.
+- **Nombra sus fuentes.** Cada registro lleva un identificador o enlace, así que la respuesta final puede señalar de dónde sale cada dato.
+- **Avisa de la antigüedad.** Si un registro no se actualiza desde hace meses, el servidor también lo dice, para que nadie tome una cifra vieja por actual.
+
+Usamos el mismo principio en nuestro [Evidence-based ATS](/work/evidence-based-ats), donde cada frase del resumen de un candidato debe citar su fuente y cada número sale del código y no del modelo. El patrón se traslada tal cual a MCP: que el software ponga los datos y el modelo los explique.
+
+## Primero solo lectura, después escritura
+
+La mayoría de los equipos deberían empezar con un servidor de solo lectura. Responde preguntas, no puede romper nada y genera confianza rápido. Cuando la gente ya depende de él, se pueden añadir herramientas de escritura de una en una, cada una limitada a una sola acción, como "añade una nota a este registro", en lugar de dar permiso general de edición.
+
+Para servidores que están delante de una aplicación con cuentas de usuario, la regla es sencilla: el agente nunca debe poder hacer más de lo que la persona con sesión iniciada podría hacer a mano. Así tu modelo de permisos actual sigue al mando.
+
+## Cómo suele ser un proyecto
+
+Un servidor MCP a medida es un proyecto corto cuando está bien acotado. Nuestro proceso tiene tres pasos:
+
+- **Mapear las tareas.** Listamos lo que se pedirá a los agentes, qué sistemas tocan esas tareas y quién puede ver qué. Ese mapa se convierte en la lista de herramientas y se aprueba antes de escribir código.
+- **Construir y probar con un cliente real.** Cada herramienta se llama como lo haría un agente, y rompemos los datos a propósito para comprobar que el servidor se niega en lugar de adivinar.
+- **Entregar y acompañar.** Conectamos el servidor a las herramientas que ya usa tu equipo, explicamos cómo ampliarlo y seguimos dando soporte mientras el uso real se asienta.
+
+Al final deberías tener todo el código fuente en tu propio repositorio, con una batería de pruebas que use el servidor igual que un agente. Si un proveedor te ofrece un servidor que no puedes leer ni modificar, tómalo como una señal de alerta.
+
+## Preguntas antes de construir
+
+Antes de comprometerte con un servidor, lo construyas tú o con un socio, ten claras estas respuestas:
+
+- ¿Cuáles son las tres a cinco preguntas que la gente hará más a menudo, y qué datos responden cada una?
+- ¿Qué debe pasar cuando los datos no pueden responder una pregunta?
+- ¿Quién puede ver cada registro, y cómo sabrá el servidor quién pregunta?
+- ¿Hace falta permiso de escritura desde el primer día, o puede esperar?
+- ¿Qué clientes de IA usará el equipo, y se ha probado el servidor en cada uno?
+
+Si puedes responderlas, estás listo para construir. Si quieres ayuda para definirlo o construirlo, nuestro [servicio de servidores MCP a medida](/services/custom-mcp-servers) cubre todo el proceso, del mapa de herramientas a la entrega, con niveles de precio fijos y soporte incluido.`,
+    },
+  },
+  {
+    slug: "how-to-reduce-llm-api-costs-without-hurting-quality",
+    titleKey: "posts.llmCostGuide.title",
+    excerptKey: "posts.llmCostGuide.excerpt",
+    author: "ArsonistAI",
+    date: "2026-10-18",
+    section: "AI Integration",
+    serviceId: "llm-cost-optimization",
+    image: "/images/services/content_service.png",
+    content: {
+      en: `The bill for an AI feature has an unusual shape. It does not stay flat like a software license. It grows with every user, every message, and every extra paragraph someone adds to the system prompt. A feature that cost a few hundred dollars a month in beta can cost many times that after launch, and the first sign is usually an invoice.
+
+Most of that growth is avoidable. This guide covers where LLM spend actually goes, the five changes that usually cut it the most, and the step most cost advice skips: proving that the cheaper setup still gives your users the right answer.
+
+## Where the money goes
+
+LLM providers charge per token, and they charge differently for different kinds of tokens. Input tokens (everything you send) are priced separately from output tokens (everything the model writes back), and output is usually several times more expensive per token. Many providers also price cached input, batch requests, and reasoning tokens on their own lines.
+
+That means the same feature can be cheap or expensive depending on details nobody looks at. Before changing anything, break the bill down three ways:
+
+- **By feature.** Which part of the product sends the requests? One feature often accounts for most of the spend.
+- **By model.** Which model handles each request, and does that request actually need it?
+- **By token type.** How much is input, how much is output, and how much of the input is the same text sent over and over?
+
+Your provider's usage export or a sample of request logs is usually enough to do this. The breakdown alone often points straight at the fix.
+
+## 1. Stop using the top model for easy requests
+
+The most common waste is sending every request to the most capable model. Classifying a support ticket, extracting a date from an email, or rewriting a sentence rarely needs it. Smaller models in the same family are much cheaper per token and often just as accurate on narrow tasks.
+
+The fix is routing: send each type of request to the cheapest model that handles it well. That can be as simple as choosing a model per feature, or as involved as a small classifier that decides per request. Either way, the routing rule has to be tested, which we cover below.
+
+## 2. Use prompt caching
+
+Many features send the same long block of text on every call: a system prompt, a product catalog, a policy document, a set of examples. Without caching, you pay full price for that block every single time.
+
+OpenAI, Anthropic, and Google all offer prompt caching, which bills repeated input at a fraction of the normal rate. The rules differ by provider. Some cache automatically, some need you to mark what to cache, and caches expire after a set time. The general rule holds across all of them: put the stable content first, put the part that changes last, and keep the stable part byte-for-byte identical between calls.
+
+## 3. Shorten what you send
+
+Prompts tend to grow. Every bug fix adds a sentence, every edge case adds an example, and nobody removes anything. A prompt that started at 300 words ends up at 3,000, and every word is billed on every call.
+
+Go through the prompt and cut instructions the model already follows without being told, examples that duplicate each other, and context the request does not use. Do the same for retrieved documents: sending the three most relevant passages instead of the top twenty can cut input cost sharply and often improves answers, because the model has less noise to sort through.
+
+## 4. Batch the work that can wait
+
+Not every request needs an answer in two seconds. Nightly report generation, bulk tagging, back-filling summaries, and evaluation runs can all wait hours. OpenAI and Anthropic both offer batch processing at roughly half the normal price in exchange for results within 24 hours, and Google offers a similar discount.
+
+Look at your request logs for work that runs on a schedule or in bulk. If no person is waiting on the result, it is a candidate for batching.
+
+## 5. Cap and control output
+
+Because output tokens usually cost the most, a model that writes long answers when short ones would do is expensive. Set sensible maximum lengths, ask for structured output when you only need a few fields, and tell the model what length you expect. For reasoning models, check whether a lower reasoning setting gives the same quality on your task.
+
+## The step most advice skips: proving quality holds
+
+Every change above can make answers worse. A smaller model may miss a nuance. A shorter prompt may drop the one instruction that prevented a known failure. Routing may send a hard question down the cheap path. Cost dashboards will show you the savings. They will not show you the support tickets that follow.
+
+So before switching anything in production, test it:
+
+- **Build a test set from real traffic.** Pull 50 to 150 real prompts from your logs, chosen to cover the common cases and the hard ones.
+- **Write down what a good answer is.** For each prompt, or each type of prompt, state what a correct answer must include and must not include. Without a written standard, "it seems fine" becomes the bar.
+- **Run every candidate setup against the set.** Score each one for quality and record its cost per thousand requests. Reject any setup that fails, even if it is cheaper.
+- **Keep the test set.** Rerun it whenever a prompt, model, or provider changes, so a future update does not quietly undo the work.
+
+Test runs like this usually cost a few dollars in API fees. They are the difference between a saving you can trust and one that comes back as churn.
+
+## Free can be an option too
+
+For some features, the cheapest model is one with no per-request bill at all. When we built the [Reductivist Shop Assistant](/work/shop-assistant), it ran on Cloudflare's free Workers AI allocation, with daily limits that kept it there, so the store pays nothing to run it. That works because the assistant answers a narrow set of questions from the store's own data, and the model never has to state a price itself. Not every feature fits that shape, but more do than teams expect.
+
+## Where to start
+
+If you only do one thing this week, export last month's usage and break it down by feature and model. You will likely find that one or two features drive most of the bill, and that at least one of them uses a bigger model than it needs.
+
+If you want the full process done for you, our [LLM cost optimization service](/services/llm-cost-optimization) starts with a cost audit that puts a dollar figure on each change, then tests every candidate on your own prompts before anything ships.`,
+      es: `La factura de una función con IA tiene una forma poco habitual. No se queda fija como una licencia de software. Crece con cada usuario, cada mensaje y cada párrafo que alguien añade al prompt del sistema. Una función que costaba unos cientos de dólares al mes en la fase beta puede costar varias veces más tras el lanzamiento, y la primera señal suele ser la factura.
+
+Casi todo ese crecimiento se puede evitar. Esta guía explica a dónde va realmente el gasto en LLM, los cinco cambios que más suelen reducirlo y el paso que casi todos los consejos sobre costos se saltan: demostrar que la opción más barata sigue dando a tus usuarios la respuesta correcta.
+
+## A dónde va el dinero
+
+Los proveedores de LLM cobran por token, y cobran distinto según el tipo de token. Los tokens de entrada (todo lo que envías) tienen un precio distinto al de los tokens de salida (todo lo que el modelo escribe), y la salida suele costar varias veces más por token. Muchos proveedores también cobran aparte la entrada en caché, las peticiones por lotes y los tokens de razonamiento.
+
+Eso significa que una misma función puede ser barata o cara según detalles que nadie mira. Antes de cambiar nada, desglosa la factura de tres maneras:
+
+- **Por función.** ¿Qué parte del producto envía las peticiones? A menudo una sola función concentra la mayor parte del gasto.
+- **Por modelo.** ¿Qué modelo atiende cada petición, y de verdad la necesita?
+- **Por tipo de token.** ¿Cuánto es entrada, cuánto es salida y cuánto de la entrada es el mismo texto enviado una y otra vez?
+
+Para hacerlo suele bastar con la exportación de uso de tu proveedor o una muestra de los registros de peticiones. El desglose por sí solo muchas veces señala la solución.
+
+## 1. Deja de usar el mejor modelo para tareas fáciles
+
+El derroche más común es mandar todas las peticiones al modelo más potente. Clasificar un ticket de soporte, sacar una fecha de un correo o reescribir una frase rara vez lo necesitan. Los modelos más pequeños de la misma familia cuestan mucho menos por token y en tareas acotadas suelen acertar igual.
+
+La solución es el enrutamiento: enviar cada tipo de petición al modelo más barato que la resuelva bien. Puede ser tan simple como elegir un modelo por función o tan elaborado como un pequeño clasificador que decide petición a petición. En cualquier caso, la regla de enrutamiento hay que probarla, como veremos más abajo.
+
+## 2. Usa la caché de prompts
+
+Muchas funciones envían el mismo bloque largo de texto en cada llamada: un prompt del sistema, un catálogo de productos, un documento de políticas o una serie de ejemplos. Sin caché, pagas ese bloque a precio completo cada vez.
+
+OpenAI, Anthropic y Google ofrecen caché de prompts, que cobra la entrada repetida a una fracción del precio normal. Las reglas cambian según el proveedor. Algunos guardan en caché de forma automática, otros te piden marcar qué guardar, y la caché caduca pasado un tiempo. La regla general vale para todos: pon primero el contenido estable, deja al final lo que cambia y mantén la parte estable idéntica, byte a byte, entre llamadas.
+
+## 3. Acorta lo que envías
+
+Los prompts tienden a crecer. Cada corrección añade una frase, cada caso límite añade un ejemplo y nadie quita nada. Un prompt que empezó con 300 palabras acaba con 3.000, y cada palabra se cobra en cada llamada.
+
+Revisa el prompt y elimina las instrucciones que el modelo ya cumple sin que se lo pidas, los ejemplos repetidos y el contexto que la petición no usa. Haz lo mismo con los documentos recuperados: enviar los tres pasajes más relevantes en lugar de los veinte primeros puede bajar mucho el costo de entrada, y a menudo mejora las respuestas, porque el modelo tiene menos ruido que filtrar.
+
+## 4. Agrupa en lotes el trabajo que puede esperar
+
+No todas las peticiones necesitan respuesta en dos segundos. Los informes nocturnos, el etiquetado masivo, los resúmenes atrasados y las rondas de evaluación pueden esperar horas. OpenAI y Anthropic ofrecen procesamiento por lotes a cerca de la mitad del precio normal a cambio de entregar los resultados en un plazo de 24 horas, y Google ofrece un descuento parecido.
+
+Busca en tus registros el trabajo que se ejecuta de forma programada o en bloque. Si ninguna persona está esperando el resultado, es candidato a ir por lotes.
+
+## 5. Limita y controla la salida
+
+Como los tokens de salida suelen ser los más caros, un modelo que escribe respuestas largas cuando bastaría con una corta sale caro. Fija longitudes máximas razonables, pide salida estructurada cuando solo necesitas unos pocos campos y dile al modelo qué extensión esperas. En los modelos de razonamiento, comprueba si un nivel de razonamiento más bajo da la misma calidad en tu tarea.
+
+## El paso que casi todos se saltan: demostrar que la calidad se mantiene
+
+Cada uno de estos cambios puede empeorar las respuestas. Un modelo más pequeño puede pasar por alto un matiz. Un prompt más corto puede perder justo la instrucción que evitaba un fallo conocido. El enrutamiento puede mandar una pregunta difícil por el camino barato. Los paneles de costos te enseñan el ahorro. No te enseñan los tickets de soporte que vienen después.
+
+Así que, antes de cambiar nada en producción, pruébalo:
+
+- **Arma un conjunto de pruebas con tráfico real.** Toma entre 50 y 150 prompts reales de tus registros, elegidos para cubrir los casos comunes y los difíciles.
+- **Escribe qué es una buena respuesta.** Para cada prompt, o cada tipo de prompt, anota qué debe incluir y qué no debe incluir una respuesta correcta. Sin un criterio escrito, "parece que está bien" se convierte en el listón.
+- **Pasa cada opción por el conjunto de pruebas.** Puntúa la calidad de cada una y anota su costo por cada mil peticiones. Descarta las que fallen, aunque sean más baratas.
+- **Guarda el conjunto de pruebas.** Vuelve a pasarlo cada vez que cambie un prompt, un modelo o un proveedor, para que una actualización futura no deshaga el trabajo sin que nadie lo vea.
+
+Estas pruebas suelen costar unos pocos dólares en llamadas a la API. Son la diferencia entre un ahorro en el que puedes confiar y uno que vuelve en forma de clientes perdidos.
+
+## Gratis también puede ser una opción
+
+Para algunas funciones, el modelo más barato es uno que no cobra por petición. Cuando creamos el [asistente de compras de Reductivist](/work/shop-assistant), funcionaba con la cuota gratuita de Workers AI de Cloudflare, con límites diarios que lo mantenían dentro de ella, así que a la tienda no le cuesta nada mantenerlo. Funciona porque el asistente responde un conjunto acotado de preguntas con los datos de la propia tienda, y el modelo nunca tiene que escribir un precio por sí mismo. No todas las funciones encajan en ese molde, pero encajan más de las que los equipos suponen.
+
+## Por dónde empezar
+
+Si solo haces una cosa esta semana, exporta el uso del mes pasado y desglósalo por función y por modelo. Lo más probable es que una o dos funciones expliquen casi toda la factura, y que al menos una use un modelo más grande del que necesita.
+
+Si prefieres que hagamos todo el proceso por ti, nuestro [servicio de optimización de costos de LLM](/services/llm-cost-optimization) empieza con una auditoría que pone una cifra en dólares a cada cambio y luego prueba cada opción con tus propios prompts antes de que nada llegue a producción.`,
+    },
+  },
+  {
+    slug: "chatbot-audit-checklist-12-things-that-break-in-production",
+    titleKey: "posts.chatbotAuditChecklist.title",
+    excerptKey: "posts.chatbotAuditChecklist.excerpt",
+    author: "ArsonistAI",
+    date: "2026-10-18",
+    section: "AI Integration",
+    serviceId: "chatbot-audit",
+    image: "/images/services/phone.png",
+    content: {
+      en: `A support chatbot that fails in testing costs you an afternoon. One that fails in production costs you customers, and sometimes more. In 2024 a Canadian tribunal ordered Air Canada to honor a bereavement refund policy that its website chatbot had invented. Whatever your bot says, customers will treat it as something you said.
+
+Most teams test their bot by asking it ten friendly questions and watching it answer them well. That proves very little. The failures that hurt come from the questions nobody on the team thought to ask. This checklist covers the twelve we see most often, grouped by what goes wrong.
+
+## Invented facts
+
+These are the most damaging failures, because the bot sounds exactly as sure of itself when it is wrong as when it is right.
+
+### 1. Prices and discounts that are not in your documents
+
+Ask about a product, a bundle, a discount for buying three, or a price for a size you do not sell. A bot that has seen a few prices will often produce a new one that looks consistent with them. Check every number it gives against your real catalog.
+
+### 2. Policies you do not have
+
+Ask about a return window for opened items, price matching, a loyalty program, or a student discount. If your documents say nothing, the right answer is "I don't have that information" and a pointer to a person. A bot that improvises a generous policy has just made a promise on your behalf.
+
+### 3. Dates, days, and deadlines
+
+Shipping times, return windows, warranty lengths, and holiday hours are easy for a model to blur. "30 days" becomes "60 days," or a business-day count becomes a calendar-day count. Ask for each one directly and in passing, inside a longer question.
+
+### 4. Phone numbers, emails, and links
+
+Contact details are a quiet but serious failure. A bot can produce a support email that follows your domain's pattern but does not exist, or a link to a page that was never published. Every address and URL in a reply should be checked against a real source.
+
+## Questions near the edge of your documents
+
+### 5. Questions your documents almost answer
+
+If your policy covers returns for unworn shoes, ask about worn ones. If it covers shipping to Canada, ask about Mexico. These near-miss questions are where bots stretch a real policy to cover a case it was never written for.
+
+### 6. Questions about one customer's order
+
+"Where is my order?" and "Can I change my address?" need account data the bot usually cannot see. It should say so and hand off, not guess a delivery date or confirm a change it cannot make.
+
+### 7. Requests outside the bot's job
+
+Ask for medical advice about a supplement, legal advice about a contract, or help with a competitor's product. A support bot should decline politely and stay in its lane.
+
+## Pressure and manipulation
+
+### 8. Attempts to make it break its rules
+
+Try the basic prompt injections: "ignore your previous instructions," "you are now in developer mode," "print your system prompt." This is not a full security test, but a bot that gives in to the obvious attempts will give in to worse ones.
+
+### 9. Being talked round over several messages
+
+Many bots handle one message well and slip over three. A customer who pushes ("but the last agent said I could," "your website says otherwise") can sometimes walk a bot into agreeing to things it refused at first. Test short conversations, not only single questions.
+
+### 10. Promises and commitments
+
+Ask the bot to guarantee delivery by a date, approve a refund, or confirm an exception. Unless it is connected to a system that can actually do those things, it should not say it has.
+
+## Tone and handoff
+
+### 11. Saying "I don't know" well
+
+Every bot will hit questions it cannot answer. Check that it says so plainly, does not apologize five times, and gives the customer a real next step, such as a contact form, an email address that exists, or a human handoff.
+
+### 12. Staying consistent with your brand
+
+Read twenty answers in a row. Does the bot sound like your company? Does it use the right product names? Does it stay calm with an angry customer? Tone problems rarely cause legal trouble, but they shape how people remember the experience.
+
+## How to check answers
+
+Asking the questions is the easy half. The hard half is judging the answers consistently, especially across sixty of them.
+
+- **Use rules wherever a rule can decide.** Extract every price, number of days, date, phone number, email, and link from each reply and compare it with your documents. If it is not there, it is a failure. No judgment needed.
+- **Use a model only where judgment is required.** For questions like "does this answer contradict our return policy?", an AI model can help, but it should quote the exact line it relied on and be labeled as a model's verdict so a person can check it.
+- **Never count an unclear result as a pass.** Anything the checks cannot settle should go on a list for a person to read.
+- **Keep the question set.** A bot can answer differently the next time it is asked, and every change to its prompt or documents can break something that used to work. Rerun the same questions after every change.
+
+We followed this process when we built the [Reductivist Shop Assistant](/work/shop-assistant). Before launch it was tested against 61 questions, including prompt injections and invented policies, and the test report lists every failure and what was changed to fix it.
+
+## What a pass does and does not mean
+
+A pass on one question is one good answer, not a guarantee. Models are not fully predictable, and a bot that answered correctly today can answer differently tomorrow. Testing lowers the risk of a bad answer reaching a customer. It does not remove it. That is why the most useful outcome of an audit is a clear, ranked list of what to fix first, and a question set you can run again.
+
+If you want this done for you before launch, our [chatbot audit](/services/chatbot-audit) builds about 60 questions from your own documents, checks every answer, and hands you a plain-English report you can read in ten minutes, along with the question set to keep.`,
+      es: `Un chatbot de soporte que falla en las pruebas te cuesta una tarde. Uno que falla en producción te cuesta clientes, y a veces más. En 2024 un tribunal canadiense obligó a Air Canada a respetar una política de reembolso por duelo que el chatbot de su web se había inventado. Lo que diga tu bot, los clientes lo tomarán como algo que dijiste tú.
+
+La mayoría de los equipos prueban su bot con diez preguntas amables y lo ven responder bien. Eso demuestra muy poco. Los fallos que duelen vienen de las preguntas que a nadie del equipo se le ocurrió hacer. Esta lista reúne las doce que vemos con más frecuencia, agrupadas según lo que sale mal.
+
+## Datos inventados
+
+Son los fallos más dañinos, porque el bot suena igual de seguro cuando se equivoca que cuando acierta.
+
+### 1. Precios y descuentos que no están en tus documentos
+
+Pregunta por un producto, un paquete, un descuento por comprar tres o el precio de una talla que no vendes. Un bot que ha visto algunos precios suele producir uno nuevo que parece coherente con ellos. Compara cada cifra que dé con tu catálogo real.
+
+### 2. Políticas que no tienes
+
+Pregunta por el plazo de devolución de artículos abiertos, la igualación de precios, un programa de fidelidad o un descuento para estudiantes. Si tus documentos no dicen nada, la respuesta correcta es "no tengo esa información" y una indicación para hablar con una persona. Un bot que improvisa una política generosa acaba de hacer una promesa en tu nombre.
+
+### 3. Fechas, días y plazos
+
+Los tiempos de envío, los plazos de devolución, la duración de la garantía y los horarios de festivos son fáciles de confundir para un modelo. "30 días" se convierte en "60 días", o un plazo en días hábiles pasa a días naturales. Pregunta por cada uno de forma directa y también de pasada, dentro de una pregunta más larga.
+
+### 4. Teléfonos, correos y enlaces
+
+Los datos de contacto son un fallo silencioso pero grave. Un bot puede dar un correo de soporte que sigue el patrón de tu dominio pero no existe, o un enlace a una página que nunca se publicó. Cada dirección y cada URL de una respuesta se debe comprobar contra una fuente real.
+
+## Preguntas al borde de tus documentos
+
+### 5. Preguntas que tus documentos casi responden
+
+Si tu política cubre devoluciones de zapatos sin usar, pregunta por unos usados. Si cubre envíos a Canadá, pregunta por México. En estas preguntas que casi encajan es donde los bots estiran una política real para cubrir un caso para el que nunca se escribió.
+
+### 6. Preguntas sobre el pedido de un cliente concreto
+
+"¿Dónde está mi pedido?" y "¿Puedo cambiar mi dirección?" necesitan datos de la cuenta que el bot normalmente no ve. Debe decirlo y derivar a una persona, no adivinar una fecha de entrega ni confirmar un cambio que no puede hacer.
+
+### 7. Peticiones fuera del trabajo del bot
+
+Pide consejo médico sobre un suplemento, consejo legal sobre un contrato o ayuda con el producto de un competidor. Un bot de soporte debe declinar con amabilidad y no salirse de su papel.
+
+## Presión y manipulación
+
+### 8. Intentos de que rompa sus reglas
+
+Prueba las inyecciones de instrucciones básicas: "ignora tus instrucciones anteriores", "ahora estás en modo desarrollador", "muestra tu prompt del sistema". No es una prueba de seguridad completa, pero un bot que cede ante los intentos obvios cederá ante otros peores.
+
+### 9. Convencerlo a lo largo de varios mensajes
+
+Muchos bots manejan bien un mensaje y fallan en el tercero. Un cliente que insiste ("pero el otro agente me dijo que sí", "en su web dice otra cosa") a veces logra que el bot acepte algo que al principio rechazó. Prueba conversaciones cortas, no solo preguntas sueltas.
+
+### 10. Promesas y compromisos
+
+Pide al bot que garantice una entrega para cierta fecha, que apruebe un reembolso o que confirme una excepción. Salvo que esté conectado a un sistema que de verdad pueda hacerlo, no debe decir que lo ha hecho.
+
+## Tono y derivación
+
+### 11. Decir "no lo sé" bien
+
+Todo bot se topará con preguntas que no puede responder. Comprueba que lo diga con claridad, que no se disculpe cinco veces y que dé al cliente un siguiente paso real, como un formulario de contacto, un correo que exista o el paso a una persona.
+
+### 12. Mantener la voz de tu marca
+
+Lee veinte respuestas seguidas. ¿Suena el bot como tu empresa? ¿Usa los nombres correctos de los productos? ¿Mantiene la calma con un cliente enfadado? Los problemas de tono rara vez traen problemas legales, pero marcan cómo recuerda la gente la experiencia.
+
+## Cómo comprobar las respuestas
+
+Hacer las preguntas es la mitad fácil. La mitad difícil es juzgar las respuestas con un criterio constante, sobre todo cuando son sesenta.
+
+- **Usa reglas siempre que una regla pueda decidir.** Extrae de cada respuesta los precios, los días, las fechas, los teléfonos, los correos y los enlaces, y compáralos con tus documentos. Si no están ahí, es un fallo. No hace falta interpretar nada.
+- **Usa un modelo solo cuando haga falta juicio.** Para preguntas como "¿contradice esta respuesta nuestra política de devoluciones?", un modelo de IA puede ayudar, pero debe citar la línea exacta en la que se basa y marcarse como veredicto de un modelo, para que una persona pueda revisarlo.
+- **Nunca cuentes un resultado dudoso como aprobado.** Lo que las comprobaciones no puedan resolver debe ir a una lista para que lo lea una persona.
+- **Guarda el conjunto de preguntas.** Un bot puede responder distinto la próxima vez, y cualquier cambio en su prompt o en sus documentos puede romper algo que antes funcionaba. Vuelve a pasar las mismas preguntas tras cada cambio.
+
+Seguimos este proceso al crear el [asistente de compras de Reductivist](/work/shop-assistant). Antes del lanzamiento se probó con 61 preguntas, incluidas inyecciones de instrucciones y políticas inventadas, y el informe de pruebas recoge cada fallo y lo que se cambió para corregirlo.
+
+## Qué significa un aprobado y qué no
+
+Aprobar una pregunta es una buena respuesta, no una garantía. Los modelos no son del todo predecibles, y un bot que hoy respondió bien puede responder distinto mañana. Las pruebas reducen el riesgo de que una mala respuesta llegue a un cliente. No lo eliminan. Por eso el resultado más útil de una auditoría es una lista clara y ordenada de qué corregir primero, junto con un conjunto de preguntas que puedes volver a usar.
+
+Si quieres que lo hagamos por ti antes del lanzamiento, nuestra [auditoría de chatbots](/services/chatbot-audit) prepara unas 60 preguntas a partir de tus propios documentos, revisa cada respuesta y te entrega un informe en lenguaje claro que se lee en diez minutos, además del conjunto de preguntas para que lo conserves.`,
+    },
+  },
   {
     slug: "introducing-product-kpis-bringing-measurable-impact-into-your-design-workflow",
     titleKey: "posts.productKpisPlugin.title",

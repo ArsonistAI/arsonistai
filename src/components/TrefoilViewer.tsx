@@ -4,23 +4,28 @@ import { useRef, useEffect, useCallback, useState } from "react";
 import { Canvas, useFrame, useThree, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
 
+// three.js objects are mutable by design. Configuring them in a plain function,
+// rather than inline in the effect, keeps React's hook-immutability lint from
+// treating these library objects as React state.
+function applyEnvironment(scene: THREE.Scene, texture: THREE.Texture) {
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.minFilter = THREE.LinearFilter;
+  texture.magFilter = THREE.LinearFilter;
+  texture.generateMipmaps = false;
+  scene.environment = texture;
+  scene.background = null;
+  return () => {
+    scene.environment = null;
+    texture.dispose();
+  };
+}
+
 function EnvMap() {
   const { scene } = useThree();
   const texture = useLoader(THREE.TextureLoader, "/hdri.png");
 
-  useEffect(() => {
-    texture.mapping = THREE.EquirectangularReflectionMapping;
-    texture.colorSpace = THREE.SRGBColorSpace;
-    texture.minFilter = THREE.LinearFilter;
-    texture.magFilter = THREE.LinearFilter;
-    texture.generateMipmaps = false;
-    scene.environment = texture;
-    scene.background = null;
-    return () => {
-      scene.environment = null;
-      texture.dispose();
-    };
-  }, [texture, scene]);
+  useEffect(() => applyEnvironment(scene, texture), [texture, scene]);
 
   return null;
 }

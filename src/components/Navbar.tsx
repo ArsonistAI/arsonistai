@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -24,8 +25,10 @@ export default function Navbar() {
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 heat-wave">
-          <img
+          <Image
             src="/Logo_Orange.svg"
+            unoptimized
+            priority
             alt="ArsonistAI"
             width={120}
             height={32}

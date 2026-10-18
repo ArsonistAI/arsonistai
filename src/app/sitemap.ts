@@ -11,13 +11,13 @@ import { SITE_URL, LOCALES, DEFAULT_LOCALE } from "@/lib/seo";
  * signal entirely. Update the date here when a page's content actually changes.
  */
 const staticPages: { path: string; lastModified: string; priority: number }[] = [
-  { path: "", lastModified: "2026-02-28", priority: 1.0 },
-  { path: "/about-us", lastModified: "2026-02-28", priority: 0.8 },
-  { path: "/services", lastModified: "2026-10-14", priority: 0.9 },
-  { path: "/products", lastModified: "2026-02-28", priority: 0.8 },
-  { path: "/partnerships", lastModified: "2026-02-28", priority: 0.8 },
-  { path: "/insights", lastModified: "2026-02-28", priority: 0.8 },
-  { path: "/case-studies", lastModified: "2026-03-06", priority: 0.8 },
+  { path: "", lastModified: "2026-10-18", priority: 1.0 },
+  { path: "/about-us", lastModified: "2026-10-18", priority: 0.8 },
+  { path: "/services", lastModified: "2026-10-18", priority: 0.9 },
+  { path: "/products", lastModified: "2026-10-14", priority: 0.8 },
+  { path: "/partnerships", lastModified: "2026-10-14", priority: 0.8 },
+  { path: "/insights", lastModified: "2026-10-18", priority: 0.8 },
+  { path: "/case-studies", lastModified: "2026-10-18", priority: 0.8 },
   { path: "/privacy-policy", lastModified: "2026-02-28", priority: 0.3 },
   { path: "/legal-terms", lastModified: "2026-02-28", priority: 0.3 },
 ];

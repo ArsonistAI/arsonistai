@@ -44,15 +44,20 @@ const nextConfig: NextConfig = {
     return [{ source: "/(.*)", headers: securityHeaders }];
   },
   async redirects() {
-    // Retired services keep their indexed URLs pointing somewhere useful.
     return [
+      // A permanent redirect, so search engines consolidate the bare origin
+      // into /en. The redirect() in app/page.tsx answers 307, which is temporary.
+      { source: "/", destination: "/en", permanent: true },
+      // Retired services keep their indexed URLs pointing somewhere useful.
       {
-        source: "/:locale(en|es)/services/product-design",
+        source:
+          "/:locale(en|es)/services/:slug(product-design|content-generation|concept-visualization|exploration-scaling)",
         destination: "/:locale/services",
         permanent: true,
       },
       {
-        source: "/services/product-design",
+        source:
+          "/services/:slug(product-design|content-generation|concept-visualization|exploration-scaling)",
         destination: "/en/services",
         permanent: true,
       },

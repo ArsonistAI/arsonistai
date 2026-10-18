@@ -1,12 +1,15 @@
 "use client";
 
+import Image from "next/image";
+
+// Intrinsic sizes, so next/image reserves the right box for each logo.
 const clients = [
-  { name: "Cognizant", src: "/clients/cognizant.png" },
-  { name: "AdAptive", src: "/clients/adaptive.png" },
-  { name: "Quantec", src: "/clients/quantec.png" },
-  { name: "Reductivist", src: "/clients/reductivist.png" },
-  { name: "Unkillable", src: "/clients/unkillable.png" },
-  { name: "HCIT", src: "/clients/hcit_logo.svg" },
+  { name: "Cognizant", src: "/clients/cognizant.png", width: 200, height: 35 },
+  { name: "AdAptive", src: "/clients/adaptive.png", width: 200, height: 43 },
+  { name: "Quantec", src: "/clients/quantec.png", width: 200, height: 38 },
+  { name: "Reductivist", src: "/clients/reductivist.png", width: 200, height: 41 },
+  { name: "Unkillable", src: "/clients/unkillable.png", width: 200, height: 46 },
+  { name: "HCIT", src: "/clients/hcit_logo.svg", width: 291, height: 86 },
 ];
 
 export default function ClientMarquee() {
@@ -17,13 +20,14 @@ export default function ClientMarquee() {
       <div className="relative">
         <div className="flex animate-marquee gap-20 w-max">
           {doubled.map((client, i) => (
-            <img
+            <Image
               key={`${client.name}-${i}`}
               src={client.src}
               alt={`${client.name} logo`}
-              loading="lazy"
-              width={120}
-              height={32}
+              width={client.width}
+              height={client.height}
+              // The default loader does not optimize SVG.
+              unoptimized={client.src.endsWith(".svg")}
               className="h-8 w-auto opacity-50 hover:opacity-100 m3-transition transition-opacity grayscale hover:grayscale-0"
             />
           ))}

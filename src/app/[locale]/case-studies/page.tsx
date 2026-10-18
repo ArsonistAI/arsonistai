@@ -6,7 +6,7 @@ import Image from "next/image";
 import { caseStudies, localized } from "@/content/caseStudies";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import { Link } from "@/i18n/navigation";
-import { alternatesFor, openGraphFor } from "@/lib/seo";
+import { alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,7 +18,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: "/case-studies",
       title: t("ogTitle"),

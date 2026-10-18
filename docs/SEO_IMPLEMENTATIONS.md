@@ -9,7 +9,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 **Location:** `src/app/layout.tsx`
 
 - **metadataBase** — Set to the production URL (`https://arsonistai.com`) so relative URLs in metadata resolve correctly.
-- **Title** — Default title and template (`%s — ArsonistAI`) for consistent branding in tabs and search results.
+- **Title**: Default title and template (`%s | ArsonistAI`) for consistent branding in tabs and search results.
 - **Description** — Single, keyword-rich default description for the site.
 - **Keywords** — Array of target phrases (e.g. "AI integration firm", "AI integration services", "AI consulting"; repositioned from "AI design firm" in October 2026) for discovery.
 - **Authors / creator / publisher** — Set to the brand for attribution.
@@ -143,7 +143,7 @@ This document lists all SEO work implemented on the site and can be used as a re
 
 ## 9. Visible keyword content
 
-- **Homepage hero** — The `home.heroTagline` message (“Your AI integration firm. Scale your business with AI.” / “Tu firma de integración de IA. Escala tu negocio con IA.”) is not rendered anywhere as of October 2026; the visible hero shows `heroSubtitle` instead.
+- **Homepage hero**: The `<h1>` is `home.heroTagline` ("Your AI integration firm" / "Tu firma de integración de IA"), shown as the eyebrow above the mission statement, which is now a `<p>`. Updated in the fifth pass (October 2026).
 
 **Best practice:** Include primary target phrases in the main body content (e.g. above the fold) so rankings and snippets align with what users see.
 
@@ -300,4 +300,50 @@ Every page setting `openGraph: { title, description }` was dropping the site-wid
 
 ---
 
-*Last updated to reflect the fourth SEO pass (shared helpers, canonical and OG merge bugs, sitemap accuracy, schema depth, image optimization, 404 handling, service detail pages).*
+---
+
+## Fifth SEO pass (October 2026)
+
+### 26. Twitter cards per page
+
+The root layout set one site-wide `twitter` block, and only blog posts overrode it, so every other page shared on X with the homepage title. `twitterFor()` and `socialFor()` in `src/lib/seo.ts` now build the card from the same arguments as `openGraphFor()`. Simple pages spread `...socialFor({...})`. Article pages (`insights/[slug]`, `work/[slug]`) take `social.openGraph` and `social.twitter` separately, so they can add `type: "article"`.
+
+### 27. Headings and copy after the repositioning
+
+- The homepage `<h1>` was the mission statement, which has no keywords. It is now the "Your AI integration firm" tagline. The stale "Design Augmented" eyebrow (`home.heroSubtitle`) was removed.
+- The about page `<h1>` changed from "about us" to "about our AI integration firm" (es: "nuestra firma de integración de IA").
+- Each hero `<h1>` is short enough to fit on one line at 375px, so the five-word line rule holds.
+- Meta copy that still said "AI design" was rewritten: case studies, insights, and the home and services descriptions, which now name the newer services. Two Spanish service descriptions over 155 characters were trimmed.
+- The title separator changed from the em dash to " | " in the template, in the OG titles, and in the `ogTitle` messages.
+
+### 28. Organization schema
+
+`serviceType` is now derived from `services` in `src/content/services.ts`, so new services appear automatically. `knowsAbout` and the descriptions name the current service set.
+
+### 29. Permanent root redirect
+
+`/` answered `307` from `redirect()` in `app/page.tsx`. `next.config.ts` now sends a `308` from `/` to `/en`, which lets search engines consolidate the bare origin.
+
+### 30. Sitemap dates
+
+`staticPages` dates were updated to the real last edits. Several pages still read 2026-02-28 after the October changes.
+
+### 31. /llms.txt
+
+`src/app/llms.txt/route.ts` serves a plain-text map of services, case studies, and service-linked guides for AI assistants and answer engines (llmstxt.org). It is built from the same content files as the sitemap, so it cannot drift.
+
+### 32. Service-linked articles
+
+`Post.serviceId` ties an article to a service. When it is set:
+- The post shows a "service behind this article" card.
+- The service page lists the post under "Guides on this topic".
+- The `BlogPosting` gains `about: { "@id": "<service url>#service" }`.
+- The post appears in `/llms.txt`.
+
+Posts with `author: "ArsonistAI"` emit the Organization as `author` in place of a Person. Three articles shipped this way (MCP servers, LLM costs, chatbot audit checklist). The backlog is in `docs/content-plan.md`, and the off-site work is in `docs/seo-offsite-checklist.md`.
+
+### 33. Post dates
+
+Bare ISO dates parse as UTC midnight, so formatting them in local time showed every post a day early in US timezones. The post page now formats with `timeZone: "UTC"`.
+
+*Last updated to reflect the fifth SEO pass (per-page Twitter cards, repositioning copy and headings, derived Organization schema, permanent root redirect, llms.txt, service-linked articles).*

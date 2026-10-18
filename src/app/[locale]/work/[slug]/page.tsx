@@ -9,7 +9,7 @@ import {
   ORG_ID,
   absoluteUrl,
   alternatesFor,
-  openGraphFor,
+  socialFor,
 } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -31,19 +31,19 @@ export async function generateMetadata({
   const title = localized(study.title, locale);
   const description = localized(study.metaDescription, locale);
 
+  const social = socialFor({
+    locale,
+    path: `/work/${slug}`,
+    title: `${title} | ${t("label")}`,
+    description,
+    image: `${SITE_URL}${study.heroImage}`,
+  });
+
   return {
     title,
     description,
-    openGraph: {
-      ...openGraphFor({
-        locale,
-        path: `/work/${slug}`,
-        title: `${title} — ${t("label")}`,
-        description,
-        image: `${SITE_URL}${study.heroImage}`,
-      }),
-      type: "article",
-    },
+    openGraph: { ...social.openGraph, type: "article" },
+    twitter: social.twitter,
     alternates: alternatesFor(locale, `/work/${slug}`),
   };
 }

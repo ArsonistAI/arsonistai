@@ -44,6 +44,16 @@ export const OG_IMAGE = {
 };
 
 type OpenGraph = NonNullable<Metadata["openGraph"]>;
+type Twitter = NonNullable<Metadata["twitter"]>;
+
+interface SocialOpts {
+  locale: string;
+  path?: string;
+  title: string;
+  description: string;
+  /** Absolute URL of a page-specific image, replacing the site default. */
+  image?: string;
+}
 
 /**
  * Open Graph block for a page.
@@ -52,14 +62,7 @@ type OpenGraph = NonNullable<Metadata["openGraph"]>;
  * so a page declaring only { title, description } silently loses the site-wide
  * image. Going through this helper keeps the image and locale on every page.
  */
-export function openGraphFor(opts: {
-  locale: string;
-  path?: string;
-  title: string;
-  description: string;
-  /** Absolute URL of a page-specific image, replacing the site default. */
-  image?: string;
-}): OpenGraph {
+export function openGraphFor(opts: SocialOpts): OpenGraph {
   return {
     type: "website",
     siteName: "ArsonistAI",
@@ -69,4 +72,25 @@ export function openGraphFor(opts: {
     description: opts.description,
     images: opts.image ? [{ url: opts.image }] : [OG_IMAGE],
   };
+}
+
+/**
+ * Twitter card for a page. The root layout sets a site-wide card, and without
+ * an override every page shares on X with the homepage title.
+ */
+export function twitterFor(opts: SocialOpts): Twitter {
+  return {
+    card: "summary_large_image",
+    title: opts.title,
+    description: opts.description,
+    images: [opts.image ?? OG_IMAGE.url],
+  };
+}
+
+/** Open Graph and Twitter together, so a page cannot set one and forget the other. */
+export function socialFor(opts: SocialOpts): {
+  openGraph: OpenGraph;
+  twitter: Twitter;
+} {
+  return { openGraph: openGraphFor(opts), twitter: twitterFor(opts) };
 }

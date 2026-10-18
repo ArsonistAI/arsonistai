@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { alternatesFor } from "@/lib/seo";
+import { alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -14,6 +14,12 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    ...socialFor({
+      locale,
+      path: "/privacy-policy",
+      title: `${t("title")} | ArsonistAI`,
+      description: t("description"),
+    }),
     robots: { index: true, follow: true },
     alternates: alternatesFor(locale, "/privacy-policy"),
   };

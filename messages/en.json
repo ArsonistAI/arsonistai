@@ -20,10 +20,9 @@
     "backToTop": "back to the top"
   },
   "home": {
-    "heroSubtitle": "Design Augmented",
     "heroTitle": "We want to build a future with AI that is open to all, built to grow, and made for the people who need it most.",
     "heroCta": "Check out our work",
-    "heroTagline": "Your AI integration firm. Scale your business with AI.",
+    "heroTagline": "Your AI integration firm",
     "servicesHeading": "Our Services",
     "servicesSubheading": "Whether you're just starting out or leading an established enterprise, we're committed to understanding your goals and helping you achieve them.",
     "whyHeading": "Why Choose Us?",
@@ -45,7 +44,7 @@
     "demoReelPlay": "Play demo reel"
   },
   "about": {
-    "heading": "about us",
+    "heading": "about our AI integration firm",
     "intro": "We are an AI-first firm that helps a business bring out the best in its people with new tools. We build safe and fair systems that grow with you, so that your team can use AI with a plan, with trust, and with a goal in mind.",
     "missionHeading": "our mission",
     "missionText": "Our aim is to build the future with AI that is easy to use, made to grow, and made for the people who need it most.",
@@ -65,153 +64,6 @@
     "heading": "Services",
     "subheading": "AI augmented, scalable services",
     "label": "AI Services",
-    "contentGeneration": {
-      "title": "Content Generation",
-      "short": "You are starting from scratch and want strong, fresh ideas for new products and services.",
-      "long": "Need fresh ideas fast? Our content and idea service uses AI to help creators, founders, and teams find new ideas in seconds. From product names and social posts to startup concepts and campaign slogans, you get strong ideas built around your goals and your audience. No more creative blocks, just more options than you can use.",
-      "detail": {
-        "intro": "Most teams do not have an idea problem. They have a throughput problem. The concepts that would have worked never get written down, because the hours it takes to produce fifty viable options are hours nobody has. Our content generation service closes that gap: we build the prompt systems, brand constraints, and review loops that let your team produce a large volume of on-brand starting points and then choose well among them.",
-        "body": "This is not a request to hand your voice over to a model. We start from what you already sound like, encode it, and use AI to widen the field of options rather than to replace the judgment that picks the winner. The output is a working system your team keeps, not a one-time delivery of copy.",
-        "steps": [
-          {
-            "title": "Capture your voice",
-            "body": "We study your copy, positioning, and audience research and write down your brand voice and tone. That written spec is the bar every new option has to clear, so making more never costs you a consistent voice."
-          },
-          {
-            "title": "Build the generation system",
-            "body": "We assemble prompt chains, reference libraries, and evaluation criteria tuned to your categories, whether that is product naming, campaign lines, long-form editorial, or social. You get the system, the prompts, and the reasoning behind both."
-          },
-          {
-            "title": "Generate, filter, and hand over",
-            "body": "We run the system against your live briefs, filter the output down to the strongest candidates, and train your team to operate it without us. Knowledge transfer is part of the engagement, not an upsell."
-          }
-        ],
-        "deliverables": [
-          "A written guide to your brand voice",
-          "Prompt libraries tuned to your work",
-          "A filtered set of ready-to-use concepts from your live briefs",
-          "A working session so your team can run the system independently"
-        ],
-        "faq": [
-          {
-            "q": "Will it sound like generic AI copy?",
-            "a": "That is the failure mode we build against. The voice specification and reference library are what keep generated options inside your brand rather than inside the model's defaults. Generic output usually means nobody encoded the constraints, and encoding them is the first phase of the work."
-          },
-          {
-            "q": "Do we keep what you build?",
-            "a": "Yes. Everything we build is documented and handed over. The point of the engagement is that your team can keep generating after it ends."
-          },
-          {
-            "q": "Which models do you use?",
-            "a": "We select per task rather than committing to one vendor, and we tell you why. Reasoning-heavy work and high-volume drafting have different cost and quality profiles."
-          },
-          {
-            "q": "How do you check the facts?",
-            "a": "Generated drafts are treated as candidates, never as finished claims. Any factual assertion goes through human review before it ships, and we build that checkpoint into the workflow rather than leaving it to discipline."
-          }
-        ]
-      },
-      "metaTitle": "AI Content Generation Services",
-      "metaDescription": "AI content generation from ArsonistAI. We build the prompt systems, brand constraints, and review loops your team keeps and operates independently."
-    },
-    "conceptVisualization": {
-      "title": "Concept Visualization",
-      "short": "You have rough ideas and need detail and strong visuals to go with them.",
-      "long": "Bring your ideas to life with our concept visualization service. We use the newest AI tools to turn rough concepts into bold, high-impact visuals, fast. Whether you need product designs, moodboards, 3D interfaces, or campaign images, we help you get from a loose idea to a clear picture of it in minutes.",
-      "detail": {
-        "intro": "The distance between an idea described in a meeting and an idea everyone can see is where most projects stall. Written concepts get nodded at and then interpreted six different ways. Our concept visualization service compresses that distance: we turn abstract direction into concrete, high-fidelity visuals fast enough to use inside the decision, not after it.",
-        "body": "We work on product design, moodboards, 3D interfaces, scenes, and campaign art. The aim is shared understanding. When people can point at an image, the question stops being what did you mean and becomes whether this is right.",
-        "steps": [
-          {
-            "title": "Pin down the direction",
-            "body": "We work from your brief, references, and constraints to establish what the visual has to communicate and to whom. Vague inputs produce vague images, so this step is where we get specific about the decision the visual needs to support."
-          },
-          {
-            "title": "Generate at breadth",
-            "body": "We produce multiple distinct visual directions rather than refining a single guess. Seeing three real options side by side surfaces preferences that no amount of discussion will."
-          },
-          {
-            "title": "Refine to fidelity",
-            "body": "Once a direction is chosen, we push it to the fidelity you actually need, whether that is a pitch-ready render, a moodboard for a design team, or a set of assets for a campaign."
-          }
-        ],
-        "deliverables": [
-          "Several distinct visual directions",
-          "Renders or moodboards in full detail",
-          "The source files and prompts",
-          "A documented rationale for why each direction reads the way it does"
-        ],
-        "faq": [
-          {
-            "q": "How fast is the first round?",
-            "a": "First directions typically land within days rather than weeks, because generating breadth is cheap once the brief is specific. The timeline depends far more on how quickly the brief gets pinned down than on production."
-          },
-          {
-            "q": "Can you match our visual identity?",
-            "a": "Yes. Working inside an established identity is the common case. We build a reference set from your existing assets and treat it as a constraint on every direction we generate."
-          },
-          {
-            "q": "Do we get the source files?",
-            "a": "Yes, along with the prompts and reference images behind them, so your team can continue the direction without starting over."
-          },
-          {
-            "q": "Does this replace a design team?",
-            "a": "No. It is a way to get a design team to the right starting point faster. The judgment about which direction is right remains a human decision, and usually yours."
-          }
-        ]
-      },
-      "metaTitle": "AI Concept Visualization",
-      "metaDescription": "Turn abstract direction into high-fidelity visuals fast. Product design, moodboards, 3D interfaces, and campaign imagery from ArsonistAI."
-    },
-    "explorationScaling": {
-      "title": "Exploration Scaling",
-      "short": "You have some ideas on screen and want a wider set of variations.",
-      "long": "Widen your creative range with our exploration scaling service. If you have a solid concept or a few visual ideas, we use the newest AI models to quickly make strong variations in style, structure, or concept, and grow your first direction into a much broader set of options.",
-      "detail": {
-        "intro": "A single good concept is a risk. Without alternatives, you cannot tell whether it is the right answer or the first answer. Our exploration scaling service takes a direction you already believe in and expands it into a broad, structured landscape of variations, so the option you ship is one you chose rather than one you settled for.",
-        "body": "Variation can be stylistic, structural, or conceptual. We decide with you which axis actually matters for the decision in front of you, then generate along it deliberately instead of producing noise.",
-        "steps": [
-          {
-            "title": "Define the axis of variation",
-            "body": "Scaling in every direction at once produces a pile, not a decision. We identify which dimension is genuinely open, whether that is visual style, information structure, or the underlying concept."
-          },
-          {
-            "title": "Generate systematically",
-            "body": "We produce variations along the chosen axis at volume, keeping every other variable fixed so comparisons are meaningful. This is what separates a real exploration from a random sample."
-          },
-          {
-            "title": "Cluster and narrow",
-            "body": "We group the output into coherent families, name what distinguishes them, and narrow to a shortlist your team can actually evaluate in a room."
-          }
-        ],
-        "deliverables": [
-          "A structured set of options, laid out along one named axis of variation",
-          "Families of options, each explained",
-          "A shortlist sized for one meeting",
-          "The generation setup, so you can rerun the exploration later"
-        ],
-        "faq": [
-          {
-            "q": "How many variations do we get?",
-            "a": "Enough to make the axis legible, which is usually dozens rather than a handful. What you receive is the clustered shortlist, not the raw pile."
-          },
-          {
-            "q": "What do you need from us to start?",
-            "a": "One direction you already believe in, and a clear statement of what decision the exploration is meant to inform."
-          },
-          {
-            "q": "Does this work for non-visual work?",
-            "a": "Yes. The same method works for site structure, messaging, and product concepts as well. The axis of variation changes, but the way we work does not."
-          },
-          {
-            "q": "What if none of them are right?",
-            "a": "That is a useful outcome, and it usually means the axis was wrong rather than the execution. We reset the axis and rerun, which is fast once the system is built."
-          }
-        ]
-      },
-      "metaTitle": "AI Exploration Scaling",
-      "metaDescription": "Expand one direction into a structured landscape of variations, clustered and narrowed to a shortlist your team can actually evaluate."
-    },
     "experienceOptimization": {
       "title": "Experience Optimization",
       "short": "Audit your digital products and make them easier to use.",
@@ -555,7 +407,7 @@
         ]
       },
       "metaTitle": "AI Voice Agent Conversation Design",
-      "metaDescription": "Redesign your AI phone agent's call flow and instructions, graded on your real calls and tested before and after. Retell AI, Vapi, ElevenLabs, and GoHighLevel."
+      "metaDescription": "Redesign your AI phone agent's call flow and prompts, graded on your real calls and tested before and after. Retell AI, Vapi, ElevenLabs, GoHighLevel."
     },
     "aiWorkflowAutomation": {
       "title": "AI Workflow Automation",
@@ -664,7 +516,8 @@
       "backToServices": "All services",
       "ctaHeading": "Start a conversation",
       "exploreHeading": "Explore this service",
-      "readMore": "Learn more"
+      "readMore": "Learn more",
+      "articlesHeading": "Guides on this topic"
     }
   },
   "products": {
@@ -702,6 +555,24 @@
   "posts": {
     "by": "by",
     "published": "Published",
+    "mcpServerGuide": {
+      "title": "What an MCP Server Is and When Your Business Needs One",
+      "pageTitle": "What an MCP Server Is and When You Need One",
+      "cardTitle": "What an MCP server is and when to build one",
+      "excerpt": "A plain guide to the Model Context Protocol: what an MCP server does, the signs your team needs a custom one, and how to build one that cites its sources."
+    },
+    "llmCostGuide": {
+      "title": "How to Cut Your LLM Bill Without Making the Product Worse",
+      "pageTitle": "How to Cut Your LLM Bill Without Losing Quality",
+      "cardTitle": "How to cut your LLM bill and keep quality",
+      "excerpt": "Where LLM API spend really goes, five changes that cut it the most, and how to prove the cheaper setup still gives your users the right answer."
+    },
+    "chatbotAuditChecklist": {
+      "title": "Chatbot Audit Checklist: 12 Things That Break in Production",
+      "pageTitle": "A Chatbot Audit Checklist: 12 Things That Break",
+      "cardTitle": "Twelve things to test before your chatbot launches",
+      "excerpt": "The twelve questions that catch support chatbots out before launch, from invented prices and policies to prompt injection, and how to check every answer."
+    },
     "productKpisPlugin": {
       "title": "Introducing Product KPIs: Bringing Measurable Impact Into Your Design Workflow",
       "pageTitle": "Introducing Product KPIs",
@@ -786,7 +657,7 @@
   "meta": {
     "home": {
       "title": "ArsonistAI: AI Integration Firm and AI Consulting",
-      "description": "ArsonistAI is an AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, content generation, and AI operations consulting.",
+      "description": "ArsonistAI is an AI integration firm: custom MCP servers, chatbot audits, voice agents, workflow automation, LLM cost cuts, and Claude and Cursor training.",
       "ogDescription": "AI integration firm specializing in custom MCP servers, AI tool setup and training, content generation, and operations consulting."
     },
     "about": {
@@ -797,45 +668,46 @@
     },
     "services": {
       "title": "AI Integration Services",
-      "description": "AI integration services from ArsonistAI: custom MCP servers, Openclaw setup, Claude and Cursor training, content generation, and operations consulting.",
+      "description": "AI integration services: custom MCP servers, chatbot audits, voice agent design, AI workflow automation, LLM cost optimization, and team training.",
       "ogTitle": "AI Integration Services | ArsonistAI",
-      "ogDescription": "AI integration services including custom MCP servers, AI tool setup and training, content generation, and operations consulting."
+      "ogDescription": "Custom MCP servers, chatbot audits, voice agents, workflow automation, LLM cost optimization, Openclaw setup, and Claude and Cursor training."
     },
     "products": {
       "title": "AI-Powered Products & Tools",
       "description": "AI-powered products from ArsonistAI: the Product KPIs Figma plugin, Diversifyr, and the New Business Toolkit. Tools that accelerate design work.",
-      "ogTitle": "AI-Powered Products & Tools — ArsonistAI",
+      "ogTitle": "AI-Powered Products & Tools | ArsonistAI",
       "ogDescription": "AI-powered products and tools for designers and businesses, including Figma plugins and portfolio tools."
     },
     "insights": {
-      "title": "AI Insights & Blog",
-      "description": "Read ArsonistAI's latest insights on AI design, product strategy, AI ethics, regulation, and how artificial intelligence is shaping creative industries.",
-      "ogTitle": "AI Insights & Blog — ArsonistAI",
-      "ogDescription": "Thought leadership on AI design, product strategy, AI ethics, and the future of creative industries."
+      "title": "AI Integration Insights & Guides",
+      "description": "Practical guides from ArsonistAI on AI integration: MCP servers, LLM cost control, chatbot testing, AI automation, and AI in product design.",
+      "ogTitle": "AI Integration Insights | ArsonistAI",
+      "ogDescription": "Practical guides on AI integration, MCP servers, LLM costs, chatbot testing, and AI in product work."
     },
     "partnerships": {
       "title": "AI Partnerships and Collaboration",
       "description": "Partner with ArsonistAI to build AI-powered solutions. We collaborate with forward-thinking companies to make AI accessible and human-centered.",
-      "ogTitle": "Partnerships — ArsonistAI",
+      "ogTitle": "Partnerships | ArsonistAI",
       "ogDescription": "Collaborate with ArsonistAI to build AI-powered solutions. Strategic partnerships for forward-thinking companies."
     },
     "caseStudies": {
-      "title": "AI Design Case Studies",
-      "description": "Explore ArsonistAI case studies: client projects and outcomes across AI design, product development, and digital experiences.",
-      "ogTitle": "Case Studies — ArsonistAI",
-      "ogDescription": "Case studies and client work from ArsonistAI: AI design, product development, and digital experiences."
+      "title": "AI Integration Case Studies",
+      "description": "ArsonistAI case studies: AI shop assistants, hiring pipelines, evidence-based applicant tracking, and AI tools for developers and designers.",
+      "ogTitle": "AI Integration Case Studies | ArsonistAI",
+      "ogDescription": "Client and in-house AI integration work: shop assistants, hiring pipelines, applicant tracking, and developer tools."
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "ArsonistAI's privacy policy. Learn how we collect, use, and protect your personal information."
+      "description": "How ArsonistAI collects, uses, and protects data from forms and newsletter sign-ups, how we use cookies, who we share data with, and your privacy rights."
     },
     "legal": {
       "title": "Legal Terms",
-      "description": "ArsonistAI's legal terms and conditions of use. Review the terms governing your use of our website and services."
+      "description": "Terms for using arsonistai.com and our AI integration services, covering site use, intellectual property, AI output, liability limits, and governing law."
     }
   },
   "insights": {
     "relatedHeading": "Related insights",
-    "backToInsights": "Back to Insights"
+    "backToInsights": "Back to Insights",
+    "relatedServiceHeading": "The service behind this article"
   }
 }

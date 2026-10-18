@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
@@ -14,37 +14,41 @@ const EMBER_COLORS = [
   new THREE.Color("#FF9944"),
 ];
 
+// Random layout is generated once per mount via a useState initializer;
+// calling Math.random during render breaks React's purity rules.
+function createParticles() {
+  const positions = new Float32Array(PARTICLE_COUNT * 3);
+  const colors = new Float32Array(PARTICLE_COUNT * 3);
+  const sizes = new Float32Array(PARTICLE_COUNT);
+  const speeds = new Float32Array(PARTICLE_COUNT);
+  const phases = new Float32Array(PARTICLE_COUNT);
+  const swayAmplitudes = new Float32Array(PARTICLE_COUNT);
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    positions[i * 3] = (Math.random() - 0.5) * 44;
+    positions[i * 3 + 1] = (Math.random() - 0.5) * 34;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 8;
+
+    const color = EMBER_COLORS[Math.floor(Math.random() * EMBER_COLORS.length)];
+    colors[i * 3] = color.r;
+    colors[i * 3 + 1] = color.g;
+    colors[i * 3 + 2] = color.b;
+
+    sizes[i] = 0.8 + Math.random() * 1.8;
+    speeds[i] = 0.004 + Math.random() * 0.008;
+    phases[i] = Math.random() * Math.PI * 2;
+    swayAmplitudes[i] = 0.3 + Math.random() * 0.8;
+  }
+
+  return { positions, colors, sizes, speeds, phases, swayAmplitudes };
+}
+
 function EmberParticles() {
   const pointsRef = useRef<THREE.Points>(null);
   const timeRef = useRef(0);
 
-  const { positions, colors, sizes, speeds, phases, swayAmplitudes } =
-    useMemo(() => {
-      const positions = new Float32Array(PARTICLE_COUNT * 3);
-      const colors = new Float32Array(PARTICLE_COUNT * 3);
-      const sizes = new Float32Array(PARTICLE_COUNT);
-      const speeds = new Float32Array(PARTICLE_COUNT);
-      const phases = new Float32Array(PARTICLE_COUNT);
-      const swayAmplitudes = new Float32Array(PARTICLE_COUNT);
-
-      for (let i = 0; i < PARTICLE_COUNT; i++) {
-        positions[i * 3] = (Math.random() - 0.5) * 44;
-        positions[i * 3 + 1] = (Math.random() - 0.5) * 34;
-        positions[i * 3 + 2] = (Math.random() - 0.5) * 8;
-
-        const color = EMBER_COLORS[Math.floor(Math.random() * EMBER_COLORS.length)];
-        colors[i * 3] = color.r;
-        colors[i * 3 + 1] = color.g;
-        colors[i * 3 + 2] = color.b;
-
-        sizes[i] = 0.8 + Math.random() * 1.8;
-        speeds[i] = 0.004 + Math.random() * 0.008;
-        phases[i] = Math.random() * Math.PI * 2;
-        swayAmplitudes[i] = 0.3 + Math.random() * 0.8;
-      }
-
-      return { positions, colors, sizes, speeds, phases, swayAmplitudes };
-    }, []);
+  const [{ positions, colors, sizes, speeds, phases, swayAmplitudes }] =
+    useState(createParticles);
 
   useFrame((_, delta) => {
     if (!pointsRef.current) return;

@@ -10,10 +10,12 @@ import {
   ORG_ID,
   absoluteUrl,
   alternatesFor,
-  openGraphFor,
+  socialFor,
 } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import ContactForm from "@/components/ContactForm";
+import InsightCard from "@/components/InsightCard";
+import { posts } from "@/content/posts";
 
 interface Step {
   title: string;
@@ -46,10 +48,10 @@ export async function generateMetadata({
   return {
     title,
     description,
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: `/services/${slug}`,
-      title: `${title} — ArsonistAI`,
+      title: `${title} | ArsonistAI`,
       description,
       image: `${SITE_URL}${service.image}`,
     }),
@@ -127,6 +129,7 @@ function ServiceDetailContent({
   };
 
   const otherServices = services.filter((s) => s.id !== service.id).slice(0, 3);
+  const articles = posts.filter((p) => p.serviceId === service.id);
 
   return (
     <>
@@ -246,6 +249,21 @@ function ServiceDetailContent({
           </div>
         </div>
       </section>
+
+      {articles.length > 0 && (
+        <section className="py-16 border-t border-border">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className="text-headline-sm font-bold mb-10">
+              {td("articlesHeading")}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {articles.map((article) => (
+                <InsightCard key={article.slug} post={article} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 border-t border-border">
         <div className="max-w-5xl mx-auto px-6">

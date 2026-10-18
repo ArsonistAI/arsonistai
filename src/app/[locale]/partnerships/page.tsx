@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ContactForm from "@/components/ContactForm";
-import { alternatesFor, openGraphFor } from "@/lib/seo";
+import { alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: "/partnerships",
       title: t("ogTitle"),

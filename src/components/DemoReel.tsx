@@ -39,6 +39,13 @@ export default function DemoReel() {
     const video = videoRef.current;
     if (!video) return;
 
+    // Already loaded: resume from the current position instead of reloading
+    if (loaded) {
+      video.play();
+      setPlaying(true);
+      return;
+    }
+
     video.volume = 0;
     video.src = VIDEO;
     video.load();

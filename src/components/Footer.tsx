@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -98,8 +99,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 gap-x-8 lg:gap-x-12 mb-14">
           <div className="md:col-span-4 lg:col-span-3 flex flex-col gap-6">
-            <img
+            <Image
               src="/Logo_Orange.svg"
+              unoptimized
               alt="ArsonistAI"
               width={120}
               height={32}

@@ -20,10 +20,9 @@
     "backToTop": "volver arriba"
   },
   "home": {
-    "heroSubtitle": "Diseño Aumentado",
     "heroTitle": "Nuestra meta es una IA para todos, que crezca con cada uno y que sirva a quien más la necesita.",
     "heroCta": "Conoce nuestro trabajo",
-    "heroTagline": "Tu firma de integración de IA. Escala tu negocio con IA.",
+    "heroTagline": "Tu firma de integración de IA",
     "servicesHeading": "Nuestros Servicios",
     "servicesSubheading": "Ya sea que estés comenzando o liderando una empresa establecida, estamos comprometidos a entender tus objetivos y ayudarte a alcanzarlos.",
     "whyHeading": "¿Por qué elegirnos?",
@@ -45,7 +44,7 @@
     "demoReelPlay": "Reproducir el demo reel"
   },
   "about": {
-    "heading": "nosotros",
+    "heading": "nuestra firma de integración de IA",
     "intro": "Somos una firma que pone la IA primero. Ayudamos a que tu gente dé lo mejor de sí con lo más nuevo, y hacemos sistemas seguros y justos que crecen contigo, para que tu equipo use la IA con calma, con un plan y con un fin.",
     "missionHeading": "nuestra misión",
     "missionText": "Queremos crear el futuro con una IA fácil de usar, que pueda crecer y que sirva a las personas que más la necesitan.",
@@ -65,153 +64,6 @@
     "heading": "Servicios",
     "subheading": "Servicios aumentados con IA, escalables",
     "label": "Servicios de IA",
-    "contentGeneration": {
-      "title": "Generación de Contenido",
-      "short": "Estás empezando desde cero y quieres ideas nuevas y sólidas para tus productos y servicios.",
-      "long": "¿Te faltan ideas y las necesitas ya? Con nuestro servicio de IA, creadores, emprendedores y equipos dan con ideas en segundos. Sean nombres de producto, posts para redes, ideas de startup o lemas de campaña, recibes ideas buenas y pensadas para ti.",
-      "detail": {
-        "intro": "La mayoría de los equipos no tiene un problema de ideas. Tiene un problema de volumen. Los conceptos que habrían funcionado nunca se escriben, porque producir cincuenta opciones viables cuesta horas que nadie tiene. Nuestro servicio de generación de contenido cierra esa brecha: construimos los sistemas de prompts, las restricciones de marca y los ciclos de revisión que permiten a tu equipo producir muchos puntos de partida fieles a tu marca y luego elegir bien entre ellos.",
-        "body": "Esto no significa entregar tu voz a un modelo. Partimos de cómo suenas hoy, lo codificamos y usamos la IA para ampliar el campo de opciones, no para sustituir el criterio que elige la ganadora. El resultado es un sistema que tu equipo conserva, no una entrega puntual de textos.",
-        "steps": [
-          {
-            "title": "Capturar tu voz",
-            "body": "Leemos tus textos, tu posicionamiento y lo que sabes de tu público, y con eso escribimos una guía de voz y tono. Cada opción nueva se mide con esa guía, así que hacer más nunca te hace perder una voz que suene a ti."
-          },
-          {
-            "title": "Construir el sistema de generación",
-            "body": "Creamos prompts, ejemplos y reglas para juzgar cada opción según lo que hagas, sean nombres de producto, frases de campaña, textos largos o redes. Te llevas el sistema, los prompts y el porqué de todo ello."
-          },
-          {
-            "title": "Generar, filtrar y transferir",
-            "body": "Ejecutamos el sistema contra tus briefs reales, filtramos el resultado hasta los candidatos más fuertes y formamos a tu equipo para operarlo sin nosotros. La transferencia de conocimiento es parte del trabajo, no un extra."
-          }
-        ],
-        "deliverables": [
-          "Una guía escrita de tu voz de marca",
-          "Bibliotecas de prompts y flujos de trabajo ajustados a las categorías en las que trabajas",
-          "Conceptos listos para usar",
-          "Una sesión de trabajo para que tu equipo pueda usar el sistema por su cuenta"
-        ],
-        "faq": [
-          {
-            "q": "¿Sonará genérico?",
-            "a": "Ese es exactamente el fallo que buscamos evitar. La especificación de voz y la biblioteca de referencia son lo que mantiene las opciones generadas dentro de tu marca y no dentro de los valores por defecto del modelo. Cuando el resultado es genérico suele ser porque nadie codificó las restricciones, y codificarlas es la primera fase del trabajo."
-          },
-          {
-            "q": "¿Nos quedamos con los prompts?",
-            "a": "Sí. Todo lo que hacemos queda por escrito y es tuyo. El objetivo es que tu equipo pueda seguir generando ideas por su cuenta cuando el proyecto termine."
-          },
-          {
-            "q": "¿Qué modelos utilizan?",
-            "a": "Elegimos según la tarea en lugar de casarnos con un proveedor, y te explicamos por qué. El trabajo que exige razonamiento y el de alto volumen tienen perfiles de coste y calidad distintos."
-          },
-          {
-            "q": "¿Cómo revisan los datos?",
-            "a": "Los borradores son propuestas, nunca textos ya cerrados. Cada dato lo revisa una persona antes de que salga, y esa revisión es parte del proceso, no algo que dependa de que cada uno se acuerde."
-          }
-        ]
-      },
-      "metaTitle": "Generación de Contenido con IA",
-      "metaDescription": "Generación de contenido con IA de ArsonistAI. Construimos los sistemas de prompts, restricciones de marca y ciclos de revisión que tu equipo conserva."
-    },
-    "conceptVisualization": {
-      "title": "Visualización de Conceptos",
-      "short": "Tienes ideas sueltas y quieres darles forma, con detalle y con visuales que se vean bien.",
-      "long": "Da vida a tus ideas con nuestro servicio de visualización de conceptos potenciado por IA. Usamos las últimas y mejores herramientas de IA para transformar conceptos en bruto en visuales impactantes y de alto impacto—rápido.",
-      "detail": {
-        "intro": "La mayoría de los proyectos se atascan entre la idea que se describe en una reunión y la idea que todos pueden ver. Los conceptos escritos reciben asentimientos y luego cada uno los entiende a su manera. Nuestro servicio de visualización de conceptos acorta esa distancia: convertimos una idea abstracta en visuales claros y detallados, tan rápido que sirven para tomar la decisión, no para después.",
-        "body": "Trabajamos en diseño de producto, moodboards, interfaces 3D, entornos e imágenes de campaña. El objetivo es la alineación. Cuando alguien puede señalar algo, la conversación pasa de qué querías decir a si esto es lo correcto.",
-        "steps": [
-          {
-            "title": "Fijar la dirección",
-            "body": "Partimos de tu brief, referencias y restricciones para establecer qué debe comunicar el visual y a quién. Los insumos vagos producen imágenes vagas, así que en este paso concretamos qué decisión debe apoyar el visual."
-          },
-          {
-            "title": "Generar en amplitud",
-            "body": "Creamos varias direcciones distintas en lugar de pulir una sola idea. Ver tres opciones reales una junto a otra revela gustos que ninguna conversación consigue sacar a la luz."
-          },
-          {
-            "title": "Refinar hasta la fidelidad necesaria",
-            "body": "Una vez elegida la dirección, la llevamos al nivel de fidelidad que realmente necesitas: un render listo para presentar, un moodboard para un equipo de diseño o un set de piezas para campaña."
-          }
-        ],
-        "deliverables": [
-          "Varias direcciones visuales distintas",
-          "Renders o moodboards con detalle",
-          "Los archivos fuente, junto con los prompts y las referencias de cada una de las direcciones",
-          "Por escrito, qué transmite cada una"
-        ],
-        "faq": [
-          {
-            "q": "¿Cuándo llega la primera ronda?",
-            "a": "Las primeras direcciones suelen llegar en días y no en semanas, porque generar amplitud es barato una vez que el brief es específico. El plazo depende mucho más de la rapidez con que se concrete el brief que de la producción."
-          },
-          {
-            "q": "¿Respetan nuestra identidad?",
-            "a": "Sí. Trabajar dentro de una identidad establecida es el caso habitual. Construimos un set de referencia a partir de tus piezas actuales y lo tratamos como restricción de cada dirección que generamos."
-          },
-          {
-            "q": "¿Recibimos los archivos fuente?",
-            "a": "Sí, junto con los prompts y las imágenes de referencia, para que tu equipo pueda continuar la dirección sin empezar de cero."
-          },
-          {
-            "q": "¿Reemplaza a un equipo de diseño?",
-            "a": "No. Es una forma de que un equipo de diseño llegue antes al punto de partida correcto. El criterio sobre qué dirección es la adecuada sigue siendo una decisión humana, y normalmente tuya."
-          }
-        ]
-      },
-      "metaTitle": "Visualización de Conceptos con IA",
-      "metaDescription": "Convierte una dirección abstracta en visuales de alta fidelidad: diseño de producto, moodboards, interfaces 3D e imágenes de campaña."
-    },
-    "explorationScaling": {
-      "title": "Escalado de Exploración",
-      "short": "Tienes unas ideas visuales y quieres muchas más variaciones de ellas para poder elegir bien.",
-      "long": "Abre tu abanico creativo con nuestro servicio de exploración con IA. Si ya tienes un concepto sólido o algunas ideas visuales, te ayudamos a crear rápido muchas variaciones de calidad en estilo, estructura o concepto.",
-      "detail": {
-        "intro": "Un único concepto bueno es un riesgo. Sin alternativas no puedes saber si es la respuesta correcta o simplemente la primera. Nuestro servicio de escalado de exploración toma una dirección en la que ya crees y la expande en un panorama amplio y estructurado de variaciones, para que la opción que lances sea una que elegiste y no una con la que te conformaste.",
-        "body": "Se puede variar el estilo, la estructura o el concepto. Elegimos contigo el eje que de verdad importa para tu decisión y generamos sobre ese eje a propósito, en vez de llenar la mesa de ruido.",
-        "steps": [
-          {
-            "title": "Definir el eje de variación",
-            "body": "Escalar en todas las direcciones a la vez produce un montón, no una decisión. Identificamos qué dimensión está realmente abierta: el estilo visual, la estructura de la información o el concepto de fondo."
-          },
-          {
-            "title": "Generar de forma sistemática",
-            "body": "Hacemos muchas variaciones sobre el eje elegido y dejamos fijo todo lo demás, para que comparar tenga sentido. Eso es lo que separa una exploración real de una muestra al azar."
-          },
-          {
-            "title": "Agrupar y reducir",
-            "body": "Agrupamos el resultado en familias coherentes, explicamos qué las hace distintas y lo reducimos a una lista corta que tu equipo pueda evaluar de verdad en una reunión."
-          }
-        ],
-        "deliverables": [
-          "Un conjunto de opciones bien ordenado a lo largo de un único eje de variación con nombre",
-          "Familias agrupadas con la lógica que las distingue por escrito",
-          "Una lista corta del tamaño de una reunión de revisión real",
-          "El montaje, para repetirlo después"
-        ],
-        "faq": [
-          {
-            "q": "¿Cuántas variaciones producen?",
-            "a": "Las suficientes para que el eje resulte legible, normalmente decenas y no un puñado. Lo que recibes es la lista corta agrupada, no el montón en bruto."
-          },
-          {
-            "q": "¿Qué necesitan para empezar?",
-            "a": "Una dirección en la que ya creas y una declaración clara de qué decisión debe informar la exploración."
-          },
-          {
-            "q": "¿Funciona para trabajo no visual?",
-            "a": "Sí. El mismo método aplica a arquitectura de información, estructura de mensajes y conceptos de producto. Cambia el eje, no la disciplina."
-          },
-          {
-            "q": "¿Y si ninguna es la correcta?",
-            "a": "Es un resultado útil, y casi siempre significa que el eje estaba mal, no la ejecución. Reajustamos el eje y repetimos, algo rápido una vez construido el sistema."
-          }
-        ]
-      },
-      "metaTitle": "Escalado de Exploración con IA",
-      "metaDescription": "Expande una dirección en un panorama estructurado de variaciones, agrupadas y reducidas a una lista corta que tu equipo pueda evaluar de verdad."
-    },
     "experienceOptimization": {
       "title": "Optimización de Experiencia",
       "short": "Audita y mejora tus productos digitales para asegurar resonancia y usabilidad.",
@@ -505,7 +357,7 @@
         ]
       },
       "metaTitle": "Auditoría de Chatbot Previa al Lanzamiento",
-      "metaDescription": "Pon a prueba tu chatbot de atención al cliente antes del lanzamiento. Cada respuesta se compara con tus documentos y se señalan precios, políticas y enlaces inventados."
+      "metaDescription": "Prueba tu chatbot de atención al cliente antes de lanzarlo. Comparamos cada respuesta con tus documentos y marcamos precios y políticas inventados."
     },
     "voiceAgentDesign": {
       "title": "Agentes de Voz",
@@ -555,7 +407,7 @@
         ]
       },
       "metaTitle": "Diseño de Conversación para Agentes de Voz con IA",
-      "metaDescription": "Rediseñamos el flujo de llamada y las instrucciones de tu agente telefónico de IA, con tus llamadas reales como base y pruebas de antes y después. Retell AI, Vapi, ElevenLabs y GoHighLevel."
+      "metaDescription": "Rediseñamos el flujo y las instrucciones de tu agente telefónico de IA con tus llamadas reales y pruebas de antes y después. Retell, Vapi, ElevenLabs."
     },
     "aiWorkflowAutomation": {
       "title": "Automatización con IA",
@@ -664,7 +516,8 @@
       "backToServices": "Todos los servicios",
       "ctaHeading": "Empecemos a hablar",
       "exploreHeading": "Explora este servicio",
-      "readMore": "Saber más"
+      "readMore": "Saber más",
+      "articlesHeading": "Guías sobre este tema"
     }
   },
   "products": {
@@ -702,6 +555,24 @@
   "posts": {
     "by": "por",
     "published": "Publicado",
+    "mcpServerGuide": {
+      "title": "Qué es un servidor MCP y cuándo lo necesita tu empresa",
+      "pageTitle": "Qué es un servidor MCP y cuándo lo necesitas",
+      "cardTitle": "Qué es un servidor MCP y cuándo construir uno",
+      "excerpt": "Una guía clara sobre el Model Context Protocol: qué hace un servidor MCP, cuándo tu equipo necesita uno propio y cómo hacer que cite sus fuentes."
+    },
+    "llmCostGuide": {
+      "title": "Cómo reducir la factura de LLM sin empeorar tu producto",
+      "pageTitle": "Cómo reducir tu factura de LLM sin perder calidad",
+      "cardTitle": "Cómo bajar la factura de LLM sin perder calidad",
+      "excerpt": "A dónde va el gasto en APIs de LLM, los cinco cambios que más lo reducen y cómo demostrar que la opción más barata sigue respondiendo bien."
+    },
+    "chatbotAuditChecklist": {
+      "title": "Auditoría de chatbots: 12 fallos que aparecen en producción",
+      "pageTitle": "Auditoría de chatbots: 12 fallos que debes probar",
+      "cardTitle": "Doce pruebas antes de lanzar tu chatbot de soporte",
+      "excerpt": "Las doce preguntas que hacen fallar a un chatbot de soporte antes del lanzamiento, de precios inventados a inyecciones, y cómo revisar cada respuesta."
+    },
     "productKpisPlugin": {
       "title": "Presentamos Product KPIs: Impacto Medible Directamente en Tu Flujo de Diseño",
       "pageTitle": "Presentamos Product KPIs",
@@ -784,7 +655,7 @@
   "meta": {
     "home": {
       "title": "ArsonistAI: Firma de Integración de IA y Consultoría",
-      "description": "ArsonistAI es una firma de integración de IA: servidores MCP, instalación de Openclaw, formación en Claude y Cursor, y consultoría de operaciones.",
+      "description": "ArsonistAI es una firma de integración de IA: servidores MCP, auditorías de chatbots, agentes de voz, automatización y reducción de costos de LLM.",
       "ogDescription": "Firma de integración de IA especializada en servidores MCP, instalación y formación en herramientas de IA, generación de contenido y consultoría."
     },
     "about": {
@@ -795,45 +666,46 @@
     },
     "services": {
       "title": "Servicios de Integración de IA",
-      "description": "Servicios de integración de IA: servidores MCP, instalación de Openclaw, formación en Claude y Cursor, generación de contenido y consultoría.",
+      "description": "Servicios de integración de IA: servidores MCP, auditoría de chatbots, agentes de voz, automatización de flujos y optimización de costos de LLM.",
       "ogTitle": "Servicios de Integración de IA | ArsonistAI",
-      "ogDescription": "Servicios de integración de IA, incluyendo servidores MCP, instalación y formación en herramientas de IA, generación de contenido y consultoría."
+      "ogDescription": "Servidores MCP a medida, auditoría de chatbots, agentes de voz, automatización, costos de LLM, Openclaw y formación en Claude y Cursor."
     },
     "products": {
       "title": "Productos y Herramientas con IA",
       "description": "Productos con IA de ArsonistAI: plugin Product KPIs para Figma, Diversifyr y el Kit de Negocios. Herramientas para acelerar tu trabajo de diseño.",
-      "ogTitle": "Productos y Herramientas con IA — ArsonistAI",
+      "ogTitle": "Productos y Herramientas con IA | ArsonistAI",
       "ogDescription": "Productos y herramientas potenciados por IA para diseñadores y empresas, incluyendo plugins de Figma y herramientas de portafolio."
     },
     "insights": {
-      "title": "Blog e Ideas sobre IA",
-      "description": "Ideas de ArsonistAI sobre diseño con IA, estrategia de producto, ética y regulación de la inteligencia artificial en industrias creativas.",
-      "ogTitle": "Blog e Ideas sobre IA — ArsonistAI",
-      "ogDescription": "Liderazgo de pensamiento sobre diseño con IA, estrategia de producto, ética de la IA y el futuro de las industrias creativas."
+      "title": "Guías e Ideas sobre Integración de IA",
+      "description": "Guías prácticas de ArsonistAI sobre integración de IA: servidores MCP, control de costos de LLM, pruebas de chatbots y automatización con IA.",
+      "ogTitle": "Ideas sobre Integración de IA | ArsonistAI",
+      "ogDescription": "Guías prácticas sobre integración de IA, servidores MCP, costos de LLM, pruebas de chatbots y la IA en el trabajo de producto."
     },
     "partnerships": {
       "title": "Alianzas y Colaboración en IA",
       "description": "Asóciate con ArsonistAI para construir soluciones con IA. Colaboramos con empresas visionarias para hacer la IA accesible y escalable.",
-      "ogTitle": "Alianzas — ArsonistAI",
+      "ogTitle": "Alianzas | ArsonistAI",
       "ogDescription": "Colabora con ArsonistAI para construir soluciones con IA. Alianzas estratégicas para empresas visionarias."
     },
     "caseStudies": {
-      "title": "Casos de Éxito en Diseño con IA",
-      "description": "Explora los casos de estudio de ArsonistAI: proyectos con clientes y resultados en diseño con IA, desarrollo de productos y experiencias digitales.",
-      "ogTitle": "Casos de estudio — ArsonistAI",
-      "ogDescription": "Casos de estudio y trabajo con clientes de ArsonistAI: diseño con IA, desarrollo de productos y experiencias digitales."
+      "title": "Casos de Estudio de Integración de IA",
+      "description": "Casos de estudio de ArsonistAI: asistentes de tienda con IA, procesos de contratación, seguimiento de candidatos y herramientas para desarrolladores.",
+      "ogTitle": "Casos de Integración de IA | ArsonistAI",
+      "ogDescription": "Trabajo de integración de IA: asistentes de tienda, procesos de contratación, seguimiento de candidatos y herramientas."
     },
     "privacy": {
       "title": "Política de Privacidad",
-      "description": "Política de privacidad de ArsonistAI. Conoce cómo recopilamos, usamos y protegemos tu información personal."
+      "description": "Cómo ArsonistAI recopila, usa y protege los datos de formularios y suscripciones, el uso de cookies, con quién se comparten y tus derechos de privacidad."
     },
     "legal": {
       "title": "Términos Legales",
-      "description": "Términos legales y condiciones de uso de ArsonistAI. Revisa los términos que rigen el uso de nuestro sitio web y servicios."
+      "description": "Términos de uso de arsonistai.com y de nuestros servicios de integración de IA: uso del sitio, propiedad intelectual, resultados de IA y ley aplicable."
     }
   },
   "insights": {
     "relatedHeading": "Contenido relacionado",
-    "backToInsights": "Volver al blog"
+    "backToInsights": "Volver al blog",
+    "relatedServiceHeading": "El servicio detrás de este artículo"
   }
 }

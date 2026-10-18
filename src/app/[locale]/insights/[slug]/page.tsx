@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { posts } from "@/content/posts";
+import { services, serviceMessageKey } from "@/content/services";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -13,7 +14,7 @@ import {
   ORG_ID,
   absoluteUrl,
   alternatesFor,
-  openGraphFor,
+  socialFor,
 } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -33,28 +34,25 @@ export async function generateMetadata({
   const title = t(post.titleKey);
   const excerpt = t(post.excerptKey);
 
+  const social = socialFor({
+    locale,
+    path: `/insights/${slug}`,
+    title: `${title} | ArsonistAI`,
+    description: excerpt,
+    image: `${SITE_URL}${post.image}`,
+  });
+
   return {
     title,
     description: excerpt,
     openGraph: {
-      ...openGraphFor({
-        locale,
-        path: `/insights/${slug}`,
-        title: `${title} — ArsonistAI`,
-        description: excerpt,
-        image: `${SITE_URL}${post.image}`,
-      }),
+      ...social.openGraph,
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.lastModified ?? post.date,
       authors: [post.author],
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description: excerpt,
-      images: post.image ? [`${SITE_URL}${post.image}`] : undefined,
-    },
+    twitter: social.twitter,
     alternates: alternatesFor(locale, `/insights/${slug}`),
   };
 }
@@ -84,6 +82,8 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
   const relatedPosts = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
 
   const body = locale === "es" ? post.content.es : post.content.en;
+  const relatedService = services.find((s) => s.id === post.serviceId);
+  const relatedServiceKey = relatedService && serviceMessageKey(relatedService);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -96,11 +96,17 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
     dateModified: post.lastModified ?? post.date,
     articleSection: post.section ?? "AI Design",
     wordCount: body.trim().split(/\s+/).length,
-    author: {
-      "@type": "Person",
-      name: post.author,
-    },
+    author:
+      post.author === "ArsonistAI"
+        ? { "@id": ORG_ID }
+        : { "@type": "Person", name: post.author },
     publisher: { "@id": ORG_ID },
+    // Ties the article to the Service node declared on its service page.
+    ...(relatedService && {
+      about: {
+        "@id": `${absoluteUrl(locale, `/services/${relatedService.id}`)}#service`,
+      },
+    }),
     mainEntityOfPage: {
       "@type": "WebPage",
       // Must follow the request locale. Hardcoding /en/ here told Spanish pages
@@ -283,6 +289,9 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
               year: "numeric",
               month: "long",
               day: "numeric",
+              // post.date is a bare ISO date, which parses as UTC midnight.
+              // Formatting in local time showed every post a day early in the US.
+              timeZone: "UTC",
             })}
           </time>
         </div>
@@ -300,6 +309,22 @@ function PostContent({ post, locale }: { post: (typeof posts)[number]; locale: s
           >
             Test it out here
           </a>
+        )}
+        {relatedService && relatedServiceKey && (
+          <aside className="mt-16 pt-10 border-t border-border">
+            <h2 className="text-headline-sm font-bold mb-6">
+              {ti("relatedServiceHeading")}
+            </h2>
+            <Link
+              href={`/services/${relatedService.id}`}
+              className="block p-6 bg-surface rounded-shape-lg border border-border hover:border-lava/40 m3-card"
+            >
+              <h3 className="text-title-md mb-2">{t(`${relatedServiceKey}.title`)}</h3>
+              <p className="text-body-sm text-muted leading-relaxed">
+                {t(`${relatedServiceKey}.short`)}
+              </p>
+            </Link>
+          </aside>
         )}
       </div>
 

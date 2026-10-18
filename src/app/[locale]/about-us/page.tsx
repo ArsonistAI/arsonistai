@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ContactForm from "@/components/ContactForm";
 import CopyEmailButton from "@/components/CopyEmailButton";
 import TrefoilViewerWrapper from "@/components/TrefoilViewerWrapper";
-import { alternatesFor, openGraphFor } from "@/lib/seo";
+import { alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -18,7 +18,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: "/about-us",
       title: t("ogTitle"),

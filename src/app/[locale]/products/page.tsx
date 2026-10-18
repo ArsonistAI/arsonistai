@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { products } from "@/content/products";
 import { BreadcrumbJsonLd } from "@/lib/breadcrumbJsonLd";
 import ProductCard from "@/components/ProductCard";
-import { SITE_URL, ORG_ID, absoluteUrl, alternatesFor, openGraphFor } from "@/lib/seo";
+import { SITE_URL, ORG_ID, absoluteUrl, alternatesFor, socialFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -17,7 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    openGraph: openGraphFor({
+    ...socialFor({
       locale,
       path: "/products",
       title: t("ogTitle"),

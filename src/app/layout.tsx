@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "ArsonistAI: AI Integration Firm | Human-Centered AI Solutions",
-    template: "%s — ArsonistAI",
+    template: "%s | ArsonistAI",
   },
   description:
-    "ArsonistAI is an AI integration firm building accessible, scalable, and human-centered AI solutions. We offer custom MCP servers, Openclaw setup, Claude and Cursor training, content generation, and operations consulting.",
+    "ArsonistAI is an AI integration firm. We build custom MCP servers, audit chatbots, design voice agents, automate workflows, cut LLM costs, and train teams on Claude and Cursor.",
   keywords: [
     "AI integration firm",
     "AI integration services",
@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     "MCP server development",
     "Model Context Protocol",
     "Claude Code training",
+    "chatbot audit",
+    "voice AI agent design",
+    "AI workflow automation",
+    "LLM cost optimization",
     "Cursor training",
     "Openclaw installation",
     "human-centered AI",
@@ -40,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "ArsonistAI",
     title: "ArsonistAI: AI Integration Firm | Human-Centered AI Solutions",
     description:
-      "AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, and operations consulting. Making AI accessible, scalable, and human-centered.",
+      "AI integration firm: custom MCP servers, chatbot audits, voice agents, workflow automation, LLM cost optimization, and Claude and Cursor training.",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -55,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ArsonistAI: AI Integration Firm | Human-Centered AI Solutions",
     description:
-      "AI integration firm: custom MCP servers, Openclaw setup, Claude and Cursor training, and operations consulting.",
+      "AI integration firm: custom MCP servers, chatbot audits, voice agents, workflow automation, and LLM cost optimization.",
     images: ["/images/og-image.jpg"],
   },
   // `/` redirects to `/en`, so the default canonical must be the locale root,
