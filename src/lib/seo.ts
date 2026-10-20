@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
 /** Canonical production origin. Single source of truth for every absolute URL. */
-export const SITE_URL = "https://arsonistai.com";
+export const SITE_URL = "https://www.arsonistai.com";
 
 /** Stable schema.org node ids so entities are declared once and referenced by id. */
 export const ORG_ID = `${SITE_URL}/#organization`;
