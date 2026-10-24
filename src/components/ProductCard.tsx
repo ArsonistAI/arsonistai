@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Product } from "@/content/products";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 interface Props {
   product: Product;
@@ -10,14 +11,8 @@ export default function ProductCard({ product }: Props) {
   const t = useTranslations();
   const tp = useTranslations("products");
 
-  return (
-    <article className="bg-surface rounded-shape-lg overflow-hidden border border-border hover:border-lava/40 m3-card">
-      <a
-        href={product.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-      >
+  const body = (
+    <>
         <div
           className="w-full max-w-[332px] overflow-hidden bg-surface-light"
           style={{ aspectRatio: "332/263" }}
@@ -37,7 +32,25 @@ export default function ProductCard({ product }: Props) {
             {tp("viewProduct")} &rarr;
           </span>
         </div>
-      </a>
+    </>
+  );
+
+  return (
+    <article className="bg-surface rounded-shape-lg overflow-hidden border border-border hover:border-lava/40 m3-card">
+      {product.internal ? (
+        <Link href={product.url as "/products/startup-suite"} className="group block">
+          {body}
+        </Link>
+      ) : (
+        <a
+          href={product.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group block"
+        >
+          {body}
+        </a>
+      )}
     </article>
   );
 }

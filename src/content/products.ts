@@ -3,9 +3,21 @@ export interface Product {
   titleKey: string;
   image: string;
   url: string;
+  /** In-site path: rendered as a locale-aware link instead of an external one. */
+  internal?: boolean;
+  /** schema.org applicationCategory for the products ItemList. Defaults to DesignApplication. */
+  category?: string;
 }
 
 export const products: Product[] = [
+  {
+    id: "startup-suite",
+    titleKey: "products.startupSuite.title",
+    image: "/images/products/startup-suite.svg",
+    url: "/products/startup-suite",
+    internal: true,
+    category: "BusinessApplication",
+  },
   {
     id: "product-kpis",
     titleKey: "products.kpis.title",

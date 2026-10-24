@@ -533,6 +533,77 @@
     },
     "figmaToolkit": {
       "title": "Figma New Business Toolkit"
+    },
+    "startupSuite": {
+      "title": "Startup Suite",
+      "label": "Early access",
+      "back": "All products",
+      "heroTitle": "The software a new company needs on day one, for one fee.",
+      "intro": "Startup Suite is a set of unbranded, white-label products covering hiring, documentation, your website, training and more. You pay once instead of stacking monthly subscriptions, and you put your own name on it.",
+      "status": "Startup Suite is still being finished. Every part listed here builds and runs from a clean clone today, and early buyers get a say in what gets polished first.",
+      "pickHeading": "Pick the parts you need",
+      "pickIntro": "Choose any of the seven, or all of them. Nothing is priced until you ask, and your selection goes straight into the request below.",
+      "counter": "{count} of {total} selected",
+      "selectAll": "Select all",
+      "clearAll": "Clear",
+      "select": "Select",
+      "selected": "Selected",
+      "requestHeading": "Request early access",
+      "requestIntro": "Tell us who you are and we will reply with pricing for exactly what you picked. Paying early moves your parts to the front of the queue.",
+      "messageNone": "I would like early access to Startup Suite. I have not picked specific parts yet.",
+      "messageSome": "I would like early access to Startup Suite. Parts I want: {parts}.",
+      "howHeading": "How it works",
+      "how": [
+        {
+          "title": "One fee, no subscription",
+          "body": "You pay once for the parts you pick and keep them. There is no seat count and no monthly bill."
+        },
+        {
+          "title": "Unbranded by design",
+          "body": "Each part ships with sample content and one place to change names, logos and colors, so it reads as yours."
+        },
+        {
+          "title": "Held to a published spec",
+          "body": "Every part is judged against written specifications, and the result is a report you can read rather than a promise."
+        }
+      ],
+      "items": {
+        "ats": {
+          "title": "Applicant tracking system",
+          "kicker": "People",
+          "body": "A recruiter-side system for roles, candidates and pipeline stages, with a candidate-side workspace and a browser capture extension. Audited against WCAG 2.2 AA."
+        },
+        "docsSite": {
+          "title": "Docs website",
+          "kicker": "Documentation",
+          "body": "Markdown in, a searchable static site out. Every page names an owning team and a review date, and a page past its interval says so on its own face."
+        },
+        "marketingSite": {
+          "title": "Marketing site",
+          "kicker": "Website",
+          "body": "A one-page site for a business selling a handful of packaged services, with enquiries by form, phone and WhatsApp. English and Spanish included."
+        },
+        "bookingSite": {
+          "title": "Booking site",
+          "kicker": "Website",
+          "body": "A site for selling scheduled small-group sessions, with a six-step booking flow, a per-session availability calendar and an operator dashboard."
+        },
+        "training": {
+          "title": "Employee training platform",
+          "kicker": "People",
+          "body": "Mobile-first courses and quizzes for a distributed team on cheap phones and weak connections, with offline lessons and phone-and-PIN sign-in."
+        },
+        "brandPortal": {
+          "title": "Brand asset portal",
+          "kicker": "Brand",
+          "body": "An internal library for logos, colors, fonts, voice guidelines and slide templates, behind sign-in limited to your email domain."
+        },
+        "chatbotGrader": {
+          "title": "Chatbot grader",
+          "kicker": "Quality",
+          "body": "Tests your customer-facing chatbot against your own documents before launch and writes a report the owner can read. Rule-based checks, with an optional model judge."
+        }
+      }
     }
   },
   "partnerships": {
@@ -705,6 +776,12 @@
     "legal": {
       "title": "Legal Terms",
       "description": "Terms for using arsonistai.com and our AI integration services, covering site use, intellectual property, AI output, liability limits, and governing law."
+    },
+    "startupSuite": {
+      "title": "Startup Suite: White-Label Software for a New Company",
+      "description": "Pick the parts you need from Startup Suite: applicant tracking, docs site, marketing and booking sites, training, brand portal and chatbot grader. One fee, no subscription. Early access.",
+      "ogTitle": "Startup Suite: Early Access | ArsonistAI",
+      "ogDescription": "White-label software for a new company on day one. Pick the parts you need and pay once. Request early access."
     }
   },
   "insights": {

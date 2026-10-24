@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="526" viewBox="0 0 664 526" role="img" aria-label="Startup Suite">
+  <rect width="664" height="526" fill="#1A1A1A"/>
+  <g fill="none" stroke="#FF4000" stroke-width="3">
+    <rect x="132" y="113" width="124" height="124" rx="16"/>
+    <rect x="270" y="113" width="124" height="124" rx="16" opacity="0.7"/>
+    <rect x="408" y="113" width="124" height="124" rx="16" opacity="0.5"/>
+    <rect x="132" y="251" width="124" height="124" rx="16" opacity="0.7"/>
+    <rect x="270" y="251" width="124" height="124" rx="16" opacity="0.5"/>
+    <rect x="408" y="251" width="124" height="124" rx="16" opacity="0.35"/>
+  </g>
+  <rect x="132" y="113" width="124" height="124" rx="16" fill="#FF4000" opacity="0.18"/>
+  <text x="332" y="448" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#EDEDED">Startup Suite</text>
+</svg>

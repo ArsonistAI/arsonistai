@@ -533,6 +533,77 @@
     },
     "figmaToolkit": {
       "title": "Kit de Negocios para Figma"
+    },
+    "startupSuite": {
+      "title": "Startup Suite",
+      "label": "Acceso anticipado",
+      "back": "Todos los productos",
+      "heroTitle": "El software que una empresa nueva necesita desde el primer día, por una sola tarifa.",
+      "intro": "Startup Suite es un conjunto de productos de marca blanca, sin marca propia, que cubre contratación, documentación, tu sitio web, capacitación y más. Pagas una vez en lugar de acumular suscripciones mensuales, y le pones tu propio nombre.",
+      "status": "Startup Suite todavía se está terminando. Cada parte de esta lista se instala y compila desde cero hoy, y los primeros compradores influyen en qué se pule primero.",
+      "pickHeading": "Elige las partes que necesitas",
+      "pickIntro": "Elige cualquiera de las siete, o todas. Nada tiene precio hasta que lo pidas, y tu selección pasa directo a la solicitud de abajo.",
+      "counter": "{count} de {total} seleccionadas",
+      "selectAll": "Seleccionar todo",
+      "clearAll": "Limpiar",
+      "select": "Seleccionar",
+      "selected": "Seleccionada",
+      "requestHeading": "Solicita acceso anticipado",
+      "requestIntro": "Cuéntanos quién eres y te responderemos con el precio exacto de lo que elegiste. Pagar antes pone tus partes al frente de la fila.",
+      "messageNone": "Quiero acceso anticipado a Startup Suite. Todavía no he elegido partes específicas.",
+      "messageSome": "Quiero acceso anticipado a Startup Suite. Partes que quiero: {parts}.",
+      "howHeading": "Cómo funciona",
+      "how": [
+        {
+          "title": "Una tarifa, sin suscripción",
+          "body": "Pagas una vez por las partes que elijas y te las quedas. No hay cantidad de usuarios ni factura mensual."
+        },
+        {
+          "title": "Sin marca, a propósito",
+          "body": "Cada parte incluye contenido de ejemplo y un solo lugar para cambiar nombres, logotipos y colores, de modo que se vea tuya."
+        },
+        {
+          "title": "Basado en una especificación publicada",
+          "body": "Cada parte se evalúa contra especificaciones escritas, y el resultado es un informe que puedes leer en lugar de una promesa."
+        }
+      ],
+      "items": {
+        "ats": {
+          "title": "Sistema de seguimiento de candidatos",
+          "kicker": "Personas",
+          "body": "Un sistema para reclutadores con vacantes, candidatos y etapas del proceso, además de un espacio para candidatos y una extensión de captura para el navegador. Auditado según WCAG 2.2 AA."
+        },
+        "docsSite": {
+          "title": "Sitio de documentación",
+          "kicker": "Documentación",
+          "body": "Entra Markdown, sale un sitio estático con búsqueda. Cada página nombra un equipo responsable y una fecha de revisión, y una página vencida lo indica a la vista."
+        },
+        "marketingSite": {
+          "title": "Sitio de marketing",
+          "kicker": "Sitio web",
+          "body": "Un sitio de una página para un negocio que vende unos pocos servicios empaquetados, con consultas por formulario, teléfono y WhatsApp. Incluye inglés y español."
+        },
+        "bookingSite": {
+          "title": "Sitio de reservas",
+          "kicker": "Sitio web",
+          "body": "Un sitio para vender sesiones programadas en grupos pequeños, con reserva en seis pasos, calendario de disponibilidad por sesión y panel para el operador."
+        },
+        "training": {
+          "title": "Plataforma de capacitación",
+          "kicker": "Personas",
+          "body": "Cursos y cuestionarios para móvil pensados para equipos distribuidos con teléfonos económicos y conexiones débiles, con lecciones sin conexión e inicio de sesión por teléfono y PIN."
+        },
+        "brandPortal": {
+          "title": "Portal de activos de marca",
+          "kicker": "Marca",
+          "body": "Una biblioteca interna de logotipos, colores, tipografías, guías de voz y plantillas de presentación, con acceso limitado al dominio de correo de tu empresa."
+        },
+        "chatbotGrader": {
+          "title": "Evaluador de chatbots",
+          "kicker": "Calidad",
+          "body": "Prueba el chatbot de atención al cliente contra tus propios documentos antes del lanzamiento y genera un informe que el dueño puede leer. Reglas primero, con un juez de modelo opcional."
+        }
+      }
     }
   },
   "partnerships": {
@@ -703,6 +774,12 @@
     "legal": {
       "title": "Términos Legales",
       "description": "Términos de uso de arsonistai.com y de nuestros servicios de integración de IA: uso del sitio, propiedad intelectual, resultados de IA y ley aplicable."
+    },
+    "startupSuite": {
+      "title": "Startup Suite: Software de Marca Blanca para una Empresa Nueva",
+      "description": "Elige las partes que necesitas de Startup Suite: seguimiento de candidatos, sitio de documentación, sitios de marketing y reservas, capacitación, portal de marca y evaluador de chatbots. Una tarifa, sin suscripción. Acceso anticipado.",
+      "ogTitle": "Startup Suite: Acceso Anticipado | ArsonistAI",
+      "ogDescription": "Software de marca blanca para una empresa nueva desde el primer día. Elige las partes que necesitas y paga una vez. Solicita acceso anticipado."
     }
   },
   "insights": {

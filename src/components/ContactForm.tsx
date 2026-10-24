@@ -2,11 +2,18 @@
 
 import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "";
 
-export default function ContactForm() {
+interface Props {
+  /** Replaces the default heading, e.g. on a request-access page. */
+  heading?: string;
+  /** Fills the message box and refills it whenever the value changes. */
+  presetMessage?: string;
+}
+
+export default function ContactForm({ heading, presetMessage }: Props = {}) {
   const t = useTranslations("contact");
   const tn = useTranslations("newsletter");
   const formRef = useRef<HTMLFormElement>(null);
@@ -14,6 +21,12 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [subscribeNl, setSubscribeNl] = useState(false);
+
+  useEffect(() => {
+    if (presetMessage === undefined || !formRef.current) return;
+    const box = formRef.current.querySelector<HTMLTextAreaElement>("[name='message']");
+    if (box) box.value = presetMessage;
+  }, [presetMessage]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -62,7 +75,7 @@ export default function ContactForm() {
   return (
     <section className="py-24">
       <div className="max-w-xl mx-auto">
-        <h2 className="text-headline-md font-bold mb-10 text-center">{t("heading")}</h2>
+        <h2 className="text-headline-md font-bold mb-10 text-center">{heading ?? t("heading")}</h2>
         <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
           <div aria-hidden="true" className="absolute overflow-hidden" style={{ left: "-9999px" }}>
             <label htmlFor="company_url">Website</label>
