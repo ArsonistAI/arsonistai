@@ -12,6 +12,7 @@ import InsightCard from "@/components/InsightCard";
 import ContactForm from "@/components/ContactForm";
 import ClientMarquee from "@/components/ClientMarquee";
 import DemoReel from "@/components/DemoReel";
+import EbookLaunch from "@/components/EbookLaunch";
 import FadeInSection from "@/components/FadeInSection";
 import { alternatesFor, socialFor } from "@/lib/seo";
 
@@ -53,6 +54,8 @@ function HomeContent() {
 
   return (
     <>
+      <EbookLaunch />
+
       {/* Hero */}
       <section className="relative py-24 md:py-36 lg:py-48 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-lava/5 to-transparent" />

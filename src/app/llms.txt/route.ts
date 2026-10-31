@@ -1,7 +1,8 @@
 import { posts } from "@/content/posts";
 import { caseStudies } from "@/content/caseStudies";
 import { services, serviceMessageKey } from "@/content/services";
-import { absoluteUrl, DEFAULT_LOCALE } from "@/lib/seo";
+import { EBOOK_TITLE, EBOOK_PDF } from "@/content/ebook";
+import { absoluteUrl, DEFAULT_LOCALE, SITE_URL } from "@/lib/seo";
 import messages from "../../../messages/en.json";
 
 export const dynamic = "force-static";
@@ -60,6 +61,7 @@ export function GET() {
     "## Products",
     "",
     `- [${msg("products.startupSuite.title")}](${url("/products/startup-suite")}): ${msg("products.startupSuite.intro")}`,
+    `- [${EBOOK_TITLE}](${SITE_URL}${EBOOK_PDF}): Free PDF ebook. What AI reliably does for a 1 to 50 person company, what it costs, and how to run a 90-day pilot that proves it.`,
     "",
     "## Company",
     "",
