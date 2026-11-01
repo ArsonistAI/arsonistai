@@ -34,8 +34,8 @@ export default function EbookLaunch() {
             alt={t("ebookImageAlt")}
             width={1024}
             height={1024}
-            sizes="240px"
-            className="w-full max-w-[240px] h-auto rounded-shape-sm mb-8"
+            sizes="(max-width: 1023px) 100vw, 480px"
+            className="w-full max-w-[480px] h-auto rounded-shape-sm mb-8"
           />
           <p className="text-label-lg text-lava uppercase tracking-widest mb-6">
             {t("ebookLabel")}
