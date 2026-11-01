@@ -27,7 +27,7 @@ export const posts: Post[] = [
     date: "2026-10-18",
     section: "AI Integration",
     serviceId: "custom-mcp-servers",
-    image: "/images/services/fisheye.png",
+    image: "/images/blog/mcp-server.jpg",
     content: {
       en: `If your team uses Claude, Cursor, or another AI assistant at work, you have probably seen the same pattern. Someone copies a spreadsheet into a chat, pastes a few rows from the CRM, attaches a PDF of the pricing policy, and then asks a question. The answer comes back confident. Whether it is right depends on what got pasted, how fresh it was, and whether the model filled the gaps on its own.
 
@@ -185,7 +185,7 @@ Si puedes responderlas, estás listo para construir. Si quieres ayuda para defin
     date: "2026-10-18",
     section: "AI Integration",
     serviceId: "llm-cost-optimization",
-    image: "/images/services/content_service.png",
+    image: "/images/blog/llm-cost.png",
     content: {
       en: `The bill for an AI feature has an unusual shape. It does not stay flat like a software license. It grows with every user, every message, and every extra paragraph someone adds to the system prompt. A feature that cost a few hundred dollars a month in beta can cost many times that after launch, and the first sign is usually an invoice.
 

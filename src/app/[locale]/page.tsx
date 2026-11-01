@@ -10,7 +10,7 @@ import ServiceCard from "@/components/ServiceCard";
 import ProductCard from "@/components/ProductCard";
 import InsightCard from "@/components/InsightCard";
 import ClientMarquee from "@/components/ClientMarquee";
-import DemoReel from "@/components/DemoReel";
+// import DemoReel from "@/components/DemoReel";
 import EbookLaunch from "@/components/EbookLaunch";
 import FadeInSection from "@/components/FadeInSection";
 import { alternatesFor, socialFor } from "@/lib/seo";
@@ -64,29 +64,14 @@ function HomeContent() {
             <p className="text-display-sm md:text-display-md lg:text-display-lg text-statement font-bold leading-tight max-w-4xl mb-10">
               {t("heroTitle")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-5 items-start">
-              <a
-                href="#demo-reel"
-                className="inline-flex items-center gap-3 px-10 py-4 bg-lava text-background font-bold rounded-shape-full m3-button"
-              >
-                {t("heroCta")}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                </svg>
-              </a>
-            </div>
+            {/* The hero CTA scrolls to #demo-reel. Restore it together with
+                <DemoReel /> below once the new reel is ready. */}
           </div>
         </div>
       </section>
 
-      <DemoReel />
+      {/* Demo reel hidden until the new video is ready. Restore the import above too. */}
+      {/* <DemoReel /> */}
 
       <ClientMarquee />
 
