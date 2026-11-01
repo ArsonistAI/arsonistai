@@ -83,7 +83,8 @@ export default function DemoReel() {
     description: t("demoReelDescription"),
     thumbnailUrl: `${SITE_URL}${POSTER}`,
     contentUrl: `${SITE_URL}${VIDEO}`,
-    uploadDate: "2026-03-06",
+    // Google requires a full ISO 8601 datetime with a timezone offset here.
+    uploadDate: "2026-03-06T00:00:00-08:00",
     duration: "PT58S",
   };
 
