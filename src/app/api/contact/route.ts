@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
+import { EBOOK_PDF } from "@/content/ebook";
+import { createEbookToken } from "@/lib/ebookToken";
 
 const TURNSTILE_SECRET = process.env.TURNSTILE_SECRET_KEY ?? "";
 const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID ?? "";
@@ -106,21 +108,30 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const { name, email, message, turnstileToken, subscribeNewsletter, companyUrl } =
-    body as {
-      name?: string;
-      email?: string;
-      message?: string;
-      turnstileToken?: string;
-      subscribeNewsletter?: boolean;
-      companyUrl?: string;
-    };
+  const {
+    name,
+    email,
+    message,
+    turnstileToken,
+    subscribeNewsletter,
+    companyUrl,
+    requestEbook,
+  } = body as {
+    name?: string;
+    email?: string;
+    message?: string;
+    turnstileToken?: string;
+    subscribeNewsletter?: boolean;
+    companyUrl?: string;
+    requestEbook?: boolean;
+  };
+  const wantsEbook = requestEbook === true;
 
   if (companyUrl) {
     return NextResponse.json({ ok: true });
   }
 
-  if (!name || !email || !message) {
+  if (!name || !email || (!message && !wantsEbook)) {
     return NextResponse.json(
       { error: "Missing required fields." },
       { status: 400 },
@@ -158,10 +169,22 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    await sendEmailServer({ name, email, message });
+    await sendEmailServer({
+      name,
+      email,
+      message: wantsEbook ? `[Free ebook download] ${message || "No message."}` : message!,
+    });
 
     if (subscribeNewsletter) {
       await subscribeServer(email).catch(() => {});
+    }
+
+    if (wantsEbook) {
+      const token = await createEbookToken();
+      return NextResponse.json({
+        ok: true,
+        downloadUrl: `${EBOOK_PDF}?token=${encodeURIComponent(token)}`,
+      });
     }
 
     return NextResponse.json({ ok: true });
