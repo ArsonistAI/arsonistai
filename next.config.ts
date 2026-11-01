@@ -51,6 +51,21 @@ const nextConfig: NextConfig = {
       // A permanent redirect, so search engines consolidate the bare origin
       // into /en. The redirect() in app/page.tsx answers 307, which is temporary.
       { source: "/", destination: "/en", permanent: true },
+      // URLs from the old WordPress site, which had no locale prefix and kept
+      // posts at the root. Google still crawls them and reports them as 404s.
+      {
+        source:
+          "/:page(about-us|services|products|partnerships|insights|case-studies|privacy-policy|legal-terms)",
+        destination: "/en/:page",
+        permanent: true,
+      },
+      { source: "/:page(work|work-single)", destination: "/en/case-studies", permanent: true },
+      {
+        source:
+          "/:slug(introducing-product-kpis-bringing-measurable-impact-into-your-design-workflow|why-choosing-the-right-kpis-makes-all-the-difference-in-product-success|containment-not-catastrophe-9-practical-ways-to-regulate-ai-before-it-regulates-us|10-ways-to-incorporate-ai-into-everyday-life|lean-product-canvas-interactive-figma-templates|would-you-date-an-ai|how-to-use-figma-to-manage-your-brand|what-designers-need-to-know-about-ai|excited-or-terrified-what-people-really-think-about-ai)",
+        destination: "/en/insights/:slug",
+        permanent: true,
+      },
       // Retired services keep their indexed URLs pointing somewhere useful.
       {
         source:
